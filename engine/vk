@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+# vk: one command for every pipeline step. Run it from inside a project folder (one holding
+# project.json, or any folder below it), or pass -C <project folder> first.
+#
+#   vk new <folder> "<Title>" "<course line>" [--lang L] [--source f…]   scaffold project (+course), bring in material
+#   vk status                     where every chapter and scene stands (cheap; read this first)
+#   vk voice [N] [--only ID …]    voice new/changed lines of script/chN_*.md (all chapters if no N)
+#   vk voice [N] --qa-only        consensus voice QA (Whisper base+small+medium) on cached clips, no re-voicing
+#   vk qa [N] [-v] [--all]        sentences the voice QA flagged: id:sentence  "expected" → "heard" (models)
+#   vk retime [N]                 redo word timings without re-voicing
+#   vk packet <stem>              one scene's brief + narration timings (what a scene-builder reads)
+#   vk build <stem> [--notes "…"]    build or fix one scene with Codex (GPT-6.1 Sol), off the Claude quota
+#   vk check <stem…> | --chapter N [--no-render] [--frames t …] [--render-anyway]   audit, then 480p render + beats image once clean
+#   vk holds N                    one settled frame per narration line -> media/chN_holds.png
+#   vk preview N                  480p15 chapter -> out/chN_*_preview.mp4
+#   vk final N                    1080p60 chapter with music -> out/chN_*.mp4
+#   vk finalize N… [--no-review]  final + Gemini viewer/transitions reviews, no agent -> media/review/chN_finalize.md
+#   vk render …                   tools/render.py with any of its flags (--only, --no-stitch, …)
+#   vk dwell …                    screen-time audit on its own
+#   vk audition <ref.wav …>       hear a voice reference the way the pipeline would voice it
+#   vk lecture <video> [--model M] [--chunk S]   lecture recording -> source/<stem>.transcript.md (Whisper) + .digest.md (Gemini)
+#   vk review N [--transitions] [--file F]      Gemini watches out/chN_*.mp4 as a viewer -> media/review/chN_review.md (_transitions.md)
+#   vk review <stem…> [--model M]               ... or scenes' 480p check renders -> media/review/<stem>_review.md
+#   vk listen N [--only ID …] [--model M]       Gemini ear-checks the voiced narration vs the script -> media/review/chN_listen.md
+#   vk usage                      tokens per agent of the latest Claude session in the studio
+set -euo pipefail
+
+ENGINE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+PY="$ENGINE/.venv/bin/python"
+MLX="$ENGINE/.venv-mlx/bin/python"
+T="$ENGINE/tools"
+
+export VK_CALLER_PWD="$PWD"   # where vk was run from: lecture/review resolve relative paths against it
+if [[ "${1:-}" == "-C" ]]; then cd "$2"; shift 2; fi
+
+find_project() {
+  local d="$PWD"
+  while [[ "$d" != "/" ]]; do
+    [[ -f "$d/project.json" ]] && { echo "$d"; return; }
+    d="$(dirname "$d")"
+  done
+  echo "vk: not inside a project (no project.json at or above $PWD); cd into one or use -C" >&2
+  exit 2
+}
+
+in_project() {   # run a tool from the project root, with the project pinned for child processes
+  export VK_PROJECT="$(find_project)"
+  export PYTHONPATH="$ENGINE${PYTHONPATH:+:$PYTHONPATH}"
+  cd "$VK_PROJECT"
+}
+
+cmd="${1:-help}"; shift || true
+case "$cmd" in
+  new)     exec "$PY" "$T/new_project.py" "$@" ;;
+  status)  in_project; exec "$PY" "$T/status.py" "$@" ;;
+  voice)   in_project
+           if [[ "${1:-}" =~ ^[0-9]+$ ]]; then n="$1"; shift; exec "$MLX" "$T/voice.py" --chapter "$n" "$@"; fi
+           exec "$MLX" "$T/voice.py" "$@" ;;
+  retime)  in_project
+           if [[ "${1:-}" =~ ^[0-9]+$ ]]; then n="$1"; shift; exec "$MLX" "$T/voice.py" --retime --chapter "$n" "$@"; fi
+           exec "$MLX" "$T/voice.py" --retime "$@" ;;
+  qa)      in_project; exec "$PY" "$T/voiceqa.py" "$@" ;;
+  packet)  in_project; exec "$PY" "$T/packet.py" "$@" ;;
+  build)   in_project; exec "$PY" "$T/codex_build.py" "$@" ;;
+  check)   in_project; exec "$PY" "$T/check.py" "$@" ;;
+  holds)   in_project
+           if [[ "${1:-}" =~ ^[0-9]+$ ]]; then n="$1"; shift; exec "$PY" "$T/holds.py" --chapter "$n" "$@"; fi
+           exec "$PY" "$T/holds.py" "$@" ;;
+  preview) in_project; exec "$PY" "$T/render.py" --chapter "$1" "${@:2}" ;;
+  final)   in_project; exec "$PY" "$T/render.py" --chapter "$1" --final "${@:2}" ;;
+  finalize) in_project; exec "$PY" "$T/finalize.py" "$@" ;;
+  render)  in_project; exec "$PY" "$T/render.py" "$@" ;;
+  dwell)   in_project; exec "$PY" "$T/dwell.py" "$@" ;;
+  sheet)   exec "$T/sheet.sh" "$@" ;;
+  audition) exec "$MLX" "$T/audition.py" "$@" ;;
+  lecture) in_project; exec "$MLX" "$T/lecture.py" "$@" ;;
+  review)  in_project; exec "$PY" "$T/review.py" "$@" ;;
+  listen)  in_project; exec "$MLX" "$T/listen.py" "$@" ;;
+  usage)   exec python3 "$T/usage.py" "$@" ;;
+  help|-h|--help) sed -n '2,23p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//' ;;
+  *) echo "vk: unknown command '$cmd' (vk help)" >&2; exit 2 ;;
+esac

@@ -1,0 +1,21 @@
+# Environments, caches, runtime state
+.venv/
+.venv-mlx/
+__pycache__/
+.DS_Store
+engine/.locks/
+engine/logs/
+engine/media/
+media/
+
+# Bring-your-own assets: never commit voices, music or third-party references
+engine/assets/voice/
+engine/assets/music/
+engine/reference/*
+!engine/reference/INDEX.md
+.claude/skills/
+.claude/settings.local.json
+
+# Video series: lecture material, narration and renders stay local
+projects/*
+!projects/INDEX.md
