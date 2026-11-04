@@ -453,6 +453,10 @@ def main():
         reuse = not args.force and manifest.get(cid, {}).get("key") == key and wav_path.exists()
         voter_heard = None
         if reuse:   # only marks moved, or --retime: keep the audio, redo the timings
+            orig = AUDIO / ".pre-regap" / f"{cid}.wav"
+            if "regap" in manifest.get(cid, {}) and orig.exists():
+                # time the un-paced original (vk regap's backup); the pacing is re-applied below
+                wav_path.write_bytes(orig.read_bytes())
             audio, sr = sf.read(wav_path, dtype="float32")
         else:
             model = model or load_model(VOICE["model"])
@@ -495,6 +499,16 @@ def main():
         print_flags(cid, voiceqa.reported(qa))
         update_manifest({cid: manifest[cid]})
         getattr(mx, "clear_cache", lambda: None)()   # keep MLX's buffer cache from growing over a long run
+
+    # house pacing (2026-11-03): varied pauses, twice as long (tools/regap.py) on every line voiced
+    # or re-timed here; project.json "pacing": "fixed" opts out
+    import regap
+    pace = regap.pacing()
+    if pace:
+        n, before, after = regap.apply(todo, **pace, say=lambda _: None)
+        print(f"pacing: {n} line(s) paced (scale {pace['scale']}, speed {pace['speed']}): "
+              f"{before:.1f} → {after:.1f} min")
+        manifest = json.loads(MANIFEST.read_text())
 
     mine = [manifest[k]["duration"] for k in script if k in manifest]
     print(f"narration: {sum(mine) / 60:.1f} min over {len(mine)} lines ({len(todo)} processed in "

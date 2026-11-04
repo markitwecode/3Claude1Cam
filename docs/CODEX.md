@@ -5,7 +5,7 @@ The current runbook is `CLAUDE.md`. The substantive role instructions remain in 
 The current scene-model candidate is **GPT-6 Astra, medium reasoning**. The previous scene model was GPT-6.1 Sol at medium. The shared `vk build` default remains unchanged for the existing Claude workflow; Codex directors pass the model explicitly:
 
 ```sh
-VK_JOB_GB=12 VK_GPU_SLOTS=1 VK_MANIM_SLOTS=6 engine/vk -C <new-project> build <scene> --model gpt-6-astra --effort medium --instructions /path/to/3Claude1Cam/.claude/agents/scene-builder.md
+VK_JOB_GB=12 VK_GPU_SLOTS=1 VK_MANIM_SLOTS=6 engine/vk -C <new-project> build <scene> --model gpt-6-astra --effort medium --instructions /Users/markgolbraikh/Documents/3Claude1Cam/.claude/agents/scene-builder.md
 ```
 
 The model ID and medium reasoning setting are supported by [official OpenAI model documentation](https://developers.openai.com/api/docs/models/gpt-6-astra). Availability is checked separately; documentation alone does not establish scene quality.

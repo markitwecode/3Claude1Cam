@@ -58,6 +58,23 @@ built. A turn re-reads the whole context, so **cost ≈ turns × context size**.
 
 ## Voice (TTS)
 
+- **Varied pauses (trial, 2026-11-02, DB L4 ch1):** the fixed 0.55 s between sentences and 0.35 s
+  after each line sounded robotic to the user. `vk regap N` stretches voice.py's inserted silences
+  (exact zero samples, so they're found exactly) to seeded random lengths: sentences triangular
+  0.40–1.05 s (mode 0.60), +0.25 after a question, +0.12 after 18+ words; after a line 0.30–0.85 s
+  (mode 0.45), +0.30 after a question. `{pause}`s and scenes' explicit `gap=` are kept. No re-voice:
+  the cache key is untouched and the word timings are shifted (checked: every word's offset from its
+  pause is unchanged to ≤ 2 ms). A line re-voiced later gets fixed gaps again until regap is re-run.
+  **Verdict (2026-11-03):** the user picked `--scale 2` (varied pauses, twice as long, speech at
+  normal speed). "With the original pace there is just no room for any thought outside of the
+  lecture". DB L4 ch1: 10:12 → 12:20. Made the house default the same day: `vk voice` paces every
+  line it voices or re-times (`regap.apply`; it re-times from the `.pre-regap` original, so a paced clip
+  is never paced twice: a retime of a paced line gave byte-identical audio). Projects voiced before
+  then: `vk regap N` + re-render, on request (INDEX.md, "Pacing").
+  Also tried: `--speed 0.75`/`0.8` (Rubber Band R3 on the speech only; Whisper check on the stretched
+  audio: median word 13 ms off, p90 ~60 ms) gave 12:55 / 14:22, not chosen. For trying speeds, the
+  video player's playback rate is the instant test; baking a change in costs a full re-render
+  (~5 min a chapter at 1080p60), since every animation is timed to the words.
 - **Use Chatterbox Turbo via `mlx-audio` (MLX), not the PyTorch `chatterbox-tts`.**
   PyTorch on MPS ran 2.5–12× *slower* than real time; MLX runs 2.5–3.5× *faster* than
   real time on an M1 Max. The PyTorch package also pins torch 2.6 and numpy<2, and its
@@ -102,6 +119,10 @@ built. A turn re-reads the whole context, so **cost ≈ turns × context size**.
   timings. Writes now go through `update_manifest()` (file lock, re-read, merge one entry,
   atomic replace). Still, prefer one sequential run (`voice.py` with no `--chapter` does
   everything) because they share one GPU anyway.
+- **House pacing is applied once, at the end of the whole `vk voice` run** (`voice.py`,
+  `regap.apply` after every line; 2026-11-03, L12). In a multi-chapter run, chapters already
+  voiced still carry unpaced timings until the run ends, so don't start a chapter-director on
+  them early: its scenes would sync to timings that then change.
 - Editing narration with search-and-replace can hit `{mark}` names too. `{id}` became
   `{eye-dee}`, which is no longer a valid mark (hyphen), so it would have been *spoken*. Only
   replace inside the narration text, and grep for `{[a-z]*-` afterwards.
@@ -166,6 +187,10 @@ built. A turn re-reads the whole context, so **cost ≈ turns × context size**.
 - Arrows built with `link(..., follow=True)` are redrawn every frame and ignore colour animations.
 - Manim's logs are wrapped by `rich`, so `grep` misses phrases split across lines.
   Use `COLUMNS=400` when grepping logs.
+- Never give a Mobject an attribute named after one of its methods (`.update`, `.scale`, `.shift`,
+  `.set`, `.copy`…). DB L4 ch5 s3's `recap_r2()` set `.update`, which hid `Mobject.update`, so
+  `play()` broke for every later scene that imported it (ch5 s7 and ch9 s6 had to work around it).
+  Use descriptive names (`.upd_row`, `.update_card`).
 
 ## Rendering and assembly
 
@@ -173,6 +198,11 @@ built. A turn re-reads the whole context, so **cost ≈ turns × context size**.
   1080p60 ~90 s, on the M1 Max.
 - Stitch with `-c:v copy` and re-encode only the audio. Use `aresample=async=1` so the gaps
   between scenes stay as silence; otherwise narration can drift. Verified within 5 ms.
+- **Homebrew's `ffmpeg` has no `drawtext` since 9.0.2** (brew upgrade 2026-11-03): `vk check`
+  beats images and `vk holds` crashed. Labelled grabs now go through `lib.paths.ffmpeg_text()`,
+  which picks an ffmpeg that has drawtext ($VK_FFMPEG_TEXT, Homebrew's keg-only `ffmpeg-full`,
+  PATH, anaconda envs) and always passes a font file. Today it finds `~/anaconda3/envs/ML`'s
+  4.2.2. The durable fix is `brew install ffmpeg-full` (do it when nothing is rendering).
 - Contact sheets (`tools/sheet.sh`) select frames by real timestamp, with the label at the
   bottom. The earlier version used the `fps` filter, mislabelled frames by up to ~1 s, and
   covered the top margin.
@@ -484,8 +514,28 @@ built. A turn re-reads the whole context, so **cost ≈ turns × context size**.
   recording, though Claude reading sampled frames plus the slides may match it (Gemini's digest was
   wrong in places in L8 and L10). Its visual checks (scene reviews, the final transitions pass) are
   on trial: they cost ~80% of its tokens and doubled director time, and frame sheets caught real
-  glitches without them. Test: Wednesday's pass (projects/INDEX.md "Pending"). Few real findings in
-  the nine chapters → drop both visual checks; keep the ear and the digest.
+  glitches without them. Test (the user chose a sample, 2026-11-03): Wednesday's transitions review of
+  FoCS L5 ch3–7 only, built with no Gemini (projects/INDEX.md "Pending"). 0–1 real findings in the 5 →
+  drop both visual checks, keep the ear and the digest; 2+ → review the other 20 that skipped theirs.
+
+
+## Scheduling study: the sample (2026-11-04): Gemini's visual reviews dropped
+The test the 2026-11-01 results set up: run Gemini's final transitions pass on 5 chapters built with
+no Gemini at all (FoCS L5 ch3–7), then frame-check what it flags. If 0–1 findings were real, drop
+Gemini's visual checks; 2 or more, keep them.
+- tally() gave ch3–6 "clean" and ch7 "look" (a "duplicate red O(n^2)"). Three more settled-looking
+  mismatches were mid-transition, so tally() didn't count them.
+- Frame check at the time and ±0.5 s and ±1.5 s, against the narration: ch7's duplicate was FALSE (one
+  O(n^2), and the table row is meant to be highlighted). ch6's "circle on 34, not 53" was FALSE: the
+  circle was on 53 at the stamp, and Gemini caught it moving on. ch4's highlight on `else` was
+  TRANSIENT, ~0.4 s mid-slide. ch5's dim "Part 5" label during the spoken "part one" was REAL but
+  minor: a deliberate callback that reads as a contradiction. It was accepted.
+- **1 real finding in 5 chapters, and it was minor**, so the visual checks are dropped: no directors'
+  `vk review <stems>` and no transitions pass in `vk finalize` (now opt-in with `--review`). This
+  saves ~80% of Gemini's weekly tokens. Kept: `vk listen` (in the same run, 9 lines were heard wrong
+  by Gemini and the Whisper vote together) and `vk lecture` digests. Motion is now checked by
+  `vk check`'s transition audits and the builders' `--frames` sheets.
+- Cost of the sample: ~0.6M Gemini tokens for 5 reviews, and ~1.3M for 30 listens.
 
 ## Gemini in the pipeline (2026-10-28, measured)
 - Reached through the Antigravity CLI `agy` headless, plan mode, from a scratch dir holding only the

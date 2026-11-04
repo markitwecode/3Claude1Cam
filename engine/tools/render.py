@@ -23,11 +23,12 @@ from pathlib import Path
 ENGINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENGINE))
 import music  # noqa: E402
-from lib.paths import project, subprocess_env  # noqa: E402
+from lib.paths import final_quality, project, subprocess_env  # noqa: E402
 
 ROOT = project()   # the project folder (script/, scenes/, media/, out/, …)
 MANIM = ENGINE / ".venv" / "bin" / "manim"
-QUALITY = {False: ("-ql", "480p15", "_preview"), True: ("-qh", "1080p60", "")}
+# finals follow project.json "resolution" (1080p60 by default, 1440p60 for deep-style projects)
+QUALITY = {False: ("-ql", "480p15", "_preview"), True: (*final_quality()[:2], "")}
 
 
 def chapter_scenes(n):
@@ -62,7 +63,7 @@ def render(stem, cls, flag):
         # stored segment has a whole number of frames, so cached renders drift out of sync
         # with the narration (~0.3 s per scene measured). Fresh renders are cheap enough.
         import slots
-        with slots.manim(f"render {stem}", gb=0.75 if flag == "-ql" else 1.2):
+        with slots.manim(f"render {stem}", gb={"-ql": 0.75, "-qp": 1.6}.get(flag, 1.2)):   # 1440p: a guess, ~1.8x the pixels
             cmd = [str(MANIM), flag, "--media_dir", "media", "--config_file", str(cfg),
                    "--disable_caching", f"scenes/{stem}.py", cls]
             if flag != "-ql":   # finals: nobody's loop waits on them, so builders' previews get the CPU first
@@ -94,7 +95,7 @@ def stitch(parts, out, chapter, stems, res):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--chapter", type=int, required=True)
-    ap.add_argument("--final", action="store_true", help="1080p60 instead of the 480p preview")
+    ap.add_argument("--final", action="store_true", help="the final quality (project.json resolution: 1080p60 default, 1440p60) instead of the 480p preview")
     ap.add_argument("--only", nargs="*", help="scene file stems to (re)render")
     ap.add_argument("--no-stitch", action="store_true")
     args = ap.parse_args()

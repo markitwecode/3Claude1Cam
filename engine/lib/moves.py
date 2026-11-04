@@ -189,20 +189,27 @@ def _term_pairs(pairs, n_src, n_trg):
         pairs = [p for k, p in enumerate(pairs) if k not in lone]
 
 
+def edit_pairs(old, new):
+    """(old pieces, new pieces, [(i, j)]): the glyph pairs edit() slides; every other piece of old
+    fades out, every other piece of new fades in (lib.teach.derive_step highlights the same diff)."""
+    src, trg = _pieces(old), _pieces(new)
+    if not src or not trg:
+        raise ValueError("edit() needs two texts with glyphs (use appear/disappear for one side)")
+    k1, k2 = glyph_classes(src, trg)
+    blocks = SequenceMatcher(None, k1, k2, autojunk=False).get_matching_blocks()
+    pairs = [(b.a + i, b.b + i) for b in blocks for i in range(b.size)]
+    from manim import MathTex, Tex
+    if isinstance(old, (MathTex, Tex)) or isinstance(new, (MathTex, Tex)):
+        pairs = _term_pairs(pairs, len(src), len(trg))
+    return src, trg, pairs
+
+
 class _Edit(AnimationGroup):
     """See edit(). The end-state handling is TransformMatchingStrings': the source is put back as it
     was and taken off screen with the helper copies; the target is shown."""
 
     def __init__(self, old, new, min_shared=0.5, **kwargs):
-        src, trg = _pieces(old), _pieces(new)
-        if not src or not trg:
-            raise ValueError("edit() needs two texts with glyphs (use appear/disappear for one side)")
-        k1, k2 = glyph_classes(src, trg)
-        blocks = SequenceMatcher(None, k1, k2, autojunk=False).get_matching_blocks()
-        pairs = [(b.a + i, b.b + i) for b in blocks for i in range(b.size)]
-        from manim import MathTex, Tex
-        if isinstance(old, (MathTex, Tex)) or isinstance(new, (MathTex, Tex)):
-            pairs = _term_pairs(pairs, len(src), len(trg))
+        src, trg, pairs = edit_pairs(old, new)
         self.fade_in_copies, anims = [], []
         if pairs and len(pairs) >= min_shared * min(len(src), len(trg)):
             used_s, used_t = {i for i, _ in pairs}, {j for _, j in pairs}

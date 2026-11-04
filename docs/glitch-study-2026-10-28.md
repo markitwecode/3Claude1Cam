@@ -405,7 +405,7 @@ arrow reads source → target.
 | 187 | l03 ch4* | s6_cost @ 69.5 | mism | vertical bracket n+1 | no | N | - |
 
 ## Appendix: the study's tools (scratch, not installed)
-In a session scratchpad (not kept):
+In `/private/tmp/claude-501/-Users-markgolbraikh-Documents-3Claude1Cam/84c988cb-2109-4b91-a1de-93341199077f/scratchpad/gs/`:
 `glitch_review.py` + `run_glitch.sh` (the transition-prompt review), `playlog.py` (dry-run play
 logger with glyph-identity markers), `mapf.py` (finding → active plays), `classify.py` + `final.py`
 + `gen_table.py` (classes and this table), `early.py` + `runmany.py` (label timing over all

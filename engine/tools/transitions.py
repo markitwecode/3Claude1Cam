@@ -16,6 +16,11 @@ layout lint (settled moments only) can't see. This audit watches every play() of
            -> c.wait_until(own_word=label); opt out with a "# early: <reason>" comment on the line
   flashbox (advice only, any scene) a flash or drawn box hugging a single letter or digit: its top
            edge reads as an overbar (NOT in a logic course)  -> FlashAround (it rings one glyph)
+  inplace  (advice only, projects whose project.json has a "style") a MathTex rewritten into a
+           different MathTex (Transform, ReplacementTransform, TransformMatching*, edit()) after
+           which the original is nowhere on screen: the viewer can't see what was there
+           (DEEP_STYLE §14)  -> lib.teach.derive_step. A value update (only digits change) and a
+           rewrite of a copy while the original stays up (derive, derive_step) don't count.
 
 Scenes marked "# style: 2" (the builder template's line) get these as blocking flags; other scenes
 get them as advice, so a fix pass on an older scene doesn't turn into a rewrite. The overlap rule
@@ -30,7 +35,7 @@ import numpy as np
 STYLE_RE = re.compile(r"^#\s*style:\s*2\b", re.M)
 SAMPLES = tuple(round(0.1 * k, 1) for k in range(1, 10))   # each play inspected every 10% (overlap)
 SUBSTEPS = (1 / 3, 2 / 3)     # moving glyphs' boxes interpolated between samples, so no crossing slips by
-ADVICE_ONLY = {"flashbox"}    # never blocking, in any scene
+ADVICE_ONLY = {"flashbox", "inplace"}   # never blocking, in any scene
 MIN_OP = 0.3                  # a glyph fainter than this doesn't count as drawn over another
 OVERLAP = 0.35                # share of the smaller glyph box (the layout lint's threshold)
 EARLY_S = 2.0                 # a label up this long before its word is flagged
@@ -38,7 +43,10 @@ MAX_LABEL_WORDS = 6           # longer texts (sentences, quotes) are read over t
 OVERLAP_BLOCKS = True         # set by the 2026-10-28 calibration (see LESSONS.md)
 FIX = {"morph": "use swap() or edit() (fly() for a copy)", "partial": "use appear()",
        "flashbox": "use FlashAround (it rings a one-glyph target) or a colour pulse",
-       "tilde": "build it with T()", "early": "cue it with c.wait_until(own_word=label)"}
+       "tilde": "build it with T()", "early": "cue it with c.wait_until(own_word=label)",
+       "inplace": "keep the original up: derive_step(self, src, new) writes the new line beneath "
+                  "(or beside) with '=' and rewrites a copy (DEEP_STYLE §14)"}
+VALUE_ONLY = re.compile(r"[\d.,\s{}]|\\[,;!]")   # stripped before comparing TeX: a readout update
 
 
 def new_style(src):
@@ -57,6 +65,11 @@ class Audit:
         self.items, self._keys = [], set()
         self.cur, self.cid = None, None
         self.clips, self.labels, self._label_ids = [], [], set()
+        try:
+            from lib.paths import config
+            self.styled = bool(config().get("style"))
+        except (SystemExit, Exception):
+            self.styled = False
 
     # ── install / remove the hooks ──────────────────────────────────────────────
     def install(self):
@@ -161,6 +174,7 @@ class Audit:
             return orig_play(scene, *anims, **kwargs)
         line, helper = self._caller()
         self._static(anims, line, helper, scene)
+        rewrites = self._rewrites(anims) if self.styled else []
         before = self._texts_on(scene)
         start, start_boxes = self._pairs(scene)
         self.cur = {"line": line, "helper": helper, "mid": {}, "done": set(), "start": start,
@@ -178,6 +192,8 @@ class Audit:
                               key=pair)
                     break
             self._new_labels(scene, before, anims, t0, scene.time - t0, line)
+            for rw in rewrites:
+                self._inplace(scene, rw, line, helper)
         finally:
             self.cur = None
         return r
@@ -238,6 +254,82 @@ class Audit:
                                   f"(letter by letter){via}: {FIX['partial']}", key=(id(a), hit[0]))
                 if scene is not None:
                     self._flashbox(a, name, scene, line, via)
+
+    # ── inplace: an expression rewritten where it stood, the original gone ───────
+    def _rewrites(self, anims):
+        """MathTex -> different MathTex rewrites in this play, with the source's glyphs copied
+        now (a Transform reshapes its source as it runs)."""
+        from manim import AnimationGroup, FadeTransform, SingleStringMathTex, Transform, TransformFromCopy
+        from manim.animation.fading import _Fade
+        from manim.mobject.text.tex_mobject import MathTexPart   # a MathTex's parts (CE 0.22)
+        tex = (SingleStringMathTex, MathTexPart)
+        from manim.animation.transform_matching_parts import TransformMatchingAbstractBase
+        from lib.moves import glyph_classes
+        out, seen = [], set()
+        for top in anims:
+            for a in self._walk(top):
+                if isinstance(a, AnimationGroup) and hasattr(a, "source") and hasattr(a, "target"):
+                    pair = (a.source, a.target)              # lib edit(), lib TransformMatchingStrings
+                elif isinstance(a, TransformMatchingAbstractBase):
+                    pair = (a.to_remove[0], a.to_add)
+                elif (isinstance(a, Transform) and not isinstance(a, (_Fade, FadeTransform, TransformFromCopy))
+                      and type(a).__name__ not in ("_FlyCopy", "MoveToTarget", "_MethodAnimation",
+                                                   "ApplyMethod", "Restore")):
+                    pair = (a.mobject, getattr(a, "target_mobject", None))
+                else:
+                    continue
+                s, t = pair
+                if not (isinstance(s, tex) and isinstance(t, tex)):
+                    continue
+                if (id(s), id(t)) in seen:
+                    continue
+                seen.add((id(s), id(t)))
+                gs, gt = self._glyphs(s), self._glyphs(t)
+                if not gs or not gt:
+                    continue
+                ks, kt = glyph_classes(gs, gt)
+                if ks == kt:                                  # a move or a restyle
+                    continue
+                if VALUE_ONLY.sub("", s.tex_string or "") == VALUE_ONLY.sub("", t.tex_string or ""):
+                    continue                                  # a readout: only digits change
+                out.append({"src": s, "tgt": t, "copies": [g.copy() for g in gs],
+                            "names": (self._name(s), self._name(t)), "anim": type(a).__name__})
+        return out
+
+    def _inplace(self, scene, rw, line, helper):
+        """Flag the rewrite if no text on screen now still shows the source's glyphs in order."""
+        from manim import SingleStringMathTex, Text
+        from manim.mobject.text.tex_mobject import MathTexPart
+        from lib.moves import glyph_classes
+        excl = {id(m) for m in rw["src"].get_family()} | {id(m) for m in rw["tgt"].get_family()}
+        units, done = [], set()
+
+        def walk(m):
+            if id(m) in done or id(m) in excl:
+                return
+            done.add(id(m))
+            if isinstance(m, (SingleStringMathTex, MathTexPart, Text)):   # the outermost text: one unit
+                g = [x for x in self._glyphs(m) if id(x) not in excl]
+                if len(g) >= len(rw["copies"]):
+                    vis = self._vis([(x, None, None) for x in g])
+                    units.append([x for x, v in zip(g, vis) if v >= 0.15])
+                return
+            for s in m.submobjects:
+                walk(s)
+
+        for top in scene.mobjects:
+            walk(top)
+        units = [u for u in units if len(u) >= len(rw["copies"])]
+        if units:
+            cls = glyph_classes(rw["copies"], *units)
+            src, n = cls[0], len(cls[0])
+            for seq in cls[1:]:
+                if any(seq[k:k + n] == src for k in range(len(seq) - n + 1)):
+                    return                                    # the original is still up
+        a, b = rw["names"]
+        via = f" (via {helper})" if helper else ""
+        self._add("inplace", line, f"{rw['anim']} rewrites {a!r} into {b!r} and the original is no "
+                  f"longer on screen{via}: {FIX['inplace']}", key=(id(rw["src"]), id(rw["tgt"])))
 
     def _flashbox(self, a, name, scene, line, via):
         """A travelling flash or a drawn box round one letter or digit shows its top edge first,

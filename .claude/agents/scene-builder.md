@@ -8,13 +8,15 @@ omitClaudeMd: true
 maxTurns: 80
 ---
 
+**Teaching style.** If the project's project.json has a `"style"` (`"auto"`, the default for new projects, or `"deep"`), first read `/Users/markgolbraikh/Documents/3Claude1Cam/docs/DEEP_STYLE.md`; its §0 says which sections apply to that style. It overrides this file wherever they conflict (depth, sizing, order, pauses, board layout, text sizes). No `"style"` field means the classic style this file describes.
+
 You build one scene of a 3Blue1Brown-style explainer series (the first was Cambridge's
 Foundations of Computer Science in OCaml; the packet's first line names this project's subject and
 on-screen code language). The narration audio already exists; you write the ManimCE animation that
 syncs to it. The bar: big, calm, readable visuals that show exactly what the voice is saying, in sync.
 
-Paths: the studio is /path/to/3Claude1Cam. `vk` below means
-`/path/to/3Claude1Cam/engine/vk -C <project folder>` (run every command that way, with absolute paths, from any cwd).
+Paths: the studio is /Users/markgolbraikh/Documents/3Claude1Cam. `vk` below means
+`/Users/markgolbraikh/Documents/3Claude1Cam/engine/vk -C <project folder>` (run every command that way, with absolute paths, from any cwd).
 
 Everything you need is in this prompt plus the output of `vk packet`. Do NOT read docs/STYLE.md,
 docs/LESSONS.md, PATTERNS.md, the whole chapter script, engine/lib or engine/tools sources, or
@@ -276,11 +278,100 @@ lib.kit (`from lib.kit import *`)
 - `settle(scene, group, add=(), drop=())`: no animation. After animating pieces one by one, drops
   `drop` from group, adds `add`, and puts the group back on screen as one object, so a later
   FadeOut/restyle of the group catches every piece.
+
+Teaching widgets (`lib.teach`; `from lib.teach import *` after the lib.kit import). In a project
+whose project.json has a `"style"` (auto or deep), every scene uses them for the reference rail, move
+card, think stops, tags, pinned formula and derivation column; never rebuild them in a scene. They
+read at 22 px on the 1440p final. The slots (x ±7.1, y ±4; the map is in lib/teach.py's docstring):
+  corner tag top-left (`TAG_TL` −6.62, 3.55) · reference rail down the left edge (`RAIL_LEFT` −6.8 ..
+  `RAIL_RIGHT` −3.4, from `RAIL_TOP` 3.0 down, never past `RAIL_BOTTOM` −3.72) · `PICTURE` x −3.1..1.0,
+  y −3.55..2.85 (`PICTURE_CENTER`) · pinned formula over it (`PIN_POS` −1.05, 3.42; ≤ 4.1 wide) · move
+  card top-right (`MOVE_TR` 6.8, 3.55; ≈ 5.5 wide, bottom ≈ 1.95 at 2 lines) · column x `COL_LEFT`
+  1.25..`COL_RIGHT` 6.6, line i centred at y 1.5 − 0.8i (`COL_TOP`, `COL_PITCH`; MathTex `COL_SIZE` 34;
+  6 lines to −2.5) · think box under the column, its bottom at `THINK_POS` (3.55, −3.62), growing up:
+  top ≈ −2.35 with a one-line question (column lines 0–4 stay), ≈ −1.95 with two (lines 0–3) · think
+  ring `RING_POS` (6.4, −3.15). Also `EDGE_X` 6.8, `EDGE_Y` 3.55, `TEXT_X` 6.6 (loose text stays inside
+  ±6.6), `CARD_FILL` #171A21, `EARLIER` 0.4 (the opacity for earlier column lines).
+- `tag(text, item=None, direction=RIGHT, buff=0.2)` → DIM 22 T ("reference", "(81) · notes p. 108")
+  beside item; `corner_tag(text="beyond the notes")` → the same in the top-left slot.
+- **The reference rail** holds everything a viewer would otherwise rewind for: the letters, then
+  the definitions, then the key results now in play, divided by thin lines. **Rule: every new
+  definition or key result goes on the rail when it is introduced (`rail_add` on its own word), and
+  stays while the chapter still uses it**; letters go on as they enter. Entries: `rail_sym(tex,
+  colour, words)` (a letter; a plain legend tuple `(tex, colour, words)` works too), `rail_def(tex,
+  words, color=FG, key=None)`, `rail_result(tex, words, color=FG, key=None)` (a YELLOW bar on its
+  left). Words are "a few words" (≤ ~22 characters stay on one line); symbols 28 px, formulas 26,
+  words 22. About 10 entries fit; past `RAIL_BOTTOM` it tightens once, then raises ValueError:
+  `rail_remove` what the chapter no longer uses. Keys are unique: a definition of A needs `key=`
+  ("A def"), since the letter A has key "A".
+- `rail(entries=())` → VGroup(box, *dividers, *rows); `.box .rows .dividers .entries`; each row is
+  VGroup(symbol or formula, VGroup(word lines)[, bar]) with `.key .entry`.
+  `rail_add(scene, r, *entries, run_time=1.2, extra=())`, `rail_change(scene, r, key, words=None,
+  tex=None, color=None, …)`, `rail_remove(scene, r, *keys, …)`, `rail_set(scene, r, entries, *extra,
+  run_time=1.2)`: they call scene.play themselves (old rows out, kept rows slide, new rows in, the box
+  grows or shrinks). `rail_highlight(r, key, color=YELLOW, run_time=1.5)` → a list for play(): a soft
+  tint behind that row rises, holds and goes, while the narration uses it (pass it as
+  `derive_step(..., extra=rail_highlight(r, "A def"))` when a step uses a definition).
+  `rail_row(r, key)` → the row (e.g. `fly(rail_row(r, "omega")[0], target)`).
+  `legend`, `legend_add/_change/_remove/_set` are the same functions under their old names.
+- `chrome(entries, corner=True)` → rail + corner tag for a join (`.rail` (also `.legend`), `.tag`).
+  The rail's layout depends only on its entries, so the next scene opens with
+  `ch = chrome(r.entries); self.add(*ch)` and the cut is invisible; keep the chapter's entry list in
+  one place (its first scene) and import it.
+- `move_card(text=None, small=False, max_lines=2, max_w=None, body=None)` → the "The move" card in
+  the top-right slot: 28→24 px, even line breaks, "\n" in text forces them, `body=` a ready-made
+  Mobject (e.g. lines with coloured MathTex); `.box .label .body`. Keep a move ≤ ~60 characters: a
+  3-line card reaches y ≈ 1.55, onto column line 0. `small=True`: the recap size, built at ORIGIN.
+- `think_box(question, size=32, pos=None)` → the question (str with "\n", or a Mobject) in a box ≤ 4.7
+  wide, DIM "pause the video if you want longer" under it, bottom at THINK_POS (`pos`: centre it
+  there instead); break the question into lines of ≤ ~24 characters; `.box .question .hint`.
+- `think_ring(pos=None)` → DIM ring (`.track .arc`); `drain(ring, run_time=8.0)` → the animation
+  that empties it: `self.play(drain(ring, c.until("answer cue")))`.
+- `pinned(tex, label=None, size=36, **kw)` → MathTex at PIN_POS (a tall one hangs from y 3.7) with
+  a DIM 22 label on its left, the pair centred over the picture; `.formula .label`.
+  `pin_move(mob, height=None)` → mob.animate into the slot.
+- `col_point(i, top=None, pitch=None)`; `col_place(mob, i, top=None, pitch=None)` → mob's left edge
+  on line i (i may be fractional). A line with a fraction (0.72 tall) needs 0.3 more above and
+  below: place it at i + 0.3 and every line after it 0.6 lower (per fraction line).
+- `step_label(text, i=None, y=None, between=None, x=None)` → DIM arrow + 22 label (≤ 5 words) in the
+  gap above line i, at height y, or centred between two placed lines with `between=(upper, lower)`.
+- **Algebra keeps the original (DEEP_STYLE §14; the user: "first rewrite it with an equals, then do
+  the transform shenanigans so i can always see the original").** In a styled project, never
+  transform an expression in place (`TransformMatchingTex(old, new)`, `edit(old, new)`,
+  `Transform`/`ReplacementTransform` where `new` takes `old`'s place): use `derive_step`. `vk check`
+  advises (`inplace`) on any MathTex rewrite after which the original is no longer on screen.
+- `eq_line(lhs, rhs, rel="=", font_size=34, color=FG, **tex_kw)` → the first line "lhs = rhs" as
+  VGroup(lhs, rel, body) with `.lhs .rel .body` (tex_kw, e.g. `substrings_to_isolate`, go to the
+  body), built at ORIGIN: `col_place(l0, 0)`, `self.play(*appear(l0))`.
+- `derive_step(scene, src, new, rel="=", where="below", i=None, label=None, highlight=None,
+  hl_color=YELLOW, new_color=None, keep_colors=True, dim=True, run_time=None, hold=0.4, extra=(),
+  indent=0.0, **tex_kw)` → the new line, VGroup(rel, body) with `.rel .body .label`. It calls
+  scene.play itself (2 plays, 3 with highlight): (1) `highlight` colours what will change in src
+  (`True`: the glyphs the rewrite drops; or a list of src parts / isolated TeX keys), then `hold` s;
+  (2) a copy of src's expression drops to the new line and the "=" fades in under src's "="; (3) the
+  copy is `edit()`ed into `new` (shared glyphs slide, dropped ones fade, new ones fade in), the
+  `label` drops into the gap, src dims to 0.4. src never moves or changes shape. `new`: TeX string,
+  list of MathTex args, or a ready MathTex. `i`: column line (default one pitch below src).
+  `where="beside"`: a short rewrite on src's own line, "src = new" (the "=" first, then the copy
+  appears beyond it and is rewritten; no label). A substitution: `highlight=["A"]` (isolated in src),
+  `hl_color` = the substituted thing's colour, `new_color=True` (the new part takes it too),
+  `extra=rail_highlight(r, "A def", color=TEAL)`. `keep_colors`: a coloured term stays coloured in
+  the next line. `run_time` is the whole move (0.8 + 1.0 + 1.5 s by default, split in those
+  proportions), so `run_time=c.until("next cue")` follows the narration. Chain it:
+  `l1 = derive_step(self, l0, …, i=1)`, `l2 = derive_step(self, l1, …, i=2)`; the "=" signs line up.
+  The step label is `line.label`, not part of the line: fade both when the derivation leaves.
+- `arrow_between(start, end, color, width=6, z=-2)` → the house arrow (z −2: under the panels).
+- `clock(t)` → ValueTracker t advances in real time while running (add t to the scene);
+  `run_clock(t, on=True)` starts/stops it. For an exact freeze: stop it, then play `t.animate.set_value(v)`.
+- `baseline_align(text, y)` → a T's baseline at y (rows of mixed T sizes).
+
 A helper you need that isn't here goes in your scene file. Never edit engine/lib/.
+Exported helpers other scenes import: never set an attribute that shadows a Mobject method
+(`.update`, `.scale`, `.shift`, `.set`, `.copy`…); it breaks `play()` in every importing scene.
 
 ## Manim CE 0.22: verified constructor signatures
 For anything else, grep the installed source
-`/path/to/3Claude1Cam/engine/.venv/lib/python3.11/site-packages/manim/` (the final
+`/Users/markgolbraikh/Documents/3Claude1Cam/engine/.venv/lib/python3.11/site-packages/manim/` (the final
 word) or `engine/reference/INDEX.md`; never guess an API.
 ```
 FadeIn(*mobjects, shift=None, target_position=None, scale=1, **kw)   FadeOut(*mobjects, shift=…, **kw)

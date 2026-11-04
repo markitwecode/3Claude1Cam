@@ -28,6 +28,9 @@ def main():
     ap.add_argument("course_line", help="line under it, e.g. 'Digital Electronics · Lecture 4'")
     ap.add_argument("--lang", default="", help="Pygments lexer for on-screen code (empty: no code)")
     ap.add_argument("--source", nargs="*", default=[], help="material files to move/copy in")
+    ap.add_argument("--style", choices=["auto", "deep", "classic"], default="auto",
+                    help="teaching style (docs/DEEP_STYLE.md §0): auto = the lecture, enhanced (default); "
+                         "deep = rebuilt from first principles; classic = the pre-2026-11-04 style at 1080p")
     args = ap.parse_args()
 
     folder = Path(args.folder).expanduser()
@@ -75,6 +78,12 @@ def main():
         "sources": sources,             # planner adds pages and notes
         "created": today,
     }
+    if args.style != "classic":         # auto / deep: the 1440p board and the shared teaching rules
+        cfg["style"] = args.style
+        cfg["resolution"] = "1440p"
+        # varied pauses at 1.5x, not the house 2x (the user, 2026-11-04): with the load equalizer and
+        # 3b1b-style "pause and ponder" prompts, density isn't left to silence (docs/DEEP_STYLE.md §13)
+        cfg["pacing"] = {"scale": 1.5}
     (folder / "project.json").write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n")
     (folder / "PLAN.md").write_text(f"# {args.title}: plan\n\n(The series-planner writes this.)\n")
     (folder / "STATUS.md").write_text(f"# {args.title}: status\n\n{today}: project created; planning.\n")

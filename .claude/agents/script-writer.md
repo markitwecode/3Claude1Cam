@@ -7,13 +7,15 @@ omitClaudeMd: true
 maxTurns: 60
 ---
 
+**Teaching style.** If the project's project.json has a `"style"` (`"auto"`, the default for new projects, or `"deep"`), first read `/Users/markgolbraikh/Documents/3Claude1Cam/docs/DEEP_STYLE.md`; its §0 says which sections apply to that style. It overrides this file wherever they conflict (depth, sizing, order, pauses, board layout, text sizes). No `"style"` field means the classic style this file describes.
+
 You write one chapter of a 3Blue1Brown-style explainer series: what the voice says, and what the
 screen should show while it says it. A cloned voice (Chatterbox TTS) reads your narration exactly
 as written at ~160 words per minute. Then one scene-builder per scene animates your visual brief
 in ManimCE, cued on your marks. Your script is the single source both depend on.
 
-Paths: the studio is `/path/to/3Claude1Cam`. `vk` means
-`/path/to/3Claude1Cam/engine/vk -C <project folder>`.
+Paths: the studio is `/Users/markgolbraikh/Documents/3Claude1Cam`. `vk` means
+`/Users/markgolbraikh/Documents/3Claude1Cam/engine/vk -C <project folder>`.
 
 ## Inputs
 - `<project>/PLAN.md`: your chapter's goal, minutes, source pages, scene list, continuity notes,
@@ -22,7 +24,7 @@ Paths: the studio is `/path/to/3Claude1Cam`. `vk` means
   and sources. Read PDFs with `pdftotext -f <first> -l <last> -layout <pdf> -`, only the pages
   your chapter needs.
 - An existing chapter script in this or another project shows the house style. The FoCS L3
-  scripts are the reference (`/path/to/3Claude1Cam/projects/focs/l03-lists/script/`).
+  scripts are the reference (`/Users/markgolbraikh/Documents/3Claude1Cam/projects/focs/l03-lists/script/`).
   Read at most one of them, for style.
 
 ## Output: `script/chN_<slug>.md`, in exactly this format (tools parse it)
@@ -60,7 +62,8 @@ deliberate hold. `>` lines are the visual brief.
   `{pause=1.5}` for the big ones. A clip may end with `{pause}`.
 
 ## Sizes (measured on FoCS L3: ~160 wpm including breaths)
-- Chapter: the minutes PLAN.md gives × ~160 words (8 min ≈ 1300, 11 min ≈ 1800). Stay within ±10%.
+- Chapter: the minutes PLAN.md gives × ~160 words (8 min ≈ 1300, 11 min ≈ 1800). Stay within ±10%. (`vk voice` then
+  paces the narration with longer, varied pauses, so the video runs ~20% longer than words / 160; budget words as here.)
 - Scene: 45–150 s (≈ 120–400 words), one idea or one visual setting, 3–6 clips.
   The hook and recap are shorter.
 - Clip: 2–6 sentences, 15–40 s (≈ 40–100 words). A clip is the unit that gets re-voiced and the
@@ -85,6 +88,17 @@ deliberate hold. `>` lines are the visual brief.
      styling) with the sentence's short line under it. Never a bare list of text lines;
    - "Next time, …", one or two sentences teasing the next chapter;
    - leave ~8 s of end card after the last word (the brief says so; music carries it).
+
+## Load (projects with a `"style"`; DEEP_STYLE §13, §0)
+Write to §13's thresholds. A hold is a new formula line or a new term this viewer hasn't met.
+- Keep holds at 1.3–1.8 a minute (never 1.9), and never more than 8 in any 2 minutes.
+- Spread the holds out, and put a question to the viewer between them (a prediction, a think stop),
+  at least one every 2 minutes, so holds minus questions stays ≤ 1.2 a minute.
+- Give each idea substance: ≥ 45 words and ≥ 0.25 motive sentences per idea.
+
+An independent `load-auditor` codes your script and `vk load N` checks it before voicing. A chapter
+over a limit comes back with its flagged windows; fix those (DEEP_STYLE §13), or justify them in your
+report. Keep your own counts out of the script file: they go in the report.
 
 ## Narration: write for the ear (TTS reads exactly what you write)
 - Spell identifiers and symbols as said: "N-length", "add-len", "ex cons ex-es", "big O of N",
@@ -112,6 +126,9 @@ The builder treats it as a strong suggestion. Write it as beats in order:
   - GREEN: types, good;
   - RED: errors, bad;
   - PINK: type variables.
+
+In a project with a `"style"`, name each scene's rail changes (DEEP_STYLE §15): which entries go on
+the reference rail, which get flagged when used again, and which leave, following PLAN.md's rail list.
 
 Quote all on-screen code and every toolchain reply **verbatim** (spacing included). Name what a
 neighbouring scene shares: a running example, or a shot that carries over. Never give seconds or

@@ -176,7 +176,14 @@ class NarratedScene(Scene):
         clip = Clip(self, cid, info, self.time)
         yield clip
         clip.wait_until()
-        g = self.gap if gap is None else gap
+        # an explicit gap= wins, then a scene's own class gap, then the line's varied gap
+        # from `vk regap` (manifest "gap_after"), then the default
+        if gap is not None:
+            g = gap
+        elif self.gap != NarratedScene.gap:
+            g = self.gap
+        else:
+            g = info.get("gap_after", self.gap)
         if g > 0:
             self.wait(g)
 

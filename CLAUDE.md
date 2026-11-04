@@ -10,20 +10,23 @@ scripts or scenes, and you don't review frames: agents do, each in its own conte
 you: the producer, the main session; talks to the user
 ├─ series-planner      request + material → PLAN.md, project.json; later reviews all scripts for continuity
 ├─ script-writer ×N    one chapter's narration + visual briefs, code verified with the real toolchain
+├─ load-auditor ×N     Sonnet, independent: codes each script's holds, questions, ideas → `vk load N` gate
 ├─ vk voice            local GPU, no tokens: TTS + Whisper QA + word timings
 └─ chapter-director ×N one chapter: narration fixes → music → scene builds → review → final video
    └─ scene-builder ×6–8   one scene each, in parallel: Opus, medium effort
 ```
-All four agent types are defined in `.claude/agents/`: Opus, their own instructions, no CLAUDE.md.
+All five agent types are defined in `.claude/agents/`: Opus (load-auditor: Sonnet), their own instructions, no CLAUDE.md.
 Brief them with **paths and decisions, not content**. Spawn them with `subagent_type: "<name>"`.
 
 ## What the user says, and what you do
 | Request | You do |
 |---|---|
-| "Make videos on X" / "do lecture 5 from <pdf>" | **New project** (below), run straight through to finished videos |
+| "Make videos on X" / "do lecture 5 from <pdf>" | **New project** (below), run straight through to finished videos. Style auto (the default) |
+| "… in depth" / "deep style" | The same, with `vk new … --style deep` (docs/DEEP_STYLE.md §0) |
 | "Finish / continue <project>" | **Resume** (below) |
 | "Where are we?" | `projects/INDEX.md` + `engine/vk -C <project> status` |
 | "In chapter N, change / fix …" | A chapter-director for N, with the notes as a fix pass |
+| "Add the pauses to <project / chapters>" / "re-render X with the pauses" | Projects voiced before 2026-11-03 have the old fixed pacing: `engine/vk -C <project> regap N` per chapter (house pacing by default; seconds, no AI), then `vk finalize N… --no-review` (`run_in_background: true`; chapters render in order, ~5 min each). Track which projects are re-paced in `projects/INDEX.md`, "Pacing". New projects need nothing: `vk voice` paces every line it voices |
 | "Change this line" / "it mispronounces …" | Edit that narration line (text only, keep `{marks}`), `vk voice N`, then a director re-check of the affected scenes |
 
 ## New project
@@ -35,7 +38,8 @@ Brief them with **paths and decisions, not content**. Spawn them with `subagent_
    Reuse an existing course folder if there is one (`ls projects`). For the lecture's title,
    use the user's words or peek at the material (`pdftotext -l 2 <pdf> - | head -40`); don't read
    more. Then run one command:
-   `engine/vk new <folder> "<Title>" "<Course · Lecture N>" --lang <pygments lexer, or omit> --source <material files>`.
+   `engine/vk new <folder> "<Title>" "<Course · Lecture N>" --lang <pygments lexer, or omit> --source <material files>`
+   (it writes `"style": "auto"` and `"resolution": "1440p"`; add `--style deep` when the user asks for depth).
    It creates the course (`COURSE.md`, `source/`) if it's new, and the project's files and
    folders. It **moves** material that's inside the studio (e.g. dropped in its root) into the
    course's `source/`, copies material from elsewhere, records it in project.json, and adds a
@@ -63,6 +67,11 @@ Brief them with **paths and decisions, not content**. Spawn them with `subagent_
 4. **Scripts.** One `script-writer` per chapter, all in one message, `run_in_background: true`:
    "Project folder: … Write chapter N." When all are in, SendMessage the planner (or start a fresh
    one): "Continuity review of all scripts."
+   **Load gate** (styled projects; docs/DEEP_STYLE.md §13): one `load-auditor` per chapter, all in one
+   message ("Project folder: … Chapter N."), then `engine/vk -C <project> load 1 2 …`. A chapter that is
+   "over" goes back to its writer (SendMessage) with `media/review/chN_load.md`, which separates load fixes
+   (holds/peak) from "thin explanation" fixes. Then re-audit that chapter and run `vk load` again. Voice only
+   chapters that pass. `vk load N --rail` lists the holds in order as rail candidates (§15).
 5. **Voice.** `engine/vk -C <project> voice` with `run_in_background: true`. An hour of narration
    takes ~70 min (DE L10, 2026-10-31: TTS 45 min incl. 34% retakes, CPU Whisper base 14, GPU
    small + medium 13; two lecture transcriptions ran beside it). Pass any lines it flags to the relevant chapter-director.
@@ -73,13 +82,15 @@ Brief them with **paths and decisions, not content**. Spawn them with `subagent_
    and records it in STATUS.md, and the previous chapter's last scene ends on exactly that card; a
    helper one chapter owns and another needs is recorded early and the dependent scenes are built
    last. A director that ends its turn "waiting" with nothing running is asleep: resume it with
-   SendMessage. Relay each report in ≤ 5 lines.
+   SendMessage. The opposite case: a director's *final* report (ready for final, paused) that
+   arrives as "waiting on its own background work" has left a job running, and it will show as
+   active. `TaskStop` its agent ID right away (2026-11-02). Relay each report in ≤ 5 lines.
    A director ends at "ready for final" (since 2026-11-01). Then `engine/vk -C <project> finalize N…`
-   (`run_in_background: true`; several chapters in one call): final render at low CPU priority and
-   Gemini's viewer and transitions reviews, no agent waiting. Read only its summary
-   (`media/review/chN_finalize.md`). "clean": done. "look": a chapter-director fix pass, with the
-   finalize, review and transitions files as notes; then `vk finalize N --no-review`. It runs only Gemini's
-   transitions pass (`--with-viewer` adds the viewer pass): Gemini is a weekly Antigravity quota.
+   (`run_in_background: true`; several chapters in one call): final render at low CPU priority and a
+   format check, no agent waiting, and no Gemini review by default since 2026-11-04 (`--review` adds
+   the transitions pass). Read only its summary (`media/review/chN_finalize.md`). "clean": done.
+   "look" (a format or handover problem): a chapter-director fix pass, with the summary as notes;
+   then `vk finalize N` again.
 7. **Wrap up.** Update `projects/INDEX.md` (and COURSE.md for a course). Tell the user where the
    videos are, what Gemini still flags, and what compromises were accepted. The user doesn't
    check lines by ear; `vk listen` and `vk review` are the ear.
@@ -109,7 +120,7 @@ Don't redo work the files show as done.
 - **A type missing from your agent list?** Claude Code only watches agent folders that existed
   when it started, so restart `claude` in this folder. Fallback: `general-purpose`, `model:
   "opus"`, with a prompt that begins "First Read
-  /path/to/3Claude1Cam/.claude/agents/<name>.md; everything below its
+  /Users/markgolbraikh/Documents/3Claude1Cam/.claude/agents/<name>.md; everything below its
   frontmatter is your instruction set."
 
 ## Costs (Claude tokens, list prices, measured 2026-10-28)
@@ -126,7 +137,7 @@ Don't redo work the files show as done.
 | `engine/` | Shared and topic-independent. `vk` (the CLI), `lib/` (scene library), `tools/`, the two venvs, `assets/` (music album, voice reference), `reference/` (manim docs, 3b1b's code + PATTERNS.md) |
 | `projects/<…>/` | One video series per folder: `project.json`, `PLAN.md`, `STATUS.md`, `script/`, `audio/`, `music/`, `scenes/`, `media/` (renders, check images), `out/` (finished videos), `source/` |
 | `projects/INDEX.md` | Every project and its state, one line each |
-| `.claude/agents/` | The four agent types; each file is the authority on its role's rules |
+| `.claude/agents/` | The five agent types; each file is the authority on its role's rules |
 | `docs/PIPELINE.md` | How it all fits together: stages, file formats, the `vk` commands, recovery |
 | `docs/LESSONS.md` | Every pitfall paid for so far. Read before changing the engine |
 | `docs/STYLE.md` | The visual style, long form (the scene-builder kit is its distilled version) |
@@ -134,22 +145,36 @@ Don't redo work the files show as done.
 ## Decisions already made (don't re-ask)
 - **Engine:** ManimCE 0.22, not ManimGL. 3b1b's style is ported from `engine/reference/3b1b/PATTERNS.md`.
 - **Voice:** Chatterbox Turbo fp16 via MLX, cloned from `engine/assets/voice/refs/ref_c.wav`.
-  Each sentence is voiced separately with a 0.55 s breath (~160 wpm).
-- **Depth:** everything in the material, at ~45–60 min per lecture hour, in 8–11 min chapters,
-  each ending in a recap. Exercises: hints in the last chapter, solutions in a bonus chapter.
+  Each sentence is voiced separately (~160 wpm of words), then paced. The user isn't a celebrity
+  and it's for personal use; don't re-litigate.
+- **Pacing (2026-11-03):** varied pauses, twice as long, speech at normal speed (`tools/regap.py`
+  HOUSE; `vk voice` applies it automatically; project.json `"pacing": "fixed"` opts out). The user: "with
+  the original pace there is just no room for any thought". Finished chapters run ~20% longer than
+  words / 160. Slower speech (0.75×, 0.8×) was tried and not chosen.
+- **Pacing for styled projects (2026-11-04):** varied pauses at 1.5× (`vk new` writes `"pacing": {"scale": 1.5}`). Density is handled by the load gate, and think stops say "pause and ponder" with a ~3 s beat, so the viewer pauses. The user: "1.5x still randomize wouldn't be bad". Classic projects keep 2×.
+- **Teaching style (2026-11-04, after the deep pilot):** two styles, spec in `docs/DEEP_STYLE.md` (§0).
+  **auto** (the default) keeps the lecture's structure and enhances every gap: atomic steps, a motive per
+  move, prerequisites built from the ground up, an intuition picture. **deep** (on request) rebuilds the
+  material from first principles; `nst-maths/l10-deep-oscillations` is its model, and the user loved it.
+  Both use the 1440p board, keep one idea's pieces on screen with a pinned legend, name the key moves, and
+  ask questions with think stops. Everything in the material is still covered; there's no fixed
+  minutes-per-lecture-hour target. Chapters are 8–14 min, each ending in a short visual recap. Exercises:
+  hints where they're taught, worked solutions at the end. Projects made before 2026-11-04 keep the classic
+  style (1080p).
 - **Music:** the 3Blue1Brown album, for private study only. Publishing a video needs the
   composer's permission form.
 - **Builders** are Claude scene-builders (Opus, medium effort), again from 2026-10-30. Codex
   (`vk build`, GPT-6.1 Sol) was the default from 10-28 to 10-30. A full Codex lecture
   (`digital-electronics/l06-flip-flops-counters-codex`) came out clearly worse to the user's eye than
   the Opus one. A blind Gemini judge called it mixed, and the user's eye wins. Use Codex only at a
-  Claude usage limit, and say so.
-- **Gemini budget:** a weekly Antigravity quota that doesn't grow. One scene-review round per scene,
-  one batched re-listen per chapter, finals with the transitions pass only (docs/LESSONS.md,
-  "Scheduling study", has the 2026-11-01 numbers).
+  Claude usage limit, and say so. The user is considering Claude Max 20x to pay for it.
+- **Gemini budget:** a weekly Antigravity quota that doesn't grow. One batched re-listen per
+  chapter. **No visual reviews since 2026-11-04**: no directors' scene reviews and no final transitions
+  pass. A frame-checked sample of 5 chapters found 1 minor real finding (docs/LESSONS.md, "Scheduling
+  study: the sample"); this saves ~80% of Gemini's tokens.
 - **Gemini** (through the Antigravity CLI `agy`, never the dead `gemini` CLI) is part of the
-  pipeline at four points: `vk lecture` (source digest), `vk listen` (ear-check of the narration),
-  `vk review <stems>` (directors' scene review) and `vk review N` (final). It runs on the user's
+  pipeline at two points: `vk lecture` (source digest) and `vk listen` (ear-check of the narration).
+  `vk review` still works on request, but it is no longer a default step. It runs on the user's
   Google quota. Its findings are claims: pronunciation it shares with the Whisper vote is real;
   visual glitches get confirmed with a real frame; confirmed glitches feed root-cause fixes.
 - **Engine changes** (lib, tools, voice settings) are made by you or the user, never by

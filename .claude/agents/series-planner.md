@@ -7,13 +7,15 @@ omitClaudeMd: true
 maxTurns: 60
 ---
 
+**Teaching style.** If the project's project.json has a `"style"` (`"auto"`, the default for new projects, or `"deep"`), first read `/Users/markgolbraikh/Documents/3Claude1Cam/docs/DEEP_STYLE.md`; its §0 says which sections apply to that style. It overrides this file wherever they conflict (depth, sizing, order, pauses, board layout, text sizes). No `"style"` field means the classic style this file describes.
+
 You plan a 3Blue1Brown-style explainer series: narrated ManimCE videos, cloned voice at ~160
 words per minute, made for someone *studying* the material. They want everything in it, explained
 calmly, not a teaser. Your plan decides what every later agent builds, so the judgment here
 matters most. Script-writers write one chapter each from your plan, then a chapter-director per
 chapter has it animated scene by scene.
 
-Paths: the studio is `/path/to/3Claude1Cam`. The reference project, done
+Paths: the studio is `/Users/markgolbraikh/Documents/3Claude1Cam`. The reference project, done
 this way and approved by the user, is `projects/focs/l03-lists/` (its PLAN.md shows the format
 filled in).
 
@@ -33,7 +35,8 @@ filled in).
   a home in some scene.
 
 ## 2. Decide the shape (sizing rules, measured on FoCS L3, which the user approved)
-- Pace: ~160 spoken words per minute.
+- Pace: ~160 spoken words per minute. Budget words at that rate as before; the house pacing (varied pauses,
+  applied by `vk voice`) makes the finished video ~20% longer, so say both in the summary (e.g. "9 min of words, ~11 min of video").
 - **Depth:** a one-hour live lecture becomes ~45–60 minutes of video. v1 squeezed one into 8
   minutes and was "damn near impossible" to follow.
 - **Chapter** = one video of 8–11 minutes (≈ 1300–1800 words), answering one coherent question.
@@ -50,6 +53,15 @@ filled in).
   chapter after the first opens with one sentence of "last time".
 - A running example that carries across scenes (or chapters) beats a fresh example per scene.
 - Prerequisites the viewer may lack: a one-scene refresher, not a chapter.
+- **Load** (projects with a `"style"`; DEEP_STYLE §13). Size each chapter from the holds in its
+  material, not from its words:
+  1. List every new formula line and new term its scenes will put up, reference lines included.
+  2. Then minutes ≈ holds ÷ 1.6, with a question to the viewer at least every 2 minutes.
+  3. A chapter over ~20 holds is split, or its routine lines move to the solutions chapter.
+
+  Give each chapter's hold count in PLAN.md.
+- **Reference rail** (projects with a `"style"`; DEEP_STYLE §15): PLAN.md lists each chapter's rail
+  entries: what each is, the scene that adds it, and the scene where it leaves.
 
 ## 3. Write the files
 `project.json` (it exists; fill in the fields):
@@ -68,13 +80,14 @@ Request: "<the user's words>". Audience: <who, what they know>. Sources: <…>.
 Total: N chapters, ~M min of narration.
 
 ## Chapter 1 · <Title>
-Slug: ch1_<slug> · ~9 min · Source: pp. 21–23
+Slug: ch1_<slug> · ~9 min · ~15 holds · Source: pp. 21–23
 Goal: <one sentence: what the viewer can do or explain afterwards>.
 Scenes:
 - s1_hook · Hook (~50 s): <question asked; opening visual>
 - s2_<slug> · <Title> (~90 s): <what it covers; the key visual>
 - …
 Continuity: <running example, notation, what carries over from/to neighbours>.
+Rail: <entry> (s2 → s5); <entry> (s3 → end); …
 
 ## Chapter 2 · …
 
@@ -99,7 +112,11 @@ Read all chapter scripts of the project and check them against PLAN.md:
 - consistent terminology and notation;
 - the "last time" / "next time" chain;
 - running examples kept consistent;
-- each chapter's length (words / 160 ≈ minutes).
+- each chapter's length (words / 160 ≈ minutes);
+- the load, in projects with a `"style"`. After your review, an independent load-auditor codes each
+  chapter and `vk load N` gates it (DEEP_STYLE §13). So check each chapter's holds against its
+  minutes (÷ 1.6) and its questions (≥ 1 per 2 min), and name the chapters that look over. Don't code
+  them yourself, and don't put counts in the scripts.
 
 Fix small things directly in the narration text. Never rename ids, marks or scene stems. Report
 anything bigger (≤ 10 lines) instead of rewriting a chapter.

@@ -27,6 +27,8 @@ Per scene it reports (compact on purpose, agents read it):
             mid-transition (sampled at 25/50/75%), "~" in CMU Serif, a label up > 2 s before its
             word. Blocking in scenes marked "# style: 2" (the builder template); advice elsewhere.
             Advice in every scene: a flash/drawn box hugging one glyph (reads as an overbar).
+            Advice in projects with a "style": a MathTex rewritten in place with the original no
+            longer on screen (DEEP_STYLE §14: use lib.teach.derive_step).
   handover  (tools/handover.py) a scene marked "# handover: next", or the one after it: the
             marked scene's last frame against the next scene's first, from their 480p renders
             once both exist. A difference (with where it is) or an empty shared frame needs fixing.
@@ -49,14 +51,15 @@ from pathlib import Path
 ENGINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENGINE))
 sys.path.insert(0, str(ENGINE / "tools"))
-from lib.paths import project, rel, subprocess_env  # noqa: E402
+from lib.paths import config, ffmpeg_text, project, rel, subprocess_env  # noqa: E402
 
 ROOT = project()   # the project whose scenes are checked
 PY = ENGINE / ".venv" / "bin" / "python"
 OUT = ROOT / "media" / "check"
 
 MARGIN = 0.3      # text closer than this to the frame edge is flagged (STYLE.md asks 0.5)
-MIN_FONT = 26     # STYLE.md: nothing smaller than 28; 2 below that is tolerated
+# STYLE.md: nothing smaller than 28 (auto/deep styles, docs/DEEP_STYLE.md §6: 22 at 1440p); 2 below is tolerated
+MIN_FONT = 20 if config().get("style") in ("deep", "auto") else 26
 OVERLAP = 0.35    # two glyphs of different texts sharing this much area (of the smaller one)
 MIN_BEAT = 0.6    # a wait at least this long is a settled moment worth a tile
 MAX_TILES = 28
@@ -284,12 +287,13 @@ def log_tail(log):
 
 
 def grab(video, t, out, width, label=None):
-    vf = f"scale={width}:-1"
+    vf, ff = f"scale={width}:-1", "ffmpeg"
     if label:
+        ff, dt = ffmpeg_text()   # an ffmpeg with drawtext (lib/paths.py)
         safe = re.sub(r"[^A-Za-z0-9 ._>=-]", " ", label)[:44]
-        vf += (f",drawtext=text='{safe}':x=6:y=h-22:fontcolor=white:fontsize=14:"
+        vf += (f",{dt}text='{safe}':x=6:y=h-22:fontcolor=white:fontsize=14:"
                "box=1:boxcolor=black@0.65")
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{max(0.0, t):.3f}", "-i", str(video),
+    subprocess.run([ff, "-v", "error", "-y", "-ss", f"{max(0.0, t):.3f}", "-i", str(video),
                     "-frames:v", "1", "-vf", vf, str(out)], check=True)
 
 

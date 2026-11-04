@@ -1,12 +1,13 @@
-"""Finish chapters without an agent: final render, format check, then Gemini's transitions
-review (and the viewer pass with --with-viewer); one short summary per chapter. Run by the producer once a chapter-director
+"""Finish chapters without an agent: final render and format check, plus Gemini's transitions
+review only when asked (--review); one short summary per chapter. Run by the producer once a chapter-director
 reports "ready for final" (since 2026-11-01: finals and their reviews need no hot cache, so no
 agent waits through them).
 
-    vk finalize 3 4              # final render + the transitions review, chapter after chapter
-    vk finalize 3 --no-review    # re-final after a fix pass (the one-round rule: no second review)
-    vk finalize 3 --with-viewer  # also the viewer pass (it rarely led to a fix in L10; Gemini is a
-                                 # weekly quota, so it's off by default)
+    vk finalize 3 4              # final render + format check, chapter after chapter (no Gemini)
+    vk finalize 3 --review       # also Gemini's transitions pass (off by default since 2026-11-04:
+                                 # a 5-chapter sample found 1 minor real finding; docs/LESSONS.md)
+    vk finalize 3 --with-viewer  # the transitions pass and the viewer pass
+    vk finalize 3 --no-review    # same as the default; kept for old notes and scripts
 
 Renders run one chapter at a time (each already uses every core, at low CPU priority, see
 render.py); a chapter's two reviews run while the next chapter renders. Writes
@@ -24,7 +25,7 @@ from pathlib import Path
 
 ENGINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENGINE))
-from lib.paths import project  # noqa: E402
+from lib.paths import final_quality, project  # noqa: E402
 
 ROOT = project()
 VK = ENGINE / "vk"
@@ -88,9 +89,10 @@ def summarise(n, rc, handovers, log, reviews, transitions_only=False):
     fmt = probe(video)
     if fmt:
         w, h, fps, dur = fmt
-        ok = (w, h, fps) == (1920, 1080, 60)
+        ew, eh, efps = final_quality()[2]
+        ok = (w, h, fps) == (ew, eh, efps)
         lines.append(f"{video.relative_to(ROOT)}: {int(dur // 60)}:{dur % 60:04.1f}, {w}×{h} at {fps} fps"
-                     + ("" if ok else "  (NOT 1920×1080 at 60 fps)"))
+                     + ("" if ok else f"  (NOT {ew}×{eh} at {efps} fps)"))
     else:
         ok = False
         lines.append(f"{video.relative_to(ROOT)}: ffprobe failed")
@@ -116,10 +118,14 @@ def summarise(n, rc, handovers, log, reviews, transitions_only=False):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("chapters", type=int, nargs="+")
-    ap.add_argument("--no-review", action="store_true", help="re-final only (after a fix pass)")
+    ap.add_argument("--review", action="store_true",
+                    help="also Gemini's transitions pass (off by default since 2026-11-04)")
+    ap.add_argument("--no-review", action="store_true", help="no Gemini review (the default; kept for old notes)")
     ap.add_argument("--with-viewer", action="store_true",
-                    help="also Gemini's viewer pass (off by default: rarely led to a fix in L10; weekly quota)")
+                    help="Gemini's transitions and viewer passes (the viewer pass rarely led to a fix in L10)")
     args = ap.parse_args()
+    if not (args.review or args.with_viewer):
+        args.no_review = True
     REVIEW.mkdir(parents=True, exist_ok=True)
     sys.path.insert(0, str(ENGINE / "tools"))
     import gemini
@@ -131,6 +137,10 @@ def main():
     for n in args.chapters:
         print(f"ch{n}: final render…", flush=True)
         rc, handovers, log = render(n)
+        if not rc and out_video(n):
+            # the 480p review previews have done their job; `vk preview N` remakes one if needed
+            for p in (ROOT / "out").glob(f"ch{n}_*_preview.*"):
+                p.unlink()
         sink, threads = {}, []
         if not rc and not args.no_review and out_video(n):
             for extra in (((), ("--transitions",)) if args.with_viewer else (("--transitions",),)):

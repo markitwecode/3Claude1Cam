@@ -29,7 +29,7 @@ import numpy as np
 
 ENGINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENGINE))
-from lib.paths import project  # noqa: E402
+from lib.paths import ffmpeg_text, project  # noqa: E402
 
 ROOT = project()   # the project folder (script/, audio/, scenes/, media/, …)
 GAP = 0.35         # NarratedScene.gap (old estimate only)
@@ -170,9 +170,10 @@ def scene_holds(path, quality, manifest):
 
 def grab(video, t, fps, label, out):
     # ffmpeg takes the first frame at or after -ss: aim half a frame early to get frame t*fps
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{max(0.0, t - 0.5 / fps):.4f}",
+    ff, dt = ffmpeg_text()   # an ffmpeg with drawtext (lib/paths.py)
+    subprocess.run([ff, "-v", "error", "-y", "-ss", f"{max(0.0, t - 0.5 / fps):.4f}",
                     "-i", str(video), "-frames:v", "1", "-vf",
-                    f"scale={W}:-1,drawtext=text='{label}':x=6:y=h-22:fontcolor=white:"
+                    f"scale={W}:-1,{dt}text='{label}':x=6:y=h-22:fontcolor=white:"
                     "fontsize=14:box=1:boxcolor=black@0.6", str(out)], check=True)
 
 
