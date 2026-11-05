@@ -36,6 +36,18 @@ New projects get it from `vk voice`. Older projects have the old fixed pacing un
 - Not yet (user's call, 2026-11-03: "just these for now"; DE up to L8 already watched): databases L4 ch2–10,
   databases L5, digital-electronics L6–L8, focs, cross-product, studio-tour.
 
+## Pending: public demo for the GitHub README (the user, 2026-11-05; run in the daytime, it renders)
+~2–3 min from the pendulum pilot's part 2: s5_shadow + s6_mirror (two arrows turning opposite ways, the sum
+sliding on the real axis, the swing as the shadow of a turning arrow; the s5→s6 handover is exact). Voiced
+with **Chatterbox's built-in voice**: a demo project's project.json gets `"voice": {"ref": "default"}`
+(supported by `engine/tools/voice.py` since 2026-11-05). Never the cloned 3b1b voice in public, and no 3b1b
+music. Steps:
+1. A demo project (`projects/demo-shadow/`). Copy the two scenes plus the scene files they `load_scene` from
+   (`ch1_s2_tools`, the ch2 arrow kit), and a script with only s5–s6's clips.
+2. `vk voice`, then render s5 and s6 final (`--no-stitch`) and stitch them without music.
+3. A ~10 s silent GIF preview into `docs/demo/`; the mp4 as a GitHub release asset.
+4. README: the GIF inline, linking to the mp4. Then `engine/tools/publish.sh`.
+
 ## Teaching styles (2026-11-04): auto by default, deep on request
 The user loved the deep pilot (`nst-maths/l10-deep-oscillations`, 58.4 min). New projects are `"style": "auto"`:
 the lecture's structure, enhanced at every gap. `--style deep` gives the pilot's first-principles rebuild. Both

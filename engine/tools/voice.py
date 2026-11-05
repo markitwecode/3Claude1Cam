@@ -75,6 +75,15 @@ VOICE = {
     "sentence_gap": 0.55,   # breath between sentences (user-chosen pacing "B")
     "pause": 1.0,           # default length of a {pause}
 }
+# A project may override the voice in project.json, e.g. "voice": {"ref": "default"} to use the model's
+# built-in voice (Chatterbox's conds.safetensors: nothing cloned; used for the public demo, 2026-11-05),
+# or another sample relative to engine/.
+try:
+    VOICE.update({k: v for k, v in json.loads((ROOT / "project.json").read_text()).get("voice", {}).items()
+                  if k in VOICE})
+except (OSError, ValueError):
+    pass
+BUILTIN_VOICE = VOICE["ref"] == "default"
 MAX_WER = 0.12      # per sentence, once it has >= 3 errors
 MAX_STUTTER = 3     # this many extra words in one place = a repeated/garbled phrase
 TRIES = 4
@@ -226,7 +235,7 @@ def fill_times(times, duration):
 
 # ── synthesis ─────────────────────────────────────────────────────────────────
 def clip_key(raw_without_marks):
-    ref_hash = hashlib.sha1((ENGINE / VOICE["ref"]).read_bytes()).hexdigest()[:10]
+    ref_hash = "builtin" if BUILTIN_VOICE else hashlib.sha1((ENGINE / VOICE["ref"]).read_bytes()).hexdigest()[:10]
     blob = json.dumps({**VOICE, "ref": ref_hash, "text": raw_without_marks}, sort_keys=True)
     return hashlib.sha1(blob.encode()).hexdigest()[:16]
 
@@ -240,7 +249,7 @@ def synth(model, text, seed):
     t0 = time.time()
     mx.random.seed(seed)
     parts = [np.array(r.audio, dtype=np.float32)
-             for r in model.generate(text=text, ref_audio=str(ENGINE / VOICE["ref"]),
+             for r in model.generate(text=text, ref_audio=None if BUILTIN_VOICE else str(ENGINE / VOICE["ref"]),
                                      temperature=VOICE["temperature"])]
     STATS["tts"] += time.time() - t0
     STATS["takes"] += 1

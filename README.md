@@ -1,5 +1,14 @@
 # 3Claude1Cam
 
+**Lectures in, 3Blue1Brown-style explainer videos out, paced by measured evidence of what makes
+explanations land.**
+
+We measured what separates explanations that work from ones that overwhelm: 8 3Blue1Brown videos against
+our own, then a load calibration on chapters a real student rated. The rules that came out of it are built
+into the pipeline: how fast new formulas and terms may arrive, how much "why" each idea gets, picture
+before formula, questions you can pause on, and a screen that keeps definitions in view. Independent
+agents check them before a single line is voiced. *Not affiliated with 3Blue1Brown.*
+
 A studio that turns study material (lecture notes, slides, a recording, or just a topic) into
 narrated, 3Blue1Brown-style explainer videos. Claude Code produces them by directing a team of agents.
 They plan the series, write the narration, voice it in your own cloned voice (Chatterbox Turbo, locally
