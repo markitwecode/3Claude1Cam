@@ -71,7 +71,7 @@ SETUP.md gives a workaround for each, but a newcomer shouldn't need any of them.
    - `slots.py` assumes a 32 GB Mac.
    - `vk new --source` can't copy a folder from outside the studio.
    - `paths.py` has anaconda fallbacks.
-   - There's no LICENSE file. That's the user's call; `engine/reference/3b1b/NOTICE.md` covers the
+   - LICENSE: MIT since 2026-11-05; `engine/reference/3b1b/` stays CC BY-NC-SA (NOTICE.md) and covers the
      3b1b-derived files (CC BY-NC-SA 4.0).
 
 ## Tasks for later

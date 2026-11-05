@@ -78,3 +78,7 @@ The finished videos land in `projects/<…>/out/`. To check progress at any time
   Claude usage limit.
 - **Licence:** `engine/reference/3b1b/` is CC BY-NC-SA 4.0, as derived from 3b1b's video code
   ([NOTICE](engine/reference/3b1b/NOTICE.md)).
+
+## License
+MIT (see `LICENSE`), except `engine/reference/3b1b/`. Those files are derived from 3Blue1Brown's
+`3b1b/videos` code and stay under CC BY-NC-SA 4.0 (see `engine/reference/3b1b/NOTICE.md`).
