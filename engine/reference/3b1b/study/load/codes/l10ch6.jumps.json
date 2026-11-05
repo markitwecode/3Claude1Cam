@@ -1,0 +1,4 @@
+{"key": "l10ch6", "n_sentences": 115, "jumps": [
+ {"i": 14, "J": "sf", "why": "omega = root(g/L) asserted, 'take that as given', then built on"},
+ {"i": 18, "J": "s", "why": "general form a cos + b sin asserted, never derived, then built on"}
+]}

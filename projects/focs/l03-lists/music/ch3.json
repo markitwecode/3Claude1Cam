@@ -1,0 +1,39 @@
+{
+ "cues": [
+  {
+   "track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 12 Reflections.ogg",
+   "from": "START",
+   "until": "c3.def.1",
+   "track_start": 0,
+   "fade_in": 1,
+   "fade_out": 4,
+   "level_db": -12
+  },
+  {
+   "track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 28 Gnomon.ogg",
+   "from": "c3.bad.4:end",
+   "until": "c3.acc.1",
+   "track_start": 204,
+   "fade_in": 3,
+   "fade_out": 3.5,
+   "level_db": -12
+  },
+  {
+   "track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 32 Machinery.ogg",
+   "from": "c3.wrap.1:end",
+   "until": "END",
+   "track_start": 0,
+   "fade_in": 3,
+   "fade_out": 3,
+   "level_db": -11,
+   "swell_after": "c3.recap.2:end",
+   "swell_db": 6
+  }
+ ],
+ "duck": {
+  "threshold": 0.03,
+  "ratio": 2,
+  "attack": 50,
+  "release": 2000
+ }
+}

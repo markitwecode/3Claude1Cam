@@ -1,0 +1,491 @@
+{
+ "chapter": 1,
+ "script": "script/ch1_first_principles.md",
+ "coder": "load-auditor",
+ "rubric": 1,
+ "audience": "NST IA maths, knows A-level differentiation (incl. first principles) and Lectures 1-11; no earlier chapters of this project",
+ "clips": [
+  {
+   "id": "c1.hook.1",
+   "holds": [],
+   "questions": [],
+   "ideas": 1,
+   "motive": 2,
+   "recalls": [
+    {
+     "s": 2,
+     "text": "Lecture 11 content: hyperbolic functions, conics"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.hook.2",
+   "holds": [
+    {
+     "s": 2,
+     "kind": "D",
+     "text": "partial differentiation: differentiating a multivariable function in different directions"
+    }
+   ],
+   "questions": [],
+   "ideas": 1,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.hook.3",
+   "holds": [],
+   "questions": [
+    {
+     "s": 3,
+     "text": "What exactly is a derivative?"
+    },
+    {
+     "s": 4,
+     "text": "When does it fail to exist?"
+    }
+   ],
+   "ideas": 1,
+   "motive": 1,
+   "recalls": [
+    {
+     "s": 2,
+     "text": "tangent as limit of chords (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.chord.1",
+   "holds": [],
+   "questions": [],
+   "ideas": 2,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 3,
+     "text": "delta x step"
+    },
+    {
+     "s": 4,
+     "text": "delta y = rise (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.chord.2",
+   "holds": [],
+   "questions": [],
+   "ideas": 2,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 1,
+     "text": "chord (A-level)"
+    },
+    {
+     "s": 2,
+     "text": "slope = dy/dx rise over run"
+    },
+    {
+     "s": 3,
+     "text": "y = x^3 at x=1"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.chord.3",
+   "holds": [],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 1,
+     "text": "tangent as limit of chords"
+    },
+    {
+     "s": 3,
+     "text": "derivative = gradient"
+    },
+    {
+     "s": 5,
+     "text": "derivative as limit of dy/dx (A-level first principles)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.chord.4",
+   "holds": [],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 2,
+     "text": "both top and bottom go to zero"
+    },
+    {
+     "s": 4,
+     "text": "ratio tends to 3"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.chord.5",
+   "holds": [
+    {
+     "s": 1,
+     "kind": "D",
+     "text": "linear operation: derivative of sum is sum, constants come out"
+    }
+   ],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 2,
+     "text": "sum and constant-multiple rules (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.cube.1",
+   "holds": [],
+   "questions": [],
+   "ideas": 1,
+   "motive": 2,
+   "recalls": [
+    {
+     "s": 4,
+     "text": "substitute x+dx into x^3"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.cube.2",
+   "holds": [
+    {
+     "s": 2,
+     "kind": "F",
+     "text": "(x+dx)^3 = x^3 + 3x^2 dx + 3x dx^2 + dx^3"
+    },
+    {
+     "s": 3,
+     "kind": "F",
+     "text": "y(x+dx)-y(x) = 3x^2 dx + 3x dx^2 + dx^3"
+    }
+   ],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.cube.3",
+   "holds": [
+    {
+     "s": 3,
+     "kind": "F",
+     "text": "dy/dx = 3x^2 + 3x dx + dx^2"
+    }
+   ],
+   "questions": [],
+   "ideas": 1,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.cube.4",
+   "holds": [
+    {
+     "s": 3,
+     "kind": "F",
+     "text": "limit gives 3x^2"
+    }
+   ],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 4,
+     "text": "power rule (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.cube.5",
+   "holds": [],
+   "questions": [],
+   "ideas": 2,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.notation.1",
+   "holds": [],
+   "questions": [],
+   "ideas": 0,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.notation.2",
+   "holds": [
+    {
+     "s": 4,
+     "kind": "D",
+     "text": "Newton's dot: derivative with respect to time"
+    },
+    {
+     "s": 5,
+     "kind": "D",
+     "text": "Euler's capital D as derivative operator"
+    }
+   ],
+   "questions": [],
+   "ideas": 3,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 5,
+     "text": "Lagrange primes y' (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.notation.3",
+   "holds": [
+    {
+     "s": 2,
+     "kind": "D",
+     "text": "d/dx as an operator acting on y"
+    },
+    {
+     "s": 3,
+     "kind": "D",
+     "text": "subscript notation for derivatives"
+    }
+   ],
+   "questions": [],
+   "ideas": 4,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 2,
+     "text": "dy/dx"
+    },
+    {
+     "s": 3,
+     "text": "y prime"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.notation.4",
+   "holds": [],
+   "questions": [],
+   "ideas": 2,
+   "motive": 1,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.fail.1",
+   "holds": [],
+   "questions": [
+    {
+     "s": 1,
+     "text": "When does differentiability fail?"
+    }
+   ],
+   "ideas": 5,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 3,
+     "text": "modulus function |x|"
+    },
+    {
+     "s": 4,
+     "text": "slope -1 line"
+    },
+    {
+     "s": 5,
+     "text": "slope +1 line"
+    },
+    {
+     "s": 6,
+     "text": "continuity (A-level)"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.fail.2",
+   "holds": [],
+   "questions": [
+    {
+     "s": 2,
+     "text": "Which line is the tangent at the corner?"
+    }
+   ],
+   "ideas": 5,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.fail.3",
+   "holds": [
+    {
+     "s": 1,
+     "kind": "D",
+     "text": "Heaviside step function"
+    },
+    {
+     "s": 2,
+     "kind": "F",
+     "text": "H(x)=0 for x<0, 1 for x>0"
+    }
+   ],
+   "questions": [],
+   "ideas": 4,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.fail.4",
+   "holds": [
+    {
+     "s": 4,
+     "kind": "F",
+     "text": "chord slope across jump = 1/dx"
+    }
+   ],
+   "questions": [],
+   "ideas": 4,
+   "motive": 1,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.diff.1",
+   "holds": [
+    {
+     "s": 3,
+     "kind": "D",
+     "text": "differentiable at x: limit of (f(x+h)-f(x))/h exists and is finite"
+    }
+   ],
+   "questions": [
+    {
+     "s": 1,
+     "text": "What does differentiable demand?"
+    }
+   ],
+   "ideas": 2,
+   "motive": 0,
+   "recalls": [
+    {
+     "s": 5,
+     "text": "step renamed h, same quotient"
+    }
+   ],
+   "jumps": []
+  },
+  {
+   "id": "c1.diff.2",
+   "holds": [
+    {
+     "s": 4,
+     "kind": "D",
+     "text": "left-hand and right-hand limits of the quotient, from either side"
+    }
+   ],
+   "questions": [],
+   "ideas": 4,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.diff.3",
+   "holds": [],
+   "questions": [],
+   "ideas": 0,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.diff.4",
+   "holds": [],
+   "questions": [],
+   "ideas": 1,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.diff.5",
+   "holds": [
+    {
+     "s": 2,
+     "kind": "F",
+     "text": "f(x+h)-f(x) = h * (quotient) -> 0"
+    }
+   ],
+   "questions": [],
+   "ideas": 5,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.recap.1",
+   "holds": [],
+   "questions": [],
+   "ideas": 0,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.recap.2",
+   "holds": [],
+   "questions": [],
+   "ideas": 0,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  },
+  {
+   "id": "c1.recap.3",
+   "holds": [],
+   "questions": [],
+   "ideas": 1,
+   "motive": 0,
+   "recalls": [],
+   "jumps": []
+  }
+ ]
+}

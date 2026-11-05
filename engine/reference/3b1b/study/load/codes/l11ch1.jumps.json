@@ -1,0 +1,4 @@
+{"key": "l11ch1", "n_sentences": 137, "jumps": [
+ {"i": 4, "J": "m", "why": "lift out every i: no reason given for removing the i"},
+ {"i": 70, "J": "m", "why": "z = ix: goal stated, but not why this substitution should help"}
+]}

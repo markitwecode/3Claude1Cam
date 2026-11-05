@@ -1,0 +1,16 @@
+{
+  "title": "The Cross Product",
+  "course_line": "Vector algebra · From geometry to components",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every numeric example with numpy 2.4.6 in the engine venv: `/Users/markgolbraikh/Documents/3Claude1Cam/engine/.venv/bin/python -c 'import numpy as np; print(np.cross([3,0,0],[1,2,0]))'`",
+  "sources": [
+    {"path": "source/gibbs-wilson-1901-arts31-35.txt", "pages": "Arts. 31-35, pp. 60-66", "note": "E. B. Wilson, Vector Analysis (1901), from Gibbs's Yale lectures. The canonical geometric-first treatment: definition, right-handed screw, area, anticommutativity, a x a = 0, the i/j/k table, the 9-term expansion, the determinant. OCR text (formulas garbled). Its Art. 34 distributivity proof is a prism argument, not the one the video uses"},
+    {"path": "https://archive.org/details/vectoranalysiste00gibbiala", "pages": "pp. 60-66", "note": "the scan of the same book, to check formulas against"},
+    {"path": "https://en.wikipedia.org/wiki/Cross_product", "pages": "History; Properties", "note": "dates: Lagrange 1773 (component form), Hamilton 1843, Grassmann 1844, Clifford 1878 ('vector product'), Gibbs 1881 ('skew product', the x notation), Wilson 1901"},
+    {"path": "https://en.wikipedia.org/wiki/History_of_quaternions", "pages": "1843", "note": "16 October 1843, Brougham (Broom) Bridge, Royal Canal, Dublin; carved i^2 = j^2 = k^2 = ijk = -1 (the carving no longer survives)"},
+    {"path": "https://math.mcgill.ca/labute/courses/133f03/VectorHistory.html", "pages": "", "note": "short history after Crowe: Hamilton named 'scalar' and 'vector'; Maxwell's Treatise (1873) and quaternions; Gibbs's notes for his students from 1881; Heaviside's Electromagnetic Theory (1893); Tait's opposition in the 1890s"},
+    {"path": "https://en.wikipedia.org/wiki/Lorentz_force", "pages": "History", "note": "Thomson 1881 (off by a factor of 1/2), Heaviside 1885/1889 (the correct magnetic force q v x B), Lorentz 1895"},
+    {"path": "https://proofwiki.org/wiki/Vector_Cross_Product_Distributes_over_Addition", "pages": "Proof 3", "note": "the projection proof: project b, c onto the plane perpendicular to a; a x b' = a x b; a x b' is b' turned 90 degrees in that plane and scaled by |a|"}
+  ],
+  "created": "2026-10-25"
+}

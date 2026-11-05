@@ -1,0 +1,1397 @@
+{
+ "aggregate": {
+  "videos_fetched": 33,
+  "videos_with_auto_captions_used": 9,
+  "videos_with_manual_captions": 10,
+  "manual_tracks_with_any_music_mark": 0,
+  "music_only_at_start": "0/9",
+  "music_only_at_end": "4/9",
+  "any_inline_marks": "5/9",
+  "inline_marks_>=5 (bed under narration)": "5/9",
+  "inline_in_first_60s (of bed videos)": "2/5"
+ },
+ "videos": [
+  {
+   "id": "Nbwv5wHQoj0",
+   "title": "The last IMO problem AI could not solve",
+   "duration": 3115,
+   "upload_date": "20260918",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": 0.08,
+   "last_speech": 3090.559,
+   "n_chapters": 9,
+   "spans": [
+    {
+     "start": 1319.2,
+     "end": 1319.9,
+     "len": 0.7,
+     "pos": 0.423,
+     "role": "mid",
+     "dist_to_boundary": 105.1
+    },
+    {
+     "start": 1527.5,
+     "end": 1528.0,
+     "len": 0.5,
+     "pos": 0.49,
+     "role": "mid",
+     "dist_to_boundary": 46.5
+    }
+   ],
+   "inline": [
+    {
+     "t": 15.7,
+     "pos": 0.005,
+     "chapter": "The one that AI missed",
+     "dist_to_boundary": 233.3
+    },
+    {
+     "t": 394.0,
+     "pos": 0.126,
+     "chapter": "Problem statement",
+     "dist_to_boundary": 11.0
+    },
+    {
+     "t": 407.8,
+     "pos": 0.131,
+     "chapter": "Finding the Optimal Construction",
+     "dist_to_boundary": 2.8
+    },
+    {
+     "t": 773.6,
+     "pos": 0.248,
+     "chapter": "Finding the Optimal Construction",
+     "dist_to_boundary": 357.4
+    },
+    {
+     "t": 778.9,
+     "pos": 0.25,
+     "chapter": "Finding the Optimal Construction",
+     "dist_to_boundary": 352.1
+    },
+    {
+     "t": 801.3,
+     "pos": 0.257,
+     "chapter": "Finding the Optimal Construction",
+     "dist_to_boundary": 329.7
+    },
+    {
+     "t": 945.4,
+     "pos": 0.303,
+     "chapter": "Finding the Optimal Construction",
+     "dist_to_boundary": 185.6
+    },
+    {
+     "t": 1167.2,
+     "pos": 0.375,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 36.2
+    },
+    {
+     "t": 1196.7,
+     "pos": 0.384,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 65.7
+    },
+    {
+     "t": 1222.0,
+     "pos": 0.392,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 91.0
+    },
+    {
+     "t": 1230.1,
+     "pos": 0.395,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 99.1
+    },
+    {
+     "t": 1333.6,
+     "pos": 0.428,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 91.4
+    },
+    {
+     "t": 1391.2,
+     "pos": 0.447,
+     "chapter": "A weak lower bound",
+     "dist_to_boundary": 33.8
+    },
+    {
+     "t": 1538.5,
+     "pos": 0.494,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 57.5
+    },
+    {
+     "t": 1583.7,
+     "pos": 0.508,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 102.7
+    },
+    {
+     "t": 1640.2,
+     "pos": 0.527,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 159.2
+    },
+    {
+     "t": 1664.5,
+     "pos": 0.534,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 183.5
+    },
+    {
+     "t": 1774.7,
+     "pos": 0.57,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 273.3
+    },
+    {
+     "t": 1981.3,
+     "pos": 0.636,
+     "chapter": "Proving the Construction is Optimal",
+     "dist_to_boundary": 66.7
+    },
+    {
+     "t": 2094.0,
+     "pos": 0.672,
+     "chapter": "One final conjecture",
+     "dist_to_boundary": 46.0
+    },
+    {
+     "t": 2443.8,
+     "pos": 0.785,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 61.8
+    },
+    {
+     "t": 2505.4,
+     "pos": 0.804,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 123.4
+    },
+    {
+     "t": 2529.7,
+     "pos": 0.812,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 147.7
+    },
+    {
+     "t": 2626.4,
+     "pos": 0.843,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 129.6
+    },
+    {
+     "t": 2663.3,
+     "pos": 0.855,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 92.7
+    },
+    {
+     "t": 2676.0,
+     "pos": 0.859,
+     "chapter": "The Erdos-Szkeres Theorem",
+     "dist_to_boundary": 80.0
+    },
+    {
+     "t": 2759.5,
+     "pos": 0.886,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 3.5
+    },
+    {
+     "t": 2771.9,
+     "pos": 0.89,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 15.9
+    },
+    {
+     "t": 2895.6,
+     "pos": 0.93,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 139.6
+    },
+    {
+     "t": 2946.6,
+     "pos": 0.946,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 190.6
+    },
+    {
+     "t": 2999.3,
+     "pos": 0.963,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 243.3
+    },
+    {
+     "t": 3083.7,
+     "pos": 0.99,
+     "chapter": "Reflections on AI in Math",
+     "dist_to_boundary": 327.7
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": 24.4,
+   "inline_in_first_60s": 1,
+   "chapters_with_inline": 8,
+   "share_marks_within_20s_of_boundary": 0.12,
+   "share_time_within_20s_of_boundary": 0.1
+  },
+  {
+   "id": "GlYgs6v2YfU",
+   "title": "But what is cross-entropy? | Compression is Intelligence 2",
+   "duration": 2031,
+   "upload_date": "20260716",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.08,
+   "last_speech": 2013.493,
+   "n_chapters": 10,
+   "spans": [
+    {
+     "start": 2013.5,
+     "end": 2031,
+     "len": 17.5,
+     "pos": 0.991,
+     "role": "end",
+     "dist_to_boundary": 118.5
+    }
+   ],
+   "inline": [
+    {
+     "t": 85.2,
+     "pos": 0.042,
+     "chapter": "Language trees and zipping",
+     "dist_to_boundary": 96.8
+    },
+    {
+     "t": 91.1,
+     "pos": 0.045,
+     "chapter": "Language trees and zipping",
+     "dist_to_boundary": 90.9
+    },
+    {
+     "t": 251.7,
+     "pos": 0.124,
+     "chapter": "Recap optimal codes",
+     "dist_to_boundary": 68.3
+    },
+    {
+     "t": 372.9,
+     "pos": 0.184,
+     "chapter": "Defining cross-entropy",
+     "dist_to_boundary": 52.9
+    },
+    {
+     "t": 463.1,
+     "pos": 0.228,
+     "chapter": "Defining cross-entropy",
+     "dist_to_boundary": 42.9
+    },
+    {
+     "t": 1154.9,
+     "pos": 0.569,
+     "chapter": "Pre-training LLMs",
+     "dist_to_boundary": 83.1
+    },
+    {
+     "t": 1336.5,
+     "pos": 0.658,
+     "chapter": "What makes this loss function best?",
+     "dist_to_boundary": 98.5
+    },
+    {
+     "t": 1580.6,
+     "pos": 0.778,
+     "chapter": "Distillation",
+     "dist_to_boundary": 7.6
+    },
+    {
+     "t": 1694.5,
+     "pos": 0.834,
+     "chapter": "Distillation",
+     "dist_to_boundary": 117.5
+    },
+    {
+     "t": 1755.2,
+     "pos": 0.864,
+     "chapter": "Distillation",
+     "dist_to_boundary": 56.8
+    },
+    {
+     "t": 1946.8,
+     "pos": 0.959,
+     "chapter": "KL Divergence",
+     "dist_to_boundary": 51.8
+    },
+    {
+     "t": 2002.7,
+     "pos": 0.986,
+     "chapter": "KL Divergence",
+     "dist_to_boundary": 107.7
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": true,
+   "end_span_len": 17.5,
+   "tail_after_speech": 17.5,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 7,
+   "share_marks_within_20s_of_boundary": 0.08,
+   "share_time_within_20s_of_boundary": 0.18
+  },
+  {
+   "id": "l6DKRf-fAAM",
+   "title": "Reinventing Entropy | Compression is Intelligence 1",
+   "duration": 1939,
+   "upload_date": "20260607",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "ldxFjLJ3rVY",
+   "title": "How (and why) to take a logarithm of an image",
+   "duration": 2692,
+   "upload_date": "20260322",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.08,
+   "last_speech": 2667.0,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [
+    {
+     "t": 190.0,
+     "pos": 0.071,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 594.0
+    },
+    {
+     "t": 336.7,
+     "pos": 0.125,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 447.3
+    },
+    {
+     "t": 393.8,
+     "pos": 0.146,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 390.2
+    },
+    {
+     "t": 459.8,
+     "pos": 0.171,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 324.2
+    },
+    {
+     "t": 470.9,
+     "pos": 0.175,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 313.1
+    },
+    {
+     "t": 555.8,
+     "pos": 0.206,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 228.2
+    },
+    {
+     "t": 604.4,
+     "pos": 0.225,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 179.6
+    },
+    {
+     "t": 691.7,
+     "pos": 0.257,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 92.3
+    },
+    {
+     "t": 702.8,
+     "pos": 0.261,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 81.2
+    },
+    {
+     "t": 733.6,
+     "pos": 0.273,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 50.4
+    },
+    {
+     "t": 745.3,
+     "pos": 0.277,
+     "chapter": "The print gallery",
+     "dist_to_boundary": 38.7
+    },
+    {
+     "t": 803.1,
+     "pos": 0.298,
+     "chapter": "Conformal maps from complex analysis",
+     "dist_to_boundary": 19.1
+    },
+    {
+     "t": 972.7,
+     "pos": 0.361,
+     "chapter": "Conformal maps from complex analysis",
+     "dist_to_boundary": 188.7
+    },
+    {
+     "t": 1400.4,
+     "pos": 0.52,
+     "chapter": "The complex exponential",
+     "dist_to_boundary": 99.4
+    },
+    {
+     "t": 1410.2,
+     "pos": 0.524,
+     "chapter": "The complex exponential",
+     "dist_to_boundary": 109.2
+    },
+    {
+     "t": 1433.5,
+     "pos": 0.533,
+     "chapter": "The complex exponential",
+     "dist_to_boundary": 122.5
+    },
+    {
+     "t": 1534.0,
+     "pos": 0.57,
+     "chapter": "The complex exponential",
+     "dist_to_boundary": 22.0
+    },
+    {
+     "t": 1879.6,
+     "pos": 0.698,
+     "chapter": "The complex logarithm",
+     "dist_to_boundary": 72.4
+    },
+    {
+     "t": 1972.2,
+     "pos": 0.733,
+     "chapter": "3b1b Talent",
+     "dist_to_boundary": 20.2
+    },
+    {
+     "t": 1984.1,
+     "pos": 0.737,
+     "chapter": "3b1b Talent",
+     "dist_to_boundary": 9.9
+    },
+    {
+     "t": 2014.8,
+     "pos": 0.748,
+     "chapter": "Constructing the key function",
+     "dist_to_boundary": 20.8
+    },
+    {
+     "t": 2138.0,
+     "pos": 0.794,
+     "chapter": "Constructing the key function",
+     "dist_to_boundary": 144.0
+    },
+    {
+     "t": 2185.0,
+     "pos": 0.812,
+     "chapter": "Constructing the key function",
+     "dist_to_boundary": 191.0
+    },
+    {
+     "t": 2229.2,
+     "pos": 0.828,
+     "chapter": "Constructing the key function",
+     "dist_to_boundary": 186.8
+    },
+    {
+     "t": 2340.9,
+     "pos": 0.87,
+     "chapter": "Constructing the key function",
+     "dist_to_boundary": 75.1
+    },
+    {
+     "t": 2422.6,
+     "pos": 0.9,
+     "chapter": "The deeper math behind Escher",
+     "dist_to_boundary": 6.6
+    },
+    {
+     "t": 2469.7,
+     "pos": 0.917,
+     "chapter": "The deeper math behind Escher",
+     "dist_to_boundary": 53.7
+    },
+    {
+     "t": 2520.5,
+     "pos": 0.936,
+     "chapter": "The deeper math behind Escher",
+     "dist_to_boundary": 104.5
+    },
+    {
+     "t": 2548.5,
+     "pos": 0.947,
+     "chapter": "The deeper math behind Escher",
+     "dist_to_boundary": 132.5
+    },
+    {
+     "t": 2585.0,
+     "pos": 0.96,
+     "chapter": "The deeper math behind Escher",
+     "dist_to_boundary": 169.0
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": 25.0,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 7,
+   "share_marks_within_20s_of_boundary": 0.1,
+   "share_time_within_20s_of_boundary": 0.09
+  },
+  {
+   "id": "fsLh-NYhOoU",
+   "title": "The most beautiful formula not enough people understand",
+   "duration": 3623,
+   "upload_date": "20260227",
+   "live_talk": true,
+   "has_auto": true,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": 7.839,
+   "last_speech": 3623.556,
+   "n_chapters": 13,
+   "spans": [
+    {
+     "start": 3613.7,
+     "end": 3621.5,
+     "len": 7.8,
+     "pos": 0.997,
+     "role": "end",
+     "dist_to_boundary": 60.7
+    }
+   ],
+   "inline": [
+    {
+     "t": 3622.1,
+     "pos": 1.0,
+     "chapter": "Explaining the intro animation",
+     "dist_to_boundary": 69.1
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": true,
+   "end_span_len": 7.8,
+   "tail_after_speech": -0.6,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 1
+  },
+  {
+   "id": "BHdbsHFs2P0",
+   "title": "Why you can't comb a hairy ball",
+   "duration": 1779,
+   "upload_date": "20260131",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": 0.0,
+   "last_speech": 1756.36,
+   "n_chapters": 8,
+   "spans": [],
+   "inline": [
+    {
+     "t": 84.9,
+     "pos": 0.048,
+     "chapter": "Applications",
+     "dist_to_boundary": 0.9
+    },
+    {
+     "t": 220.5,
+     "pos": 0.124,
+     "chapter": "Applications",
+     "dist_to_boundary": 136.5
+    },
+    {
+     "t": 438.4,
+     "pos": 0.246,
+     "chapter": "Applications",
+     "dist_to_boundary": 87.6
+    },
+    {
+     "t": 627.5,
+     "pos": 0.353,
+     "chapter": "The puzzle of one null point",
+     "dist_to_boundary": 101.5
+    },
+    {
+     "t": 653.1,
+     "pos": 0.367,
+     "chapter": "The puzzle of one null point",
+     "dist_to_boundary": 78.9
+    },
+    {
+     "t": 793.8,
+     "pos": 0.446,
+     "chapter": "The proof outline",
+     "dist_to_boundary": 61.8
+    },
+    {
+     "t": 903.9,
+     "pos": 0.508,
+     "chapter": "The proof outline",
+     "dist_to_boundary": 97.1
+    },
+    {
+     "t": 1021.0,
+     "pos": 0.574,
+     "chapter": "Defining orientation",
+     "dist_to_boundary": 20.0
+    },
+    {
+     "t": 1259.4,
+     "pos": 0.708,
+     "chapter": "Defining orientation",
+     "dist_to_boundary": 44.6
+    },
+    {
+     "t": 1595.5,
+     "pos": 0.897,
+     "chapter": "3b1b Talent",
+     "dist_to_boundary": 36.5
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": 22.6,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 5,
+   "share_marks_within_20s_of_boundary": 0.2,
+   "share_time_within_20s_of_boundary": 0.16
+  },
+  {
+   "id": "FE-hM1kRK4Y",
+   "title": "Why Laplace transforms are so useful",
+   "duration": 1385,
+   "upload_date": "20251105",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.0,
+   "last_speech": 1367.64,
+   "n_chapters": 8,
+   "spans": [
+    {
+     "start": 180.8,
+     "end": 181.6,
+     "len": 0.8,
+     "pos": 0.131,
+     "role": "mid",
+     "dist_to_boundary": 27.4
+    }
+   ],
+   "inline": [
+    {
+     "t": 57.4,
+     "pos": 0.041,
+     "chapter": "Opening puzzle",
+     "dist_to_boundary": 8.6
+    },
+    {
+     "t": 87.1,
+     "pos": 0.063,
+     "chapter": "Key properties of a Laplace Transform",
+     "dist_to_boundary": 21.1
+    },
+    {
+     "t": 282.9,
+     "pos": 0.204,
+     "chapter": "The Laplace Transforms of a Derivative",
+     "dist_to_boundary": 13.9
+    },
+    {
+     "t": 381.3,
+     "pos": 0.275,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 15.3
+    },
+    {
+     "t": 400.2,
+     "pos": 0.289,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 34.2
+    },
+    {
+     "t": 411.4,
+     "pos": 0.297,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 45.4
+    },
+    {
+     "t": 572.5,
+     "pos": 0.413,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 146.5
+    },
+    {
+     "t": 611.7,
+     "pos": 0.442,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 107.3
+    },
+    {
+     "t": 619.5,
+     "pos": 0.447,
+     "chapter": "The forced oscillator",
+     "dist_to_boundary": 99.5
+    },
+    {
+     "t": 809.2,
+     "pos": 0.584,
+     "chapter": "Intuition from the transformed solution",
+     "dist_to_boundary": 90.2
+    },
+    {
+     "t": 878.8,
+     "pos": 0.635,
+     "chapter": "Intuition from the transformed solution",
+     "dist_to_boundary": 36.2
+    },
+    {
+     "t": 988.8,
+     "pos": 0.714,
+     "chapter": "Inverting to find a final answer",
+     "dist_to_boundary": 71.2
+    },
+    {
+     "t": 1084.7,
+     "pos": 0.783,
+     "chapter": "Explaining the derivative property",
+     "dist_to_boundary": 24.7
+    },
+    {
+     "t": 1134.9,
+     "pos": 0.819,
+     "chapter": "Explaining the derivative property",
+     "dist_to_boundary": 74.9
+    }
+   ],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": 17.4,
+   "inline_in_first_60s": 1,
+   "chapters_with_inline": 7,
+   "share_marks_within_20s_of_boundary": 0.21,
+   "share_time_within_20s_of_boundary": 0.2
+  },
+  {
+   "id": "j0wJBEZdwLs",
+   "title": "But what is a Laplace Transform?",
+   "duration": 2080,
+   "upload_date": "20251012",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.08,
+   "last_speech": 2061.62,
+   "n_chapters": 8,
+   "spans": [
+    {
+     "start": 2061.6,
+     "end": 2080.7,
+     "len": 19.1,
+     "pos": 0.991,
+     "role": "end",
+     "dist_to_boundary": 82.6
+    }
+   ],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": true,
+   "end_span_len": 19.1,
+   "tail_after_speech": 18.4,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "-j8PzkZ70Lg",
+   "title": "The Physics of Euler's Formula",
+   "duration": 1669,
+   "upload_date": "20251005",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "Dlsa9EBKDGI",
+   "title": "Where my explanation of Grover's algorithm failed",
+   "duration": 983,
+   "upload_date": "20250504",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.08,
+   "last_speech": 965.96,
+   "n_chapters": 4,
+   "spans": [
+    {
+     "start": 966.0,
+     "end": 983,
+     "len": 17.0,
+     "pos": 0.983,
+     "role": "end",
+     "dist_to_boundary": 107.0
+    }
+   ],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": true,
+   "end_span_len": 17.0,
+   "tail_after_speech": 17.0,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "RQWpF2Gb-gU",
+   "title": "But what is quantum computing? (Grover)",
+   "duration": 2214,
+   "upload_date": "20250430",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.0,
+   "last_speech": 2208.16,
+   "n_chapters": 10,
+   "spans": [
+    {
+     "start": 1117.5,
+     "end": 1120.4,
+     "len": 2.9,
+     "pos": 0.505,
+     "role": "mid",
+     "dist_to_boundary": 0.5
+    },
+    {
+     "start": 2208.2,
+     "end": 2214,
+     "len": 5.8,
+     "pos": 0.997,
+     "role": "end",
+     "dist_to_boundary": 100.2
+    }
+   ],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": true,
+   "end_span_len": 5.8,
+   "tail_after_speech": 5.8,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "6dTyOl1fmDo",
+   "title": "Why colliding blocks compute pi",
+   "duration": 1567,
+   "upload_date": "20250313",
+   "live_talk": false,
+   "has_auto": true,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": 0.0,
+   "last_speech": 1547.44,
+   "n_chapters": 6,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": 19.6,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "IQqtsm-bBRU",
+   "title": "This open problem taught me what topology is",
+   "duration": 1645,
+   "upload_date": "20241224",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": true,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "LPZh9BOjkQs",
+   "title": "Large Language Models explained briefly",
+   "duration": 478,
+   "upload_date": "20241120",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 11,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "piJkuavhV50",
+   "title": "Solving problems by adding a dimension",
+   "duration": 1782,
+   "upload_date": "20241108",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "EmKQsSDlaa4",
+   "title": "How are holograms possible?",
+   "duration": 2783,
+   "upload_date": "20241005",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 9,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "9-Jl0dxWQs8",
+   "title": "How might LLMs store facts | DL7",
+   "duration": 1362,
+   "upload_date": "20240831",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "eMlx5fFNoYc",
+   "title": "Attention in transformers | DL6",
+   "duration": 1569,
+   "upload_date": "20240407",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 12,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "wjZofJX0v4M",
+   "title": "Transformers, the tech behind LLMs | DL5",
+   "duration": 1634,
+   "upload_date": "20240401",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 9,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "Cz4Q4QOuoo8",
+   "title": "Answering viewer questions about refraction",
+   "duration": 804,
+   "upload_date": "20231203",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "KTzGBJPuJwM",
+   "title": "But why would light slow down?",
+   "duration": 1713,
+   "upload_date": "20231130",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 8,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "QCX62YJCmGk",
+   "title": "The barber pole effect",
+   "duration": 597,
+   "upload_date": "20230901",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 6,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "aXRTczANuIs",
+   "title": "How wiggling charges give rise to light",
+   "duration": 1293,
+   "upload_date": "20230901",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "d_qvLDhkg00",
+   "title": "Gaussian + Gaussian = Gaussian",
+   "duration": 795,
+   "upload_date": "20230711",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "YtkIWDE36qU",
+   "title": "Moser's circle problem",
+   "duration": 973,
+   "upload_date": "20230702",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 6,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "IaSGqQa5O-M",
+   "title": "Convolutions | Why X+Y in probability is a beautiful mess",
+   "duration": 1645,
+   "upload_date": "20230627",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 9,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "cy8r7WSuT1I",
+   "title": "Why pi is in the normal distribution",
+   "duration": 1485,
+   "upload_date": "20230402",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "zeJD6dqJ5lo",
+   "title": "But what is the Central Limit Theorem?",
+   "duration": 1874,
+   "upload_date": "20230314",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 11,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "KuXjwB4LzSA",
+   "title": "But what is a convolution?",
+   "duration": 1381,
+   "upload_date": "20221118",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 9,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "851U557j6HE",
+   "title": "Borwein integrals",
+   "duration": 1045,
+   "upload_date": "20221104",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 4,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "VYQVlVoWoPY",
+   "title": "How to lie using visual proofs",
+   "duration": 1128,
+   "upload_date": "20220703",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 6,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "bOXCLR3Wric",
+   "title": "Olympiad level counting (generating functions)",
+   "duration": 2075,
+   "upload_date": "20220523",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 7,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  },
+  {
+   "id": "v68zYyaEmEA",
+   "title": "Solving Wordle using information theory",
+   "duration": 1838,
+   "upload_date": "20220206",
+   "live_talk": false,
+   "has_auto": false,
+   "has_manual": false,
+   "manual_music_marks": 0,
+   "first_speech": null,
+   "last_speech": null,
+   "n_chapters": 5,
+   "spans": [],
+   "inline": [],
+   "music_at_start": false,
+   "music_at_end": false,
+   "end_span_len": null,
+   "tail_after_speech": null,
+   "inline_in_first_60s": 0,
+   "chapters_with_inline": 0
+  }
+ ]
+}

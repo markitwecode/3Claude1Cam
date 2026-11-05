@@ -1,0 +1,49 @@
+{
+  "title": "Powers, Logarithms and Oscillations",
+  "course_line": "NST IA Mathematics · Lecture 10",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every formula and number with Python 3.11: system `python3` (/Library/Frameworks/Python.framework/Versions/3.11/bin/python3) with the standard library `cmath`/`math`, and sympy 1.14.0 for symbolic identities, e.g. `python3 -c 'import cmath; print(cmath.exp(0.2*cmath.log(2j)))'`. Note: cmath.log gives the principal value only; add 2j*cmath.pi*n for the others. (The engine venv has numpy 2.4.6 but no sympy.)",
+  "sources": [
+    {
+      "path": "../source/Chapter234_to_annotate.pdf",
+      "pages": "19-29 (printed 100-110); refresher 15-19",
+      "note": "typeset notes with blanks. L10 = Example 28 (p19) to Example 32 (p28-29): §2.3 complex roots, §2.4 De Moivre (Ex 29, (77)-(79), cos^3, Ex 30), §2.5 complex logarithms (p24, principal-value box p25, Ex 31, general powers p26 blank), §2.6 oscillations (p27-28, Fig 24, (81)-(83)), Ex 32 impedance (p28, p29 blank). p30 §2.7 (FTA) is L11's (its ch4 s2); ch1 s5 only quotes the p19 remark. pp15-19 are L9's (refresher in ch1 s2-s3; Example 27's conjugate division for ch3 s5). Text extraction drops symbols: render pages as images (pdftoppm) to read formulas"
+    },
+    {
+      "path": "../source/Lecture10_scanned.pdf",
+      "pages": "1-12",
+      "note": "the lecturer's handwritten fills for this lecture (images). p1 recap of L9; p2-3 Ex 28 (+2πn added by hand, the five-root diagram); p4 Ex 29 fills (sin 4θ forms); p6 θ=2πm case; p7 log definition and ln 2i ladder; p8 'Def z^w := e^{w ln z}', 2^i and i^i working; p9 general powers, four cases; p10 pendulum (scanned upside down); p11 circuit labels; p12 complex amplitudes, three rules, Z = R − i/(ωC)"
+    },
+    {
+      "path": "../source/l10-lecture.transcript.md",
+      "pages": "00:00:00-00:55:46; student question 00:56:12-00:56:28",
+      "note": "Whisper medium transcript of l10-lecture.mp4. Per-chapter time ranges in PLAN.md; slips listed in PLAN.md Decisions (e.g. 'z equal to i' = 2i, 'argon diagram' = Argand)"
+    },
+    {
+      "path": "../source/l10-lecture.digest.md",
+      "pages": "00:00:00-00:57:17",
+      "note": "Gemini digest of l10-lecture.mp4: screen text, diagrams, emphasis, questions. Where it disagrees with the notes or the scan, they win (PLAN.md Decisions)"
+    },
+    {
+      "path": "../source/l10-lecture.mp4",
+      "pages": "",
+      "note": "the recording, for frames of board drawings if a brief needs one"
+    },
+    {
+      "path": "../source/Lecture09_scanned.pdf",
+      "pages": "13, 15-16",
+      "note": "context only: p13 (notes p97) θ and θ+2πn are the same point; p15 z^4 = 1 worked; p16 ends on the FTA remark where L10 starts"
+    },
+    {
+      "path": "../source/M26examples1 (2).pdf",
+      "pages": "8-9 (F12, F13, F15-F19); 14 (basic-skills answers F1(h), F3(d))",
+      "note": "Examples Sheet I, section F. Hints in ch1 (F15, F16), ch3 (F12, F13, F17), ch4 (F18), ch6 (F19); full solutions in the bonus ch8. The notes' p25 box cites 'sheet 1 question 10', an older sheet's numbering"
+    },
+    {
+      "path": "../source/HW math supo 3.pdf",
+      "pages": "17-19",
+      "note": "the user's supervision 3 work (D, E, F5-F12, all correct). Not lecture content: it shows F12 already solved, so ch8 keeps F12 short"
+    }
+  ],
+  "created": "2026-11-01"
+}

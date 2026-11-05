@@ -1,21 +1,47 @@
+# The public repo's .gitignore (github.com/markitwecode/3Claude1Cam), written by engine/tools/publish.sh.
+# Policy (the user, 2026-11-04): publish everything except lecture material and voice samples. Also kept
+# out: renders, narration audio (it's the cloned voice), the music album, third-party clones, frames from
+# other people's videos, big data and tool dependencies. Patterns are valid for git and rsync alike.
+
 # Environments, caches, runtime state
 .venv/
 .venv-mlx/
 __pycache__/
 .DS_Store
-engine/.locks/
+.locks/
 engine/logs/
-engine/media/
-media/
-
-# Bring-your-own assets: never commit voices, music or third-party references
-engine/assets/voice/
-engine/assets/music/
-engine/reference/*
-!engine/reference/INDEX.md
 .claude/skills/
 .claude/settings.local.json
 
-# Video series: lecture material, narration and renders stay local
-projects/*
-!projects/INDEX.md
+# Lecture material: never published
+source/
+
+# Voices: bring your own (docs/SETUP.md), plus narration audio, which is the cloned voice
+engine/assets/voice/
+audio/
+
+# Renders
+media/
+out/
+archive/
+
+# Music: the 3Blue1Brown album isn't ours to share
+engine/assets/music/
+music/album/
+
+# Third-party clones and frames from others' videos
+engine/reference/3b1b/videos/
+engine/reference/3b1b/manimgl/
+engine/reference/3b1b/_scratch_media/
+engine/reference/3b1b/study/sheets/
+engine/reference/3b1b/study/dl/
+engine/reference/manim-v0.22.0/
+engine/reference/manim_skill/
+
+# Tool dependencies and big data
+node_modules/
+projects/databases/tools/cypher-shell/
+*.duckdb
+*.tvdb
+*.mp4
+*.wav

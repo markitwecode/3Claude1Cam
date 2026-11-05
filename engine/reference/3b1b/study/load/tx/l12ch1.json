@@ -1,0 +1,1077 @@
+{
+ "key": "l12ch1",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l12-differentiation",
+ "chapter": 1,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l12-differentiation/out/ch1_first_principles.mp4",
+ "total": 767.469,
+ "scenes_sum": 767.466667,
+ "words": 1566,
+ "scenes": [
+  {
+   "stem": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 79.466667,
+   "cue_dur": 79.4667
+  },
+  {
+   "stem": "ch1_s2_chord",
+   "t0": 79.466667,
+   "dur": 141.7,
+   "cue_dur": 141.7
+  },
+  {
+   "stem": "ch1_s3_cube",
+   "t0": 221.166667,
+   "dur": 122.216667,
+   "cue_dur": 122.2167
+  },
+  {
+   "stem": "ch1_s4_notation",
+   "t0": 343.383334,
+   "dur": 120.516667,
+   "cue_dur": 120.5167
+  },
+  {
+   "stem": "ch1_s5_fail",
+   "t0": 463.900001,
+   "dur": 124.383333,
+   "cue_dur": 124.3833
+  },
+  {
+   "stem": "ch1_s6_differentiable",
+   "t0": 588.283334,
+   "dur": 124.7,
+   "cue_dur": 124.7
+  },
+  {
+   "stem": "ch1_s7_recap",
+   "t0": 712.983334,
+   "dur": 54.483333,
+   "cue_dur": 54.4833
+  }
+ ],
+ "clips": [
+  {
+   "id": "c1.hook.1",
+   "scene": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 32.971
+  },
+  {
+   "id": "c1.hook.2",
+   "scene": "ch1_s1_hook",
+   "t0": 35.3667,
+   "dur": 17.154
+  },
+  {
+   "id": "c1.hook.3",
+   "scene": "ch1_s1_hook",
+   "t0": 54.3167,
+   "dur": 21.605
+  },
+  {
+   "id": "c1.chord.1",
+   "scene": "ch1_s2_chord",
+   "t0": 79.466667,
+   "dur": 23.003
+  },
+  {
+   "id": "c1.chord.2",
+   "scene": "ch1_s2_chord",
+   "t0": 103.949967,
+   "dur": 30.666
+  },
+  {
+   "id": "c1.chord.3",
+   "scene": "ch1_s2_chord",
+   "t0": 135.733367,
+   "dur": 34.919
+  },
+  {
+   "id": "c1.chord.4",
+   "scene": "ch1_s2_chord",
+   "t0": 171.483367,
+   "dur": 24.11
+  },
+  {
+   "id": "c1.chord.5",
+   "scene": "ch1_s2_chord",
+   "t0": 197.183367,
+   "dur": 19.836
+  },
+  {
+   "id": "c1.cube.1",
+   "scene": "ch1_s3_cube",
+   "t0": 221.166667,
+   "dur": 19.23
+  },
+  {
+   "id": "c1.cube.2",
+   "scene": "ch1_s3_cube",
+   "t0": 241.649967,
+   "dur": 23.14
+  },
+  {
+   "id": "c1.cube.3",
+   "scene": "ch1_s3_cube",
+   "t0": 265.466667,
+   "dur": 23.079
+  },
+  {
+   "id": "c1.cube.4",
+   "scene": "ch1_s3_cube",
+   "t0": 289.699967,
+   "dur": 26.345
+  },
+  {
+   "id": "c1.cube.5",
+   "scene": "ch1_s3_cube",
+   "t0": 317.033367,
+   "dur": 25.037
+  },
+  {
+   "id": "c1.notation.1",
+   "scene": "ch1_s4_notation",
+   "t0": 343.383334,
+   "dur": 27.622
+  },
+  {
+   "id": "c1.notation.2",
+   "scene": "ch1_s4_notation",
+   "t0": 371.883334,
+   "dur": 34.875
+  },
+  {
+   "id": "c1.notation.3",
+   "scene": "ch1_s4_notation",
+   "t0": 407.95003399999996,
+   "dur": 26.707
+  },
+  {
+   "id": "c1.notation.4",
+   "scene": "ch1_s4_notation",
+   "t0": 436.150034,
+   "dur": 24.22
+  },
+  {
+   "id": "c1.fail.1",
+   "scene": "ch1_s5_fail",
+   "t0": 463.900001,
+   "dur": 30.128
+  },
+  {
+   "id": "c1.fail.2",
+   "scene": "ch1_s5_fail",
+   "t0": 495.500001,
+   "dur": 30.314
+  },
+  {
+   "id": "c1.fail.3",
+   "scene": "ch1_s5_fail",
+   "t0": 526.933301,
+   "dur": 26.443
+  },
+  {
+   "id": "c1.fail.4",
+   "scene": "ch1_s5_fail",
+   "t0": 554.716701,
+   "dur": 31.212
+  },
+  {
+   "id": "c1.diff.1",
+   "scene": "ch1_s6_differentiable",
+   "t0": 588.283334,
+   "dur": 27.652
+  },
+  {
+   "id": "c1.diff.2",
+   "scene": "ch1_s6_differentiable",
+   "t0": 616.816634,
+   "dur": 21.042
+  },
+  {
+   "id": "c1.diff.3",
+   "scene": "ch1_s6_differentiable",
+   "t0": 638.8500339999999,
+   "dur": 17.282
+  },
+  {
+   "id": "c1.diff.4",
+   "scene": "ch1_s6_differentiable",
+   "t0": 656.883334,
+   "dur": 20.5
+  },
+  {
+   "id": "c1.diff.5",
+   "scene": "ch1_s6_differentiable",
+   "t0": 678.900034,
+   "dur": 31.005
+  },
+  {
+   "id": "c1.recap.1",
+   "scene": "ch1_s7_recap",
+   "t0": 712.983334,
+   "dur": 17.358
+  },
+  {
+   "id": "c1.recap.2",
+   "scene": "ch1_s7_recap",
+   "t0": 731.500034,
+   "dur": 13.095
+  },
+  {
+   "id": "c1.recap.3",
+   "scene": "ch1_s7_recap",
+   "t0": 745.650034,
+   "dur": 10.412
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c1.hook.1",
+   "text": "This is part one of Differentiation.",
+   "i": 1
+  },
+  {
+   "t": 3.65,
+   "clip": "c1.hook.1",
+   "text": "Last time, in Lecture eleven, you met the hyperbolic functions, and the conics: circles, ellipses and hyperbolas.",
+   "i": 2
+  },
+  {
+   "t": 13.44,
+   "clip": "c1.hook.1",
+   "text": "The lecturer calls Chapter four of the notes a review of A-level maths.",
+   "i": 3
+  },
+  {
+   "t": 19.26,
+   "clip": "c1.hook.1",
+   "text": "So these videos rebuild it from the foundations.",
+   "i": 4
+  },
+  {
+   "t": 23.27,
+   "clip": "c1.hook.1",
+   "text": "And they slow down on the parts people only half remember: implicit differentiation, Leibniz's formula, and classifying stationary points.",
+   "i": 5
+  },
+  {
+   "t": 35.37,
+   "clip": "c1.hook.2",
+   "text": "Everything in this lecture is about functions of one variable.",
+   "i": 6
+  },
+  {
+   "t": 39.69,
+   "clip": "c1.hook.2",
+   "text": "Taking a function of two variables and differentiating it in different directions is called partial differentiation.",
+   "i": 7
+  },
+  {
+   "t": 47.17,
+   "clip": "c1.hook.2",
+   "text": "That comes in Chapter seven of the notes, and next term.",
+   "i": 8
+  },
+  {
+   "t": 54.32,
+   "clip": "c1.hook.3",
+   "text": "So start at the very beginning: a curve, and a line through two of its points.",
+   "i": 9
+  },
+  {
+   "t": 61.1,
+   "clip": "c1.hook.3",
+   "text": "Slide one point towards the other, and the line swings round until it just touches the curve.",
+   "i": 10
+  },
+  {
+   "t": 67.8,
+   "clip": "c1.hook.3",
+   "text": "What exactly is a derivative?",
+   "i": 11
+  },
+  {
+   "t": 71.61,
+   "clip": "c1.hook.3",
+   "text": "And when does it fail to exist?",
+   "i": 12
+  },
+  {
+   "t": 79.47,
+   "clip": "c1.chord.1",
+   "text": "Take a function of one variable, why of ex, drawn in blue.",
+   "i": 13
+  },
+  {
+   "t": 84.09,
+   "clip": "c1.chord.1",
+   "text": "Pick a point on it, at ex.",
+   "i": 14
+  },
+  {
+   "t": 87.66,
+   "clip": "c1.chord.1",
+   "text": "Now step along by a small amount, delta ex, to a second point, at ex plus delta ex.",
+   "i": 15
+  },
+  {
+   "t": 94.82,
+   "clip": "c1.chord.1",
+   "text": "Between the two points, the curve rises by delta why: the height at the second point, minus the height at the first.",
+   "i": 16
+  },
+  {
+   "t": 103.95,
+   "clip": "c1.chord.2",
+   "text": "The line through the two points is called the chord.",
+   "i": 17
+  },
+  {
+   "t": 108.59,
+   "clip": "c1.chord.2",
+   "text": "Its slope is the rise over the run, delta why over delta ex.",
+   "i": 18
+  },
+  {
+   "t": 113.55,
+   "clip": "c1.chord.2",
+   "text": "Here's an example: why equals ex cubed, at ex equals one.",
+   "i": 19
+  },
+  {
+   "t": 120.66,
+   "clip": "c1.chord.2",
+   "text": "With delta ex equal to a half, the chord's slope is four point seven five.",
+   "i": 20
+  },
+  {
+   "t": 125.91,
+   "clip": "c1.chord.2",
+   "text": "With a tenth, it's three point three one.",
+   "i": 21
+  },
+  {
+   "t": 130.13,
+   "clip": "c1.chord.2",
+   "text": "With a hundredth, three point zero three.",
+   "i": 22
+  },
+  {
+   "t": 135.73,
+   "clip": "c1.chord.3",
+   "text": "As delta ex shrinks, the chords swing round and settle on one line, the tangent line.",
+   "i": 23
+  },
+  {
+   "t": 141.98,
+   "clip": "c1.chord.3",
+   "text": "Here its slope is three.",
+   "i": 24
+  },
+  {
+   "t": 145.39,
+   "clip": "c1.chord.3",
+   "text": "That slope is the derivative, the gradient of the curve at that point.",
+   "i": 25
+  },
+  {
+   "t": 151.23,
+   "clip": "c1.chord.3",
+   "text": "So here's the definition.",
+   "i": 26
+  },
+  {
+   "t": 154.7,
+   "clip": "c1.chord.3",
+   "text": "The derivative of why with respect to ex is the limit, as delta ex goes to zero, of delta why over delta ex.",
+   "i": 27
+  },
+  {
+   "t": 163.5,
+   "clip": "c1.chord.3",
+   "text": "Chapter five of the notes does limits properly.",
+   "i": 28
+  },
+  {
+   "t": 167.59,
+   "clip": "c1.chord.3",
+   "text": "For now, closer and closer is enough.",
+   "i": 29
+  },
+  {
+   "t": 171.48,
+   "clip": "c1.chord.4",
+   "text": "Look closely at that limit.",
+   "i": 30
+  },
+  {
+   "t": 174.1,
+   "clip": "c1.chord.4",
+   "text": "The top goes to zero, and so does the bottom.",
+   "i": 31
+  },
+  {
+   "t": 178.3,
+   "clip": "c1.chord.4",
+   "text": "Newton's idea, in effect, divides zero by zero, and in the seventeenth century that was controversial.",
+   "i": 32
+  },
+  {
+   "t": 184.78,
+   "clip": "c1.chord.4",
+   "text": "Yet the ratio heads somewhere definite, here to three.",
+   "i": 33
+  },
+  {
+   "t": 188.85,
+   "clip": "c1.chord.4",
+   "text": "As the lecturer puts it, another mathematical crisis successfully resolved.",
+   "i": 34
+  },
+  {
+   "t": 197.18,
+   "clip": "c1.chord.5",
+   "text": "One property follows straight away: differentiation is a linear operation.",
+   "i": 35
+  },
+  {
+   "t": 204.55,
+   "clip": "c1.chord.5",
+   "text": "The derivative of a sum is the sum of the derivatives, and a constant factor comes out in front.",
+   "i": 36
+  },
+  {
+   "t": 211.22,
+   "clip": "c1.chord.5",
+   "text": "That's because the quotient for a sum splits into one quotient per function, and limits add up the same way.",
+   "i": 37
+  },
+  {
+   "t": 221.17,
+   "clip": "c1.cube.1",
+   "text": "So why do those chord slopes head for three?",
+   "i": 38
+  },
+  {
+   "t": 225.99,
+   "clip": "c1.cube.1",
+   "text": "Work it out from first principles.",
+   "i": 39
+  },
+  {
+   "t": 228.73,
+   "clip": "c1.cube.1",
+   "text": "The lecturer's recipe has five steps: substitute, expand, subtract, divide, and take the limit.",
+   "i": 40
+  },
+  {
+   "t": 237.13,
+   "clip": "c1.cube.1",
+   "text": "First, substitute ex plus delta ex into ex cubed.",
+   "i": 41
+  },
+  {
+   "t": 241.65,
+   "clip": "c1.cube.2",
+   "text": "Expand the cube.",
+   "i": 42
+  },
+  {
+   "t": 243.7,
+   "clip": "c1.cube.2",
+   "text": "You get ex cubed, plus three ex squared times delta ex, plus three ex times delta ex squared, plus delta ex cubed.",
+   "i": 43
+  },
+  {
+   "t": 252.8,
+   "clip": "c1.cube.2",
+   "text": "Now subtract why of ex, which is ex cubed.",
+   "i": 44
+  },
+  {
+   "t": 257.53,
+   "clip": "c1.cube.2",
+   "text": "It cancels the first term.",
+   "i": 45
+  },
+  {
+   "t": 261.08,
+   "clip": "c1.cube.2",
+   "text": "Every term that's left has at least one factor of delta ex.",
+   "i": 46
+  },
+  {
+   "t": 265.47,
+   "clip": "c1.cube.3",
+   "text": "Divide by delta ex.",
+   "i": 47
+  },
+  {
+   "t": 268.49,
+   "clip": "c1.cube.3",
+   "text": "Each term loses one factor of it.",
+   "i": 48
+  },
+  {
+   "t": 272.31,
+   "clip": "c1.cube.3",
+   "text": "You get three ex squared, plus three ex times delta ex, plus delta ex squared.",
+   "i": 49
+  },
+  {
+   "t": 277.79,
+   "clip": "c1.cube.3",
+   "text": "At ex equals one, with delta ex equal to a half, this comes to four point seven five.",
+   "i": 50
+  },
+  {
+   "t": 284.2,
+   "clip": "c1.cube.3",
+   "text": "That's the first chord slope you saw.",
+   "i": 51
+  },
+  {
+   "t": 289.7,
+   "clip": "c1.cube.4",
+   "text": "Now let delta ex go to zero.",
+   "i": 52
+  },
+  {
+   "t": 293.57,
+   "clip": "c1.cube.4",
+   "text": "The last two terms each carry a factor of delta ex, so they go to zero.",
+   "i": 53
+  },
+  {
+   "t": 299.28,
+   "clip": "c1.cube.4",
+   "text": "What's left is three ex squared.",
+   "i": 54
+  },
+  {
+   "t": 303.36,
+   "clip": "c1.cube.4",
+   "text": "That's the power rule you already know: the power comes down in front, and the new power is one less.",
+   "i": 55
+  },
+  {
+   "t": 312.24,
+   "clip": "c1.cube.4",
+   "text": "At ex equals one, it gives three, the slope of the tangent line.",
+   "i": 56
+  },
+  {
+   "t": 317.03,
+   "clip": "c1.cube.5",
+   "text": "The notes add a condition here: if delta ex is smaller than one in size, each power of it is smaller than the last.",
+   "i": 57
+  },
+  {
+   "t": 326.54,
+   "clip": "c1.cube.5",
+   "text": "The lecturer says you can skip it: every leftover term has a factor of delta ex, so it goes to zero anyway.",
+   "i": 58
+  },
+  {
+   "t": 335.5,
+   "clip": "c1.cube.5",
+   "text": "Keep the result on a card, ex cubed to three ex squared.",
+   "i": 59
+  },
+  {
+   "t": 340.3,
+   "clip": "c1.cube.5",
+   "text": "Part four takes it further.",
+   "i": 60
+  },
+  {
+   "t": 343.38,
+   "clip": "c1.notation.1",
+   "text": "The symbol in that box, dee why by dee ex, has a history.",
+   "i": 61
+  },
+  {
+   "t": 348.84,
+   "clip": "c1.notation.1",
+   "text": "Calculus was invented by two people at around the same time, Isaac Newton and Gottfried Leibniz.",
+   "i": 62
+  },
+  {
+   "t": 355.24,
+   "clip": "c1.notation.1",
+   "text": "Leibniz published in sixteen eighty-six, and Newton in sixteen eighty-seven.",
+   "i": 63
+  },
+  {
+   "t": 360.8,
+   "clip": "c1.notation.1",
+   "text": "But it seems Newton made his breakthrough some twenty years earlier, in sixteen sixty-five and sixty-six.",
+   "i": 64
+  },
+  {
+   "t": 367.88,
+   "clip": "c1.notation.1",
+   "text": "Each claimed to be first, and they fell out badly.",
+   "i": 65
+  },
+  {
+   "t": 371.88,
+   "clip": "c1.notation.2",
+   "text": "Newton's approach was based on limits.",
+   "i": 66
+  },
+  {
+   "t": 375.5,
+   "clip": "c1.notation.2",
+   "text": "Leibniz used geometric arguments, and a much simpler notation, including dee by dee ex and the integral sign.",
+   "i": 67
+  },
+  {
+   "t": 382.81,
+   "clip": "c1.notation.2",
+   "text": "Britain kept Newton's notation through the eighteenth century, and the rest of the world, using Leibniz's, made more progress.",
+   "i": 68
+  },
+  {
+   "t": 391.54,
+   "clip": "c1.notation.2",
+   "text": "Newton's dot, for a derivative with respect to time, survives.",
+   "i": 69
+  },
+  {
+   "t": 396.43,
+   "clip": "c1.notation.2",
+   "text": "Oiler wrote a capital D, and his student Lagrange gave us primes.",
+   "i": 70
+  },
+  {
+   "t": 402.1,
+   "clip": "c1.notation.2",
+   "text": "And mathematicians in India seem to have had similar ideas a couple of centuries earlier.",
+   "i": 71
+  },
+  {
+   "t": 407.95,
+   "clip": "c1.notation.3",
+   "text": "So here are the notations in the notes.",
+   "i": 72
+  },
+  {
+   "t": 412.02,
+   "clip": "c1.notation.3",
+   "text": "First, dee why by dee ex, and dee by dee ex acting on why.",
+   "i": 73
+  },
+  {
+   "t": 418.05,
+   "clip": "c1.notation.3",
+   "text": "Then why prime, two kinds of subscript, and a capital D.",
+   "i": 74
+  },
+  {
+   "t": 423.47,
+   "clip": "c1.notation.3",
+   "text": "For a function of time, a dot on top.",
+   "i": 75
+  },
+  {
+   "t": 427.5,
+   "clip": "c1.notation.3",
+   "text": "This course uses mostly the fractions and the primes.",
+   "i": 76
+  },
+  {
+   "t": 431.88,
+   "clip": "c1.notation.3",
+   "text": "The capital D comes later, especially next term.",
+   "i": 77
+  },
+  {
+   "t": 436.15,
+   "clip": "c1.notation.4",
+   "text": "Read dee why by dee ex as an operator, dee by dee ex, acting on the function why.",
+   "i": 78
+  },
+  {
+   "t": 443.94,
+   "clip": "c1.notation.4",
+   "text": "Dee why over dee ex looks like a fraction.",
+   "i": 79
+  },
+  {
+   "t": 449.46,
+   "clip": "c1.notation.4",
+   "text": "Some manipulations will treat it like one.",
+   "i": 80
+  },
+  {
+   "t": 453.11,
+   "clip": "c1.notation.4",
+   "text": "But it is not a fraction.",
+   "i": 81
+  },
+  {
+   "t": 456.62,
+   "clip": "c1.notation.4",
+   "text": "So when part three flips it over, it proves that the flip is allowed.",
+   "i": 82
+  },
+  {
+   "t": 463.9,
+   "clip": "c1.fail.1",
+   "text": "Now, when does it fail?",
+   "i": 83
+  },
+  {
+   "t": 467.39,
+   "clip": "c1.fail.1",
+   "text": "Functions are not always differentiable.",
+   "i": 84
+  },
+  {
+   "t": 471.15,
+   "clip": "c1.fail.1",
+   "text": "Here's an example: why equals mod ex, the absolute value of ex.",
+   "i": 85
+  },
+  {
+   "t": 478.7,
+   "clip": "c1.fail.1",
+   "text": "To the left of zero it's minus ex, a straight line with slope minus one.",
+   "i": 86
+  },
+  {
+   "t": 484.9,
+   "clip": "c1.fail.1",
+   "text": "To the right it's just ex, with slope plus one.",
+   "i": 87
+  },
+  {
+   "t": 488.74,
+   "clip": "c1.fail.1",
+   "text": "And it's continuous.",
+   "i": 88
+  },
+  {
+   "t": 491.24,
+   "clip": "c1.fail.1",
+   "text": "You can draw it without lifting the pen.",
+   "i": 89
+  },
+  {
+   "t": 495.5,
+   "clip": "c1.fail.2",
+   "text": "But look at the corner, at zero.",
+   "i": 90
+  },
+  {
+   "t": 499.0,
+   "clip": "c1.fail.2",
+   "text": "Which line is the tangent line there?",
+   "i": 91
+  },
+  {
+   "t": 503.65,
+   "clip": "c1.fail.2",
+   "text": "Lots of lines touch the corner, and none of them is the right one.",
+   "i": 92
+  },
+  {
+   "t": 507.88,
+   "clip": "c1.fail.2",
+   "text": "Chords from the right all have slope plus one.",
+   "i": 93
+  },
+  {
+   "t": 511.76,
+   "clip": "c1.fail.2",
+   "text": "Chords from the left all have slope minus one.",
+   "i": 94
+  },
+  {
+   "t": 516.29,
+   "clip": "c1.fail.2",
+   "text": "There's no single slope, so the derivative of mod ex does not exist at zero.",
+   "i": 95
+  },
+  {
+   "t": 522.13,
+   "clip": "c1.fail.2",
+   "text": "Everywhere else, it's fine.",
+   "i": 96
+  },
+  {
+   "t": 526.93,
+   "clip": "c1.fail.3",
+   "text": "The second example is the Heaviside step function.",
+   "i": 97
+  },
+  {
+   "t": 530.83,
+   "clip": "c1.fail.3",
+   "text": "It's zero for negative ex, and one for positive ex.",
+   "i": 98
+  },
+  {
+   "t": 536.18,
+   "clip": "c1.fail.3",
+   "text": "At zero itself, definitions vary, and the notes leave it out.",
+   "i": 99
+  },
+  {
+   "t": 541.23,
+   "clip": "c1.fail.3",
+   "text": "The lecturer puts that point in the top piece: a filled dot at height one, and an open circle at the origin.",
+   "i": 100
+  },
+  {
+   "t": 550.1,
+   "clip": "c1.fail.3",
+   "text": "That way the function has exactly one value at zero.",
+   "i": 101
+  },
+  {
+   "t": 554.72,
+   "clip": "c1.fail.4",
+   "text": "Away from zero, the graph is flat, so its derivative is zero.",
+   "i": 102
+  },
+  {
+   "t": 559.68,
+   "clip": "c1.fail.4",
+   "text": "At zero, it's undefined.",
+   "i": 103
+  },
+  {
+   "t": 563.07,
+   "clip": "c1.fail.4",
+   "text": "To see why, take a chord from the left that crosses the jump.",
+   "i": 104
+  },
+  {
+   "t": 567.3,
+   "clip": "c1.fail.4",
+   "text": "It rises by one over a run of delta ex, so its slope is one over delta ex.",
+   "i": 105
+  },
+  {
+   "t": 574.02,
+   "clip": "c1.fail.4",
+   "text": "With delta ex equal to a tenth, that's ten.",
+   "i": 106
+  },
+  {
+   "t": 578.28,
+   "clip": "c1.fail.4",
+   "text": "With a hundredth, a hundred.",
+   "i": 107
+  },
+  {
+   "t": 582.16,
+   "clip": "c1.fail.4",
+   "text": "The slope grows without bound, so no tangent line can match it.",
+   "i": 108
+  },
+  {
+   "t": 588.28,
+   "clip": "c1.diff.1",
+   "text": "So what exactly does differentiable demand?",
+   "i": 109
+  },
+  {
+   "t": 592.48,
+   "clip": "c1.diff.1",
+   "text": "Here's the lecturer's definition.",
+   "i": 110
+  },
+  {
+   "t": 595.63,
+   "clip": "c1.diff.1",
+   "text": "F is differentiable at ex if this limit exists, and is finite.",
+   "i": 111
+  },
+  {
+   "t": 601.28,
+   "clip": "c1.diff.1",
+   "text": "It's the quotient from before: the change in F, over a small step.",
+   "i": 112
+  },
+  {
+   "t": 608.98,
+   "clip": "c1.diff.1",
+   "text": "She calls the step H, instead of delta ex.",
+   "i": 113
+  },
+  {
+   "t": 613.07,
+   "clip": "c1.diff.1",
+   "text": "As she says, H is just a variable.",
+   "i": 114
+  },
+  {
+   "t": 616.82,
+   "clip": "c1.diff.2",
+   "text": "The notes' box says what that takes.",
+   "i": 115
+  },
+  {
+   "t": 620.44,
+   "clip": "c1.diff.2",
+   "text": "First, the function must be continuous.",
+   "i": 116
+  },
+  {
+   "t": 624.48,
+   "clip": "c1.diff.2",
+   "text": "Second, the derivative must be finite and defined.",
+   "i": 117
+  },
+  {
+   "t": 629.52,
+   "clip": "c1.diff.2",
+   "text": "That means the left-hand limit, where you step back from ex by H, must equal the right-hand limit, where you step forward.",
+   "i": 118
+  },
+  {
+   "t": 638.85,
+   "clip": "c1.diff.3",
+   "text": "Run mod ex through the box, at zero.",
+   "i": 119
+  },
+  {
+   "t": 643.31,
+   "clip": "c1.diff.3",
+   "text": "It's continuous, so the first test passes.",
+   "i": 120
+  },
+  {
+   "t": 647.59,
+   "clip": "c1.diff.3",
+   "text": "But the left-hand limit is minus one, and the right-hand limit is plus one.",
+   "i": 121
+  },
+  {
+   "t": 653.33,
+   "clip": "c1.diff.3",
+   "text": "They disagree, so the second test fails.",
+   "i": 122
+  },
+  {
+   "t": 656.88,
+   "clip": "c1.diff.4",
+   "text": "Now the Heaviside step function.",
+   "i": 123
+  },
+  {
+   "t": 660.29,
+   "clip": "c1.diff.4",
+   "text": "Both pieces are flat, with slope zero, so the two sides seem to agree.",
+   "i": 124
+  },
+  {
+   "t": 665.75,
+   "clip": "c1.diff.4",
+   "text": "But the function jumps, so it is not continuous, and the first test fails.",
+   "i": 125
+  },
+  {
+   "t": 671.46,
+   "clip": "c1.diff.4",
+   "text": "Indeed, the left-hand quotient is one over the step, which blows up.",
+   "i": 126
+  },
+  {
+   "t": 678.9,
+   "clip": "c1.diff.5",
+   "text": "Notice which way it goes.",
+   "i": 127
+  },
+  {
+   "t": 681.37,
+   "clip": "c1.diff.5",
+   "text": "If the derivative exists, the change in F is the step, times the difference quotient, which stays finite, so it goes to zero with the step.",
+   "i": 128
+  },
+  {
+   "t": 691.05,
+   "clip": "c1.diff.5",
+   "text": "So a differentiable function is continuous.",
+   "i": 129
+  },
+  {
+   "t": 694.61,
+   "clip": "c1.diff.5",
+   "text": "The reverse is false, and mod ex shows it.",
+   "i": 130
+  },
+  {
+   "t": 699.28,
+   "clip": "c1.diff.5",
+   "text": "Finite matters too.",
+   "i": 131
+  },
+  {
+   "t": 702.21,
+   "clip": "c1.diff.5",
+   "text": "Where the tangent line is vertical, its slope is infinite.",
+   "i": 132
+  },
+  {
+   "t": 707.04,
+   "clip": "c1.diff.5",
+   "text": "The circle in part three has two such points.",
+   "i": 133
+  },
+  {
+   "t": 712.98,
+   "clip": "c1.recap.1",
+   "text": "Time for a recap.",
+   "i": 134
+  },
+  {
+   "t": 716.06,
+   "clip": "c1.recap.1",
+   "text": "The derivative is the limit of chord slopes, as delta ex goes to zero.",
+   "i": 135
+  },
+  {
+   "t": 720.8,
+   "clip": "c1.recap.1",
+   "text": "From first principles, you substitute, expand, subtract, divide, and take the limit.",
+   "i": 136
+  },
+  {
+   "t": 727.42,
+   "clip": "c1.recap.1",
+   "text": "For ex cubed, that gives three ex squared.",
+   "i": 137
+  },
+  {
+   "t": 731.5,
+   "clip": "c1.recap.2",
+   "text": "At a corner or a jump, there's no derivative.",
+   "i": 138
+  },
+  {
+   "t": 735.01,
+   "clip": "c1.recap.2",
+   "text": "To be differentiable, a function must be continuous, its left-hand and right-hand limits must agree, and its slope must be finite.",
+   "i": 139
+  },
+  {
+   "t": 745.65,
+   "clip": "c1.recap.3",
+   "text": "Next time: the chain rule, the product rule and the quotient rule.",
+   "i": 140
+  },
+  {
+   "t": 751.51,
+   "clip": "c1.recap.3",
+   "text": "Each one comes from this same limit.",
+   "i": 141
+  }
+ ]
+}

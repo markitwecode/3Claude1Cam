@@ -1,0 +1,9 @@
+{"cues": [
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 23 Fives.ogg", "from": "START", "until": "c4.avg.1",
+   "track_start": 0, "fade_in": 1, "fade_out": 4, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 19 Spirals.ogg", "from": "c4.avg.2:end", "until": "c4.avg.4",
+   "track_start": 0, "fade_in": 3, "fade_out": 3.5, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 31 Quantum Blue.ogg", "from": "c4.speed.3:end", "until": "END",
+   "track_start": 0, "fade_in": 3, "fade_out": 3, "level_db": -11,
+   "swell_after": "c4.recap.2:end", "swell_db": 6}],
+ "duck": {"threshold": 0.03, "ratio": 2, "attack": 50, "release": 2000}}

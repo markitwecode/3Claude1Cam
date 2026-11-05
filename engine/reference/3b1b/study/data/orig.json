@@ -1,0 +1,44 @@
+{
+ "l10ch2": {
+  "runtime_min": 10.182600000000004,
+  "narrated_min": 9.968666666666667,
+  "speech_min": 7.281666666666667,
+  "words": 1554,
+  "wpm_speech": 213.41268024719614,
+  "wpm_runtime": 152.613281480172,
+  "nospeech_share": 0.2695445729953855,
+  "gaps_ge1_per_min": 3.511001136895606,
+  "gaps_ge2_per_min": 1.4044004547582425,
+  "gaps_ge4_per_min": 0.10031431819701732,
+  "gap_median_s": 0.86,
+  "gaps_ge0.3": 167
+ },
+ "l10ch4": {
+  "runtime_min": 10.08113333333333,
+  "narrated_min": 9.817333333333334,
+  "speech_min": 6.909000000000001,
+  "words": 1597,
+  "wpm_speech": 231.14777826024024,
+  "wpm_runtime": 158.41472850274775,
+  "nospeech_share": 0.29624473719951117,
+  "gaps_ge1_per_min": 4.787450767350265,
+  "gaps_ge2_per_min": 0.8148852369957897,
+  "gaps_ge4_per_min": 0.3055819638734211,
+  "gap_median_s": 0.88,
+  "gaps_ge0.3": 182
+ },
+ "l10ch6": {
+  "runtime_min": 9.311943050000002,
+  "narrated_min": 9.144333333333334,
+  "speech_min": 6.740666666666667,
+  "words": 1468,
+  "wpm_speech": 217.7826129957472,
+  "wpm_runtime": 157.64701224198313,
+  "nospeech_share": 0.2628586009550542,
+  "gaps_ge1_per_min": 3.6087923304049867,
+  "gaps_ge2_per_min": 0.8748587467648452,
+  "gaps_ge4_per_min": 0.10935734334560565,
+  "gap_median_s": 0.86,
+  "gaps_ge0.3": 160
+ }
+}

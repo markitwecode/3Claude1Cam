@@ -1,0 +1,945 @@
+{
+ "key": "l10ch2",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-complex-roots-logs",
+ "chapter": 2,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-complex-roots-logs/out/ch2_de_moivre.mp4",
+ "total": 712.737,
+ "scenes_sum": 712.6996740000001,
+ "words": 1554,
+ "scenes": [
+  {
+   "stem": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 51.4,
+   "cue_dur": 51.4
+  },
+  {
+   "stem": "ch2_s2_theorem",
+   "t0": 51.4,
+   "dur": 125.3,
+   "cue_dur": 125.3
+  },
+  {
+   "stem": "ch2_s3_integer",
+   "t0": 176.7,
+   "dur": 105.233333,
+   "cue_dur": 105.2333
+  },
+  {
+   "stem": "ch2_s4_expand",
+   "t0": 281.933333,
+   "dur": 115.0,
+   "cue_dur": 115.0
+  },
+  {
+   "stem": "ch2_s5_simplify",
+   "t0": 396.933333,
+   "dur": 134.666667,
+   "cue_dur": 134.6667
+  },
+  {
+   "stem": "ch2_s6_expo",
+   "t0": 531.6,
+   "dur": 115.649674,
+   "cue_dur": 115.65
+  },
+  {
+   "stem": "ch2_s7_recap",
+   "t0": 647.249674,
+   "dur": 65.45,
+   "cue_dur": 65.45
+  }
+ ],
+ "clips": [
+  {
+   "id": "c2.hook.1",
+   "scene": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 21.684
+  },
+  {
+   "id": "c2.hook.2",
+   "scene": "ch2_s1_hook",
+   "t0": 22.6167,
+   "dur": 25.803
+  },
+  {
+   "id": "c2.thm.1",
+   "scene": "ch2_s2_theorem",
+   "t0": 51.4,
+   "dur": 22.809
+  },
+  {
+   "id": "c2.thm.2",
+   "scene": "ch2_s2_theorem",
+   "t0": 75.3,
+   "dur": 32.773
+  },
+  {
+   "id": "c2.thm.3",
+   "scene": "ch2_s2_theorem",
+   "t0": 108.94999999999999,
+   "dur": 26.379
+  },
+  {
+   "id": "c2.thm.4",
+   "scene": "ch2_s2_theorem",
+   "t0": 136.2667,
+   "dur": 18.91
+  },
+  {
+   "id": "c2.thm.5",
+   "scene": "ch2_s2_theorem",
+   "t0": 156.4333,
+   "dur": 18.076
+  },
+  {
+   "id": "c2.int.1",
+   "scene": "ch2_s3_integer",
+   "t0": 176.7,
+   "dur": 25.831
+  },
+  {
+   "id": "c2.int.2",
+   "scene": "ch2_s3_integer",
+   "t0": 204.5333,
+   "dur": 34.225
+  },
+  {
+   "id": "c2.int.3",
+   "scene": "ch2_s3_integer",
+   "t0": 239.4667,
+   "dur": 20.044
+  },
+  {
+   "id": "c2.int.4",
+   "scene": "ch2_s3_integer",
+   "t0": 261.13329999999996,
+   "dur": 17.774
+  },
+  {
+   "id": "c2.exp.1",
+   "scene": "ch2_s4_expand",
+   "t0": 281.933333,
+   "dur": 23.488
+  },
+  {
+   "id": "c2.exp.2",
+   "scene": "ch2_s4_expand",
+   "t0": 306.266633,
+   "dur": 24.54
+  },
+  {
+   "id": "c2.exp.3",
+   "scene": "ch2_s4_expand",
+   "t0": 331.483333,
+   "dur": 24.884
+  },
+  {
+   "id": "c2.exp.4",
+   "scene": "ch2_s4_expand",
+   "t0": 357.433333,
+   "dur": 37.099
+  },
+  {
+   "id": "c2.simp.1",
+   "scene": "ch2_s5_simplify",
+   "t0": 396.933333,
+   "dur": 26.33
+  },
+  {
+   "id": "c2.simp.2",
+   "scene": "ch2_s5_simplify",
+   "t0": 424.200033,
+   "dur": 44.812
+  },
+  {
+   "id": "c2.simp.3",
+   "scene": "ch2_s5_simplify",
+   "t0": 469.83333300000004,
+   "dur": 23.804
+  },
+  {
+   "id": "c2.simp.4",
+   "scene": "ch2_s5_simplify",
+   "t0": 494.78333299999997,
+   "dur": 34.785
+  },
+  {
+   "id": "c2.expo.1",
+   "scene": "ch2_s6_expo",
+   "t0": 531.6,
+   "dur": 26.636
+  },
+  {
+   "id": "c2.expo.2",
+   "scene": "ch2_s6_expo",
+   "t0": 559.3000000000001,
+   "dur": 34.467
+  },
+  {
+   "id": "c2.expo.3",
+   "scene": "ch2_s6_expo",
+   "t0": 594.8167000000001,
+   "dur": 23.328
+  },
+  {
+   "id": "c2.expo.4",
+   "scene": "ch2_s6_expo",
+   "t0": 619.7,
+   "dur": 22.906
+  },
+  {
+   "id": "c2.recap.1",
+   "scene": "ch2_s7_recap",
+   "t0": 647.249674,
+   "dur": 42.721
+  },
+  {
+   "id": "c2.recap.2",
+   "scene": "ch2_s7_recap",
+   "t0": 691.066374,
+   "dur": 10.758
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c2.hook.1",
+   "text": "This is part two of Powers, Logarithms and Oscillations, on De Moivre's theorem.",
+   "i": 1
+  },
+  {
+   "t": 7.3,
+   "clip": "c2.hook.1",
+   "text": "Last time, you solved zed to the fifth equals two eye, and found five roots, spaced evenly round a ring.",
+   "i": 2
+  },
+  {
+   "t": 15.5,
+   "clip": "c2.hook.1",
+   "text": "The key was that multiplying complex numbers adds their angles, so a fifth power multiplies an angle by five.",
+   "i": 3
+  },
+  {
+   "t": 22.62,
+   "clip": "c2.hook.2",
+   "text": "Today's question sounds like plain trigonometry.",
+   "i": 4
+  },
+  {
+   "t": 26.56,
+   "clip": "c2.hook.2",
+   "text": "What is cosine of four theta, written using only cosine theta?",
+   "i": 5
+  },
+  {
+   "t": 32.06,
+   "clip": "c2.hook.2",
+   "text": "You could use the double-angle formula twice, since four is two times two.",
+   "i": 6
+  },
+  {
+   "t": 38.09,
+   "clip": "c2.hook.2",
+   "text": "But for cosine of seven theta, you'd be stacking compound-angle formulas, line after line.",
+   "i": 7
+  },
+  {
+   "t": 43.21,
+   "clip": "c2.hook.2",
+   "text": "De Moivre's theorem gets any of them from a single power.",
+   "i": 8
+  },
+  {
+   "t": 51.4,
+   "clip": "c2.thm.1",
+   "text": "Start with a complex number of modulus one, at angle theta.",
+   "i": 9
+  },
+  {
+   "t": 55.33,
+   "clip": "c2.thm.1",
+   "text": "It's cosine theta, plus eye sine theta, and by Euler's formula, that's E to the eye theta.",
+   "i": 10
+  },
+  {
+   "t": 62.65,
+   "clip": "c2.thm.1",
+   "text": "Now raise it to a whole-number power, N.",
+   "i": 11
+  },
+  {
+   "t": 67.34,
+   "clip": "c2.thm.1",
+   "text": "Here, as in the notes, N is the power.",
+   "i": 12
+  },
+  {
+   "t": 71.1,
+   "clip": "c2.thm.1",
+   "text": "It's no longer the count of full turns from last time.",
+   "i": 13
+  },
+  {
+   "t": 75.3,
+   "clip": "c2.thm.2",
+   "text": "When you raise an exponential to a power, you multiply the exponents.",
+   "i": 14
+  },
+  {
+   "t": 79.87,
+   "clip": "c2.thm.2",
+   "text": "So E to the eye theta, to the power N, is E to the eye N theta.",
+   "i": 15
+  },
+  {
+   "t": 86.25,
+   "clip": "c2.thm.2",
+   "text": "And by Euler's formula again, that's cosine of N theta, plus eye sine of N theta.",
+   "i": 16
+  },
+  {
+   "t": 93.41,
+   "clip": "c2.thm.2",
+   "text": "Set the first expression equal to the last, and you have De Moivre's theorem.",
+   "i": 17
+  },
+  {
+   "t": 98.59,
+   "clip": "c2.thm.2",
+   "text": "Cosine of N theta, plus eye sine of N theta, equals cosine theta plus eye sine theta, all to the power N.",
+   "i": 18
+  },
+  {
+   "t": 108.95,
+   "clip": "c2.thm.3",
+   "text": "Here's what that means in the plane.",
+   "i": 19
+  },
+  {
+   "t": 112.38,
+   "clip": "c2.thm.3",
+   "text": "Multiplying complex numbers multiplies their lengths and adds their angles.",
+   "i": 20
+  },
+  {
+   "t": 118.29,
+   "clip": "c2.thm.3",
+   "text": "So the arrow times itself points at angle two theta.",
+   "i": 21
+  },
+  {
+   "t": 123.04,
+   "clip": "c2.thm.3",
+   "text": "Times itself again, three theta.",
+   "i": 22
+  },
+  {
+   "t": 126.1,
+   "clip": "c2.thm.3",
+   "text": "And once more, four theta.",
+   "i": 23
+  },
+  {
+   "t": 129.81,
+   "clip": "c2.thm.3",
+   "text": "Each step turns it by another theta, and its length stays one, because one times one is still one.",
+   "i": 24
+  },
+  {
+   "t": 136.27,
+   "clip": "c2.thm.4",
+   "text": "The lecturer calls the proof rather trivial.",
+   "i": 25
+  },
+  {
+   "t": 139.73,
+   "clip": "c2.thm.4",
+   "text": "Those were good times, she says, when putting your name on a theorem took very little labour.",
+   "i": 26
+  },
+  {
+   "t": 145.75,
+   "clip": "c2.thm.4",
+   "text": "She keeps the modulus equal to one, for simplicity.",
+   "i": 27
+  },
+  {
+   "t": 150.24,
+   "clip": "c2.thm.4",
+   "text": "With a modulus R, the only change is the length, which becomes R to the power N.",
+   "i": 28
+  },
+  {
+   "t": 156.43,
+   "clip": "c2.thm.5",
+   "text": "The power N can be negative, too.",
+   "i": 29
+  },
+  {
+   "t": 159.9,
+   "clip": "c2.thm.5",
+   "text": "With N equal to minus one, you get cosine theta, minus eye sine theta.",
+   "i": 30
+  },
+  {
+   "t": 165.55,
+   "clip": "c2.thm.5",
+   "text": "That's the arrow turned back by theta, to its mirror image below the real axis.",
+   "i": 31
+  },
+  {
+   "t": 171.13,
+   "clip": "c2.thm.5",
+   "text": "It's the conjugate, and you'll need it again at the end of this chapter.",
+   "i": 32
+  },
+  {
+   "t": 176.7,
+   "clip": "c2.int.1",
+   "text": "The notes add a warning.",
+   "i": 33
+  },
+  {
+   "t": 179.78,
+   "clip": "c2.int.1",
+   "text": "The power N must be an integer here.",
+   "i": 34
+  },
+  {
+   "t": 183.43,
+   "clip": "c2.int.1",
+   "text": "The lecturer wrote it as E to the eye theta, to the N, equals E to the eye times N theta, for whole numbers N.",
+   "i": 35
+  },
+  {
+   "t": 192.88,
+   "clip": "c2.int.1",
+   "text": "For any other N, the left-hand side has more than one value.",
+   "i": 36
+  },
+  {
+   "t": 197.64,
+   "clip": "c2.int.1",
+   "text": "So what goes wrong with a fraction, like one half?",
+   "i": 37
+  },
+  {
+   "t": 204.53,
+   "clip": "c2.int.2",
+   "text": "Remember the full turns from last time.",
+   "i": 38
+  },
+  {
+   "t": 208.0,
+   "clip": "c2.int.2",
+   "text": "The point E to the eye theta is also E to the eye, theta plus two pi, one full turn later.",
+   "i": 39
+  },
+  {
+   "t": 214.91,
+   "clip": "c2.int.2",
+   "text": "Now take N equal to one half, and take half of each angle.",
+   "i": 40
+  },
+  {
+   "t": 220.41,
+   "clip": "c2.int.2",
+   "text": "Half of theta gives E to the eye, theta over two.",
+   "i": 41
+  },
+  {
+   "t": 225.37,
+   "clip": "c2.int.2",
+   "text": "Half of the second angle, theta plus two pi, is theta over two, plus pi.",
+   "i": 42
+  },
+  {
+   "t": 231.6,
+   "clip": "c2.int.2",
+   "text": "That's an extra half turn, which lands on the opposite point, minus E to the eye, theta over two.",
+   "i": 43
+  },
+  {
+   "t": 239.47,
+   "clip": "c2.int.3",
+   "text": "Two different points, and both of them square back to the same number.",
+   "i": 44
+  },
+  {
+   "t": 243.69,
+   "clip": "c2.int.3",
+   "text": "So E to the eye theta, to the power one half, has two values, the two square roots.",
+   "i": 45
+  },
+  {
+   "t": 250.76,
+   "clip": "c2.int.3",
+   "text": "With a whole number N, the extra turn becomes N full turns, and every version lands on the same point.",
+   "i": 46
+  },
+  {
+   "t": 261.13,
+   "clip": "c2.int.4",
+   "text": "That's exactly why, last time, zed to the fifth equals two eye had five roots.",
+   "i": 47
+  },
+  {
+   "t": 267.38,
+   "clip": "c2.int.4",
+   "text": "Dividing the full turns by five gave fifths of a turn, and five different points.",
+   "i": 48
+  },
+  {
+   "t": 273.96,
+   "clip": "c2.int.4",
+   "text": "In part five, you'll count the values of any power, even eye to the power eye.",
+   "i": 49
+  },
+  {
+   "t": 281.93,
+   "clip": "c2.exp.1",
+   "text": "Here's Example twenty-nine from the notes.",
+   "i": 50
+  },
+  {
+   "t": 286.19,
+   "clip": "c2.exp.1",
+   "text": "Use De Moivre's theorem to write cosine of four theta and sine of four theta, in terms of cosine theta and sine theta.",
+   "i": 51
+  },
+  {
+   "t": 294.42,
+   "clip": "c2.exp.1",
+   "text": "Take the theorem with N equal to four.",
+   "i": 52
+  },
+  {
+   "t": 298.4,
+   "clip": "c2.exp.1",
+   "text": "Cosine of four theta, plus eye sine of four theta, equals cosine theta plus eye sine theta, all to the fourth.",
+   "i": 53
+  },
+  {
+   "t": 306.27,
+   "clip": "c2.exp.2",
+   "text": "The right side is a sum of two terms, raised to the fourth power.",
+   "i": 54
+  },
+  {
+   "t": 311.75,
+   "clip": "c2.exp.2",
+   "text": "So the coefficients come from row four of Pascal's triangle, one, four, six, four, one.",
+   "i": 55
+  },
+  {
+   "t": 318.26,
+   "clip": "c2.exp.2",
+   "text": "In each term, the power of cosine counts down from four, and the power of eye sine counts up from zero.",
+   "i": 56
+  },
+  {
+   "t": 325.45,
+   "clip": "c2.exp.2",
+   "text": "Every cosine and sine here is of theta, so for this example, I'll just say cosine and sine.",
+   "i": 57
+  },
+  {
+   "t": 331.48,
+   "clip": "c2.exp.3",
+   "text": "Each term also carries a power of eye.",
+   "i": 58
+  },
+  {
+   "t": 335.52,
+   "clip": "c2.exp.3",
+   "text": "Eye squared is minus one.",
+   "i": 59
+  },
+  {
+   "t": 338.5,
+   "clip": "c2.exp.3",
+   "text": "Eye cubed is minus eye.",
+   "i": 60
+  },
+  {
+   "t": 341.99,
+   "clip": "c2.exp.3",
+   "text": "And eye to the fourth is one.",
+   "i": 61
+  },
+  {
+   "t": 345.22,
+   "clip": "c2.exp.3",
+   "text": "On the Argand diagram, each factor of eye is a quarter turn, so the powers go round a dial, eye, minus one, minus eye, and back to one.",
+   "i": 62
+  },
+  {
+   "t": 357.43,
+   "clip": "c2.exp.4",
+   "text": "Now put those values into the five terms.",
+   "i": 63
+  },
+  {
+   "t": 361.71,
+   "clip": "c2.exp.4",
+   "text": "The terms with eye squared and eye to the fourth become real.",
+   "i": 64
+  },
+  {
+   "t": 366.23,
+   "clip": "c2.exp.4",
+   "text": "The terms with eye and eye cubed stay imaginary.",
+   "i": 65
+  },
+  {
+   "t": 370.46,
+   "clip": "c2.exp.4",
+   "text": "That's how plus six becomes minus six, and plus four eye becomes minus four eye.",
+   "i": 66
+  },
+  {
+   "t": 376.04,
+   "clip": "c2.exp.4",
+   "text": "Now collect them.",
+   "i": 67
+  },
+  {
+   "t": 378.51,
+   "clip": "c2.exp.4",
+   "text": "The real terms are cosine to the fourth, minus six cosine squared sine squared, plus sine to the fourth.",
+   "i": 68
+  },
+  {
+   "t": 385.49,
+   "clip": "c2.exp.4",
+   "text": "The imaginary terms share a factor of four eye, times a bracket, cosine cubed sine, minus cosine sine cubed.",
+   "i": 69
+  },
+  {
+   "t": 396.93,
+   "clip": "c2.simp.1",
+   "text": "Two complex numbers are equal exactly when their real parts match and their imaginary parts match.",
+   "i": 70
+  },
+  {
+   "t": 403.14,
+   "clip": "c2.simp.1",
+   "text": "So cosine of four theta is the real part, cosine to the fourth, minus six cosine squared sine squared, plus sine to the fourth.",
+   "i": 71
+  },
+  {
+   "t": 411.84,
+   "clip": "c2.simp.1",
+   "text": "And sine of four theta is the imaginary part, four times the bracket.",
+   "i": 72
+  },
+  {
+   "t": 418.6,
+   "clip": "c2.simp.1",
+   "text": "That's the task done, with both written in terms of cosine and sine of theta.",
+   "i": 73
+  },
+  {
+   "t": 424.2,
+   "clip": "c2.simp.2",
+   "text": "Now write cosine of four theta using cosine alone.",
+   "i": 74
+  },
+  {
+   "t": 429.06,
+   "clip": "c2.simp.2",
+   "text": "Replace each sine squared with one minus cosine squared.",
+   "i": 75
+  },
+  {
+   "t": 433.54,
+   "clip": "c2.simp.2",
+   "text": "The middle term becomes minus six cosine squared, times one minus cosine squared.",
+   "i": 76
+  },
+  {
+   "t": 439.92,
+   "clip": "c2.simp.2",
+   "text": "Sine to the fourth becomes one minus cosine squared, all squared.",
+   "i": 77
+  },
+  {
+   "t": 445.03,
+   "clip": "c2.simp.2",
+   "text": "Multiply everything out.",
+   "i": 78
+  },
+  {
+   "t": 448.4,
+   "clip": "c2.simp.2",
+   "text": "The fourth powers come with one, six and one, eight in all.",
+   "i": 79
+  },
+  {
+   "t": 452.86,
+   "clip": "c2.simp.2",
+   "text": "The squares come with minus six and minus two, minus eight in all.",
+   "i": 80
+  },
+  {
+   "t": 457.82,
+   "clip": "c2.simp.2",
+   "text": "And a plus one is left over.",
+   "i": 81
+  },
+  {
+   "t": 461.17,
+   "clip": "c2.simp.2",
+   "text": "So cosine of four theta is eight cosine to the fourth, minus eight cosine squared, plus one.",
+   "i": 82
+  },
+  {
+   "t": 469.83,
+   "clip": "c2.simp.3",
+   "text": "For sine of four theta, take out the common factor, four cosine sine.",
+   "i": 83
+  },
+  {
+   "t": 475.86,
+   "clip": "c2.simp.3",
+   "text": "What's left in the bracket is cosine squared minus sine squared.",
+   "i": 84
+  },
+  {
+   "t": 480.74,
+   "clip": "c2.simp.3",
+   "text": "Since cosine squared plus sine squared is one, that bracket is also two cosine squared minus one, or, equally, one minus two sine squared.",
+   "i": 85
+  },
+  {
+   "t": 490.58,
+   "clip": "c2.simp.3",
+   "text": "Those are the two endings the lecturer wrote in by hand.",
+   "i": 86
+  },
+  {
+   "t": 494.78,
+   "clip": "c2.simp.4",
+   "text": "A quick check never hurts.",
+   "i": 87
+  },
+  {
+   "t": 498.26,
+   "clip": "c2.simp.4",
+   "text": "Take theta equal to pi over four.",
+   "i": 88
+  },
+  {
+   "t": 501.66,
+   "clip": "c2.simp.4",
+   "text": "Then four theta is pi, and cosine of pi is minus one.",
+   "i": 89
+  },
+  {
+   "t": 507.17,
+   "clip": "c2.simp.4",
+   "text": "On the right, cosine squared of pi over four is one half, so cosine to the fourth is one quarter.",
+   "i": 90
+  },
+  {
+   "t": 514.27,
+   "clip": "c2.simp.4",
+   "text": "Eight quarters make two.",
+   "i": 91
+  },
+  {
+   "t": 517.47,
+   "clip": "c2.simp.4",
+   "text": "Eight halves make four.",
+   "i": 92
+  },
+  {
+   "t": 520.71,
+   "clip": "c2.simp.4",
+   "text": "So you get two, minus four, plus one.",
+   "i": 93
+  },
+  {
+   "t": 525.24,
+   "clip": "c2.simp.4",
+   "text": "That's minus one.",
+   "i": 94
+  },
+  {
+   "t": 528.48,
+   "clip": "c2.simp.4",
+   "text": "It matches.",
+   "i": 95
+  },
+  {
+   "t": 531.6,
+   "clip": "c2.expo.1",
+   "text": "You can use the same idea another way, and it's even more useful.",
+   "i": 96
+  },
+  {
+   "t": 536.12,
+   "clip": "c2.expo.1",
+   "text": "Here's Oiler's formula, equation seventy-one in the notes.",
+   "i": 97
+  },
+  {
+   "t": 540.93,
+   "clip": "c2.expo.1",
+   "text": "E to the eye theta equals cosine theta, plus eye sine theta.",
+   "i": 98
+  },
+  {
+   "t": 545.99,
+   "clip": "c2.expo.1",
+   "text": "Take the complex conjugate, which turns every plus eye into minus eye.",
+   "i": 99
+  },
+  {
+   "t": 551.09,
+   "clip": "c2.expo.1",
+   "text": "You get E to the minus eye theta equals cosine theta, minus eye sine theta.",
+   "i": 100
+  },
+  {
+   "t": 559.3,
+   "clip": "c2.expo.2",
+   "text": "Add the two equations.",
+   "i": 101
+  },
+  {
+   "t": 561.85,
+   "clip": "c2.expo.2",
+   "text": "The eye sine terms cancel, and you're left with two cosine theta.",
+   "i": 102
+  },
+  {
+   "t": 567.2,
+   "clip": "c2.expo.2",
+   "text": "So cosine theta is E to the eye theta, plus E to the minus eye theta, all over two.",
+   "i": 103
+  },
+  {
+   "t": 574.69,
+   "clip": "c2.expo.2",
+   "text": "That's equation seventy-seven.",
+   "i": 104
+  },
+  {
+   "t": 578.21,
+   "clip": "c2.expo.2",
+   "text": "Subtract instead, and the cosines cancel, leaving two eye sine theta.",
+   "i": 105
+  },
+  {
+   "t": 584.22,
+   "clip": "c2.expo.2",
+   "text": "So sine theta is E to the eye theta, minus E to the minus eye theta, all over two eye.",
+   "i": 106
+  },
+  {
+   "t": 591.8,
+   "clip": "c2.expo.2",
+   "text": "That's equation seventy-eight.",
+   "i": 107
+  },
+  {
+   "t": 594.82,
+   "clip": "c2.expo.3",
+   "text": "Here's the picture.",
+   "i": 108
+  },
+  {
+   "t": 597.39,
+   "clip": "c2.expo.3",
+   "text": "The gold arrow, E to the eye theta, turns one way as theta grows.",
+   "i": 109
+  },
+  {
+   "t": 602.59,
+   "clip": "c2.expo.3",
+   "text": "Its mirror image, E to the minus eye theta, turns the other way.",
+   "i": 110
+  },
+  {
+   "t": 607.5,
+   "clip": "c2.expo.3",
+   "text": "Put them tip to tail.",
+   "i": 111
+  },
+  {
+   "t": 610.09,
+   "clip": "c2.expo.3",
+   "text": "Their imaginary parts cancel, so the sum always lands on the real axis, at two cosine theta.",
+   "i": 112
+  },
+  {
+   "t": 619.7,
+   "clip": "c2.expo.4",
+   "text": "Their difference does the opposite.",
+   "i": 113
+  },
+  {
+   "t": 623.42,
+   "clip": "c2.expo.4",
+   "text": "The real parts cancel, and it lands on the imaginary axis, at two eye sine theta.",
+   "i": 114
+  },
+  {
+   "t": 629.79,
+   "clip": "c2.expo.4",
+   "text": "Dividing by two eye brings it back to a real number, sine theta.",
+   "i": 115
+  },
+  {
+   "t": 634.77,
+   "clip": "c2.expo.4",
+   "text": "As the lecturer puts it, working with exponentials is easier than working with cosines and sines.",
+   "i": 116
+  },
+  {
+   "t": 647.25,
+   "clip": "c2.recap.1",
+   "text": "Let's recap.",
+   "i": 117
+  },
+  {
+   "t": 648.28,
+   "clip": "c2.recap.1",
+   "text": "De Moivre's theorem says that E to the eye theta, to the power N, is E to the eye N theta, the arrow turned to angle N theta.",
+   "i": 118
+  },
+  {
+   "t": 660.58,
+   "clip": "c2.recap.1",
+   "text": "The power N must be a whole number, because a fraction splits the full turns into several values.",
+   "i": 119
+  },
+  {
+   "t": 667.96,
+   "clip": "c2.recap.1",
+   "text": "To expand a power, use Pascal's row, and let the powers of eye sort the real terms from the imaginary ones.",
+   "i": 120
+  },
+  {
+   "t": 676.26,
+   "clip": "c2.recap.1",
+   "text": "Matching real parts, then imaginary parts, gives cosine and sine of four theta.",
+   "i": 121
+  },
+  {
+   "t": 682.36,
+   "clip": "c2.recap.1",
+   "text": "And adding or subtracting two mirror-image arrows writes cosine and sine as exponentials.",
+   "i": 122
+  },
+  {
+   "t": 691.07,
+   "clip": "c2.recap.2",
+   "text": "Next time, those two formulas turn a power like cosine cubed into single cosines, and a sum of cosines into a geometric series.",
+   "i": 123
+  }
+ ]
+}

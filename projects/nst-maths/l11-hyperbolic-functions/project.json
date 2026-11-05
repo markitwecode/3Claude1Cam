@@ -1,0 +1,39 @@
+{
+  "title": "Hyperbolic Functions and Conics",
+  "course_line": "NST IA Mathematics · Lecture 11",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every formula, identity and number with sympy 1.14 / numpy 2.1 in the system Python (the engine venv has numpy but no sympy), e.g. `python3 -I -c 'import sympy as sp; x=sp.symbols(\"x\"); print(sp.simplify((sp.cosh(x)**2-sp.sinh(x)**2).rewrite(sp.exp)))'` and `python3 -I -c 'import cmath,math; print(cmath.cos(complex(0, math.log(2+math.sqrt(3)))))'`",
+  "sources": [
+    {
+      "path": "../source/Chapter234_to_annotate.pdf",
+      "pages": "30-46",
+      "note": "typeset notes with blanks. p30 = §2.7 fundamental theorem of algebra (end of Ch 2, lectured at the start of L11, 03:12-04:43); pp31-45 = Ch 3: §3.1 definitions (84)-(89), (90)-(92) p31-32; §3.2 identities (93)-(95), Example 33 p33-34; §3.3 graphs, Figure 25, properties 1-6 p35-36; §3.4 inverses (96)-(97), Figure 26, Example 34 p36-38; Example 35 cos z = 2 p39 (blank: working in the digest); §3.5 circles (98)-(99) p40-41, ellipses (100) p41-42, Example 36 p43 (blank: working in the digest), area (101) and hyperbola (102) p44-45, Figures 27-28; p46 blank (the conic summary was handwritten on a separate sheet, digest 49:18-54:55). The text layer garbles the maths: render a page (`pdftoppm -f N -l N -r 80 -png`) to read formulas"
+    },
+    {
+      "path": "../source/l11-lecture.transcript.md",
+      "pages": "00:00-54:55",
+      "note": "Whisper medium transcript of l11-lecture.mp4. 00:00-03:12 recap of L10; 03:12-04:43 FTA; 04:43-54:55 Ch 3 (per-chapter ranges in PLAN.md); after 54:55 packing up, a reps announcement and the next (physics) lecture's set-up. Known slips: 18:23 'root of x plus 1' (notes: x^2+1); 21:08 'x between -1 and 1' for cosh^-1 (notes: x >= 1); 41:57 '7 minus 11' (constants: -2 - 9 + 7 = -4)"
+    },
+    {
+      "path": "../source/l11-lecture.digest.md",
+      "pages": "00:00-54:55",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l11-lecture.mp4: notes under the visualiser plus the lecturer's handwriting (L11's scan isn't posted yet, so this is the only record of the filled blanks: Examples 35 and 36, Figure 26/27/28 labels, the conic summary). Trust the notes over it where they differ: it gives tanh^-1 with |...| (notes: square brackets, |x| < 1) and 'tansh' (notes: 'tanch')"
+    },
+    {
+      "path": "../source/M26examples1 (2).pdf",
+      "pages": "9 (section G); 6 (E2); 8 (F11)",
+      "note": "Examples Sheet I. Section G hyperbolic functions G1-G4: hints in ch6, worked solutions in ch7 (no printed answers: only basic-skills answers are printed, p15). No conic-section questions in G; G2 (loci (a cos t, b sin t), (a cosh t, b sinh t)) is the conic one. E2's circle (x-1)^2+y^2=1 is borrowed as ch5's completing-the-square example; F11 (circles as contours of 1/z) belongs to section F and is already done in supervision 3"
+    },
+    {
+      "path": "../source/HW math supo 3.pdf",
+      "pages": "1-19",
+      "note": "the user's supervision 3 work (handwritten; text layer is noise): sections D, E and F7-F12. F11 completes the square for circles cleanly. No section G yet, so G1-G4 are still ahead of the user. Context only, not lecture content"
+    },
+    {
+      "path": "../source/Lecture10_scanned.pdf",
+      "pages": "",
+      "note": "previous lecture's annotations: context only (what ch1's 'last time' recalls); L11's own scan not posted yet"
+    }
+  ],
+  "created": "2026-11-01"
+}

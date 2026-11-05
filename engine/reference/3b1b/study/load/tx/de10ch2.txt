@@ -1,0 +1,117 @@
+S001 [00:00] (c2.hook.1) Last time, you built a divide-by-five counter by giving its five states a plain binary count.
+S002 [00:06] (c2.hook.1) It worked, and its next-state logic cost three gates.
+S003 [00:11] (c2.hook.1) Two and gates, and an exclusive-or.
+S004 [00:16] (c2.hook.2) This time, the same five states get some funkier codes.
+S005 [00:21] (c2.hook.2) The lecturer calls them just a bit of fun, not something you'd necessarily do for real.
+S006 [00:27] (c2.hook.2) But they show how much freedom you have when you choose the codes.
+S007 [00:33] (c2.hook.2) Can a cleverer choice make the logic almost disappear?
+S008 [00:38] (c2.hook.2) And if it can, what do you pay for it instead?
+S009 [00:45] (c2.slide.1) These funkier assignments often borrow the action of a shift register.
+S010 [00:49] (c2.slide.1) In a shift register, every edge of the clock passes each flip-flop's value on to the next.
+S011 [00:57] (c2.slide.1) The first example is called the sliding assignment.
+S012 [01:00] (c2.slide.1) We start with all three flip-flops at zero, drawn in the table's order, with flip-flop A on the right.
+S013 [01:08] (c2.slide.1) On the first edge of the clock, a one enters flip-flop A.
+S014 [01:13] (c2.slide.1) On the next edge, it slides along to flip-flop bee, and a second one enters behind it.
+S015 [01:18] (c2.slide.2) On the third edge, both ones slide along together.
+S016 [01:23] (c2.slide.2) On the fourth, the first one drops off the far end.
+S017 [01:27] (c2.slide.2) On the fifth, the second one drops off too, and every flip-flop is back at zero.
+S018 [01:33] (c2.slide.2) So the five states get the codes zero zero zero, zero zero one, zero one one, one one zero, and one zero zero, and then round again.
+S019 [01:46] (c2.slide.3) Why send in two ones?
+S020 [01:50] (c2.slide.3) The output must be one in two of the five states, and we'd like to take it straight from a flip-flop.
+S021 [01:57] (c2.slide.3) A single one passing through would hold each flip-flop at one for just one state.
+S022 [02:04] (c2.slide.3) Two of them, one right behind the other, hold each flip-flop at one for two states in a row.
+S023 [02:10] (c2.slide.4) Check it on the columns.
+S024 [02:13] (c2.slide.4) Flip-flop A reads zero, one, one, zero, zero.
+S025 [02:19] (c2.slide.4) Flip-flop bee reads zero, zero, one, one, zero.
+S026 [02:24] (c2.slide.4) And flip-flop see reads three zeros, then two ones.
+S027 [02:29] (c2.slide.4) Each is high for two states and low for three, the waveform we want.
+S028 [02:34] (c2.slide.4) In fact they're the same waveform, each one period behind the last.
+S029 [02:39] (c2.slide.4) The specification never says where the output's cycle should start, so any of the three can be the output.
+S030 [02:51] (c2.logic.1) Here's the transition table for the sliding assignment.
+S031 [02:55] (c2.logic.1) Each state's next state is simply the code that follows it in the sequence.
+S032 [03:00] (c2.logic.1) Three patterns never occur: zero one zero, one zero one, and one one one.
+S033 [03:08] (c2.logic.1) Notice that zero one zero is unused here, though the binary count used it.
+S034 [03:14] (c2.logic.1) Which patterns are unused depends on the assignment.
+S035 [03:17] (c2.logic.2) Now plot a K-map for the input of flip-flop A, with the unused states as don't cares, just as in part one.
+S036 [03:26] (c2.logic.2) The next value of flip-flop A is one in just two states, zero zero zero and zero zero one.
+S037 [03:34] (c2.logic.2) They sit side by side, so they make a pair, and the input to flip-flop A is not bee and not see.
+S038 [03:42] (c2.logic.2) The don't cares can't make a bigger group, so we leave them out.
+S039 [03:46] (c2.logic.3) For the other two flip-flops, you don't even need a K-map.
+S040 [03:50] (c2.logic.3) Look at the column for flip-flop A in the current state.
+S041 [03:54] (c2.logic.3) It reads zero, one, one, zero, zero.
+S042 [03:58] (c2.logic.3) Now look at the column for flip-flop bee in the next state.
+S043 [04:03] (c2.logic.3) It's exactly the same.
+S044 [04:07] (c2.logic.3) So dee bee equals A, which is just a wire.
+S045 [04:10] (c2.logic.3) In the same way, the current column for bee matches the next column for see, so dee see equals bee.
+S046 [04:18] (c2.logic.3) As the lecturer puts it, we like things where we don't have to do anything.
+S047 [04:23] (c2.logic.4) Put the three together.
+S048 [04:26] (c2.logic.4) Flip-flop bee copies A, and flip-flop see copies bee, on every edge of the clock.
+S049 [04:33] (c2.logic.4) That's a shift register, running from A to bee to see.
+S050 [04:37] (c2.logic.4) The only logic is the and gate at its input, and you can read it in words.
+S051 [04:43] (c2.logic.4) A new one enters flip-flop A only when bee and see are both zero.
+S052 [04:53] (c2.circ.1) Here's the sliding counter as a circuit, laid out the way the lecturer drew it in his simulator.
+S053 [04:58] (c2.circ.1) As in part one, the circuit puts flip-flop A on the left, so here the ones slide to the right.
+S054 [05:06] (c2.circ.1) Just one gate is needed, an and gate.
+S055 [05:10] (c2.circ.1) It takes the not-bee and not-see outputs, and feeds flip-flop A.
+S056 [05:15] (c2.circ.1) Then the output of flip-flop A is wired straight into the input of flip-flop bee, and the output of bee into flip-flop see.
+S057 [05:23] (c2.circ.2) It starts with all three flip-flops at zero, which is the first state in our table.
+S058 [05:30] (c2.circ.2) On every edge of the clock, the ones slide one place along.
+S059 [05:35] (c2.circ.2) The lecturer takes the output from flip-flop bee, though any of them would do.
+S060 [05:41] (c2.circ.2) It's high for two periods of the clock, then low for three, again and again.
+S061 [05:46] (c2.circ.3) So the sliding assignment uses the same three flip-flops as the binary count, but one gate instead of three.
+S062 [05:54] (c2.circ.3) It needs less wiring too, because two of its three inputs are plain wires from a neighbour.
+S063 [06:00] (c2.circ.3) Can we go further, and get rid of that last gate?
+S064 [06:09] (c2.ring.1) Next comes the shift register assignment, what the lecturer calls an even more egregious use of flip-flops.
+S065 [06:16] (c2.ring.1) Take a shift register, and connect the output of its last flip-flop back to the input of its first.
+S066 [06:21] (c2.ring.1) Now whatever is inside just cycles round and round.
+S067 [06:27] (c2.ring.2) Use five flip-flops, from flip-flop A to flip-flop ee, and put two ones side by side in the ring.
+S068 [06:34] (c2.ring.2) They have to be neighbours, so that each output stays high for two states in a row.
+S069 [06:40] (c2.ring.2) On every edge of the clock, the pair moves one step round the ring.
+S070 [06:45] (c2.ring.2) In the table's order, with flip-flop A on the right, the first state is zero zero zero one one.
+S071 [06:53] (c2.ring.2) The next is zero zero one one zero.
+S072 [06:56] (c2.ring.2) The pair moves one place left each time, and wraps round from the left end back to the right.
+S073 [07:04] (c2.ring.2) After five steps, it's back where it started.
+S074 [07:08] (c2.ring.3) That's five flip-flops for five states, two more than the minimum of three.
+S075 [07:13] (c2.ring.3) And just as before, every column reads one, one, zero, zero, zero, each starting at a different point in the cycle.
+S076 [07:23] (c2.ring.3) So any of the five flip-flops can be the output.
+S077 [07:30] (c2.wire.1) So what next-state logic does the ring need?
+S078 [07:35] (c2.wire.1) Remember, with dee flip-flops each input is just the next state.
+S079 [07:40] (c2.wire.1) The next-state column for flip-flop A reads zero, zero, zero, then one, one, exactly the current column for flip-flop ee.
+S080 [07:51] (c2.wire.1) So flip-flop A takes its input from ee, the last flip-flop.
+S081 [07:57] (c2.wire.1) The next column for flip-flop bee matches the current column for flip-flop A, so dee bee equals A.
+S082 [08:03] (c2.wire.1) The rest follow the same way.
+S083 [08:07] (c2.wire.1) Flip-flop see takes its input from bee, flip-flop dee from see, and flip-flop ee from dee.
+S084 [08:15] (c2.wire.2) That's no surprise, because it's exactly how the ring is wired.
+S085 [08:20] (c2.wire.2) Each flip-flop's input is the output of the flip-flop before it.
+S086 [08:25] (c2.wire.2) Laid out as a circuit, it's five flip-flops in a row, sharing one clock signal, with one long wire from the last back to the first.
+S087 [08:33] (c2.wire.2) There are no gates at all, only wires.
+S088 [08:39] (c2.wire.3) Five flip-flops can hold thirty-two patterns, and we use only five.
+S089 [08:44] (c2.wire.3) In the slide's words, unused states, lots!
+S090 [08:49] (c2.wire.3) Twenty-seven of them.
+S091 [08:52] (c2.wire.3) In the design they're just don't cares, and this time we never even drew a K-map.
+S092 [08:58] (c2.wire.3) Keep those twenty-seven in mind.
+S093 [09:00] (c2.wire.3) They come back in part three.
+S094 [09:04] (c2.trade.1) The slide sums up the ring in one line.
+S095 [09:07] (c2.trade.1) Two more flip-flops, but no logic and simple wiring.
+S096 [09:11] (c2.trade.1) The lecturer calls these last two designs just a couple of bits of fun.
+S097 [09:16] (c2.trade.1) But they show that you can build a working machine with no combinational logic at all, from flip-flops alone.
+S098 [09:23] (c2.trade.2) And sometimes that's the cheaper design.
+S099 [09:26] (c2.trade.2) On a modern chip, each flip-flop takes up only a little room.
+S100 [09:32] (c2.trade.2) Logic gates need wiring between them, and wiring takes up space.
+S101 [09:37] (c2.trade.2) So using more flip-flops to avoid the logic can be the better choice.
+S102 [09:42] (c2.trade.2) Those were the slide's two points in part one, about area and wiring.
+S103 [09:48] (c2.trade.3) Here's the scoreboard so far.
+S104 [09:50] (c2.trade.3) The binary count used three flip-flops and three gates.
+S105 [09:55] (c2.trade.3) Sliding used three flip-flops and one gate.
+S106 [09:59] (c2.trade.3) The ring uses five flip-flops and no gates at all.
+S107 [10:03] (c2.trade.3) None of them needs output logic.
+S108 [10:07] (c2.trade.3) So which is best depends on what you're trying to save.
+S109 [10:17] (c2.recap.1) To recap.
+S110 [10:19] (c2.recap.1) In the sliding assignment, two ones slide through three flip-flops.
+S111 [10:25] (c2.recap.1) Each flip-flop then gives the same waveform in a different phase, so any of them can be the output.
+S112 [10:33] (c2.recap.1) Where a current column matches a next-state column, that input is just a wire.
+S113 [10:39] (c2.recap.1) So the sliding counter needs just one and gate.
+S114 [10:43] (c2.recap.2) Then join the register into a ring of five, and each flip-flop simply copies the one before it, with no gates at all.
+S115 [10:51] (c2.recap.2) You spend flip-flops to save logic and wiring, and on a modern chip that can be the better deal.
+S116 [10:58] (c2.recap.2) Next time, we switch the ring on, and nothing happens.
+S117 [11:02] (c2.recap.2) Why?

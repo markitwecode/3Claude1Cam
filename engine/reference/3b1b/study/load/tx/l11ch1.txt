@@ -1,0 +1,137 @@
+S001 [00:00] (c1.hook.1) This is part one of Hyperbolic Functions and Conics.
+S002 [00:04] (c1.hook.1) Last time, in Lecture ten, you wrote cosine and sine with complex exponentials, E to the eye ex, and E to the minus eye ex.
+S003 [00:16] (c1.hook.2) Take the formula for cosine of ex.
+S004 [00:19] (c1.hook.2) Now lift out every eye.
+S005 [00:22] (c1.hook.2) What stays is E to the ex, plus E to the minus ex, all over two.
+S006 [00:28] (c1.hook.2) It looks almost the same, but it's built from real exponentials only, and it's a brand new function.
+S007 [00:35] (c1.hook.3) Here's a glimpse of where it leads.
+S008 [00:38] (c1.hook.3) On the left, cosine and sine carry a point round a circle.
+S009 [00:43] (c1.hook.3) On the right, this new function and its partner carry a point along a different curve, a hyperbola.
+S010 [00:52] (c1.hook.4) So, three questions.
+S011 [00:55] (c1.hook.4) What are these new functions?
+S012 [00:59] (c1.hook.4) How are they tied to cosine and sine?
+S013 [01:03] (c1.hook.4) And why are they called hyperbolic?
+S014 [01:07] (c1.hook.4) You'll answer the first two in this chapter.
+S015 [01:11] (c1.hook.4) The third takes a little longer.
+S016 [01:17] (c1.def.1) Here's last time's pair again.
+S017 [01:21] (c1.def.1) Cosine of ex is the sum of the two exponentials, over two.
+S018 [01:26] (c1.def.1) Sine of ex is their difference, over two eye.
+S019 [01:30] (c1.def.1) The lecture asks a simple question.
+S020 [01:33] (c1.def.1) What happens if the exponent is real, with no eye in it?
+S021 [01:40] (c1.def.2) Keep the shape, and use real exponentials.
+S022 [01:44] (c1.def.2) E to the ex, plus E to the minus ex, all over two, is the hyperbolic cosine, cosh of ex.
+S023 [01:52] (c1.def.2) Their difference over two is the hyperbolic sine, shine of ex.
+S024 [01:57] (c1.def.2) Look at its denominator.
+S025 [01:59] (c1.def.2) It's just two, with no eye this time.
+S026 [02:03] (c1.def.2) These are real functions.
+S027 [02:06] (c1.def.2) Feed them a real number, and you get a real number back.
+S028 [02:11] (c1.def.3) To see them, put both exponentials on one set of axes.
+S029 [02:16] (c1.def.3) E to the ex, in gold, climbs to the right.
+S030 [02:20] (c1.def.3) E to the minus ex, in purple, is its mirror image.
+S031 [02:24] (c1.def.3) Now stand at ex equals one.
+S032 [02:28] (c1.def.3) Here E to the ex is about two point seven two, and E to the minus ex is about zero point three seven.
+S033 [02:36] (c1.def.3) Cosh of one is their average, the point halfway between, about one point five four.
+S034 [02:41] (c1.def.4) Now slide across, taking the midpoint everywhere.
+S035 [02:45] (c1.def.4) The midpoints trace out cosh.
+S036 [02:49] (c1.def.4) Shine is half the gap between the two curves, gold minus purple.
+S037 [02:54] (c1.def.4) At ex equals one, that's about one point one eight.
+S038 [02:59] (c1.def.4) At zero, the curves cross, so the gap is zero.
+S039 [03:04] (c1.def.4) To the left, purple is on top, and shine goes negative.
+S040 [03:09] (c1.def.4) So cosh is the average of the two exponentials, and shine is half their difference.
+S041 [03:16] (c1.def.5) One more thing falls out.
+S042 [03:19] (c1.def.5) Add cosh and shine.
+S043 [03:22] (c1.def.5) The E to the minus ex terms cancel, and the two E to the ex terms, a half each, add up to one whole E to the ex.
+S044 [03:30] (c1.def.5) So E to the ex equals cosh of ex, plus shine of ex.
+S045 [03:35] (c1.def.5) Compare that with E to the eye ex, which is cosine of ex, plus eye times sine of ex.
+S046 [03:41] (c1.def.5) It's the same pattern, without the eye.
+S047 [03:47] (c1.family.1) Just as tangent is sine over cosine, the hyperbolic tangent is shine over cosh.
+S048 [03:53] (c1.family.1) Back at ex equals one, that's about one point one eight over one point five four, so tanch of one is about zero point seven six.
+S049 [04:03] (c1.family.1) Write both in exponentials, and the factors of a half cancel.
+S050 [04:07] (c1.family.1) What's left is the difference of the two exponentials, over their sum.
+S051 [04:14] (c1.family.2) About those names.
+S052 [04:17] (c1.family.2) The notes say how to pronounce them: cosh, shine, and tanch.
+S053 [04:24] (c1.family.2) In this series, cosine, sine and tangent always mean the circular functions, and cosh, shine and tanch always mean the hyperbolic ones.
+S054 [04:35] (c1.family.3) The circular functions have three reciprocals: secant, cosecant and cotangent.
+S055 [04:43] (c1.family.3) The hyperbolic ones copy them.
+S056 [04:47] (c1.family.3) The hyperbolic secant is one over cosh.
+S057 [04:51] (c1.family.3) The hyperbolic cosecant is one over shine.
+S058 [04:55] (c1.family.3) And the hyperbolic cotangent is one over tanch.
+S059 [04:59] (c1.family.3) On paper, each hyperbolic name is its circular parent, with one extra letter on the end.
+S060 [05:05] (c1.family.4) Here's a warning, because this one trips people up.
+S061 [05:09] (c1.family.4) The hyperbolic secant is one over cosh.
+S062 [05:13] (c1.family.4) That is a different thing from the inverse of cosh, written with a small minus one up top.
+S063 [05:20] (c1.family.4) The inverse is the function that undoes cosh, and it's built from logarithms.
+S064 [05:25] (c1.family.4) You'll meet it properly in part three.
+S065 [05:34] (c1.cosix.1) The new functions look like cousins of cosine and sine.
+S066 [05:38] (c1.cosix.1) Now let's find the exact family tie.
+S067 [05:42] (c1.cosix.1) Start from cosine of zed, where zed can be any complex number.
+S068 [05:47] (c1.cosix.1) It's E to the eye zed, plus E to the minus eye zed, all over two.
+S069 [05:52] (c1.cosix.2) Here's the trick from the notes.
+S070 [05:55] (c1.cosix.2) Put zed equal to eye times ex, where ex can be complex too.
+S071 [06:00] (c1.cosix.2) The first exponent becomes eye, times eye ex.
+S072 [06:05] (c1.cosix.2) That's eye squared, times ex.
+S073 [06:09] (c1.cosix.2) And eye squared is minus one.
+S074 [06:12] (c1.cosix.2) So E to the eye zed turns into E to the minus ex.
+S075 [06:17] (c1.cosix.2) In the second exponent, the minus in front meets eye squared, and two minuses make a plus.
+S076 [06:24] (c1.cosix.2) You get E to the ex.
+S077 [06:27] (c1.cosix.3) Look at what happened.
+S078 [06:30] (c1.cosix.3) The two exponentials have swapped places.
+S079 [06:34] (c1.cosix.3) But you can add in any order, so the sum is unchanged.
+S080 [06:38] (c1.cosix.3) It's E to the ex, plus E to the minus ex, over two, which is exactly cosh of ex.
+S081 [06:46] (c1.cosix.3) So cosine of eye ex equals cosh of ex.
+S082 [06:53] (c1.cosix.4) Try it with ex equal to one.
+S083 [06:56] (c1.cosix.4) The cosine of eye is cosh of one, about one point five four.
+S084 [07:02] (c1.cosix.4) That's the midpoint you found on the graph.
+S085 [07:06] (c1.cosix.4) So here's a cosine bigger than one.
+S086 [07:10] (c1.cosix.4) On the real line, cosine is stuck between minus one and one.
+S087 [07:15] (c1.cosix.4) Once you step off the real line, it breaks free.
+S088 [07:22] (c1.sinix.1) Now the same trick with sine.
+S089 [07:25] (c1.sinix.1) Sine of zed is E to the eye zed, minus E to the minus eye zed, all over two eye.
+S090 [07:33] (c1.sinix.1) Put zed equal to eye ex, and once again the two exponentials swap.
+S091 [07:38] (c1.sinix.1) But this time, order matters.
+S092 [07:42] (c1.sinix.1) The difference comes out backwards, E to the minus ex, minus E to the ex, over two eye.
+S093 [07:48] (c1.sinix.2) Turn it round by pulling out a minus sign.
+S094 [07:51] (c1.sinix.2) Now the bracket reads E to the ex, minus E to the minus ex, and in front sits minus one over two eye.
+S095 [07:59] (c1.sinix.2) This next step is where people drop a sign, so let's go slowly.
+S096 [08:05] (c1.sinix.3) What is one over eye?
+S097 [08:08] (c1.sinix.3) Multiply the top and the bottom by eye.
+S098 [08:12] (c1.sinix.3) The top becomes eye.
+S099 [08:16] (c1.sinix.3) The bottom becomes eye squared, which is minus one.
+S100 [08:20] (c1.sinix.3) So one over eye is minus eye.
+S101 [08:23] (c1.sinix.3) That turns minus one over two eye into plus eye over two.
+S102 [08:27] (c1.sinix.3) The two minus signs cancel.
+S103 [08:31] (c1.sinix.4) What's left is eye, times half the difference of the exponentials.
+S104 [08:36] (c1.sinix.4) And half their difference is shine of ex.
+S105 [08:40] (c1.sinix.4) So sine of eye ex equals eye times shine of ex.
+S106 [08:46] (c1.sinix.4) Compared with the cosine, there's an extra eye in front.
+S107 [08:50] (c1.sinix.4) If you ever get minus eye instead, go back and check the one over eye step.
+S108 [08:55] (c1.sinix.5) Tangent comes for free.
+S109 [08:58] (c1.sinix.5) Divide the sine of eye ex by the cosine of eye ex.
+S110 [09:02] (c1.sinix.5) That's eye times shine of ex, over cosh of ex.
+S111 [09:07] (c1.sinix.5) And shine over cosh is tanch.
+S112 [09:10] (c1.sinix.5) So tangent of eye ex equals eye times tanch of ex.
+S113 [09:19] (c1.dict.1) Put the three results together, and you get a small dictionary between the two worlds.
+S114 [09:24] (c1.dict.1) The notes stress that these hold for every complex ex, and not only for real ones.
+S115 [09:30] (c1.dict.1) Nothing in the working needed ex to be real.
+S116 [09:34] (c1.dict.1) Try a properly complex ex, one plus two eye.
+S117 [09:38] (c1.dict.1) Work out both sides, and they come out the same.
+S118 [09:41] (c1.dict.2) Reading across the card, cosine turns into cosh with no change at all.
+S119 [09:46] (c1.dict.2) Sine and tangent turn into shine and tanch, with an extra eye in front.
+S120 [09:51] (c1.dict.2) You can also read it backwards.
+S121 [09:55] (c1.dict.2) Cosh of ex is cosine of eye ex.
+S122 [09:58] (c1.dict.2) And shine of ex is minus eye, times sine of eye ex.
+S123 [10:05] (c1.dict.3) So what does the dictionary buy you?
+S124 [10:08] (c1.dict.3) First, every identity for cosine and sine becomes one for cosh and shine, sometimes with a sign flipped.
+S125 [10:16] (c1.dict.3) That's Part two.
+S126 [10:19] (c1.dict.3) Second, the cosine of any complex number splits into a real part and an imaginary part, built from cosine, sine, cosh and shine of real numbers.
+S127 [10:28] (c1.dict.3) That's Part four, where you'll find every zed whose cosine is two.
+S128 [10:36] (c1.recap.1) Let's recap.
+S129 [10:38] (c1.recap.1) Cosh is the average of E to the ex and E to the minus ex, and shine is half their difference.
+S130 [10:45] (c1.recap.1) Tanch is shine over cosh, and the three reciprocals are one over cosh, one over shine, and one over tanch.
+S131 [10:53] (c1.recap.1) One over cosh is the hyperbolic secant, a different thing from the inverse of cosh.
+S132 [10:59] (c1.recap.2) Putting an eye inside a cosine turns it into a cosh.
+S133 [11:04] (c1.recap.2) For sine and tangent, an extra eye comes out in front.
+S134 [11:09] (c1.recap.2) And this dictionary holds for every complex number, not only for real ones.
+S135 [11:15] (c1.recap.3) Next time, start from an identity you know well: cosine squared of ex, plus sine squared of ex, equals one.
+S136 [11:25] (c1.recap.3) Cosh and shine have a twin of it, with the plus flipped to a minus.
+S137 [11:29] (c1.recap.3) And that minus sign is where the name hyperbolic comes from.

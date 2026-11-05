@@ -1,0 +1,56 @@
+{
+  "title": "Oscillations",
+  "course_line": "NST IA Mathematics · Lecture 10",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every formula and number with Python 3.11: system `python3` (/Library/Frameworks/Python.framework/Versions/3.11/bin/python3) with the standard library `cmath`/`math`, and sympy 1.14.0 for symbolic identities, e.g. `python3 -c 'import cmath; print(cmath.exp(0.2*cmath.log(2j)))'`. Note: cmath.log gives the principal value only; add 2j*cmath.pi*n for the others. (The engine venv has numpy 2.4.6 but no sympy.)",
+  "sources": [
+    {
+      "path": "../source/Chapter234_to_annotate.pdf",
+      "pages": "27-28 (printed 108-109)",
+      "note": "typeset notes, §2.6 Oscillation problems. p27: the opening (pendulum, AC circuits, waves; DEs next term), the pendulum paragraph with ω = √(g/l), (81) x = a cos ωt + b sin ωt, the boxed 'simple harmonic motion', Figure 24 (arrow tip red, shadow green, angle labelled θ), (82) x = ℜ[A exp(iωt)], the boxed 'complex amplitude', A = a − ib. p28: (83) v = ℜ[iωA exp(iωt)], 'multiply by iω before taking the real part', the example x(0) = c, ẋ(0) = √3cω ⇒ A = c(1 − i√3) = 2c e^{−iπ/3}, x = 2c cos(ωt − ⅓π). Example 32 (p28 bottom) is out of scope (old part 7). Text extraction drops symbols: render the pages (pdftoppm -r 110 -png)"
+    },
+    {
+      "path": "../source/Lecture10_scanned.pdf",
+      "pages": "10, 12 (oscillation part only)",
+      "note": "the lecturer's handwriting. p10 (notes p108) is scanned UPSIDE DOWN: rotate 180°. It has the margin pendulum sketch (hatched ceiling, l, m, x(t), g), 'A ∈ ℂ', 'A = c̃ + id̃', 'e^{iωt} = cos ωt + i sin ωt', 'Re(Ae^{iωt}) = c̃ cos ωt − d̃ sin ωt' with c̃ = a, −d̃ = b. p12: the heading 'each oscillating quantity via complex amplitudes' and the three rules (Re and d/dt commute; e^{iωt} on two sides of eq → cancel; (e^{iωt})′ = iω e^{iωt}). The rest of p12, and p11, are the circuit (out of scope)"
+    },
+    {
+      "path": "../source/l10-lecture.transcript.md",
+      "pages": "00:41:45-00:46:18; 00:50:59-00:51:48 (the rules); 00:56:12 (student question)",
+      "note": "Whisper transcript of l10-lecture.mp4. Per-chapter ranges in PLAN.md. Slips: 'EI omega T' = e^{iωt}, 'C plus ID' = c + id, 'brings about I omega' = iω; 00:44:38 is the integrals remark (ch4 s6)"
+    },
+    {
+      "path": "../source/l10-lecture.digest.md",
+      "pages": "segments 00:41:45-00:44:34, 00:44:34-00:46:18, 00:50:00-00:52:21, 00:55:46-00:57:17",
+      "note": "Gemini digest: screen text, the pendulum sketch, Figure 24, the student question. It calls Figure 24's shadow the red dot (green in the notes) and drops the scan's tildes; the notes and scan win"
+    },
+    {
+      "path": "../source/l10-lecture.mp4",
+      "pages": "00:41:45-00:46:18",
+      "note": "the recording, for frames of the board if a brief needs one"
+    },
+    {
+      "path": "../source/M26examples1 (2).pdf",
+      "pages": "9 (F19)",
+      "note": "Examples Sheet I, F19: x = 7 + 24 cos 3t + 7 sin 3t, X = (24 − 7i)e^{3it}. Hint ladder and solution in ch4 s4-s5 (answers: amplitude 25; t ≈ 0.618, 1.665; distances 32 and 18). The sheet's 'Ae^{iϕ}, A and ϕ real' uses A for the real amplitude: mapped once (PLAN.md Notation). p8 has no oscillation questions"
+    },
+    {
+      "path": "../l10-complex-roots-logs/PLAN.md",
+      "pages": "conventions; Chapter 6",
+      "note": "context, not material: L10's notation, colours and voice rules (apply unless PLAN.md says otherwise); its Chapter 6 is the old version of this material"
+    },
+    {
+      "path": "../l10-complex-roots-logs/script/ch6_oscillations.md",
+      "pages": "all",
+      "note": "context: the old part 6 script (took ω = √(g/l) as given, reached ẍ = −ω²x only at the end); this pilot reverses both"
+    },
+    {
+      "path": "../l10-complex-roots-logs/script/ch2_de_moivre.md",
+      "pages": "scene 6 (c2.expo.1-4)",
+      "note": "context: the two-arrows picture of cos θ the user called 'elite'; ch2 s6 and ch3 s2 bring it back, moving in time"
+    }
+  ],
+  "created": "2026-11-04",
+  "style": "deep",
+  "resolution": "1440p"
+}

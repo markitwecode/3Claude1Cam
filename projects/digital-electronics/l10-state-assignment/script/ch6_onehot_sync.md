@@ -1,0 +1,139 @@
+# Chapter 6 · One-hot, straight from the diagram
+
+Digital Electronics, Lecture 10 (State Assignment), part 6 of 6. Source: slides `combined_26.pdf` pp. 141 (second slide, "re-implement the synchroniser using a 1 hot approach")–143, with p. 144's first slides as the next-lecture teaser; recording 00:51:53–00:59:56 (it ends as the last slide is discussed).
+
+Format: `[id]` starts a narration line, spoken exactly as written (numbers and identifiers
+spelled the way they're *said*). `{mark}` is a cue point; `{pause}` / `{pause=1.5}` is a
+deliberate hold. `>` lines are the visual brief.
+
+---
+
+## Scene 1 · Hook (ch6_s1_hook)
+
+> Title card on {title}: "State Assignment", "Digital Electronics · Lecture 10", "Part 6 · One-hot, straight from the diagram"; it clears on {last}. Conventions as in ch5: state bits s2 s1 s0 GREEN, inputs e and r BLUE, D inputs BLUE, the output s GREEN, the hot 1 of a one-hot code GOLD (ch4), unused patterns DIM, K-map loops PINK/PURPLE/TEAL; products with a centred dot, sums with +, NOT as an overbar, a prime only for "next state". Every table, equation, simplification, arc rule and gate count in this chapter was checked by exhaustive enumeration (Python 3.11.9, standard library, itertools.product over states and inputs); no code on screen.
+> {last}: ch5 s3's state diagram returns exactly, the same object (p. 139's layout: Sync top left, Hunt top right, Sight below). Arcs: Hunt loop `\overline{r}`; Hunt → Sight `r`; Sight loop `\overline{e}`; Sight → Sync `e\cdot r`; Sight → Hunt `e\cdot\overline{r}`; Sync has two loops, `\overline{e}` and `e\cdot r`; Sync → Hunt `e\cdot\overline{r}`. Codes under the names as in ch5: Sync [10], Hunt [00], Sight [01], with "FF labels [s1 s0]".
+> {kmaps}: beside it, small copies of ch5 s6–s7's two 4 × 4 K-maps with their loops, and their results `D_1 = s_1\cdot\overline{e} + s_1\cdot r + s_0\cdot e\cdot r` and `D_0 = s_0\cdot\overline{e} + \overline{s_1}\cdot\overline{s_0}\cdot r`.
+> {same}: the K-maps dim and slide to the edge; the diagram stays. A small inset of ch4 s2's row of flip-flops with its single GOLD 1 stepping along, tagged "Part 4: one-hot".
+> {codes}: each code under a state name morphs into its one-hot code: Sync [100], Hunt [001], Sight [010], the 1 in each GOLD; the corner label becomes "FF labels [s2 s1 s0]". Below the diagram, two D flip-flop boxes (L6's `make_ff`) gain a third.
+> {question}: a YELLOW "+1 flip-flop" over the new box, and a YELLOW "?" between it and the dimmed K-maps. {answer}: the K-maps fade out completely; a brief shimmer runs along the diagram's arcs (they become the subject of s6).
+
+[c6.hook.1] {title} This is the last part of our lecture on state assignment. {last} Last time, we built the frame synchroniser, with its three states, Hunt, Sight and Sync. {kmaps} Two flip-flops were enough, but each of their inputs took a four-variable K-map, with don't cares to plot and groups to find. {pause}
+
+[c6.hook.2] {same} Now we take the very same state diagram, and build it in the style from Part four, one-hot. {codes} One flip-flop per state, so three flip-flops instead of two. {question} What does that one extra flip-flop buy us? How much easier does the design get? {pause} {answer} By the end, you'll write the whole design straight from the diagram, with no K-maps at all.
+
+## Scene 2 · Three flip-flops, one per state (ch6_s2_codes)
+
+> s1's diagram (one-hot codes) moves to the left half; p. 141's labels beside it, verbatim: "FF labels [s2 s1 s0]". {assign}: the label's three letters light left to right. {hunt}, {sight}, {sync}: each state's code pulses in turn, its GOLD 1 brightening.
+> {hot}: under the diagram, three D flip-flop boxes in a row (L6's `make_ff`), outputs `s_2`, `s_1`, `s_0` (GREEN) left to right, in the order the codes read. The GOLD 1 sits in the current state's box. {hop}: a YELLOW dot walks the diagram Hunt → Sight → Sync, and at each step the GOLD 1 hops to that state's box (ch4's travelling 1).
+> {names}: name tags appear under the boxes in YELLOW, "Sync" under s2, "Sight" under s1, "Hunt" under s0. These tags stay on every flip-flop and every s-variable label for the rest of the chapter.
+> {careful}: a small inset of ch5 s4's codes (Hunt 00, Sight 01, Sync 10; columns s1 s0), its s1 column lit, tag "Part 5: s1 = high bit, 1 only in Sync". {now}: beside it the one-hot s1 box with its "Sight" tag, tag "Part 6: s1 = Sight"; a YELLOW "≠" between the two s1s. The inset then fades.
+> {output}: p. 141's text, verbatim: "An output, s should be true if in Sync state". {inspect}: the Sync box's output gets a GREEN wire labelled `s`, and the slide's "From inspection, s = s2" (`s = s_2`).
+> {table}: p. 142's table builds on the right in ch5 s5's layout: headers "Current state" `s_2\ s_1\ s_0` (GREEN) | "Input" `e\ r` (BLUE) | "Next state" `s_2'\ s_1'\ s_0'` (GREEN), with group lines between the Hunt, Sight and Sync rows as on the slide. {row1}: `0 0 1 | X 0 | 0 0 1`, while Hunt's `\overline{r}` loop lights YELLOW on the diagram. {row2}: `0 0 1 | X 1 | 0 1 0`, with the Hunt → Sight arc lit. {rest}: the other six rows arrive one by one, each lighting its arc: `0 1 0 | 0 X | 0 1 0`, `0 1 0 | 1 0 | 0 0 1`, `0 1 0 | 1 1 | 1 0 0`, `1 0 0 | 0 X | 1 0 0`, `1 0 0 | 1 0 | 0 0 1`, `1 0 0 | 1 1 | 1 0 0`. The current-state 1s are GOLD.
+> {unused}: to the side, all eight 3-bit patterns as small chips; the three used ones light GOLD-and-GREEN. {five}: the other five, 000, 011, 101, 110, 111, go DIM. {notlisted}: a ghost of ch5 s5's last row "1 1 | X X | X X" appears under the table and fades: nothing is added this time. {why}: the three used chips glow. The table and diagram carry into s3.
+
+[c6.codes.1] {assign} Here are the one-hot codes, read as ess two, ess one, ess zero. {hunt} Hunt is zero, zero, one. {sight} Sight is zero, one, zero. {sync} And Sync is one, zero, zero. {hot} In every state, exactly one flip-flop holds a one. {hop} As the machine moves from Hunt to Sight to Sync, the one hops from one flip-flop to the next.
+
+[c6.codes.2] {names} So each flip-flop stands for one state, and we'll call it by that state's name. Flip-flop ess zero is the Hunt flip-flop, ess one is the Sight flip-flop, and ess two is the Sync flip-flop. {careful} Careful here. In Part five, ess one was the high bit of a binary code. {now} Now it's the Sight flip-flop. Same name, new meaning, so the state names stay on the labels.
+
+[c6.codes.3] {output} The output, ess, should be one only in Sync. {inspect} The Sync flip-flop is one in Sync and nowhere else. So by inspection, the output ess equals ess two, and once again there's no output logic.
+
+[c6.codes.4] {table} Now the state transition table. It's the same machine, so the same transitions, only with the new codes. {row1} The lecturer does the first two rows. In Hunt, if ar is zero, we stay in Hunt, zero, zero, one, whatever ee is. {row2} If ar is one, we go to Sight, zero, one, zero, again whatever ee is. {rest} The other six rows come from the diagram in just the same way.
+
+[c6.codes.5] {unused} Three flip-flops have eight patterns, and we use only three of them. {five} The other five, like all zeros, or all ones, are unused. {notlisted} This time, the table leaves them out completely. {why} Everything that follows relies on the machine staying in the three states we use.
+
+## Scene 3 · Equations without K-maps (ch6_s3_inspect)
+
+> s2's table on the left (same object), the diagram small in the top right. Under the table, p. 142's note, verbatim: "Remember when interpreting this table, because of the 1-hot shift structure, only 1 FF is 1 at a time, consequently it is straightforward to write down the next state equations". {note}: the note's "only 1 FF is 1 at a time" lights YELLOW.
+> {row}: row `0 1 0 | 1 1 | 1 0 0` lights. {full}: to its right, the full product term for that row, `\overline{s_2}\cdot s_1\cdot\overline{s_0}\cdot e\cdot r`, tag "Part 5 style: the whole code". {drop}: the row's GOLD 1 under s1 glows; `\overline{s_2}` and `\overline{s_0}` grey out and slide away, leaving `s_1\cdot e\cdot r`.
+> {d2}: the `s_2'` column boxed BLUE, its three 1s lit (rows 010 11, 100 0X, 100 11); the s1' and s0' columns dim. {t1}, {t2}, {t3}: each lit row sends its term to the right (TransformFromCopy: the hot flip-flop's name from the current state, the conditions from the inputs), building p. 142's "For FF 2:" line, `D_2 = s_1\cdot e\cdot r + s_2\cdot\overline{e} + s_2\cdot e\cdot r`. {sum}: the two + signs light. Each term's state variable is GREEN with its name tag, inputs BLUE, `D_2` BLUE.
+> {xrule}: back on row `1 0 0 | 0 X | 1 0 0`, the X under r flashes and an empty slot after `s_2\cdot\overline{e}` closes up; small caption "X under an input: that input drops out".
+> {d1}: the `s_1'` column boxed BLUE, rows 001 X1 and 010 0X lit. {d1eq}: p. 142's "For FF 1:" line, `D_1 = s_0\cdot r + s_1\cdot\overline{e}`.
+> {d0}: the `s_0'` column boxed BLUE. {u1}, {u2}, {u3}: rows 001 X0, 010 10, 100 10 light in turn, each sending its term. {d0eq}: p. 142's "For FF 0:" line, `D_0 = s_0\cdot\overline{r} + s_1\cdot e\cdot\overline{r} + s_2\cdot e\cdot\overline{r}`.
+> {nokmap}: the three lines stack, each tagged with its state's name (Sync, Sight, Hunt), and a ghost of ch5's two K-maps fades away beside them. The three lines carry into s4. (The lecturer misspeaks "S2" for a moment at 00:57:02; the term is `s_1\cdot\overline{e}` as on the slide.)
+
+[c6.inspect.1] {note} Now for the payoff. The slide reminds us that only one flip-flop is one at a time. {row} Take this row, Sight with ee and ar both one, which goes to Sync. {full} In Part five, a row's term had to spell out the whole code, every state bit. {drop} But if the Sight flip-flop is one, the other two are zero, by definition. So naming the hot flip-flop is enough, and the term is just ess one, and ee, and ar.
+
+[c6.inspect.2] {d2} Let's write dee two, the input to the Sync flip-flop. Look down the next-state column for ess two, and find its ones. {t1} The first is the row we just read, ess one, and ee, and ar. {t2} The second is Sync with ee at zero, which gives ess two and not ee. {t3} The third is Sync with ee and ar both one, which gives ess two, and ee, and ar. {sum} So dee two is the or of those three terms.
+
+[c6.inspect.3] {xrule} Notice what a don't care in the inputs does. In the Sync row with ee at zero, the value of ar makes no difference, so ar simply drops out of the term. {d1} Next, dee one, for the Sight flip-flop. Its ones are Hunt with ar at one, and Sight with ee at zero. {d1eq} So dee one is ess zero and ar, or ess one and not ee.
+
+[c6.inspect.4] {d0} Finally, dee zero, for the Hunt flip-flop, has three ones. {u1} Hunt with ar at zero, {u2} Sight with ee at one and ar at zero, {u3} and Sync with ee at one and ar at zero. {d0eq} So dee zero is ess zero and not ar, or ess one, and ee, and not ar, or ess two, and ee, and not ar. {pause} {nokmap} That's all three inputs, written down just by looking at the table. As the lecturer said, there's no need for K-maps, because the other flip-flops are zero by definition.
+
+## Scene 4 · Using "exactly one is hot" (ch6_s4_onehot_rule)
+
+> s3's three lines stacked top left (same objects, name tags kept). {tidy}: they shift up to make room. {sum}: p. 142's text, verbatim: "Simplification is possible since:" and `s_2 + s_1 + s_0 = 1`.
+> {check}: a small table of the three used codes appears, rows Hunt `0 0 1`, Sight `0 1 0`, Sync `1 0 0` (GOLD 1s), with two new columns `\overline{s_0}` and `s_1 + s_2`; the Sight and Sync rows fill first, 1 | 1 and 1 | 1. {other}: the Hunt row fills, 0 | 0. {result}: the two columns get GREEN ticks, and p. 142's line appears: "so, `\overline{s_0} = s_1 + s_2`, hence,". Under it, small: "not Hunt = Sight or Sync".
+> {d2}: D2's line moves to centre. {pair}: `s_1\cdot e\cdot r` and `s_2\cdot e\cdot r` turn YELLOW. {factor}: they merge into `(s_1 + s_2)\cdot e\cdot r`. {swap}: the bracket transforms into `\overline{s_0}`. {final}: p. 142's line, `D_2 = \overline{s_0}\cdot e\cdot r + s_2\cdot\overline{e}`.
+> {read}: the diagram, small, on the right: Sight and Sync glow together ("not Hunt") and the two arcs with `e\cdot r` into Sync light (Sight → Sync and Sync's `e\cdot r` loop), over the first term. {stay}: Sync's `\overline{e}` loop lights over the second term.
+> {caveat}: the five DIM unused chips from s2 return. {zero}: a fourth row joins the check table, the unused pattern `0 0 0`: `\overline{s_0}` = 1, `s_1 + s_2` = 0, a RED cross; caption "used states only". {fine}: the chips stay DIM. {part3}: a tiny DIM thumbnail of ch3's ring with unused states leading in, tagged "Part 3". (Checked: the raw and simplified forms of D2 and D0 agree in all three used states and differ only in the unused patterns 000, 011, 101, 111.)
+
+[c6.rule.1] {tidy} These equations are correct, but they can be tidied, using the same fact once more. {sum} In every used state exactly one flip-flop is one, so ess two or ess one or ess zero is always one. {check} Now think about the Hunt flip-flop. If ess zero is zero, the machine is somewhere other than Hunt, so one of the other two must be hot. {other} And if S zero is one, the other two are both zero. {pause} {result} So not S zero is the same as S one or S two. In words, not in Hunt means in Sight or in Sync.
+
+[c6.rule.2] {d2} Use it on dee two. {pair} Two of its terms end in ee and ar, one with ess one and the other with ess two. {factor} Take ee and ar outside a bracket, and ess one or ess two is left inside. {swap} That bracket is just not S zero. {final} So dee two is not ess zero, and ee, and ar, or ess two and not ee. {pause}
+
+[c6.rule.3] {read} Read it as a sentence. You'll be in Sync next if you're past the hunting stage and the sequence arrives just when it's expected, {stay} or if you're in Sync already and you are not expecting the sequence yet.
+
+[c6.rule.4] {caveat} One warning. This trick holds only in the used states. {zero} In the unused pattern zero, zero, zero, for example, not S zero is one, but S one or S two is zero. {fine} That's fine, because a working machine never visits those patterns. {part3} Part three was about what happens when one starts there anyway.
+
+## Scene 5 · Simplifying D0 (ch6_s5_d0)
+
+> {d0}: D0's line from s3, centre top: `D_0 = s_0\cdot\overline{r} + s_1\cdot e\cdot\overline{r} + s_2\cdot e\cdot\overline{r}`. Each step appears as a new line under the last, aligned on the = sign, as on p. 142. s4's `\overline{s_0} = s_1 + s_2` stays small in the top-left corner.
+> {pair}: the last two terms turn YELLOW. {swap}: they merge into `(s_1 + s_2)\cdot e\cdot\overline{r}`, the bracket flashes against the corner rule and becomes `\overline{s_0}`: p. 142's line `D_0 = s_0\cdot\overline{r} + \overline{s_0}\cdot e\cdot\overline{r}`. {out}: both `\overline{r}`s turn YELLOW and pull out to the front: `D_0 = \overline{r}\cdot(s_0 + \overline{s_0}\cdot e)` (ours; the slide skips this line). {bracket}: the bracket boxed.
+> {inside}: the bracket lifts out on its own line. {law}: a small tag, "distributive law (OR over AND): `A + B\cdot C = (A + B)\cdot(A + C)`". {split}: `s_0 + \overline{s_0}\cdot e = (s_0 + \overline{s_0})\cdot(s_0 + e)`. {one}: `(s_0 + \overline{s_0})` boxed GREEN, becomes `1`. {result}: `s_0 + e`. Then p. 142's line `D_0 = \overline{r}\cdot(s_0 + \overline{s_0})\cdot(s_0 + e)` slots in under the earlier lines.
+> {table}: truth table (ours, checked), headers `s_0` `e` | `\overline{s_0}\cdot e` | `s_0 + \overline{s_0}\cdot e` | `s_0 + e`; rows `0 0 | 0 | 0 | 0`, `0 1 | 1 | 1 | 1`, `1 0 | 0 | 1 | 1`, `1 1 | 0 | 1 | 1`. {s0one}: the two s0 = 1 rows light, both last columns 1. {s0zero}: the two s0 = 0 rows light, the e column linked to both last columns. {same}: the last two columns GREEN, ticks. {rule}: the general form in YELLOW, `A + \overline{A}\cdot B = A + B`.
+> {final}: p. 142's last line, `D_0 = \overline{r}\cdot(s_0 + e) = \overline{r}\cdot s_0 + \overline{r}\cdot e`.
+> {meaning}: the diagram, small, on the right: Hunt glows; the three arcs into Hunt (its `\overline{r}` loop, Sight → Hunt `e\cdot\overline{r}`, Sync → Hunt `e\cdot\overline{r}`) light YELLOW. {stay}: the `\overline{e}` loops of Sight and Sync flash, and a small `D_0 = 0` appears beside each.
+
+[c6.dzero.1] {d0} Now dee zero, the input to the Hunt flip-flop. {pair} Its last two terms both end in ee and not ar, one with ess one and the other with ess two. {swap} Factor them in the same way, and ess one or ess two becomes not ess zero. {out} Now both terms contain not ar, so take that outside too. {bracket} So dee zero is not ar, and a bracket holding ess zero, or not ess zero and ee.
+
+[c6.dzero.2] {inside} That bracket simplifies. {law} Use the distributive law, the one where or spreads over and. {split} The bracket becomes S zero or not S zero, and S zero or ee. {one} The first part, S zero or not S zero, is always one, {result} so all that's left is S zero or ee.
+
+[c6.dzero.3] {table} If that step feels slippery, check it in a table. It has only four rows. {s0one} When ess zero is one, both sides are one. {s0zero} When ess zero is zero, both sides just copy ee. {same} The last two columns match, row for row. {rule} It's a pattern worth remembering, shown here in general.
+
+[c6.dzero.4] {final} So dee zero is not ar, and S zero or ee. Multiplied out, that's S zero and not ar, or ee and not ar. {meaning} Read it as a sentence. You'll be in Hunt next whenever the sequence is absent, and either you were hunting already, or you were expecting it. {stay} And in Sight, or in Sync, with ee at zero, dee zero stays zero, so the machine stays put, just as the diagram says.
+
+## Scene 6 · Straight from the diagram (ch6_s6_arcs)
+
+> The table is gone. The diagram, large, left of centre (one-hot codes, name tags). On the right, p. 143's first slide text, verbatim: "Note that it is not strictly necessary to write down the state table, since the next state equations can be obtained from the state diagram" / "It can be seen that for each state variable, the required equation is given by terms representing the incoming arcs on the graph". {skip}: a ghost of s2's table fades out.
+> {rule}: the slide's "incoming arcs" lights YELLOW. {term}: a template under it: "[flip-flop of the state the arc leaves] · [condition on the arc]", the first slot GREEN, the second BLUE.
+> {sync}: the Sync circle glows YELLOW; Hunt and Sight dim. {a1}: the Sight → Sync arc lights YELLOW; `s_1` (GREEN) lifts from Sight's name tag and `e\cdot r` (BLUE) from the arc label, and they join as `s_1\cdot e\cdot r`. {a2}: Sync's `\overline{e}` loop lights, giving `s_2\cdot\overline{e}`. {a3}: Sync's `e\cdot r` loop lights, giving `s_2\cdot e\cdot r`. {d2}: the three join into p. 143's line, "For example, for FF 2: `D_2 = s_1\cdot e\cdot r + s_2\cdot\overline{e} + s_2\cdot e\cdot r`", and s3's D2 line slides in under it with a GREEN tick.
+> {loops}: both Sync loops pulse. {sight}: Sight glows; the Hunt → Sight `r` arc and Sight's `\overline{e}` loop light. {d1}: `D_1 = s_0\cdot r + s_1\cdot\overline{e}`, GREEN tick against s3's line. {hunt}: Hunt glows; its `\overline{r}` loop, Sight → Hunt `e\cdot\overline{r}` and Sync → Hunt `e\cdot\overline{r}` light. {d0}: `D_0 = s_0\cdot\overline{r} + s_1\cdot e\cdot\overline{r} + s_2\cdot e\cdot\overline{r}`, GREEN tick (checked: the arc rule equals s3's equations for all 32 combinations of three state bits and two inputs).
+> {why}: three flip-flop boxes under the diagram (s2's, with tags); a YELLOW dot sits on Hunt, the GOLD 1 in s0's box. {lands}: with `r = 1` the dot travels the Hunt → Sight arc, the term `s_0\cdot r` flashes, and the GOLD 1 hops from s0's box to s1's.
+> {seq}: small inset of the same diagram with ch5's codes, Hunt [00], Sight [01], Sync [10]: Hunt's code expands to `\overline{s_1}\cdot\overline{s_0}`, two bits, no flip-flop of its own (as in ch5's `D_0` term `\overline{s_1}\cdot\overline{s_0}\cdot r`). {onehot}: back to the one-hot diagram, each circle joined to its own flip-flop box by a thin line.
+
+[c6.arcs.1] {skip} And now, the last surprise. The table is optional. {rule} With one flip-flop per state, each flip-flop's input is simply the or of the arcs coming into its state. {term} Each arc gives one term, the flip-flop of the state it starts from, and the condition written on the arc.
+
+[c6.arcs.2] {sync} Try it on Sync. Three arcs come in. {a1} One comes from Sight, labelled ee and ar, which gives ess one, and ee, and ar. {a2} One is Sync's own loop, taken when ee is zero, which gives ess two and not ee. {a3} And Sync's other loop, labelled ee and ar, gives ess two, and ee, and ar. {d2} That's dee two, exactly as we read it from the table. {pause}
+
+[c6.arcs.3] {loops} Notice that the loops count too. A state that holds on to itself has an arc coming in. {sight} Into Sight come two arcs, from Hunt when ar is one, and Sight's own loop when ee is zero. {d1} That's dee one. {hunt} Into Hunt come three, its own loop when ar is zero, and one each from Sight and from Sync, when ee is one and ar is zero. {d0} That's dee zero, before we simplified it.
+
+[c6.arcs.4] {why} Why does this work? The hot flip-flop says which state you're in, and the arc's condition says which way you leave it. {lands} So a state is next exactly when one of its incoming arcs is taken. {seq} With Part five's binary codes, Hunt is zero, zero, with no flip-flop of its own, so its terms have to spell out the whole code. {onehot} With one-hot, every state has its own flip-flop, and arcs turn into terms one for one.
+
+## Scene 7 · One-hot or sequential? (ch6_s7_verdict)
+
+> {side}: two panels. Left, "Sequential (Part 5)": two flip-flop boxes `s_1 s_0`, `D_1 = s_1\cdot\overline{e} + s_1\cdot r + s_0\cdot e\cdot r`, `D_0 = s_0\cdot\overline{e} + \overline{s_1}\cdot\overline{s_0}\cdot r`, `s = s_1`. Right, "One-hot (Part 6)": three tagged boxes, `D_2 = \overline{s_0}\cdot e\cdot r + s_2\cdot\overline{e}`, `D_1 = s_0\cdot r + s_1\cdot\overline{e}`, `D_0 = \overline{r}\cdot(s_0 + e)`, `s = s_2`. A small caption: "gates counted: AND, OR; not inverters (flip-flop Q̄ outputs are free)".
+> {seq}: under the left panel, gate icons (L6's `and_gate`, `and3_gate`, `or_gate`) pop in term by term: D1 two ANDs, one three-input AND, one three-input OR; D0 one AND, one three-input AND, one OR; total "7 gates" GOLD. {hot}: under the right: D2 one three-input AND, one AND, one OR; D1 two ANDs, one OR; D0 one OR then one AND; total "8 gates" GOLD.
+> {inv}: small inverter icons: one on e (left), two on e and r (right). {none}: `s = s_1` and `s = s_2` each get a GREEN tag "no output logic". (Counts checked: sequential 5 AND + 2 OR; one-hot 5 AND + 3 OR with D0 factored; one-hot unsimplified 8 AND + 3 OR.)
+> {slide}: p. 143's second slide, verbatim: "So in this example, the 1 hot is easier to design, but it results in slightly more hardware compared with the sequential state assignment design".
+> {extra}: on the right panel, the third flip-flop box and one OR gate glow GOLD. {raw}: a ghost of s3's unsimplified lines with GOLD "8 AND + 3 OR = 11 gates"; {saved}: an arrow from 11 to 8, GOLD "−3".
+> {board}: the scoreboard returns (the object started in ch1 s8 and grown in ch2 s7, ch4 s5 and ch5 s7; same labels and styling): header "assignment | flip-flops | next-state gates | output logic"; rows "binary | 3 | 3 | none", "sliding | 3 | 1 | none", "ring | 5 | 0 | none"; sub-heading "traffic light", rows "Lecture 9 | 3 | 2 (⊕, AND) | none", "one-hot | 4 | 0 | 2 OR"; sub-heading "synchroniser", row "sequential | 2 | 7 | none" (ch5 s7); the new row writes itself in under it, "one-hot | 3 | 8 | none". Numbers GOLD.
+> {thread}: under the scoreboard, p. 132's line as ch2 s7 showed it, "Depends what we are trying to optimise" (ch1 s4), with its two items "Complexity" and "Speed"; the scoreboard's flip-flop and gate columns pulse in turn.
+
+[c6.verdict.1] {side} So which design wins? Put them side by side, and count the and gates and the or gates, but not the inverters. {seq} The sequential design has two flip-flops and seven gates. {hot} The one-hot design has three flip-flops and eight gates, with dee zero factored. {inv} For inverters on the inputs, sequential needs one, and one-hot needs two. {none} Neither design needs any output logic.
+
+[c6.verdict.2] {slide} The slide gives the verdict. In this example, one-hot is easier to design, but it needs slightly more hardware. {extra} The extra is mostly the third flip-flop, plus one gate. {raw} And the easiest route costs more. Written straight from the diagram, with no algebra at all, one-hot takes eleven gates. {saved} The two simplifications earlier in this part saved three of them.
+
+[c6.verdict.3] {board} Here's the scoreboard, with its final row. {thread} And here's the thread that runs through the whole lecture, back to Part one. There's no single best assignment. It depends on what you're optimising, the flip-flops, the logic and its wiring, the speed, or how easy the design is to get right.
+
+## Scene 8 · Recap, the lecture, and next (ch6_s8_recap)
+
+> {recap}: the screen clears to six slots, filled one per sentence, each a small copy of its scene's visual (same objects, colours and styling) with that sentence's short line under it: {r1} s2's diagram with one-hot codes (GOLD 1s) and the three tagged flip-flop boxes, "one flip-flop per state"; {r2} s3's row `0 1 0 | 1 1 | 1 0 0` with `\overline{s_2}` and `\overline{s_0}` struck out, leaving `s_1\cdot e\cdot r`, "name only the hot flip-flop"; {r3} s4's check table with `\overline{s_0} = s_1 + s_2`, "in used states"; {r4} s5's final line `D_0 = \overline{r}\cdot(s_0 + e)` with the truth-table thumbnail, "distributive law"; {r5} s6's diagram with the three arcs into Sync lit YELLOW, "OR the incoming arcs"; {r6} s7's two panels with "+1 flip-flop, +1 gate" in GOLD.
+> {lecture}: the slots shrink away; the full scoreboard from s7 returns. {road}: its assignment names lift out into one road left to right, "binary count → sliding → ring → one-hot", each step with a small thumbnail of the machine that taught it (ch1 s8's binary circuit, ch2 s4's one-gate sliding circuit, ch2 s5's ring of five, this chapter's three tagged flip-flops). No numbers on the road: the scoreboard behind it keeps them.
+> {next}: p. 144's headings, verbatim: "Digital Electronics: Sequential Logic" / "Further Considerations", then "Elimination of Redundant States". {redundant}: a small generic state diagram of five circles; two of them carry identical outgoing arcs and pulse together. {remove}: the two merge into one circle, leaving four; below, three flip-flop boxes become two (`\lceil \log_2 5 \rceil = 3` → `\lceil \log_2 4 \rceil = 2`, GOLD), and a few DIM X's appear in a small K-map outline.
+> End card after the last word, held ~8 s; the music carries it.
+
+[c6.recap.1] {recap} Let's recap. {r1} One-hot gives each state its own flip-flop, so the synchroniser takes three. {r2} Only one flip-flop is hot, so each term names just that flip-flop and the inputs. {r3} In the used states, not ess zero is the same as ess one or ess two. {r4} With that and the distributive law, dee zero shrinks to not ar, and S zero or ee. {r5} You can even skip the table, and read each input from the arcs coming into its state. {r6} The price is one more flip-flop and one more gate.
+
+[c6.recap.2] {lecture} And that's the whole lecture in one line. {road} How you assign the states decides how much logic you need, from a binary count, through sliding codes and the ring, all the way to one-hot codes. {pause}
+
+[c6.recap.3] {next} Next lecture, further considerations. {redundant} Sometimes a design ends up with more states than it really needs. {remove} Removing the redundant ones can mean fewer flip-flops, or more don't cares to simplify the logic.

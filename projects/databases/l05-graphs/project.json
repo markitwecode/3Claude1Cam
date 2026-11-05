@@ -1,0 +1,49 @@
+{
+  "title": "Graph Databases",
+  "course_line": "Databases · Lecture 5",
+  "code_language": "cypher",
+  "toolchain": "Cypher: Kleppmann's cypher-shell (Traverse engine, node v24.2.0), from projects/databases/tools/cypher-shell: `printf \"<query>;\\n\" | node cypher-shell.mjs ../../source/movies.tvdb` (the Bacon-number query takes ~80 s; asking for all length-6 paths from one actor to anyone aborts with 'Error: unreachable'). SQL: DuckDB v1.5.6, `duckdb -readonly projects/databases/source/movies.duckdb -c \"<sql>\"`. Anything that writes (Cypher CREATE/MERGE, SQL CREATE TABLE, CREATE PROPERTY GRAPH) only on a copy in your scratch folder, never on source/. SQL/PGQ: the duckpgq community extension (installed 2026-11-01); `LOAD duckpgq;` as its own statement before CREATE PROPERTY GRAPH. SQL blocks on screen: `Code(src, lang=\"sql\")`. Quote results verbatim.",
+  "sources": [
+    {
+      "path": "../source/databases-notes.pdf",
+      "pages": "50-59",
+      "note": "ch. 5 Graph databases (§5.1 Cypher, §5.2 paths of variable length, §5.3 other graph query languages), Slides 94-111, Exercises 20-21 (p. 56) and 22 (p. 59). Background the viewer has: schema pp. 11-15 (Slides 19-25), the three-table join p. 26 (Slide 49), documents and normalisation pp. 38-43 (Slides 71-73, 76-81)"
+    },
+    {
+      "path": "../source/databases-handout.pdf",
+      "pages": "100-118",
+      "note": "the slides: title p. 100, Slides 94-111 on pp. 101-118 (pp. 106-108 are the Traverse setup screenshots)"
+    },
+    {
+      "path": "../source/databases-exercises.pdf",
+      "pages": "3-4",
+      "note": "Exercises 20-22 (same text as in the notes); Exercise 24's Cypher part belongs to the Datalog lecture"
+    },
+    {
+      "path": "../source/movies.tvdb",
+      "pages": "",
+      "note": "the property graph (Traverse): 2,935 Movie and 23,179 Person vertices, 49,811 edges (ACTED_IN 29,153, PRODUCED 7,429, WROTE 6,782, COMPOSED_FOR 3,281, DIRECTED 3,166); every Cypher query on screen runs on it"
+    },
+    {
+      "path": "../source/movies.duckdb",
+      "pages": "",
+      "note": "the relational version, for every SQL comparison (Slides 49, 105, Exercise 21) and SQL/PGQ (Slide 111)"
+    },
+    {
+      "path": "../source/c7d1bc42-d856-4e1d-9e91-b4d700a412ee-5a6fd345-38a0-4339-98fe-b4f200dcde90.transcript.md",
+      "pages": "04:43-57:19",
+      "note": "Whisper medium transcript of /Users/markgolbraikh/Downloads/c7d1bc42-d856-4e1d-9e91-b4d700a412ee-5a6fd345-38a0-4339-98fe-b4f200dcde90.mp4 (Thu 2026-10-29); 00:00-04:43 is pre-lecture setup. PLAN.md maps each chapter to its time range"
+    },
+    {
+      "path": "../source/c7d1bc42-d856-4e1d-9e91-b4d700a412ee-5a6fd345-38a0-4339-98fe-b4f200dcde90.captions.md",
+      "pages": "",
+      "note": "embedded captions (panopto_EN-GB eng) of the same recording; cross-check only"
+    },
+    {
+      "path": "../source/c7d1bc42-d856-4e1d-9e91-b4d700a412ee-5a6fd345-38a0-4339-98fe-b4f200dcde90.digest.md",
+      "pages": "",
+      "note": "empty stub: all 6 Gemini pieces MISSING (quota). Not used; the slides cover what was on screen, and the recording shows the slides, not the Traverse screen"
+    }
+  ],
+  "created": "2026-11-01"
+}

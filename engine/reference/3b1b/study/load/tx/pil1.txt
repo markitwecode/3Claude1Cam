@@ -1,0 +1,158 @@
+S001 [00:00] (c1.hook.1) Here's a pendulum one metre long, and beside it, a weight on a spring.
+S002 [00:05] (c1.hook.1) Two very different machines, and you can see them swinging in perfect step.
+S003 [00:10] (c1.hook.1) The pendulum takes about one second to swing across, and one second to swing back.
+S004 [00:16] (c1.hook.1) Now take two identical pendulums, and give one a wide swing and the other a narrow one.
+S005 [00:23] (c1.hook.1) You might expect the wide one to fall behind.
+S006 [00:26] (c1.hook.1) It doesn't: they keep the same beat.
+S007 [00:32] (c1.hook.2) So what rule makes things swing like this, and what sets the beat?
+S008 [00:37] (c1.hook.2) This part finds that rule, from the physics up.
+S009 [00:41] (c1.hook.2) Pendulums, alternating currents and waves all swing like this, and complex numbers turn out to be the natural language for all of them, from part two on.
+S010 [00:51] (c1.hook.2) The general theory of their equations comes next term.
+S011 [00:55] (c1.hook.2) Most of this part goes beyond the notes, which take the physics as given.
+S012 [01:01] (c1.hook.2) Here you build it from facts you already know.
+S013 [01:05] (c1.tools.1) First, the names.
+S014 [01:08] (c1.tools.1) Whatever swings, ex is how far it is from the middle.
+S015 [01:13] (c1.tools.1) It's signed: positive on one side, negative on the other.
+S016 [01:18] (c1.tools.1) Ex with one dot on top is its rate of change in time, the velocity.
+S017 [01:24] (c1.tools.1) Two dots means you take the rate of change again: that's the acceleration.
+S018 [01:30] (c1.tools.2) Now three quick questions, on tools this part will need.
+S019 [01:35] (c1.tools.2) A ten newton push on a two kilogram trolley.
+S020 [01:38] (c1.tools.2) What's its acceleration?
+S021 [01:43] (c1.tools.2) Five metres per second squared.
+S022 [01:46] (c1.tools.2) Force equals mass times acceleration, so you divide the force by the mass.
+S023 [01:50] (c1.tools.2) From here on, the acceleration is written ex double dot.
+S024 [01:56] (c1.tools.3) A right-angled triangle with a hypotenuse of ten, and an angle of thirty degrees.
+S025 [02:01] (c1.tools.3) How long is the side opposite that angle?
+S026 [02:07] (c1.tools.3) Ten times the sine of thirty degrees, which is five.
+S027 [02:12] (c1.tools.3) Last one: an arc of a circle with radius two and an angle of half a radian.
+S028 [02:18] (c1.tools.3) How long is it?
+S029 [02:22] (c1.tools.3) One.
+S030 [02:25] (c1.tools.3) Arc length is radius times angle, with the angle in radians.
+S031 [02:29] (c1.tools.3) All three get used in the next few minutes.
+S032 [02:35] (c1.spring.1) Start with the simplest thing that swings: a weight on a spring, lying on a smooth table, so gravity plays no part for now.
+S033 [02:45] (c1.spring.1) Pull the weight out, and the spring pulls back.
+S034 [02:48] (c1.spring.1) The further you pull, the harder it pulls.
+S035 [02:52] (c1.spring.1) Twice the stretch gives twice the pull: the pull is proportional to the stretch.
+S036 [03:00] (c1.spring.1) That's Hooke's law, from GCSE physics.
+S037 [03:04] (c1.spring.2) Now the sign.
+S038 [03:06] (c1.spring.2) Ex to the right is positive, and the pull points left.
+S039 [03:11] (c1.spring.2) Push the weight to the left, and you see both flip.
+S040 [03:15] (c1.spring.2) So the pull is minus the stiffness K, times ex.
+S041 [03:19] (c1.spring.2) The stiffness says how strong the spring is.
+S042 [03:23] (c1.spring.2) The minus sign means the pull always points back toward the middle.
+S043 [03:27] (c1.spring.3) But you want the motion, not the force.
+S044 [03:31] (c1.spring.3) Newton ties a force to an acceleration, and the acceleration is the position, differentiated twice.
+S045 [03:38] (c1.spring.3) So the move here is: name the force that pulls back, then let Newton turn it into an acceleration.
+S046 [03:46] (c1.spring.3) Force equals mass times acceleration.
+S047 [03:50] (c1.spring.3) The only force is the spring pulling back, so the mass M, times ex double dot, is minus K times ex.
+S048 [03:58] (c1.spring.3) Divide by the mass: ex double dot equals minus K over M, times ex.
+S049 [04:05] (c1.spring.4) That ratio, K over M, is the pull back per unit of stretch, for each kilogram it has to move.
+S050 [04:13] (c1.spring.4) Call it omega squared.
+S051 [04:15] (c1.spring.4) It's written as a square for a reason part two makes clear.
+S052 [04:20] (c1.spring.4) So ex double dot equals minus omega squared, times ex.
+S053 [04:25] (c1.spring.4) Out of context it looks abstract, but you can read it as: the acceleration always points back to the middle, and it grows with the distance.
+S054 [04:35] (c1.spring.5) Here's one for you.
+S055 [04:37] (c1.spring.5) Same spring, twice the mass.
+S056 [04:40] (c1.spring.5) Is the acceleration back toward the middle bigger or smaller, and by how much?
+S057 [04:47] (c1.spring.5) Pause the video if you want longer.
+S058 [04:56] (c1.spring.5) The pull depends only on the stretch, so it's the same as before.
+S059 [05:01] (c1.spring.5) But now it has twice the mass to move.
+S060 [05:06] (c1.spring.5) So the acceleration is half as big: minus K over two M, times ex.
+S061 [05:13] (c1.spring.5) A heavier weight on the same spring swings more slowly.
+S062 [05:20] (c1.ends.1) First, try it with numbers.
+S063 [05:23] (c1.ends.1) Say omega squared is four, and the weight is half a metre out.
+S064 [05:28] (c1.ends.1) Then the acceleration is minus four times a half: two metres per second squared, back toward the middle.
+S065 [05:36] (c1.ends.1) Now let it swing, out to half a metre on each side.
+S066 [05:41] (c1.ends.1) Keep your eye on the green velocity arrow and the red acceleration arrow.
+S067 [05:45] (c1.ends.2) Freeze it as it crosses the middle.
+S068 [05:49] (c1.ends.2) Here ex is zero, so the rule says there's no pull at all.
+S069 [05:53] (c1.ends.2) But the weight is moving at its fastest.
+S070 [05:57] (c1.ends.2) With nothing there to slow it down, it carries straight on past.
+S071 [06:01] (c1.ends.3) Now let it run out to the end of its swing, and freeze.
+S072 [06:06] (c1.ends.3) The weight is still, for an instant.
+S073 [06:10] (c1.ends.3) Is its acceleration zero there too?
+S074 [06:14] (c1.ends.3) Pause the video if you want longer.
+S075 [06:24] (c1.ends.3) You might expect so, since nothing is moving.
+S076 [06:28] (c1.ends.3) But the rule only looks at where the weight is, and here it's as far out as it ever gets.
+S077 [06:35] (c1.ends.3) So the pull is the largest it ever is: minus four times a half, minus two.
+S078 [06:43] (c1.ends.3) Being still and being free of any pull are two different things.
+S079 [06:47] (c1.ends.4) So now you can see why the weight never settles.
+S080 [06:51] (c1.ends.4) In the middle there's no pull, but it's moving too fast to stop.
+S081 [06:56] (c1.ends.4) At each end it stops, but that's where it's pulled hardest.
+S082 [07:01] (c1.ends.4) That's why it swings.
+S083 [07:06] (c1.gravity.1) Now the pendulum: a weight called the bob, on a rod of length L, hung from a fixed point.
+S084 [07:14] (c1.gravity.1) You measure its angle from the vertical, and call it theta for now.
+S085 [07:18] (c1.gravity.1) Two forces act on the bob.
+S086 [07:21] (c1.gravity.1) Gravity pulls it straight down with its weight: the mass M, times G, the strength of gravity.
+S087 [07:29] (c1.gravity.1) And the rod pulls along itself, toward the pivot.
+S088 [07:33] (c1.gravity.1) But the bob can only move along its arc, and the rod pulls at right angles to that.
+S089 [07:39] (c1.gravity.1) So the rod can't speed the bob up, or slow it down.
+S090 [07:43] (c1.gravity.2) So which part of gravity can?
+S091 [07:47] (c1.gravity.2) The move here is: split gravity into a part along the rod and a part along the swing.
+S092 [07:56] (c1.gravity.2) Only the part along the swing drives the motion.
+S093 [08:00] (c1.gravity.2) Gravity points straight down.
+S094 [08:03] (c1.gravity.2) The rod leans theta away from the vertical.
+S095 [08:07] (c1.gravity.2) So gravity and the line of the rod are theta apart, too.
+S096 [08:12] (c1.gravity.3) Now you draw gravity's arrow as the hypotenuse of a right-angled triangle, with one side along the rod, and one along the swing.
+S097 [08:21] (c1.gravity.3) The part along the swing is the side opposite theta: M times G, times the sine of theta, just like the triangle you saw at the start.
+S098 [08:29] (c1.gravity.3) It points back toward the bottom, so the pull is minus M times G, times sine theta.
+S099 [08:37] (c1.gravity.4) Watch gravity's pull as you change the angle.
+S100 [08:42] (c1.gravity.4) At the bottom, theta is zero, and there's no pull at all.
+S101 [08:46] (c1.gravity.4) Swing out to forty degrees, and gravity pulls with about sixty-four percent of the bob's weight.
+S102 [08:53] (c1.gravity.4) Swing to the other side, and it flips, still pointing home.
+S103 [08:58] (c1.gravity.4) Read it back: the further out the bob is, the harder gravity drags it home, but by the sine of the angle, not by the angle itself.
+S104 [09:10] (c1.arc.1) Now let Newton turn gravity's pull into an acceleration along the swing: the mass, times the acceleration along the swing, equals minus M times G, times sine theta.
+S105 [09:22] (c1.arc.1) Divide by the mass, and the acceleration along the swing is minus G, times sine theta.
+S106 [09:29] (c1.arc.1) The mass is gone.
+S107 [09:32] (c1.arc.2) Now a question for you.
+S108 [09:34] (c1.arc.2) Swap the bob for one twice as heavy.
+S109 [09:38] (c1.arc.2) Does the pendulum swing faster, slower, or the same?
+S110 [09:43] (c1.arc.2) Pause the video if you want longer.
+S111 [09:53] (c1.arc.2) The same.
+S112 [09:56] (c1.arc.2) Twice the mass means twice the weight, so the pull doubles too, and the two cancel.
+S113 [10:02] (c1.arc.2) The spring is different: its pull depends only on the stretch, which is why the heavier weight on the spring was slower.
+S114 [10:12] (c1.arc.3) There's one snag left.
+S115 [10:16] (c1.arc.3) Newton counts the distance the bob travels, but you're describing the pendulum by its angle.
+S116 [10:21] (c1.arc.3) The arc turns one into the other.
+S117 [10:25] (c1.arc.3) The bob moves on a circle of radius L, so its distance along the arc is L times theta, with theta in radians.
+S118 [10:34] (c1.arc.3) The length L is fixed, so differentiate twice: the acceleration along the arc is L times theta double dot.
+S119 [10:43] (c1.arc.4) Put that in: the length L, times theta double dot, equals minus G, times sine theta.
+S120 [10:51] (c1.arc.4) Divide by the length L: theta double dot equals minus G over L, times sine theta.
+S121 [11:01] (c1.arc.4) Now read it back, next to the spring's rule.
+S122 [11:05] (c1.arc.4) It's almost the same, but with the sine of theta where theta should be.
+S123 [11:10] (c1.arc.4) And that sine makes it much harder: this equation has no answer in any functions you know.
+S124 [11:21] (c1.small.1) So here's the last move: for small swings, trade sine theta for theta.
+S125 [11:27] (c1.small.1) To see why that's fair, you can compare two lengths on the same picture.
+S126 [11:33] (c1.small.1) The bob's sideways reach is L times sine theta, the side opposite the angle.
+S127 [11:38] (c1.small.1) Its distance along the arc is L times theta.
+S128 [11:43] (c1.small.1) For a small swing, the arc is nearly straight, so the two almost agree.
+S129 [11:48] (c1.small.2) How good is that trade, would you guess?
+S130 [11:53] (c1.small.2) At a tenth of a radian, the sine is point zero nine nine eight: two tenths of a percent short.
+S131 [12:02] (c1.small.2) At ten degrees, it's half a percent short.
+S132 [12:06] (c1.small.2) At thirty degrees, four and a half percent.
+S133 [12:10] (c1.small.2) At sixty degrees, the sine is seventeen percent short, and the trade starts to fail.
+S134 [12:16] (c1.small.3) So for small swings, theta double dot is about minus G over L, times theta.
+S135 [12:21] (c1.small.3) That's the spring's rule exactly, with omega squared equal to G over L.
+S136 [12:27] (c1.small.3) So omega is the square root of G over L.
+S137 [12:30] (c1.small.3) Read it back: a longer pendulum is pulled back more gently, for each radian of swing.
+S138 [12:38] (c1.small.3) For the one metre pendulum, omega squared is nine point eight one, so omega is about three point one three per second.
+S139 [12:46] (c1.small.3) What that does to its beat is part two's story.
+S140 [12:51] (c1.small.4) One honest warning.
+S141 [12:53] (c1.small.4) At big angles, gravity really pulls with the sine of theta, and that is weaker than the rule, which uses theta itself.
+S142 [13:02] (c1.small.4) So for big swings the rule is only an approximation, and part two shows what that costs.
+S143 [13:09] (c1.small.4) For small swings, though, you now have the rule.
+S144 [13:14] (c1.recap.1) So here are two very different machines, obeying one rule: ex double dot equals minus omega squared, times ex.
+S145 [13:24] (c1.recap.1) For the spring, omega squared is K over M.
+S146 [13:29] (c1.recap.1) For the pendulum, it's G over L.
+S147 [13:32] (c1.recap.1) From now on, whatever swings, you call its displacement ex, even when it's an angle.
+S148 [13:39] (c1.recap.1) Anything pulled back in proportion to how far out it is obeys this rule.
+S149 [13:44] (c1.recap.1) Its motion has a name: simple harmonic motion.
+S150 [13:50] (c1.recap.2) Time for a recap.
+S151 [13:52] (c1.recap.2) First move: name the force that pulls back, then use Newton to turn it into an acceleration.
+S152 [14:00] (c1.recap.2) Second: split gravity along the rod and along the swing.
+S153 [14:06] (c1.recap.2) Only the swing part drives the bob.
+S154 [14:10] (c1.recap.2) Third: for small swings, trade sine theta for theta, because the arc and the reach almost agree.
+S155 [14:19] (c1.recap.2) And four facts you need to keep: Newton's law, Hooke's law, G is nine point eight one metres per second squared, and arc length is radius times angle.
+S156 [14:31] (c1.recap.3) Next time: which motion obeys this rule?
+S157 [14:37] (c1.recap.3) You need a function that comes back as minus omega squared times itself after two derivatives.
+S158 [14:43] (c1.recap.3) The answer is the shadow of an arrow that turns in a circle.

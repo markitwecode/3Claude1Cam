@@ -1,0 +1,66 @@
+{
+ "la3": {
+  "words_timed": 1833,
+  "span_min": 10.59,
+  "pauses_ge1_per_min": 4.4381491973559966,
+  "pauses_ge2_per_min": 0.7554296506137866,
+  "pauses_ge4_per_min": 0.0,
+  "pause_time_share": 0.30036984576644626
+ },
+ "calc2": {
+  "words_timed": 2936,
+  "span_min": 16.546,
+  "pauses_ge1_per_min": 3.8075667835126317,
+  "pauses_ge2_per_min": 0.785688383899432,
+  "pauses_ge4_per_min": 0.18131270397679197,
+  "pause_time_share": 0.28006668278335234
+ },
+ "calc3": {
+  "words_timed": 3096,
+  "span_min": 17.346666666666668,
+  "pauses_ge1_per_min": 4.2659492697924675,
+  "pauses_ge2_per_min": 0.7494235203689469,
+  "pauses_ge4_per_min": 0.17294388931591084,
+  "pause_time_share": 0.27968870099923165
+ },
+ "calc5": {
+  "words_timed": 2186,
+  "span_min": 13.039333333333333,
+  "pauses_ge1_per_min": 4.601462242445932,
+  "pauses_ge2_per_min": 0.9969834858632854,
+  "pauses_ge4_per_min": 0.07669103737409888,
+  "pause_time_share": 0.31400889616033556
+ },
+ "l10ch2": {
+  "words_timed": 1545,
+  "span_min": 11.628106233333334,
+  "pauses_ge1_per_min": 10.405821685145881,
+  "pauses_ge2_per_min": 3.267944000293748,
+  "pauses_ge4_per_min": 0.257995578970559,
+  "pause_time_share": 0.40043834079522983
+ },
+ "l10ch4": {
+  "words_timed": 1597,
+  "span_min": 11.421632766666669,
+  "pauses_ge1_per_min": 11.469463488820567,
+  "pauses_ge2_per_min": 3.0643604741123656,
+  "pauses_ge4_per_min": 0.3502126256128418,
+  "pause_time_share": 0.4016033603695249
+ },
+ "l10ch6": {
+  "words_timed": 1464,
+  "span_min": 10.466601,
+  "pauses_ge1_per_min": 10.891788079052597,
+  "pauses_ge2_per_min": 2.6751760194164276,
+  "pauses_ge4_per_min": 0.19108400138688766,
+  "pause_time_share": 0.3880694092252747
+ },
+ "l12ch1": {
+  "words_timed": 1555,
+  "span_min": 12.565778333333332,
+  "pauses_ge1_per_min": 12.016764580307866,
+  "pauses_ge2_per_min": 3.819898674534951,
+  "pauses_ge4_per_min": 0.3183248895445792,
+  "pause_time_share": 0.4448652670009687
+ }
+}

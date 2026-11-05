@@ -1,0 +1,14 @@
+{
+  "title": "More on Lists",
+  "course_line": "Foundations of Computer Science · Lecture 4",
+  "code_language": "ocaml",
+  "toolchain": "ocaml (5.4.1, ~/.opam/default/bin/ocaml): run code as `ocaml < file.ml` and quote replies verbatim. Anything that may not terminate (a zero or negative coin in `change`, `=` on a cyclic list) must run under `timeout 10` with `OCAMLRUNPARAM='l=1M'`, or it hangs for minutes",
+  "sources": [
+    {
+      "path": "../source/focs-202627-v1.8.pdf",
+      "pages": "30-36",
+      "note": "Lecture 4: More on Lists (§4.1-4.8 + exercises 4.1-4.6). Forward links only: p. 37 (Lecture 5 opens: linear vs binary search), p. 43 (merge sort splits with take/drop), p. 49 (§6.7 making change with exceptions). Assumed known: Lecture 2's `let x = e1 in e2` and O(log n), pp. 15-17; all of Lecture 3 (projects/focs/l03-lists)"
+    }
+  ],
+  "created": "2026-10-25"
+}

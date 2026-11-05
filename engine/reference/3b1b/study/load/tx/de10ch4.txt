@@ -1,0 +1,122 @@
+S001 [00:00] (c4.hook.1) This is part four of our lecture on state assignment.
+S002 [00:04] (c4.hook.1) Last time, the ring of five did nothing until we set it into a used state.
+S003 [00:09] (c4.hook.1) That ring spent two more flip-flops than it needed, mostly for fun.
+S004 [00:14] (c4.hook.1) This part is about a style that spends flip-flops just as freely, and is used a lot in real designs.
+S005 [00:20] (c4.hook.2) Here are eight states, built two ways.
+S006 [00:24] (c4.hook.2) On the right, three flip-flops count through them in binary.
+S007 [00:28] (c4.hook.2) On the left, eight flip-flops pass a single one along, one flip-flop for each state.
+S008 [00:34] (c4.hook.2) That's eight flip-flops where three would do.
+S009 [00:38] (c4.hook.2) So what do we gain by giving every state its own flip-flop?
+S010 [00:49] (c4.onehot.1) This style is called one-hot encoding.
+S011 [00:53] (c4.onehot.1) It's a shift-register style of design, in which only one flip-flop at a time holds a one.
+S012 [01:00] (c4.onehot.1) That flip-flop is the hot one.
+S013 [01:03] (c4.onehot.1) As the machine steps from state to state, the one steps from flip-flop to flip-flop.
+S014 [01:10] (c4.onehot.2) You've seen something close to this.
+S015 [01:12] (c4.onehot.2) Part two's ring of five carried a pair of ones round.
+S016 [01:17] (c4.onehot.2) A one-hot machine always carries exactly one.
+S017 [01:21] (c4.onehot.2) So each state has its own flip-flop, and the state is simply wherever the one is.
+S018 [01:27] (c4.onehot.2) To see which state the machine is in, you just look for the one.
+S019 [01:31] (c4.onehot.3) A sequential assignment needs only log base two of the number of states, rounded up.
+S020 [01:37] (c4.onehot.3) One-hot needs one flip-flop for every state.
+S021 [01:42] (c4.onehot.3) For eight states, that's eight flip-flops instead of three.
+S022 [01:44] (c4.onehot.3) In the lecturer's words, here we really are burning through the flip-flops.
+S023 [01:51] (c4.onehot.4) So why would anyone design this way?
+S024 [01:55] (c4.onehot.4) The slide's answer is that one-hot can give simple, fast state machines.
+S025 [02:00] (c4.onehot.4) And each output comes from joining the outputs of the right flip-flops, the ones for the states where it should be on, with an or gate.
+S026 [02:09] (c4.onehot.4) Let's test both claims on a machine you already know.
+S027 [02:17] (c4.ring.1) The lecturer goes back to the traffic light from part one.
+S028 [02:20] (c4.ring.1) It steps through four states in the British order: red, then red and amber, then green, then amber, and back to red.
+S029 [02:29] (c4.ring.1) It has no inputs, and it moves on one state at every edge of the clock.
+S030 [02:34] (c4.ring.1) Four states, so one-hot needs four flip-flops, one for each state.
+S031 [02:40] (c4.ring.1) Call them the red, red-and-amber, green and amber flip-flops.
+S032 [02:45] (c4.ring.1) This time each one stands for a state, not a lamp.
+S033 [02:49] (c4.ring.2) In part one, these states had three-bit codes.
+S034 [02:54] (c4.ring.2) Now each code has a single one, in that state's own flip-flop.
+S035 [02:59] (c4.ring.2) Red is one, zero, zero, zero, red and amber is zero, one, zero, zero, and so on.
+S036 [03:06] (c4.ring.2) In the transition table, each state's next state is the next row down, and amber goes back to red.
+S037 [03:13] (c4.ring.2) Four flip-flops give sixteen patterns, and only four are used.
+S038 [03:18] (c4.ring.2) That leaves twelve unused states, or as the slide says, lots.
+S039 [03:24] (c4.ring.3) Now read the dee inputs off the table.
+S040 [03:27] (c4.ring.3) With dee flip-flops, they're just the next state.
+S041 [03:32] (c4.ring.3) The next-state column for red-and-amber reads one, zero, zero, zero, exactly the current red column.
+S042 [03:39] (c4.ring.3) So the red-and-amber flip-flop's input is the red flip-flop's output.
+S043 [03:44] (c4.ring.4) In the same way, green takes its input from red-and-amber, amber from green, and red from amber.
+S044 [03:51] (c4.ring.4) That's a ring of four, a shift register fed back on itself, and it needs no logic at all to work out the next state.
+S045 [04:00] (c4.ring.4) It has the same shape as part two's ring of five, but it carries a single one.
+S046 [04:07] (c4.lamps.1) The flip-flops now say which state we're in, but there are four flip-flops and only three lamps.
+S047 [04:14] (c4.lamps.1) The red lamp is on in two states, red and red-and-amber.
+S048 [04:20] (c4.lamps.1) So it should light when either the red flip-flop or the red-and-amber flip-flop holds the one.
+S049 [04:27] (c4.lamps.1) An or gate joins those two outputs.
+S050 [04:30] (c4.lamps.2) The amber lamp is on in red-and-amber and in amber, so another or gate joins those two flip-flops.
+S051 [04:38] (c4.lamps.2) The green lamp is on only in the green state.
+S052 [04:42] (c4.lamps.2) It's simply the green flip-flop's output, a plain wire.
+S053 [04:46] (c4.lamps.2) That's the slide's rule at work.
+S054 [04:50] (c4.lamps.2) Each output joins the flip-flops of the states where it's on.
+S055 [04:54] (c4.lamps.3) Here's the whole circuit, as the slide draws it.
+S056 [04:56] (c4.lamps.3) Four dee flip-flops share one clock signal.
+S057 [05:02] (c4.lamps.3) Each output is wired to the next input, and the last one runs back to the first.
+S058 [05:07] (c4.lamps.3) Underneath are the two or gates and the wire for green.
+S059 [05:12] (c4.lamps.3) As the one goes round, the lamps follow, red, then red and amber, then green, then amber.
+S060 [05:20] (c4.lamps.3) So the next-state logic is gone, but we do need a little output logic, two gates.
+S061 [05:30] (c4.compare.1) Now compare lecture nine's design.
+S062 [05:34] (c4.compare.1) It used part one's codes, with three flip-flops, one per lamp.
+S063 [05:40] (c4.compare.1) The red lamp's flip-flop is fed by an exclusive-or gate, which takes the red and amber outputs.
+S064 [05:46] (c4.compare.1) The amber lamp's flip-flop takes its own inverted output, so amber simply flips on every edge of the clock.
+S065 [05:54] (c4.compare.1) The green lamp's flip-flop gets an and gate, fed by the red and amber outputs, because green always follows the one state with both of them lit.
+S066 [06:04] (c4.compare.1) And each lamp is driven straight from one of the flip-flops, so there's no output logic.
+S067 [06:09] (c4.compare.2) Put the two side by side.
+S068 [06:12] (c4.compare.2) Lecture nine's design needs two gates between its flip-flops.
+S069 [06:17] (c4.compare.2) One-hot needs none there, and two gates after them, for the lamps.
+S070 [06:22] (c4.compare.2) So the logic hasn't vanished, it has moved from inside the loop to the outputs.
+S071 [06:29] (c4.compare.2) Same machine, same lamps.
+S072 [06:31] (c4.compare.2) Only the state assignment changed.
+S073 [06:34] (c4.compare.3) Both designs go on the scoreboard.
+S074 [06:38] (c4.compare.3) Lecture nine's has three flip-flops, two next-state gates and no output logic.
+S075 [06:43] (c4.compare.3) One-hot has four flip-flops, no next-state gates, and two output gates.
+S076 [06:50] (c4.compare.3) Which is better depends on what you optimise, as part one said.
+S077 [07:00] (c4.demo.1) The lecturer built this circuit in his simulator.
+S078 [07:04] (c4.demo.1) The clock signal ticks, and nothing lights up.
+S079 [07:07] (c4.demo.1) Can you see why?
+S080 [07:10] (c4.demo.1) It's the same deal as the ring of five.
+S081 [07:14] (c4.demo.1) The flip-flops start at all zeros, and all zeros is an unused state, because a one-hot state has exactly one flip-flop at one.
+S082 [07:23] (c4.demo.1) So every edge of the clock shifts zeros into zeros.
+S083 [07:27] (c4.demo.2) First he disconnects the clock signal, so that nothing shifts while he works.
+S084 [07:33] (c4.demo.2) Any single one would make a used state.
+S085 [07:37] (c4.demo.2) He picks the amber flip-flop and pulls its asynchronous set input low.
+S086 [07:42] (c4.demo.2) Remember, the little circle means active low.
+S087 [07:46] (c4.demo.2) Its output goes to one, and the amber lamp lights at once, through its or gate.
+S088 [07:51] (c4.demo.2) Then he puts the set input back high, so the flip-flop works normally again.
+S089 [07:58] (c4.demo.3) He reconnects the clock signal, and the lights run.
+S090 [08:02] (c4.demo.3) Amber, red, red and amber, green, amber.
+S091 [08:06] (c4.demo.3) Like the ring of five, this ring can never find its own way back, because any pattern just goes round.
+S092 [08:14] (c4.demo.3) Its sixteen patterns fall into six loops, and only one of them is ours.
+S093 [08:19] (c4.demo.3) Power it up with two ones that have a gap between them, and the lamps alternate for ever between red with amber, and red with green.
+S094 [08:29] (c4.demo.3) So a one-hot machine has to start in a used state.
+S095 [08:38] (c4.fast.1) The lecturer's last point is speed.
+S096 [08:42] (c4.fast.1) Remember from lecture eight what limits the clock speed.
+S097 [08:45] (c4.fast.1) Every path runs from one flip-flop, through logic, to the next.
+S098 [08:50] (c4.fast.1) So the clock period must cover the clock-to-output delay, the logic's delay, and the set-up time.
+S099 [08:57] (c4.fast.2) Now look at the one-hot ring.
+S100 [09:00] (c4.fast.2) Each output is wired straight into the next input.
+S101 [09:04] (c4.fast.2) There's no logic in the loop, so the logic's delay is zero.
+S102 [09:09] (c4.fast.2) The clock period only has to cover the clock-to-output delay and the set-up time.
+S103 [09:15] (c4.fast.2) With lecture eight's flip-flops, that's zero point two plus zero point one, which is zero point three nanoseconds.
+S104 [09:23] (c4.fast.3) That's a clock frequency of about three point three gigahertz, as fast as these flip-flops can go.
+S105 [09:30] (c4.fast.3) In lecture eight's example, four point seven nanoseconds of logic held the clock to two hundred megahertz.
+S106 [09:37] (c4.fast.3) Here the flip-flops alone set the limit.
+S107 [09:40] (c4.fast.4) The or gates for the lamps sit after the loop.
+S108 [09:44] (c4.fast.4) They delay the lamps a little, but the clock never waits for them.
+S109 [09:49] (c4.fast.4) Lecture nine's design has two gates inside its loop, an and gate and an exclusive-or gate, so its clock period must also cover the slower of the two.
+S110 [09:59] (c4.fast.5) One more check from lecture eight.
+S111 [10:02] (c4.fast.5) With no logic between flip-flops, new data reaches the next input as early as it possibly can.
+S112 [10:09] (c4.fast.5) That's the hold-time worry, in the shift register's case, and flip-flops are normally designed to meet it.
+S113 [10:15] (c4.fast.5) So, in the lecturer's words, one-hot machines can be fast, but we could end up burning lots of flip-flops.
+S114 [10:28] (c4.recap.1) Let's recap.
+S115 [10:30] (c4.recap.1) In one-hot encoding, exactly one flip-flop holds a one, so there's one flip-flop per state.
+S116 [10:37] (c4.recap.1) Built one-hot, the traffic light is a ring of four, with no next-state logic at all.
+S117 [10:44] (c4.recap.1) Its lamps come from two or gates and one plain wire.
+S118 [10:48] (c4.recap.2) Compared with lecture nine's design, the logic moved out of the loop and onto the outputs.
+S119 [10:54] (c4.recap.2) Like any ring, it has to be set into a used state, here with an asynchronous set.
+S120 [11:00] (c4.recap.2) And with no logic in its loop, it runs as fast as its flip-flops allow.
+S121 [11:08] (c4.recap.3) Next time, a real machine with inputs, from a Cambridge exam question.
+S122 [11:12] (c4.recap.3) We'll build it the usual way, with two flip-flops, and then one-hot.

@@ -1,0 +1,1047 @@
+{
+ "key": "l11ch1",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l11-hyperbolic-functions",
+ "chapter": 1,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l11-hyperbolic-functions/out/ch1_cosh_sinh.mp4",
+ "total": 705.598667,
+ "scenes_sum": 705.55,
+ "words": 1490,
+ "scenes": [
+  {
+   "stem": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 77.983333,
+   "cue_dur": 77.9833
+  },
+  {
+   "stem": "ch1_s2_define",
+   "t0": 77.983333,
+   "dur": 149.35,
+   "cue_dur": 149.35
+  },
+  {
+   "stem": "ch1_s3_family",
+   "t0": 227.33333299999998,
+   "dur": 106.966667,
+   "cue_dur": 106.9667
+  },
+  {
+   "stem": "ch1_s4_cosix",
+   "t0": 334.29999999999995,
+   "dur": 107.716667,
+   "cue_dur": 107.7167
+  },
+  {
+   "stem": "ch1_s5_sinix",
+   "t0": 442.016667,
+   "dur": 117.633333,
+   "cue_dur": 117.6333
+  },
+  {
+   "stem": "ch1_s6_dictionary",
+   "t0": 559.65,
+   "dur": 76.5,
+   "cue_dur": 76.5
+  },
+  {
+   "stem": "ch1_s7_recap",
+   "t0": 636.15,
+   "dur": 69.4,
+   "cue_dur": 69.4
+  }
+ ],
+ "clips": [
+  {
+   "id": "c1.hook.1",
+   "scene": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 15.153
+  },
+  {
+   "id": "c1.hook.2",
+   "scene": "ch1_s1_hook",
+   "t0": 16.15,
+   "dur": 18.152
+  },
+  {
+   "id": "c1.hook.3",
+   "scene": "ch1_s1_hook",
+   "t0": 35.0667,
+   "dur": 15.7
+  },
+  {
+   "id": "c1.hook.4",
+   "scene": "ch1_s1_hook",
+   "t0": 52.3,
+   "dur": 23.041
+  },
+  {
+   "id": "c1.def.1",
+   "scene": "ch1_s2_define",
+   "t0": 77.983333,
+   "dur": 20.777
+  },
+  {
+   "id": "c1.def.2",
+   "scene": "ch1_s2_define",
+   "t0": 100.200033,
+   "dur": 29.558
+  },
+  {
+   "id": "c1.def.3",
+   "scene": "ch1_s2_define",
+   "t0": 131.133333,
+   "dur": 29.549
+  },
+  {
+   "id": "c1.def.4",
+   "scene": "ch1_s2_define",
+   "t0": 161.866633,
+   "dur": 32.681
+  },
+  {
+   "id": "c1.def.5",
+   "scene": "ch1_s2_define",
+   "t0": 196.000033,
+   "dur": 28.777
+  },
+  {
+   "id": "c1.family.1",
+   "scene": "ch1_s3_family",
+   "t0": 227.33333299999998,
+   "dur": 26.366
+  },
+  {
+   "id": "c1.family.2",
+   "scene": "ch1_s3_family",
+   "t0": 254.50003299999997,
+   "dur": 19.922
+  },
+  {
+   "id": "c1.family.3",
+   "scene": "ch1_s3_family",
+   "t0": 275.56663299999997,
+   "dur": 29.468
+  },
+  {
+   "id": "c1.family.4",
+   "scene": "ch1_s3_family",
+   "t0": 305.800033,
+   "dur": 23.956
+  },
+  {
+   "id": "c1.cosix.1",
+   "scene": "ch1_s4_cosix",
+   "t0": 334.29999999999995,
+   "dur": 17.668
+  },
+  {
+   "id": "c1.cosix.2",
+   "scene": "ch1_s4_cosix",
+   "t0": 352.63329999999996,
+   "dur": 33.81
+  },
+  {
+   "id": "c1.cosix.3",
+   "scene": "ch1_s4_cosix",
+   "t0": 387.16669999999993,
+   "dur": 25.059
+  },
+  {
+   "id": "c1.cosix.4",
+   "scene": "ch1_s4_cosix",
+   "t0": 413.41669999999993,
+   "dur": 24.947
+  },
+  {
+   "id": "c1.sinix.1",
+   "scene": "ch1_s5_sinix",
+   "t0": 442.016667,
+   "dur": 25.264
+  },
+  {
+   "id": "c1.sinix.2",
+   "scene": "ch1_s5_sinix",
+   "t0": 468.38336699999996,
+   "dur": 16.078
+  },
+  {
+   "id": "c1.sinix.3",
+   "scene": "ch1_s5_sinix",
+   "t0": 485.24996699999997,
+   "dur": 24.956
+  },
+  {
+   "id": "c1.sinix.4",
+   "scene": "ch1_s5_sinix",
+   "t0": 511.483367,
+   "dur": 22.925
+  },
+  {
+   "id": "c1.sinix.5",
+   "scene": "ch1_s5_sinix",
+   "t0": 535.616667,
+   "dur": 20.771
+  },
+  {
+   "id": "c1.dict.1",
+   "scene": "ch1_s6_dictionary",
+   "t0": 559.65,
+   "dur": 21.143
+  },
+  {
+   "id": "c1.dict.2",
+   "scene": "ch1_s6_dictionary",
+   "t0": 581.4833,
+   "dur": 22.828
+  },
+  {
+   "id": "c1.dict.3",
+   "scene": "ch1_s6_dictionary",
+   "t0": 605.3667,
+   "dur": 27.328
+  },
+  {
+   "id": "c1.recap.1",
+   "scene": "ch1_s7_recap",
+   "t0": 636.15,
+   "dur": 22.518
+  },
+  {
+   "id": "c1.recap.2",
+   "scene": "ch1_s7_recap",
+   "t0": 659.8167,
+   "dur": 15.312
+  },
+  {
+   "id": "c1.recap.3",
+   "scene": "ch1_s7_recap",
+   "t0": 675.9499999999999,
+   "dur": 19.068
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c1.hook.1",
+   "text": "This is part one of Hyperbolic Functions and Conics.",
+   "i": 1
+  },
+  {
+   "t": 4.45,
+   "clip": "c1.hook.1",
+   "text": "Last time, in Lecture ten, you wrote cosine and sine with complex exponentials, E to the eye ex, and E to the minus eye ex.",
+   "i": 2
+  },
+  {
+   "t": 16.15,
+   "clip": "c1.hook.2",
+   "text": "Take the formula for cosine of ex.",
+   "i": 3
+  },
+  {
+   "t": 19.05,
+   "clip": "c1.hook.2",
+   "text": "Now lift out every eye.",
+   "i": 4
+  },
+  {
+   "t": 22.63,
+   "clip": "c1.hook.2",
+   "text": "What stays is E to the ex, plus E to the minus ex, all over two.",
+   "i": 5
+  },
+  {
+   "t": 28.95,
+   "clip": "c1.hook.2",
+   "text": "It looks almost the same, but it's built from real exponentials only, and it's a brand new function.",
+   "i": 6
+  },
+  {
+   "t": 35.07,
+   "clip": "c1.hook.3",
+   "text": "Here's a glimpse of where it leads.",
+   "i": 7
+  },
+  {
+   "t": 38.2,
+   "clip": "c1.hook.3",
+   "text": "On the left, cosine and sine carry a point round a circle.",
+   "i": 8
+  },
+  {
+   "t": 43.13,
+   "clip": "c1.hook.3",
+   "text": "On the right, this new function and its partner carry a point along a different curve, a hyperbola.",
+   "i": 9
+  },
+  {
+   "t": 52.3,
+   "clip": "c1.hook.4",
+   "text": "So, three questions.",
+   "i": 10
+  },
+  {
+   "t": 55.15,
+   "clip": "c1.hook.4",
+   "text": "What are these new functions?",
+   "i": 11
+  },
+  {
+   "t": 59.33,
+   "clip": "c1.hook.4",
+   "text": "How are they tied to cosine and sine?",
+   "i": 12
+  },
+  {
+   "t": 63.64,
+   "clip": "c1.hook.4",
+   "text": "And why are they called hyperbolic?",
+   "i": 13
+  },
+  {
+   "t": 67.45,
+   "clip": "c1.hook.4",
+   "text": "You'll answer the first two in this chapter.",
+   "i": 14
+  },
+  {
+   "t": 71.35,
+   "clip": "c1.hook.4",
+   "text": "The third takes a little longer.",
+   "i": 15
+  },
+  {
+   "t": 77.98,
+   "clip": "c1.def.1",
+   "text": "Here's last time's pair again.",
+   "i": 16
+  },
+  {
+   "t": 81.14,
+   "clip": "c1.def.1",
+   "text": "Cosine of ex is the sum of the two exponentials, over two.",
+   "i": 17
+  },
+  {
+   "t": 86.23,
+   "clip": "c1.def.1",
+   "text": "Sine of ex is their difference, over two eye.",
+   "i": 18
+  },
+  {
+   "t": 90.16,
+   "clip": "c1.def.1",
+   "text": "The lecture asks a simple question.",
+   "i": 19
+  },
+  {
+   "t": 93.59,
+   "clip": "c1.def.1",
+   "text": "What happens if the exponent is real, with no eye in it?",
+   "i": 20
+  },
+  {
+   "t": 100.2,
+   "clip": "c1.def.2",
+   "text": "Keep the shape, and use real exponentials.",
+   "i": 21
+  },
+  {
+   "t": 104.34,
+   "clip": "c1.def.2",
+   "text": "E to the ex, plus E to the minus ex, all over two, is the hyperbolic cosine, cosh of ex.",
+   "i": 22
+  },
+  {
+   "t": 112.82,
+   "clip": "c1.def.2",
+   "text": "Their difference over two is the hyperbolic sine, shine of ex.",
+   "i": 23
+  },
+  {
+   "t": 117.33,
+   "clip": "c1.def.2",
+   "text": "Look at its denominator.",
+   "i": 24
+  },
+  {
+   "t": 119.91,
+   "clip": "c1.def.2",
+   "text": "It's just two, with no eye this time.",
+   "i": 25
+  },
+  {
+   "t": 123.43,
+   "clip": "c1.def.2",
+   "text": "These are real functions.",
+   "i": 26
+  },
+  {
+   "t": 126.6,
+   "clip": "c1.def.2",
+   "text": "Feed them a real number, and you get a real number back.",
+   "i": 27
+  },
+  {
+   "t": 131.13,
+   "clip": "c1.def.3",
+   "text": "To see them, put both exponentials on one set of axes.",
+   "i": 28
+  },
+  {
+   "t": 136.69,
+   "clip": "c1.def.3",
+   "text": "E to the ex, in gold, climbs to the right.",
+   "i": 29
+  },
+  {
+   "t": 140.14,
+   "clip": "c1.def.3",
+   "text": "E to the minus ex, in purple, is its mirror image.",
+   "i": 30
+  },
+  {
+   "t": 144.85,
+   "clip": "c1.def.3",
+   "text": "Now stand at ex equals one.",
+   "i": 31
+  },
+  {
+   "t": 148.45,
+   "clip": "c1.def.3",
+   "text": "Here E to the ex is about two point seven two, and E to the minus ex is about zero point three seven.",
+   "i": 32
+  },
+  {
+   "t": 156.03,
+   "clip": "c1.def.3",
+   "text": "Cosh of one is their average, the point halfway between, about one point five four.",
+   "i": 33
+  },
+  {
+   "t": 161.87,
+   "clip": "c1.def.4",
+   "text": "Now slide across, taking the midpoint everywhere.",
+   "i": 34
+  },
+  {
+   "t": 165.64,
+   "clip": "c1.def.4",
+   "text": "The midpoints trace out cosh.",
+   "i": 35
+  },
+  {
+   "t": 169.39,
+   "clip": "c1.def.4",
+   "text": "Shine is half the gap between the two curves, gold minus purple.",
+   "i": 36
+  },
+  {
+   "t": 174.06,
+   "clip": "c1.def.4",
+   "text": "At ex equals one, that's about one point one eight.",
+   "i": 37
+  },
+  {
+   "t": 179.17,
+   "clip": "c1.def.4",
+   "text": "At zero, the curves cross, so the gap is zero.",
+   "i": 38
+  },
+  {
+   "t": 184.11,
+   "clip": "c1.def.4",
+   "text": "To the left, purple is on top, and shine goes negative.",
+   "i": 39
+  },
+  {
+   "t": 189.31,
+   "clip": "c1.def.4",
+   "text": "So cosh is the average of the two exponentials, and shine is half their difference.",
+   "i": 40
+  },
+  {
+   "t": 196.0,
+   "clip": "c1.def.5",
+   "text": "One more thing falls out.",
+   "i": 41
+  },
+  {
+   "t": 199.33,
+   "clip": "c1.def.5",
+   "text": "Add cosh and shine.",
+   "i": 42
+  },
+  {
+   "t": 202.02,
+   "clip": "c1.def.5",
+   "text": "The E to the minus ex terms cancel, and the two E to the ex terms, a half each, add up to one whole E to the ex.",
+   "i": 43
+  },
+  {
+   "t": 210.69,
+   "clip": "c1.def.5",
+   "text": "So E to the ex equals cosh of ex, plus shine of ex.",
+   "i": 44
+  },
+  {
+   "t": 215.27,
+   "clip": "c1.def.5",
+   "text": "Compare that with E to the eye ex, which is cosine of ex, plus eye times sine of ex.",
+   "i": 45
+  },
+  {
+   "t": 221.98,
+   "clip": "c1.def.5",
+   "text": "It's the same pattern, without the eye.",
+   "i": 46
+  },
+  {
+   "t": 227.33,
+   "clip": "c1.family.1",
+   "text": "Just as tangent is sine over cosine, the hyperbolic tangent is shine over cosh.",
+   "i": 47
+  },
+  {
+   "t": 233.83,
+   "clip": "c1.family.1",
+   "text": "Back at ex equals one, that's about one point one eight over one point five four, so tanch of one is about zero point seven six.",
+   "i": 48
+  },
+  {
+   "t": 243.32,
+   "clip": "c1.family.1",
+   "text": "Write both in exponentials, and the factors of a half cancel.",
+   "i": 49
+  },
+  {
+   "t": 247.84,
+   "clip": "c1.family.1",
+   "text": "What's left is the difference of the two exponentials, over their sum.",
+   "i": 50
+  },
+  {
+   "t": 254.5,
+   "clip": "c1.family.2",
+   "text": "About those names.",
+   "i": 51
+  },
+  {
+   "t": 257.75,
+   "clip": "c1.family.2",
+   "text": "The notes say how to pronounce them: cosh, shine, and tanch.",
+   "i": 52
+  },
+  {
+   "t": 264.3,
+   "clip": "c1.family.2",
+   "text": "In this series, cosine, sine and tangent always mean the circular functions, and cosh, shine and tanch always mean the hyperbolic ones.",
+   "i": 53
+  },
+  {
+   "t": 275.57,
+   "clip": "c1.family.3",
+   "text": "The circular functions have three reciprocals: secant, cosecant and cotangent.",
+   "i": 54
+  },
+  {
+   "t": 283.55,
+   "clip": "c1.family.3",
+   "text": "The hyperbolic ones copy them.",
+   "i": 55
+  },
+  {
+   "t": 287.02,
+   "clip": "c1.family.3",
+   "text": "The hyperbolic secant is one over cosh.",
+   "i": 56
+  },
+  {
+   "t": 291.22,
+   "clip": "c1.family.3",
+   "text": "The hyperbolic cosecant is one over shine.",
+   "i": 57
+  },
+  {
+   "t": 295.94,
+   "clip": "c1.family.3",
+   "text": "And the hyperbolic cotangent is one over tanch.",
+   "i": 58
+  },
+  {
+   "t": 299.99,
+   "clip": "c1.family.3",
+   "text": "On paper, each hyperbolic name is its circular parent, with one extra letter on the end.",
+   "i": 59
+  },
+  {
+   "t": 305.8,
+   "clip": "c1.family.4",
+   "text": "Here's a warning, because this one trips people up.",
+   "i": 60
+  },
+  {
+   "t": 309.4,
+   "clip": "c1.family.4",
+   "text": "The hyperbolic secant is one over cosh.",
+   "i": 61
+  },
+  {
+   "t": 313.15,
+   "clip": "c1.family.4",
+   "text": "That is a different thing from the inverse of cosh, written with a small minus one up top.",
+   "i": 62
+  },
+  {
+   "t": 320.31,
+   "clip": "c1.family.4",
+   "text": "The inverse is the function that undoes cosh, and it's built from logarithms.",
+   "i": 63
+  },
+  {
+   "t": 325.71,
+   "clip": "c1.family.4",
+   "text": "You'll meet it properly in part three.",
+   "i": 64
+  },
+  {
+   "t": 334.3,
+   "clip": "c1.cosix.1",
+   "text": "The new functions look like cousins of cosine and sine.",
+   "i": 65
+  },
+  {
+   "t": 338.69,
+   "clip": "c1.cosix.1",
+   "text": "Now let's find the exact family tie.",
+   "i": 66
+  },
+  {
+   "t": 342.51,
+   "clip": "c1.cosix.1",
+   "text": "Start from cosine of zed, where zed can be any complex number.",
+   "i": 67
+  },
+  {
+   "t": 347.27,
+   "clip": "c1.cosix.1",
+   "text": "It's E to the eye zed, plus E to the minus eye zed, all over two.",
+   "i": 68
+  },
+  {
+   "t": 352.63,
+   "clip": "c1.cosix.2",
+   "text": "Here's the trick from the notes.",
+   "i": 69
+  },
+  {
+   "t": 355.67,
+   "clip": "c1.cosix.2",
+   "text": "Put zed equal to eye times ex, where ex can be complex too.",
+   "i": 70
+  },
+  {
+   "t": 360.85,
+   "clip": "c1.cosix.2",
+   "text": "The first exponent becomes eye, times eye ex.",
+   "i": 71
+  },
+  {
+   "t": 365.62,
+   "clip": "c1.cosix.2",
+   "text": "That's eye squared, times ex.",
+   "i": 72
+  },
+  {
+   "t": 369.84,
+   "clip": "c1.cosix.2",
+   "text": "And eye squared is minus one.",
+   "i": 73
+  },
+  {
+   "t": 372.96,
+   "clip": "c1.cosix.2",
+   "text": "So E to the eye zed turns into E to the minus ex.",
+   "i": 74
+  },
+  {
+   "t": 377.48,
+   "clip": "c1.cosix.2",
+   "text": "In the second exponent, the minus in front meets eye squared, and two minuses make a plus.",
+   "i": 75
+  },
+  {
+   "t": 384.53,
+   "clip": "c1.cosix.2",
+   "text": "You get E to the ex.",
+   "i": 76
+  },
+  {
+   "t": 387.17,
+   "clip": "c1.cosix.3",
+   "text": "Look at what happened.",
+   "i": 77
+  },
+  {
+   "t": 390.06,
+   "clip": "c1.cosix.3",
+   "text": "The two exponentials have swapped places.",
+   "i": 78
+  },
+  {
+   "t": 394.18,
+   "clip": "c1.cosix.3",
+   "text": "But you can add in any order, so the sum is unchanged.",
+   "i": 79
+  },
+  {
+   "t": 398.57,
+   "clip": "c1.cosix.3",
+   "text": "It's E to the ex, plus E to the minus ex, over two, which is exactly cosh of ex.",
+   "i": 80
+  },
+  {
+   "t": 406.33,
+   "clip": "c1.cosix.3",
+   "text": "So cosine of eye ex equals cosh of ex.",
+   "i": 81
+  },
+  {
+   "t": 413.42,
+   "clip": "c1.cosix.4",
+   "text": "Try it with ex equal to one.",
+   "i": 82
+  },
+  {
+   "t": 416.56,
+   "clip": "c1.cosix.4",
+   "text": "The cosine of eye is cosh of one, about one point five four.",
+   "i": 83
+  },
+  {
+   "t": 422.44,
+   "clip": "c1.cosix.4",
+   "text": "That's the midpoint you found on the graph.",
+   "i": 84
+  },
+  {
+   "t": 426.66,
+   "clip": "c1.cosix.4",
+   "text": "So here's a cosine bigger than one.",
+   "i": 85
+  },
+  {
+   "t": 430.6,
+   "clip": "c1.cosix.4",
+   "text": "On the real line, cosine is stuck between minus one and one.",
+   "i": 86
+  },
+  {
+   "t": 435.12,
+   "clip": "c1.cosix.4",
+   "text": "Once you step off the real line, it breaks free.",
+   "i": 87
+  },
+  {
+   "t": 442.02,
+   "clip": "c1.sinix.1",
+   "text": "Now the same trick with sine.",
+   "i": 88
+  },
+  {
+   "t": 445.32,
+   "clip": "c1.sinix.1",
+   "text": "Sine of zed is E to the eye zed, minus E to the minus eye zed, all over two eye.",
+   "i": 89
+  },
+  {
+   "t": 453.08,
+   "clip": "c1.sinix.1",
+   "text": "Put zed equal to eye ex, and once again the two exponentials swap.",
+   "i": 90
+  },
+  {
+   "t": 458.56,
+   "clip": "c1.sinix.1",
+   "text": "But this time, order matters.",
+   "i": 91
+  },
+  {
+   "t": 462.15,
+   "clip": "c1.sinix.1",
+   "text": "The difference comes out backwards, E to the minus ex, minus E to the ex, over two eye.",
+   "i": 92
+  },
+  {
+   "t": 468.38,
+   "clip": "c1.sinix.2",
+   "text": "Turn it round by pulling out a minus sign.",
+   "i": 93
+  },
+  {
+   "t": 471.39,
+   "clip": "c1.sinix.2",
+   "text": "Now the bracket reads E to the ex, minus E to the minus ex, and in front sits minus one over two eye.",
+   "i": 94
+  },
+  {
+   "t": 479.31,
+   "clip": "c1.sinix.2",
+   "text": "This next step is where people drop a sign, so let's go slowly.",
+   "i": 95
+  },
+  {
+   "t": 485.25,
+   "clip": "c1.sinix.3",
+   "text": "What is one over eye?",
+   "i": 96
+  },
+  {
+   "t": 488.83,
+   "clip": "c1.sinix.3",
+   "text": "Multiply the top and the bottom by eye.",
+   "i": 97
+  },
+  {
+   "t": 492.43,
+   "clip": "c1.sinix.3",
+   "text": "The top becomes eye.",
+   "i": 98
+  },
+  {
+   "t": 496.26,
+   "clip": "c1.sinix.3",
+   "text": "The bottom becomes eye squared, which is minus one.",
+   "i": 99
+  },
+  {
+   "t": 500.04,
+   "clip": "c1.sinix.3",
+   "text": "So one over eye is minus eye.",
+   "i": 100
+  },
+  {
+   "t": 503.43,
+   "clip": "c1.sinix.3",
+   "text": "That turns minus one over two eye into plus eye over two.",
+   "i": 101
+  },
+  {
+   "t": 507.91,
+   "clip": "c1.sinix.3",
+   "text": "The two minus signs cancel.",
+   "i": 102
+  },
+  {
+   "t": 511.48,
+   "clip": "c1.sinix.4",
+   "text": "What's left is eye, times half the difference of the exponentials.",
+   "i": 103
+  },
+  {
+   "t": 516.97,
+   "clip": "c1.sinix.4",
+   "text": "And half their difference is shine of ex.",
+   "i": 104
+  },
+  {
+   "t": 520.6,
+   "clip": "c1.sinix.4",
+   "text": "So sine of eye ex equals eye times shine of ex.",
+   "i": 105
+  },
+  {
+   "t": 526.14,
+   "clip": "c1.sinix.4",
+   "text": "Compared with the cosine, there's an extra eye in front.",
+   "i": 106
+  },
+  {
+   "t": 530.37,
+   "clip": "c1.sinix.4",
+   "text": "If you ever get minus eye instead, go back and check the one over eye step.",
+   "i": 107
+  },
+  {
+   "t": 535.62,
+   "clip": "c1.sinix.5",
+   "text": "Tangent comes for free.",
+   "i": 108
+  },
+  {
+   "t": 538.18,
+   "clip": "c1.sinix.5",
+   "text": "Divide the sine of eye ex by the cosine of eye ex.",
+   "i": 109
+  },
+  {
+   "t": 542.91,
+   "clip": "c1.sinix.5",
+   "text": "That's eye times shine of ex, over cosh of ex.",
+   "i": 110
+  },
+  {
+   "t": 547.65,
+   "clip": "c1.sinix.5",
+   "text": "And shine over cosh is tanch.",
+   "i": 111
+  },
+  {
+   "t": 550.92,
+   "clip": "c1.sinix.5",
+   "text": "So tangent of eye ex equals eye times tanch of ex.",
+   "i": 112
+  },
+  {
+   "t": 559.65,
+   "clip": "c1.dict.1",
+   "text": "Put the three results together, and you get a small dictionary between the two worlds.",
+   "i": 113
+  },
+  {
+   "t": 564.9,
+   "clip": "c1.dict.1",
+   "text": "The notes stress that these hold for every complex ex, and not only for real ones.",
+   "i": 114
+  },
+  {
+   "t": 570.96,
+   "clip": "c1.dict.1",
+   "text": "Nothing in the working needed ex to be real.",
+   "i": 115
+  },
+  {
+   "t": 574.17,
+   "clip": "c1.dict.1",
+   "text": "Try a properly complex ex, one plus two eye.",
+   "i": 116
+  },
+  {
+   "t": 578.05,
+   "clip": "c1.dict.1",
+   "text": "Work out both sides, and they come out the same.",
+   "i": 117
+  },
+  {
+   "t": 581.48,
+   "clip": "c1.dict.2",
+   "text": "Reading across the card, cosine turns into cosh with no change at all.",
+   "i": 118
+  },
+  {
+   "t": 586.12,
+   "clip": "c1.dict.2",
+   "text": "Sine and tangent turn into shine and tanch, with an extra eye in front.",
+   "i": 119
+  },
+  {
+   "t": 591.56,
+   "clip": "c1.dict.2",
+   "text": "You can also read it backwards.",
+   "i": 120
+  },
+  {
+   "t": 595.0,
+   "clip": "c1.dict.2",
+   "text": "Cosh of ex is cosine of eye ex.",
+   "i": 121
+  },
+  {
+   "t": 598.56,
+   "clip": "c1.dict.2",
+   "text": "And shine of ex is minus eye, times sine of eye ex.",
+   "i": 122
+  },
+  {
+   "t": 605.37,
+   "clip": "c1.dict.3",
+   "text": "So what does the dictionary buy you?",
+   "i": 123
+  },
+  {
+   "t": 608.79,
+   "clip": "c1.dict.3",
+   "text": "First, every identity for cosine and sine becomes one for cosh and shine, sometimes with a sign flipped.",
+   "i": 124
+  },
+  {
+   "t": 616.78,
+   "clip": "c1.dict.3",
+   "text": "That's Part two.",
+   "i": 125
+  },
+  {
+   "t": 619.33,
+   "clip": "c1.dict.3",
+   "text": "Second, the cosine of any complex number splits into a real part and an imaginary part, built from cosine, sine, cosh and shine of real numbers.",
+   "i": 126
+  },
+  {
+   "t": 628.57,
+   "clip": "c1.dict.3",
+   "text": "That's Part four, where you'll find every zed whose cosine is two.",
+   "i": 127
+  },
+  {
+   "t": 636.15,
+   "clip": "c1.recap.1",
+   "text": "Let's recap.",
+   "i": 128
+  },
+  {
+   "t": 638.99,
+   "clip": "c1.recap.1",
+   "text": "Cosh is the average of E to the ex and E to the minus ex, and shine is half their difference.",
+   "i": 129
+  },
+  {
+   "t": 645.84,
+   "clip": "c1.recap.1",
+   "text": "Tanch is shine over cosh, and the three reciprocals are one over cosh, one over shine, and one over tanch.",
+   "i": 130
+  },
+  {
+   "t": 653.91,
+   "clip": "c1.recap.1",
+   "text": "One over cosh is the hyperbolic secant, a different thing from the inverse of cosh.",
+   "i": 131
+  },
+  {
+   "t": 659.82,
+   "clip": "c1.recap.2",
+   "text": "Putting an eye inside a cosine turns it into a cosh.",
+   "i": 132
+  },
+  {
+   "t": 664.21,
+   "clip": "c1.recap.2",
+   "text": "For sine and tangent, an extra eye comes out in front.",
+   "i": 133
+  },
+  {
+   "t": 669.0,
+   "clip": "c1.recap.2",
+   "text": "And this dictionary holds for every complex number, not only for real ones.",
+   "i": 134
+  },
+  {
+   "t": 675.95,
+   "clip": "c1.recap.3",
+   "text": "Next time, start from an identity you know well: cosine squared of ex, plus sine squared of ex, equals one.",
+   "i": 135
+  },
+  {
+   "t": 685.31,
+   "clip": "c1.recap.3",
+   "text": "Cosh and shine have a twin of it, with the plus flipped to a minus.",
+   "i": 136
+  },
+  {
+   "t": 689.84,
+   "clip": "c1.recap.3",
+   "text": "And that minus sign is where the name hyperbolic comes from.",
+   "i": 137
+  }
+ ]
+}

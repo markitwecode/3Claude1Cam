@@ -1,0 +1,29 @@
+{
+  "title": "Timing, Metastability and Parallelism",
+  "course_line": "Digital Electronics · Lecture 8",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every inequality, worked number (clock periods, frequencies, latencies, throughputs), the MTBF example and any number you add, in Python 3.11.9, standard library only (math), solving the MTBF equation by bisection: `python3 -I check.py`. The planner's checks are in PLAN.md (Decisions, 'Checked numbers'). No HDL or circuit simulator is installed (iverilog, yosys, ghdl, verilator, ngspice: none).",
+  "sources": [
+    {
+      "path": "../source/combined_26.pdf",
+      "pages": "104-119",
+      "note": "Slides for the whole course (190 pp., two slides per page). This lecture is pp. 104-119: set-up and hold constraints, contamination delay, clock skew, metastability, synchronisers and MTBF, parallelism and pipelining. p. 120 (the 'Synchronous State Machines 1' title) is only shown at the close: next-lecture teaser. pp. 101 (second slide)-103 (shift register, serial data link, system timing) belong to Lecture 7, which has no recording here; ch1 s2 and ch2 s3 re-teach the parts this lecture leans on. Already known: gate propagation delay p. 58, hazards and glitches pp. 59-62, timing diagrams p. 60, and Lecture 6 (pp. 85-101). pdftotext renders tau as 't' on pp. 111 and 114, and drops subscripts: read formulas from the rendered page (pdftoppm). p. 117's circuit: CB1 and CB2 in parallel, both feeding CB3, then CB4; point A is between CB3 and CB4"
+    },
+    {
+      "path": "../source/l08-lecture.transcript.md",
+      "pages": "00:03:34-00:54:49",
+      "note": "Whisper medium transcript of l08-lecture.mp4 (recorded Fri 2026-10-23; this is Lecture 8, see PLAN.md Decisions). Skip 00:00-00:03:34 (hardware-lab admin) and the end. Chapter time ranges are in PLAN.md. Slips to correct, listed in PLAN.md Decisions: 00:09:24 'TPC' for t_pd, 00:15:35 'less than zero' for 'greater than zero', 00:49:01 '5.0' for 5.5"
+    },
+    {
+      "path": "../source/l08-lecture.digest.md",
+      "pages": "00:03:34-00:54:49",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l08-lecture.mp4: screen content, diagrams, emphasis. Wrong in places (PLAN.md Decisions): clock-skew direction (00:20:00, 00:22:06), the pipeline circuit's paths and delays (00:43:52, 00:50:00), 'min tcd' for 'min tsu', and its 'Lecture 7' label. Its 'Questions' are the model's own, not students': the only student question is about lab scheduling. The laundry/assembly-line example is the model's, not the lecturer's"
+    },
+    {
+      "path": "../source/l08-lecture.captions.md",
+      "pages": "00:03:34-00:54:49",
+      "note": "embedded captions (panopto_EN-GB eng) of l08-lecture.mp4; cross-check only"
+    }
+  ],
+  "created": "2026-10-31"
+}

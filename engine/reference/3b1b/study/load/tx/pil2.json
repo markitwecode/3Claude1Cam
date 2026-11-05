@@ -1,0 +1,1329 @@
+{
+ "key": "pil2",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-deep-oscillations",
+ "chapter": 2,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-deep-oscillations/out/ch2_shadow.mp4",
+ "total": 1032.197917,
+ "scenes_sum": 1032.113085,
+ "words": 2098,
+ "scenes": [
+  {
+   "stem": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 73.283333,
+   "cue_dur": 73.2833
+  },
+  {
+   "stem": "ch2_s2_guess",
+   "t0": 73.283333,
+   "dur": 136.35,
+   "cue_dur": 136.35
+  },
+  {
+   "stem": "ch2_s3_velocity",
+   "t0": 209.633333,
+   "dur": 142.982682,
+   "cue_dur": 142.9833
+  },
+  {
+   "stem": "ch2_s4_accel",
+   "t0": 352.616015,
+   "dur": 84.766016,
+   "cue_dur": 84.7667
+  },
+  {
+   "stem": "ch2_s5_shadow",
+   "t0": 437.382031,
+   "dur": 120.732031,
+   "cue_dur": 120.7333
+  },
+  {
+   "stem": "ch2_s6_mirror",
+   "t0": 558.114062,
+   "dur": 77.649023,
+   "cue_dur": 77.65
+  },
+  {
+   "stem": "ch2_s7_every",
+   "t0": 635.763085,
+   "dur": 179.783333,
+   "cue_dur": 179.7833
+  },
+  {
+   "stem": "ch2_s8_period",
+   "t0": 815.546418,
+   "dur": 140.85,
+   "cue_dur": 140.85
+  },
+  {
+   "stem": "ch2_s9_recap",
+   "t0": 956.396418,
+   "dur": 75.716667,
+   "cue_dur": 75.7167
+  }
+ ],
+ "clips": [
+  {
+   "id": "c2.hook.1",
+   "scene": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 29.731
+  },
+  {
+   "id": "c2.hook.2",
+   "scene": "ch2_s1_hook",
+   "t0": 31.45,
+   "dur": 36.908
+  },
+  {
+   "id": "c2.guess.1",
+   "scene": "ch2_s2_guess",
+   "t0": 73.283333,
+   "dur": 37.508
+  },
+  {
+   "id": "c2.guess.2",
+   "scene": "ch2_s2_guess",
+   "t0": 111.600033,
+   "dur": 25.427
+  },
+  {
+   "id": "c2.guess.3",
+   "scene": "ch2_s2_guess",
+   "t0": 138.45003300000002,
+   "dur": 44.059
+  },
+  {
+   "id": "c2.guess.4",
+   "scene": "ch2_s2_guess",
+   "t0": 184.000033,
+   "dur": 23.751
+  },
+  {
+   "id": "c2.vel.1",
+   "scene": "ch2_s3_velocity",
+   "t0": 209.633333,
+   "dur": 27.45
+  },
+  {
+   "id": "c2.vel.2",
+   "scene": "ch2_s3_velocity",
+   "t0": 238.566633,
+   "dur": 29.512
+  },
+  {
+   "id": "c2.vel.3",
+   "scene": "ch2_s3_velocity",
+   "t0": 269.366633,
+   "dur": 31.424
+  },
+  {
+   "id": "c2.vel.4",
+   "scene": "ch2_s3_velocity",
+   "t0": 301.516633,
+   "dur": 28.399
+  },
+  {
+   "id": "c2.vel.5",
+   "scene": "ch2_s3_velocity",
+   "t0": 330.666633,
+   "dur": 15.964
+  },
+  {
+   "id": "c2.acc.1",
+   "scene": "ch2_s4_accel",
+   "t0": 352.616015,
+   "dur": 22.934
+  },
+  {
+   "id": "c2.acc.2",
+   "scene": "ch2_s4_accel",
+   "t0": 376.516015,
+   "dur": 27.415
+  },
+  {
+   "id": "c2.acc.3",
+   "scene": "ch2_s4_accel",
+   "t0": 405.482715,
+   "dur": 25.983
+  },
+  {
+   "id": "c2.shadow.1",
+   "scene": "ch2_s5_shadow",
+   "t0": 437.382031,
+   "dur": 30.027
+  },
+  {
+   "id": "c2.shadow.2",
+   "scene": "ch2_s5_shadow",
+   "t0": 469.048731,
+   "dur": 26.799
+  },
+  {
+   "id": "c2.shadow.3",
+   "scene": "ch2_s5_shadow",
+   "t0": 496.965331,
+   "dur": 33.955
+  },
+  {
+   "id": "c2.shadow.4",
+   "scene": "ch2_s5_shadow",
+   "t0": 531.848731,
+   "dur": 16.718
+  },
+  {
+   "id": "c2.mirror.1",
+   "scene": "ch2_s6_mirror",
+   "t0": 558.114062,
+   "dur": 25.098
+  },
+  {
+   "id": "c2.mirror.2",
+   "scene": "ch2_s6_mirror",
+   "t0": 584.380762,
+   "dur": 27.613
+  },
+  {
+   "id": "c2.mirror.3",
+   "scene": "ch2_s6_mirror",
+   "t0": 612.830762,
+   "dur": 18.634
+  },
+  {
+   "id": "c2.every.1",
+   "scene": "ch2_s7_every",
+   "t0": 635.763085,
+   "dur": 39.278
+  },
+  {
+   "id": "c2.every.2",
+   "scene": "ch2_s7_every",
+   "t0": 675.813085,
+   "dur": 37.748
+  },
+  {
+   "id": "c2.every.3",
+   "scene": "ch2_s7_every",
+   "t0": 714.9463850000001,
+   "dur": 38.475
+  },
+  {
+   "id": "c2.every.4",
+   "scene": "ch2_s7_every",
+   "t0": 754.396385,
+   "dur": 18.962
+  },
+  {
+   "id": "c2.every.5",
+   "scene": "ch2_s7_every",
+   "t0": 775.346385,
+   "dur": 35.913
+  },
+  {
+   "id": "c2.beat.1",
+   "scene": "ch2_s8_period",
+   "t0": 815.546418,
+   "dur": 26.575
+  },
+  {
+   "id": "c2.beat.2",
+   "scene": "ch2_s8_period",
+   "t0": 843.029718,
+   "dur": 20.166
+  },
+  {
+   "id": "c2.beat.3",
+   "scene": "ch2_s8_period",
+   "t0": 863.913118,
+   "dur": 30.039
+  },
+  {
+   "id": "c2.beat.4",
+   "scene": "ch2_s8_period",
+   "t0": 894.863118,
+   "dur": 21.736
+  },
+  {
+   "id": "c2.beat.5",
+   "scene": "ch2_s8_period",
+   "t0": 917.346418,
+   "dur": 35.431
+  },
+  {
+   "id": "c2.recap.1",
+   "scene": "ch2_s9_recap",
+   "t0": 956.396418,
+   "dur": 47.532
+  },
+  {
+   "id": "c2.recap.2",
+   "scene": "ch2_s9_recap",
+   "t0": 1004.8464180000001,
+   "dur": 14.527
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c2.hook.1",
+   "text": "Here's the weight on a spring from part one, sliding back and forth.",
+   "i": 1
+  },
+  {
+   "t": 4.84,
+   "clip": "c2.hook.1",
+   "text": "Let time run down the screen, and its position draws this wave.",
+   "i": 2
+  },
+  {
+   "t": 9.44,
+   "clip": "c2.hook.1",
+   "text": "You know its rule from part one: ex double dot equals minus omega squared, times ex.",
+   "i": 3
+  },
+  {
+   "t": 17.46,
+   "clip": "c2.hook.1",
+   "text": "So what is this wave?",
+   "i": 4
+  },
+  {
+   "t": 21.66,
+   "clip": "c2.hook.1",
+   "text": "Which function comes back as minus omega squared times itself, when you differentiate it twice?",
+   "i": 5
+  },
+  {
+   "t": 31.45,
+   "clip": "c2.hook.2",
+   "text": "By the end of this part, you can read the answer off a turning arrow.",
+   "i": 6
+  },
+  {
+   "t": 35.87,
+   "clip": "c2.hook.2",
+   "text": "First, three quick questions.",
+   "i": 7
+  },
+  {
+   "t": 39.75,
+   "clip": "c2.hook.2",
+   "text": "For a pendulum of length L, what's omega squared?",
+   "i": 8
+  },
+  {
+   "t": 45.83,
+   "clip": "c2.hook.2",
+   "text": "G over L.",
+   "i": 9
+  },
+  {
+   "t": 49.0,
+   "clip": "c2.hook.2",
+   "text": "What does multiplying by eye do to an arrow?",
+   "i": 10
+  },
+  {
+   "t": 55.04,
+   "clip": "c2.hook.2",
+   "text": "A quarter turn anticlockwise, keeping its length.",
+   "i": 11
+  },
+  {
+   "t": 59.16,
+   "clip": "c2.hook.2",
+   "text": "And what's the derivative of the cosine of three T?",
+   "i": 12
+  },
+  {
+   "t": 65.18,
+   "clip": "c2.hook.2",
+   "text": "Minus three times the sine of three T, by the chain rule.",
+   "i": 13
+  },
+  {
+   "t": 73.28,
+   "clip": "c2.guess.1",
+   "text": "You may already have a guess from the wave's shape.",
+   "i": 14
+  },
+  {
+   "t": 76.99,
+   "clip": "c2.guess.1",
+   "text": "Hold on to it.",
+   "i": 15
+  },
+  {
+   "t": 79.89,
+   "clip": "c2.guess.1",
+   "text": "The two derivatives are what make the rule hard.",
+   "i": 16
+  },
+  {
+   "t": 83.9,
+   "clip": "c2.guess.1",
+   "text": "So look for a function that differentiating barely changes.",
+   "i": 17
+  },
+  {
+   "t": 88.14,
+   "clip": "c2.guess.1",
+   "text": "E to the T is such a function.",
+   "i": 18
+  },
+  {
+   "t": 91.33,
+   "clip": "c2.guess.1",
+   "text": "Its rate of change always equals its value.",
+   "i": 19
+  },
+  {
+   "t": 94.92,
+   "clip": "c2.guess.1",
+   "text": "E to the minus T decays, and its rate of change is minus its value.",
+   "i": 20
+  },
+  {
+   "t": 99.89,
+   "clip": "c2.guess.1",
+   "text": "For E to the lambda T, the rate of change is lambda times the value.",
+   "i": 21
+  },
+  {
+   "t": 104.79,
+   "clip": "c2.guess.1",
+   "text": "As you turn lambda from one down to minus one, the curve grows, flattens, then decays.",
+   "i": 22
+  },
+  {
+   "t": 111.6,
+   "clip": "c2.guess.2",
+   "text": "So the move here is: try E to the lambda T, because differentiating only multiplies it by lambda.",
+   "i": 23
+  },
+  {
+   "t": 120.06,
+   "clip": "c2.guess.2",
+   "text": "Do it twice, and you get lambda squared times E to the lambda T.",
+   "i": 24
+  },
+  {
+   "t": 125.12,
+   "clip": "c2.guess.2",
+   "text": "Put that into the rule, and divide out the exponential, which is never zero.",
+   "i": 25
+  },
+  {
+   "t": 131.09,
+   "clip": "c2.guess.2",
+   "text": "The whole rule shrinks to one line: lambda squared equals minus omega squared.",
+   "i": 26
+  },
+  {
+   "t": 138.45,
+   "clip": "c2.guess.3",
+   "text": "Say omega is two, so you need lambda squared to be minus four.",
+   "i": 27
+  },
+  {
+   "t": 142.8,
+   "clip": "c2.guess.3",
+   "text": "Which lambda does that?",
+   "i": 28
+  },
+  {
+   "t": 146.45,
+   "clip": "c2.guess.3",
+   "text": "Pause the video if you want longer.",
+   "i": 29
+  },
+  {
+   "t": 156.25,
+   "clip": "c2.guess.3",
+   "text": "No real number works: any real number, squared, is zero or more.",
+   "i": 30
+  },
+  {
+   "t": 163.48,
+   "clip": "c2.guess.3",
+   "text": "That's why the graphs never swing.",
+   "i": 31
+  },
+  {
+   "t": 166.81,
+   "clip": "c2.guess.3",
+   "text": "But eye squared is minus one, so two eye, all squared, is minus four.",
+   "i": 32
+  },
+  {
+   "t": 172.12,
+   "clip": "c2.guess.3",
+   "text": "In general, eye omega, all squared, is minus omega squared, and minus eye omega works too.",
+   "i": 33
+  },
+  {
+   "t": 179.94,
+   "clip": "c2.guess.3",
+   "text": "So lambda is plus or minus eye omega.",
+   "i": 34
+  },
+  {
+   "t": 184.0,
+   "clip": "c2.guess.4",
+   "text": "So the rule itself asks for complex numbers.",
+   "i": 35
+  },
+  {
+   "t": 187.94,
+   "clip": "c2.guess.4",
+   "text": "But does E to the eye omega T really change at eye omega times its value?",
+   "i": 36
+  },
+  {
+   "t": 194.46,
+   "clip": "c2.guess.4",
+   "text": "You can watch it and see.",
+   "i": 37
+  },
+  {
+   "t": 197.45,
+   "clip": "c2.guess.4",
+   "text": "One note: this route goes beyond the notes, which simply state the answer.",
+   "i": 38
+  },
+  {
+   "t": 205.12,
+   "clip": "c2.guess.4",
+   "text": "This small tag marks each addition.",
+   "i": 39
+  },
+  {
+   "t": 209.63,
+   "clip": "c2.vel.1",
+   "text": "Here's E to the eye omega T.",
+   "i": 40
+  },
+  {
+   "t": 213.09,
+   "clip": "c2.vel.1",
+   "text": "You've seen that E to the eye times an angle is the arrow of length one at that angle.",
+   "i": 41
+  },
+  {
+   "t": 219.65,
+   "clip": "c2.vel.1",
+   "text": "Here the angle, omega T, grows by omega radians every second, so the arrow turns.",
+   "i": 42
+  },
+  {
+   "t": 227.87,
+   "clip": "c2.vel.1",
+   "text": "Keep omega at two.",
+   "i": 43
+  },
+  {
+   "t": 230.88,
+   "clip": "c2.vel.1",
+   "text": "At any moment, which way is the tip moving, and how fast?",
+   "i": 44
+  },
+  {
+   "t": 238.57,
+   "clip": "c2.vel.2",
+   "text": "The tip runs round the circle, so it moves along the circle, at right angles to the arrow.",
+   "i": 45
+  },
+  {
+   "t": 244.78,
+   "clip": "c2.vel.2",
+   "text": "That's a quarter turn ahead.",
+   "i": 46
+  },
+  {
+   "t": 247.3,
+   "clip": "c2.vel.2",
+   "text": "Its speed is two, since each second it sweeps an arc of radius one and angle two.",
+   "i": 47
+  },
+  {
+   "t": 253.9,
+   "clip": "c2.vel.2",
+   "text": "Slide that velocity arrow back to the centre.",
+   "i": 48
+  },
+  {
+   "t": 257.44,
+   "clip": "c2.vel.2",
+   "text": "At time zero, it points straight up, with length two.",
+   "i": 49
+  },
+  {
+   "t": 261.81,
+   "clip": "c2.vel.2",
+   "text": "That's the arrow, turned a quarter turn by eye, and stretched by two: two eye.",
+   "i": 50
+  },
+  {
+   "t": 269.37,
+   "clip": "c2.vel.3",
+   "text": "The same happens at every moment, for any omega.",
+   "i": 51
+  },
+  {
+   "t": 273.87,
+   "clip": "c2.vel.3",
+   "text": "So the move here is: differentiating a turning arrow turns it a quarter turn ahead, and stretches it by omega.",
+   "i": 52
+  },
+  {
+   "t": 282.35,
+   "clip": "c2.vel.3",
+   "text": "In symbols, the derivative of E to the eye omega T is eye omega, times E to the eye omega T.",
+   "i": 53
+  },
+  {
+   "t": 289.69,
+   "clip": "c2.vel.3",
+   "text": "Read it on the picture: eye is the quarter turn, and omega is the stretch.",
+   "i": 54
+  },
+  {
+   "t": 296.77,
+   "clip": "c2.vel.3",
+   "text": "So you get the exponential rule back, with lambda equal to eye omega.",
+   "i": 55
+  },
+  {
+   "t": 301.52,
+   "clip": "c2.vel.4",
+   "text": "The picture runs the other way too.",
+   "i": 56
+  },
+  {
+   "t": 305.03,
+   "clip": "c2.vel.4",
+   "text": "Suppose all you knew was that the velocity is always eye omega times the position.",
+   "i": 57
+  },
+  {
+   "t": 310.84,
+   "clip": "c2.vel.4",
+   "text": "Then it's always at right angles to the arrow, so the arrow's length never changes.",
+   "i": 58
+  },
+  {
+   "t": 316.05,
+   "clip": "c2.vel.4",
+   "text": "Starting at one, it stays on the unit circle, covering omega radians a second.",
+   "i": 59
+  },
+  {
+   "t": 321.59,
+   "clip": "c2.vel.4",
+   "text": "So it sits at the cosine of omega T, plus eye times the sine: that's Oiler's formula, seen from motion.",
+   "i": 60
+  },
+  {
+   "t": 330.67,
+   "clip": "c2.vel.5",
+   "text": "The algebra agrees.",
+   "i": 61
+  },
+  {
+   "t": 333.9,
+   "clip": "c2.vel.5",
+   "text": "Differentiate Oiler's formula part by part, with the chain rule.",
+   "i": 62
+  },
+  {
+   "t": 338.29,
+   "clip": "c2.vel.5",
+   "text": "Then take out eye omega.",
+   "i": 63
+  },
+  {
+   "t": 341.95,
+   "clip": "c2.vel.5",
+   "text": "Since eye times eye is minus one, what's left is the arrow itself.",
+   "i": 64
+  },
+  {
+   "t": 352.62,
+   "clip": "c2.acc.1",
+   "text": "Now differentiate again.",
+   "i": 65
+  },
+  {
+   "t": 355.76,
+   "clip": "c2.acc.1",
+   "text": "The velocity is the arrow, turned a quarter turn ahead and stretched by omega.",
+   "i": 66
+  },
+  {
+   "t": 360.97,
+   "clip": "c2.acc.1",
+   "text": "So where does the acceleration point, and how long is it?",
+   "i": 67
+  },
+  {
+   "t": 365.45,
+   "clip": "c2.acc.1",
+   "text": "Pause the video if you want longer.",
+   "i": 68
+  },
+  {
+   "t": 376.52,
+   "clip": "c2.acc.2",
+   "text": "Do the same to the velocity: another quarter turn ahead, and another stretch by omega.",
+   "i": 69
+  },
+  {
+   "t": 383.63,
+   "clip": "c2.acc.2",
+   "text": "Two quarter turns make a half turn, so the acceleration points straight back at the centre.",
+   "i": 70
+  },
+  {
+   "t": 389.25,
+   "clip": "c2.acc.2",
+   "text": "Its length is omega squared: four, with omega at two.",
+   "i": 71
+  },
+  {
+   "t": 396.82,
+   "clip": "c2.acc.2",
+   "text": "In symbols, you multiply by eye omega twice, and eye omega, all squared, is minus omega squared.",
+   "i": 72
+  },
+  {
+   "t": 405.48,
+   "clip": "c2.acc.3",
+   "text": "Watch all three turn together.",
+   "i": 73
+  },
+  {
+   "t": 409.21,
+   "clip": "c2.acc.3",
+   "text": "The acceleration is always minus omega squared times the arrow.",
+   "i": 74
+  },
+  {
+   "t": 413.97,
+   "clip": "c2.acc.3",
+   "text": "That's the rule, exactly.",
+   "i": 75
+  },
+  {
+   "t": 416.87,
+   "clip": "c2.acc.3",
+   "text": "Now you can see why part one wrote omega squared: omega itself is how fast the arrow turns.",
+   "i": 76
+  },
+  {
+   "t": 426.23,
+   "clip": "c2.acc.3",
+   "text": "As a picture, the arrow is always pulled straight toward the centre, harder the further out it is.",
+   "i": 77
+  },
+  {
+   "t": 437.38,
+   "clip": "c2.shadow.1",
+   "text": "But the weight moves on a line, and its position, ex, is a real number.",
+   "i": 78
+  },
+  {
+   "t": 443.47,
+   "clip": "c2.shadow.1",
+   "text": "So the move here is: take the shadow.",
+   "i": 79
+  },
+  {
+   "t": 449.19,
+   "clip": "c2.shadow.1",
+   "text": "Drop a line straight down from the arrow's tip, and where it meets the real axis is the arrow's shadow.",
+   "i": 80
+  },
+  {
+   "t": 456.22,
+   "clip": "c2.shadow.1",
+   "text": "Put the weight on that same line, and you see the shadow and the weight move as one.",
+   "i": 81
+  },
+  {
+   "t": 461.47,
+   "clip": "c2.shadow.1",
+   "text": "But why should the shadow obey the rule?",
+   "i": 82
+  },
+  {
+   "t": 469.05,
+   "clip": "c2.shadow.2",
+   "text": "The arrow's motion splits into side to side and up and down, and differentiating treats each on its own.",
+   "i": 83
+  },
+  {
+   "t": 476.79,
+   "clip": "c2.shadow.2",
+   "text": "So the shadow of the acceleration is the acceleration of the shadow.",
+   "i": 84
+  },
+  {
+   "t": 481.99,
+   "clip": "c2.shadow.2",
+   "text": "The acceleration is minus omega squared times the arrow, so its shadow is minus omega squared times the shadow.",
+   "i": 85
+  },
+  {
+   "t": 489.76,
+   "clip": "c2.shadow.2",
+   "text": "On the weight, that's exactly the spring's pull.",
+   "i": 86
+  },
+  {
+   "t": 493.88,
+   "clip": "c2.shadow.2",
+   "text": "The shadow obeys the rule.",
+   "i": 87
+  },
+  {
+   "t": 496.97,
+   "clip": "c2.shadow.3",
+   "text": "And the shadow of the arrow at angle omega T is the cosine of omega T.",
+   "i": 88
+  },
+  {
+   "t": 502.9,
+   "clip": "c2.shadow.3",
+   "text": "Let time run down the screen, and the shadow unrolls into the wave you saw at the start.",
+   "i": 89
+  },
+  {
+   "t": 509.41,
+   "clip": "c2.shadow.3",
+   "text": "So that wave is the cosine of omega T.",
+   "i": 90
+  },
+  {
+   "t": 513.9,
+   "clip": "c2.shadow.3",
+   "text": "Read it back: the cosine of omega T is the shadow of a point going round at omega radians per second.",
+   "i": 91
+  },
+  {
+   "t": 523.97,
+   "clip": "c2.shadow.3",
+   "text": "The chain rule from the warm-up confirms it: two derivatives give minus omega squared times the cosine.",
+   "i": 92
+  },
+  {
+   "t": 531.85,
+   "clip": "c2.shadow.4",
+   "text": "Careful: you now have two different angles.",
+   "i": 93
+  },
+  {
+   "t": 537.54,
+   "clip": "c2.shadow.4",
+   "text": "The arrow's angle, omega T, grows forever.",
+   "i": 94
+  },
+  {
+   "t": 541.95,
+   "clip": "c2.shadow.4",
+   "text": "A pendulum's ex is also an angle, but it stays small.",
+   "i": 95
+  },
+  {
+   "t": 546.08,
+   "clip": "c2.shadow.4",
+   "text": "It's the shadow, not the arrow's angle.",
+   "i": 96
+  },
+  {
+   "t": 558.11,
+   "clip": "c2.mirror.1",
+   "text": "The rule allowed a second lambda: minus eye omega.",
+   "i": 97
+  },
+  {
+   "t": 564.2,
+   "clip": "c2.mirror.1",
+   "text": "E to the minus eye omega T is the mirror arrow, turning clockwise at the same rate.",
+   "i": 98
+  },
+  {
+   "t": 570.17,
+   "clip": "c2.mirror.1",
+   "text": "Since minus eye omega, all squared, is also minus omega squared, it obeys the rule too.",
+   "i": 99
+  },
+  {
+   "t": 577.42,
+   "clip": "c2.mirror.1",
+   "text": "And its shadow is the same cosine, because a mirror in the real axis leaves the shadow where it is.",
+   "i": 100
+  },
+  {
+   "t": 584.38,
+   "clip": "c2.mirror.2",
+   "text": "You've seen these two in the video on De Moivre's theorem.",
+   "i": 101
+  },
+  {
+   "t": 588.95,
+   "clip": "c2.mirror.2",
+   "text": "Now they move in time.",
+   "i": 102
+  },
+  {
+   "t": 591.31,
+   "clip": "c2.mirror.2",
+   "text": "Put them tip to tail.",
+   "i": 103
+  },
+  {
+   "t": 594.32,
+   "clip": "c2.mirror.2",
+   "text": "What do you expect their up and down parts to do?",
+   "i": 104
+  },
+  {
+   "t": 599.46,
+   "clip": "c2.mirror.2",
+   "text": "They cancel at every moment: one rises exactly as the other falls.",
+   "i": 105
+  },
+  {
+   "t": 606.46,
+   "clip": "c2.mirror.2",
+   "text": "So the sum stays on the real axis, sliding back and forth at two times the cosine of omega T.",
+   "i": 106
+  },
+  {
+   "t": 612.83,
+   "clip": "c2.mirror.3",
+   "text": "Divide by two, and the cosine of omega T is E to the eye omega T, plus E to the minus eye omega T, all over two.",
+   "i": 107
+  },
+  {
+   "t": 621.68,
+   "clip": "c2.mirror.3",
+   "text": "So you can read a real swing as two complex swings, turning opposite ways.",
+   "i": 108
+  },
+  {
+   "t": 627.63,
+   "clip": "c2.mirror.3",
+   "text": "And taking the shadow of an arrow is the same as averaging it with its mirror.",
+   "i": 109
+  },
+  {
+   "t": 635.76,
+   "clip": "c2.every.1",
+   "text": "So far you have one swing, the cosine, and it starts at the far end, at rest.",
+   "i": 110
+  },
+  {
+   "t": 641.88,
+   "clip": "c2.every.1",
+   "text": "But you can start a swing anywhere, at any speed.",
+   "i": 111
+  },
+  {
+   "t": 646.18,
+   "clip": "c2.every.1",
+   "text": "So try an arrow that starts straight down, at minus eye.",
+   "i": 112
+  },
+  {
+   "t": 650.8,
+   "clip": "c2.every.1",
+   "text": "It's the same turning arrow, a quarter turn behind, so it obeys the rule too.",
+   "i": 113
+  },
+  {
+   "t": 657.07,
+   "clip": "c2.every.1",
+   "text": "Where does its shadow start, and which way does it go?",
+   "i": 114
+  },
+  {
+   "t": 663.05,
+   "clip": "c2.every.1",
+   "text": "At the centre, heading right, and it reaches one a quarter turn later.",
+   "i": 115
+  },
+  {
+   "t": 667.69,
+   "clip": "c2.every.1",
+   "text": "That's the sine of omega T.",
+   "i": 116
+  },
+  {
+   "t": 670.9,
+   "clip": "c2.every.1",
+   "text": "Multiply minus eye by Oiler's formula, and the real part is the sine.",
+   "i": 117
+  },
+  {
+   "t": 675.81,
+   "clip": "c2.every.2",
+   "text": "Now mix these two motions.",
+   "i": 118
+  },
+  {
+   "t": 678.5,
+   "clip": "c2.every.2",
+   "text": "The rule is linear: add multiples of two motions that obey it, and the accelerations add just as the positions do.",
+   "i": 119
+  },
+  {
+   "t": 687.97,
+   "clip": "c2.every.2",
+   "text": "Physically, the forces pulling back add together.",
+   "i": 120
+  },
+  {
+   "t": 692.02,
+   "clip": "c2.every.2",
+   "text": "So ex equals a cosine coefficient times the cosine of omega T, plus a sine coefficient times the sine of omega T.",
+   "i": 121
+  },
+  {
+   "t": 700.56,
+   "clip": "c2.every.2",
+   "text": "In part one, you met simple harmonic motion through its rule.",
+   "i": 122
+  },
+  {
+   "t": 705.5,
+   "clip": "c2.every.2",
+   "text": "Now you have its formula.",
+   "i": 123
+  },
+  {
+   "t": 708.71,
+   "clip": "c2.every.2",
+   "text": "As you turn up the sine coefficient, the wave shifts and grows, but it keeps its beat.",
+   "i": 124
+  },
+  {
+   "t": 714.95,
+   "clip": "c2.every.3",
+   "text": "What do the two numbers mean?",
+   "i": 125
+  },
+  {
+   "t": 718.06,
+   "clip": "c2.every.3",
+   "text": "At time zero, the cosine is one and the sine is zero, so the cosine coefficient is where the swing starts.",
+   "i": 126
+  },
+  {
+   "t": 725.69,
+   "clip": "c2.every.3",
+   "text": "The starting velocity is the sine coefficient times omega, so the sine coefficient is the starting speed, divided by omega.",
+   "i": 127
+  },
+  {
+   "t": 734.42,
+   "clip": "c2.every.3",
+   "text": "For example, with omega at three, a weight starts three centimetres out, moving outward at twelve centimetres a second.",
+   "i": 128
+  },
+  {
+   "t": 743.52,
+   "clip": "c2.every.3",
+   "text": "The cosine coefficient is three, and the sine coefficient is twelve over three, which is four.",
+   "i": 129
+  },
+  {
+   "t": 750.29,
+   "clip": "c2.every.3",
+   "text": "Keep this swing in mind, because it comes back.",
+   "i": 130
+  },
+  {
+   "t": 754.4,
+   "clip": "c2.every.4",
+   "text": "Can you match every start like this?",
+   "i": 131
+  },
+  {
+   "t": 758.54,
+   "clip": "c2.every.4",
+   "text": "Yes: two numbers match the two facts.",
+   "i": 132
+  },
+  {
+   "t": 764.78,
+   "clip": "c2.every.4",
+   "text": "And since the rule fixes the acceleration from the position, the start decides everything after it.",
+   "i": 133
+  },
+  {
+   "t": 771.39,
+   "clip": "c2.every.4",
+   "text": "The full proof comes next term.",
+   "i": 134
+  },
+  {
+   "t": 775.35,
+   "clip": "c2.every.5",
+   "text": "Your turn.",
+   "i": 135
+  },
+  {
+   "t": 777.7,
+   "clip": "c2.every.5",
+   "text": "A pendulum is let go from rest, at zero point one radians.",
+   "i": 136
+  },
+  {
+   "t": 782.76,
+   "clip": "c2.every.5",
+   "text": "What are its cosine coefficient and its sine coefficient?",
+   "i": 137
+  },
+  {
+   "t": 787.46,
+   "clip": "c2.every.5",
+   "text": "Pause the video if you want longer.",
+   "i": 138
+  },
+  {
+   "t": 797.58,
+   "clip": "c2.every.5",
+   "text": "It starts at zero point one, so the cosine coefficient is zero point one.",
+   "i": 139
+  },
+  {
+   "t": 803.11,
+   "clip": "c2.every.5",
+   "text": "It starts at rest, so the sine coefficient is zero.",
+   "i": 140
+  },
+  {
+   "t": 807.45,
+   "clip": "c2.every.5",
+   "text": "The swing is zero point one times the cosine of omega T.",
+   "i": 141
+  },
+  {
+   "t": 815.55,
+   "clip": "c2.beat.1",
+   "text": "Part one asked what sets the beat.",
+   "i": 142
+  },
+  {
+   "t": 819.69,
+   "clip": "c2.beat.1",
+   "text": "Now you can read it off the arrow.",
+   "i": 143
+  },
+  {
+   "t": 822.81,
+   "clip": "c2.beat.1",
+   "text": "One full turn of the arrow is one full swing, there and back.",
+   "i": 144
+  },
+  {
+   "t": 827.06,
+   "clip": "c2.beat.1",
+   "text": "The angle has to grow by two pi, at omega radians a second.",
+   "i": 145
+  },
+  {
+   "t": 831.92,
+   "clip": "c2.beat.1",
+   "text": "So the period is two pi over omega.",
+   "i": 146
+  },
+  {
+   "t": 836.54,
+   "clip": "c2.beat.1",
+   "text": "Read it back: one full turn, divided by how fast the arrow turns.",
+   "i": 147
+  },
+  {
+   "t": 843.03,
+   "clip": "c2.beat.2",
+   "text": "For the one metre pendulum, omega is about three point one three per second.",
+   "i": 148
+  },
+  {
+   "t": 847.79,
+   "clip": "c2.beat.2",
+   "text": "So its period is about two point zero one seconds: one second each way.",
+   "i": 149
+  },
+  {
+   "t": 855.24,
+   "clip": "c2.beat.2",
+   "text": "That's why a grandfather clock's pendulum is zero point nine nine four metres long.",
+   "i": 150
+  },
+  {
+   "t": 860.71,
+   "clip": "c2.beat.2",
+   "text": "Each swing takes exactly one second.",
+   "i": 151
+  },
+  {
+   "t": 863.91,
+   "clip": "c2.beat.3",
+   "text": "Now suppose you make the pendulum four metres long.",
+   "i": 152
+  },
+  {
+   "t": 867.91,
+   "clip": "c2.beat.3",
+   "text": "What's its period?",
+   "i": 153
+  },
+  {
+   "t": 870.89,
+   "clip": "c2.beat.3",
+   "text": "Pause the video if you want longer.",
+   "i": 154
+  },
+  {
+   "t": 880.49,
+   "clip": "c2.beat.3",
+   "text": "Four times the length makes omega squared, G over L, a quarter as big.",
+   "i": 155
+  },
+  {
+   "t": 886.91,
+   "clip": "c2.beat.3",
+   "text": "So omega is half as big, and the period is twice as long: about four seconds.",
+   "i": 156
+  },
+  {
+   "t": 894.86,
+   "clip": "c2.beat.4",
+   "text": "You might expect a wider swing to take longer, since it has further to go.",
+   "i": 157
+  },
+  {
+   "t": 900.04,
+   "clip": "c2.beat.4",
+   "text": "But two pi over omega has no size in it.",
+   "i": 158
+  },
+  {
+   "t": 904.0,
+   "clip": "c2.beat.4",
+   "text": "An arrow twice as long turns at the same rate, so the two shadows come back together, every time.",
+   "i": 159
+  },
+  {
+   "t": 910.82,
+   "clip": "c2.beat.4",
+   "text": "Physically, twice as far out means twice the pull, so the weight moves twice as fast the whole way.",
+   "i": 160
+  },
+  {
+   "t": 917.35,
+   "clip": "c2.beat.5",
+   "text": "Part one flagged one catch.",
+   "i": 161
+  },
+  {
+   "t": 920.42,
+   "clip": "c2.beat.5",
+   "text": "At big angles, a real pendulum is pulled back less than the rule says, so its big swings are slower.",
+   "i": 162
+  },
+  {
+   "t": 928.55,
+   "clip": "c2.beat.5",
+   "text": "A ten degree swing takes two tenths of a percent longer.",
+   "i": 163
+  },
+  {
+   "t": 933.05,
+   "clip": "c2.beat.5",
+   "text": "Thirty degrees, nearly two percent.",
+   "i": 164
+  },
+  {
+   "t": 937.19,
+   "clip": "c2.beat.5",
+   "text": "Sixty degrees, over seven percent.",
+   "i": 165
+  },
+  {
+   "t": 940.54,
+   "clip": "c2.beat.5",
+   "text": "If you let go a ten degree and a sixty degree pendulum together, after about fifteen seconds they swing in opposite directions.",
+   "i": 166
+  },
+  {
+   "t": 948.61,
+   "clip": "c2.beat.5",
+   "text": "So the same beat at any size is a promise about small swings.",
+   "i": 167
+  },
+  {
+   "t": 956.4,
+   "clip": "c2.recap.1",
+   "text": "Time for a recap.",
+   "i": 168
+  },
+  {
+   "t": 959.55,
+   "clip": "c2.recap.1",
+   "text": "First move: try E to the lambda T.",
+   "i": 169
+  },
+  {
+   "t": 965.44,
+   "clip": "c2.recap.1",
+   "text": "Differentiating only multiplies by lambda, so the rule becomes lambda squared equals minus omega squared.",
+   "i": 170
+  },
+  {
+   "t": 974.4,
+   "clip": "c2.recap.1",
+   "text": "Second: differentiating a turning arrow turns it a quarter turn ahead and stretches it by omega.",
+   "i": 171
+  },
+  {
+   "t": 980.7,
+   "clip": "c2.recap.1",
+   "text": "Twice points it straight back, so the arrow obeys the rule.",
+   "i": 172
+  },
+  {
+   "t": 985.87,
+   "clip": "c2.recap.1",
+   "text": "Third: take the shadow.",
+   "i": 173
+  },
+  {
+   "t": 990.83,
+   "clip": "c2.recap.1",
+   "text": "It's a real motion that obeys the rule, and a real swing is a mirror pair of arrows.",
+   "i": 174
+  },
+  {
+   "t": 997.47,
+   "clip": "c2.recap.1",
+   "text": "Two facts to keep in your head: Oiler's formula, and the period, two pi over omega.",
+   "i": 175
+  },
+  {
+   "t": 1004.85,
+   "clip": "c2.recap.2",
+   "text": "Next time: this form needs two numbers and two functions, and every derivative swaps cosines for sines.",
+   "i": 176
+  },
+  {
+   "t": 1014.52,
+   "clip": "c2.recap.2",
+   "text": "Could you pack the whole swing into one complex number?",
+   "i": 177
+  }
+ ]
+}

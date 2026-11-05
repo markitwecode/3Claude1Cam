@@ -1,0 +1,44 @@
+{
+  "title": "Differentiation",
+  "course_line": "NST IA Mathematics · Lecture 12",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every formula, derivative and number with sympy 1.14 in the system Python 3.11 (`/Library/Frameworks/Python.framework/Versions/3.11/bin/python3`; the engine venv has no sympy), e.g. `python3 -I -c 'import sympy as sp; x=sp.symbols(\"x\"); print([sp.expand((-1)**k*sp.exp(x**2)*sp.diff(sp.exp(-x**2),x,k)) for k in range(5)])'` (Hermite H0..H4) and `python3 -I -c 'import sympy as sp; x=sp.symbols(\"x\"); print(sp.simplify(sp.diff(sp.asin(x/sp.sqrt(1+x**2)),x)))'` (Example 41)",
+  "sources": [
+    {
+      "path": "../source/Chapter234_to_annotate.pdf",
+      "pages": "47-66",
+      "note": "typeset notes with blanks, Ch 4 Differentiation. L12 covers §4 intro to §4.10 and stops at the top of p66; §4.11 curve sketching (p66 bottom to p70, Example 43) is next lecture. Map: p47 intro, history box ('Origins of calculus'), partial-derivative preview; p48-49 §4.1 (103), Figure 29, x^3 from first principles, notation box, |x|, Heaviside (104); p50 differentiability box, §4.2 table (x^a, exp(ax), ln(ax)); p51 trig/hyperbolic table, tan/tanh, ln via e^y, §4.3 start; p52 chain-rule derivation (105), Example 37(a); p53 Example 37(b), two-variable chain rule, §4.4 start; p54 product-rule derivation (106), Example 38, §4.5 start; p55 quotient rule (107), Example 39 (two ways); p56 §4.6 (108)-(110), Example 40 start; p57 Example 40 end, Example 41 (Tripos 2006, working blank); p58 §4.7 reciprocal rule (111) (top of page blank: Example 41's working continued); p59 §4.8 (112), the note, x^3 chain; p60 (113), §4.9 Leibniz (blank); p61-62 proof by induction (114), Pascal's rule, Example 42 Hermite; p63 Hermite end, the H_n list, §4.10 figure; p64 classification; p65 x^3 vs x^4, Figure 30, rising/falling inflection; p66 three unnamed graphs (labelled by hand). The text layer garbles the maths: render a page (`pdftoppm -f N -l N -r 80 -png`). Typos the lecturer corrected on the page: p63 H3 = 8x^3 - 12 should be 8x^3 - 12x (47:18); p63 the second coefficient (n choose 0) should be (n choose n), both = 1 (46:01)"
+    },
+    {
+      "path": "../source/l12-lecture.mp4",
+      "pages": "frames read by the planner (no digest)",
+      "note": "Gemini was off, so the planner read these frames (ffmpeg, 960 px) for the handwritten blanks; L12's scan isn't posted. 07:00 (p50 top): Heaviside sketch, line on the axis for x < 0 ending in an OPEN circle at (0,0), FILLED dot at (0,1), line at height 1 for x > 0; written 'dH/dx = { 0 for x != 0; undefined at x = 0 }'; beside the Differentiability heading 'f is differentiable at x if lim_{h->0} (f(x+h) - f(x))/h' (transcript: '... exists and finite'). 24:50 (p57): Example 40 sketch, circle centred at 1 on the x-axis through -2 and 4, a dashed vertical line at a point x and a tangent at the lower point; 'y = +-sqrt(9 - (x-1)^2)' written; '-2 < x < 4' underlined. 28:40 and 29:30 (p58 top): Example 41 end, 'cos y = sqrt(1 - x^2/(1+x^2)) = sqrt(1/(1+x^2))', boxed 'dy/dx = 1/(1+x^2)', '(in fact y = tan^-1 x)'; the earlier steps (sin y = x/sqrt(1+x^2); cos y dy/dx = 1/(1+x^2)^(3/2); -pi/2 < y < pi/2 so cos y > 0) are from the transcript 25:29-28:44, not a frame. 36:25 (p60 blank): 'If y(x) = f(x)g(x) find d^n y/dx^n'; y' = f'g + fg'; y'' = f''g + 2f'g' + fg''; y''' = f'''g + 3f''g' + 3f'g'' + fg'''; Pascal's triangle 1 1 / 1 2 1 / 1 3 3 1 boxed in red, labelled \"Pascal's triangle\". 38:55 (p61 top): 'd^n(fg)/dx^n = sum_{m=0}^{n} (n choose m) f^(n-m)(x) g^(m)(x)'. 47:20 (p63): (n choose 0) overwritten with n and '= 1'; H3's '12' given an x. 52:40 (p66): the three graphs labelled, left 'y'(0) != 0, y''(0) = 0' with its tangent line drawn; middle 'y'(0) = 0, y''(0) = 0, y'''(0) != 0' under 'point of inflection'; right 'y'(0) != 0, y''(0) = 0' with its tangent line"
+    },
+    {
+      "path": "../source/l12-lecture.transcript.md",
+      "pages": "00:00-53:17, 54:57-55:20",
+      "note": "Whisper medium transcript of l12-lecture.mp4. 00:00-53:17 the lecture (per-chapter ranges in PLAN.md); 53:17-54:56 silence that Whisper filled with one repeated line ('get a better angle'): ignore; 54:57-55:20 a student asks where the odd/even higher-derivative rule comes from, the lecturer: 'with a Taylor expansion' (answered in ch6 s5). Garbles: 'they have a side' = Heaviside (05:17); 'Neos' (16:47) = 'and so'; '.10' = the centre (1, 0) (22:34); 'Hermit' = Hermite; 'cnm' = C_n^m (37:09); 'this should be 8' (21:09) is 'h'. Slips: 33:58 'find the antiderivative of the product' (Leibniz gives the nth derivative)"
+    },
+    {
+      "path": "../source/l12-lecture.digest.md",
+      "pages": "",
+      "note": "EMPTY: all six Gemini pieces failed (quota, 2026-11-01 17:20 trip). Replaced by the planner's frame notes above; no need to re-run for planning"
+    },
+    {
+      "path": "../source/M26examples1 (2).pdf",
+      "pages": "10-11 (H, I1); 15 (answers)",
+      "note": "Examples Sheet I. L12's questions: H1 and H2 (basic skills, answers printed on p15), H4 (implicit vs reciprocal rule; no printed answer), I1 (Leibniz; no printed answer). Hints at the end of the chapter that teaches each (H1/H2 ch2, H4 ch3, I1 ch5), worked solutions in ch7 (bonus); H4 and I1 checked with sympy. Not L12's: H3 (even/odd) and H5 (sketching) go with §4.11 curve sketching (next lecture); J1 (continuity and differentiability, incl. x sin(1/x)) goes with Ch 5 of the notes (limits and continuity, checked in the zip below)"
+    },
+    {
+      "path": "../source/HW math supo 3.pdf",
+      "pages": "1-19",
+      "note": "the user's supervision 3 work (sections D, E, F7-F12; handwritten). No calculus in it: sections H and I are still ahead of the user. Context only"
+    },
+    {
+      "path": "~/Downloads/Lecture Notes to Annotate-20261101.zip",
+      "pages": "Chapter5+6_to_annotate.pdf, contents only",
+      "note": "not lecture content for L12 (it stops at p66 of Ch 4). Opened only to confirm Ch 5 is limits and continuity (so sheet J1 belongs there) and that Taylor series is §6.3, which ch6 previews"
+    }
+  ],
+  "created": "2026-11-03"
+}

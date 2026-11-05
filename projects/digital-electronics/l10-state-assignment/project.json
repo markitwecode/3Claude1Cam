@@ -1,0 +1,34 @@
+{
+  "title": "State Assignment",
+  "course_line": "Digital Electronics · Lecture 10",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every state transition table, K-map grouping, Boolean simplification, self-start check (feed each unused state into the next-state logic until it reaches a used state or loops) and gate count by exhaustive enumeration in Python 3.11.9, standard library only (itertools.product over states and inputs): `python3 -I check.py`. The planner's results are in PLAN.md (Decisions, 'Checked'). No HDL or circuit simulator is installed (iverilog, yosys, ghdl, verilator, ngspice: none).",
+  "sources": [
+    {
+      "path": "../source/combined_26.pdf",
+      "pages": "132-143 (refresher: 120-128)",
+      "note": "Slides for the whole course (190 pp., two slides per page). This lecture is the whole 'Synchronous State Machines 2' section, pp. 132-143: state assignment, the divide-by-5 counter (sequential, sliding and shift-register assignments), one-hot encoding (traffic light), and the Tripos synchroniser (sequential and one-hot). pp. 120-131 ('Synchronous State Machines 1') are Lecture 9, which has no recording here: refresher only, from pp. 121-128 (FSM definitions, Moore schematic p. 122, the Moore example p. 123 that is the synchroniser with states A/B/C, the traffic light pp. 124-127, power-up and self-starting pp. 127-128). Already known from our L6: D = Q', synchronous counter design with K-maps, unused counts as don't cares, asynchronous preset/clear. pdftotext drops overbars and primes: read every formula from the rendered page (pdftoppm). p. 133 writes 'log2 m' without ceiling brackets"
+    },
+    {
+      "path": "../source/l10-lecture.transcript.md",
+      "pages": "00:05:56-00:59:56",
+      "note": "Whisper medium transcript of l10-lecture.mp4 (recorded Wed 2026-10-28; Lecture 10, see PLAN.md Decisions). Skip 00:00-00:05:56 (room chat, lab groups, Boole's birthday) and 00:38:56-00:39:36 (closing the simulator). Chapter and scene time ranges are in PLAN.md. Slips to correct, listed in PLAN.md Decisions: 00:11:33 'Gray coding of these assignments' (the K-map's order, not the codes), 00:24:41 C/D swap (self-corrected), 00:57:02 'S2' for s1. Whisper writes 'Yenka'/'yanker'/'anchor' for the simulator and 'site' for Sight"
+    },
+    {
+      "path": "../source/l10-lecture.digest.md",
+      "pages": "00:05:56-00:59:56",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l10-lecture.mp4. Right on the divide-by-5 and traffic-light parts; wrong on the synchroniser (PLAN.md Decisions): its state diagram at 00:38:44, its table and D1 at 00:50:00, and its one-hot diagram, table, D1 and D2 at 00:51:53-00:58:14. Trust slides pp. 139-143. Its 'Questions' are mostly the model's own; the one student question is at 00:26:38 (why the ring does nothing). Its 'r = received data bit' is wrong: r = 1 means the special sequence has just been recognised"
+    },
+    {
+      "path": "../source/l10-lecture.captions.md",
+      "pages": "00:05:56-00:59:56",
+      "note": "embedded captions (panopto_EN-GB eng) of l10-lecture.mp4; cross-check only"
+    },
+    {
+      "path": "../source/l10-lecture.mp4",
+      "pages": "00:13:48-00:15:08, 00:19:39-00:20:39, 00:25:51-00:29:44, 00:35:58-00:37:46, 00:59:48",
+      "note": "the recording (59:57). Frames show the four simulator demos (74HC74 D flip-flops with active-low S and R pins, 1 Hz clock, LEDs, a plot with the clock red and the output blue): seq_state_ass (D_a from a 74HC08 AND fed by the Q-bar outputs, 74HC86 XOR into b, 74HC08 AND into c, output from b), slide_state_ass (one 74HC08 AND into a, then wires a to b to c), shift_reg_state_ass (stuck at 00000; the lecturer stops the clock and presets d and e, giving 11000), one_hot (stuck at 0000; he presets a, the amber flip-flop, and two 74HC32 ORs light the lamps). p. 143's closing slide is on screen at ~00:59:48. Extract a frame with `ffmpeg -ss 00:28:45 -i <mp4> -frames:v 1 out.png`"
+    }
+  ],
+  "created": "2026-10-31"
+}

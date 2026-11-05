@@ -1,0 +1,115 @@
+S001 [00:00] (c6.hook.1) Last time, we raised complex numbers to complex powers, and found that eye to the power eye is a real number.
+S002 [00:06] (c6.hook.1) Now they meet the physical world.
+S003 [00:10] (c6.hook.1) The notes say they're especially useful for anything that oscillates, like a swinging pendulum, an alternating current, or a wave on water.
+S004 [00:19] (c6.hook.1) The differential equations behind these motions come next term.
+S005 [00:24] (c6.hook.1) Here, we just look at the motions themselves.
+S006 [00:27] (c6.hook.2) Take a swinging pendulum.
+S007 [00:30] (c6.hook.2) At every moment, its position is one real number, the angle it makes with the vertical.
+S008 [00:36] (c6.hook.2) So why would anyone describe it with a complex number?
+S009 [00:41] (c6.hook.2) The answer is a turning arrow, and its shadow.
+S010 [00:44] (c6.hook.2) By the end of this chapter, that arrow will turn a calculus problem into two lines of algebra.
+S011 [00:53] (c6.pend.1) Take a pendulum, a weight on a rod of length L, swinging under gravity.
+S012 [00:59] (c6.pend.1) Its position at time T is one number, the angular displacement, ex of T.
+S013 [01:05] (c6.pend.1) It's the angle between the rod and the vertical.
+S014 [01:09] (c6.pend.1) For small swings, it rocks back and forth with an angular frequency, omega, equal to the square root of G over L, the strength of gravity divided by the length.
+S015 [01:20] (c6.pend.1) We'll take that as given.
+S016 [01:22] (c6.pend.1) The physics comes next term.
+S017 [01:25] (c6.pend.2) Then the displacement always has this form.
+S018 [01:28] (c6.pend.2) It's a real constant times the cosine of omega T, plus another real constant times the sine of omega T.
+S019 [01:36] (c6.pend.2) We'll call them the cosine coefficient and the sine coefficient.
+S020 [01:41] (c6.pend.2) This is called simple harmonic motion.
+S021 [01:45] (c6.pend.2) Plot it against time, and you get a smooth wave.
+S022 [01:48] (c6.pend.3) So what does omega mean?
+S023 [01:52] (c6.pend.3) The quantity omega T grows by omega every second.
+S024 [01:56] (c6.pend.3) Cosine and sine repeat each time it grows by two pi.
+S025 [02:01] (c6.pend.3) So one full swing, there and back, takes two pi over omega seconds.
+S026 [02:06] (c6.pend.3) Start the pendulum differently, and the coefficients change, but that time stays the same.
+S027 [02:13] (c6.arrow.1) Here's the trick, from Figure twenty-four in the notes.
+S028 [02:17] (c6.arrow.1) Put an arrow in the Argand diagram, and let it turn about zero at a steady rate, omega radians per second.
+S029 [02:26] (c6.arrow.1) Its tip runs round a circle.
+S030 [02:29] (c6.arrow.1) Now watch its shadow on the real axis.
+S031 [02:33] (c6.arrow.1) The shadow slides back and forth, slowest at the ends and fastest in the middle, just like the pendulum.
+S032 [02:40] (c6.arrow.1) Trace it out over time, and you get the same wave as before.
+S033 [02:46] (c6.arrow.2) In symbols, the displacement is the real part of this turning arrow.
+S034 [02:50] (c6.arrow.2) The arrow starts as a fixed complex number, which the notes call the complex amplitude.
+S035 [02:56] (c6.arrow.2) Then it's multiplied by E to the eye omega T.
+S036 [03:00] (c6.arrow.2) Multiplying adds angles, so the arrow keeps its length, and its angle grows by omega T.
+S037 [03:07] (c6.arrow.2) Careful, that's a different angle from the pendulum's.
+S038 [03:11] (c6.arrow.2) The pendulum's angle stays small, while the arrow's angle keeps growing.
+S039 [03:17] (c6.arrow.3) But why does this give the same motion?
+S040 [03:21] (c6.arrow.3) Write the complex amplitude as alpha plus eye beta, and E to the eye omega T as cosine plus eye sine.
+S041 [03:30] (c6.arrow.3) Multiply out.
+S042 [03:33] (c6.arrow.3) Eye times eye is minus one, so the two imaginary pieces multiply to give a real term, minus beta times the sine of omega T.
+S043 [03:41] (c6.arrow.3) So the real part is alpha times the cosine of omega T, minus beta times the sine of omega T.
+S044 [03:49] (c6.arrow.4) Now compare with the pendulum's formula.
+S045 [03:52] (c6.arrow.4) Alpha is the cosine coefficient.
+S046 [03:55] (c6.arrow.4) And beta is minus the sine coefficient.
+S047 [03:59] (c6.arrow.4) So the complex amplitude is the cosine coefficient, minus eye times the sine coefficient.
+S048 [04:06] (c6.arrow.4) Two real constants, packed into one complex number.
+S049 [04:10] (c6.arrow.5) In polar form, that one number tells you the whole motion.
+S050 [04:15] (c6.arrow.5) Its modulus is the radius of the circle, so it's the size of the swing.
+S051 [04:20] (c6.arrow.5) By Pythagoras, it's the square root of the two coefficients squared and added.
+S052 [04:25] (c6.arrow.5) Its argument is the angle where the arrow starts, called the phase.
+S053 [04:30] (c6.arrow.5) So the displacement is the modulus, times the cosine of the arrow's angle, which is omega T plus the phase.
+S054 [04:38] (c6.arrow.5) And each full turn of the arrow, two pi, is one full swing of the pendulum.
+S055 [04:46] (c6.deriv.1) Here's the big advantage.
+S056 [04:49] (c6.deriv.1) The velocity is the derivative of the displacement with respect to time.
+S057 [04:54] (c6.deriv.1) You can take the real part before or after differentiating, because the derivative acts on the real and imaginary parts separately.
+S058 [05:03] (c6.deriv.1) So we differentiate the arrow itself.
+S059 [05:07] (c6.deriv.1) In the words of the notes, to differentiate E to the eye omega T, we simply multiply by eye omega, before taking the real part.
+S060 [05:16] (c6.deriv.2) You can check that rule with cosine and sine.
+S061 [05:20] (c6.deriv.2) Differentiate cosine of omega T, plus eye sine of omega T, and you get minus omega sine, plus eye omega cosine.
+S062 [05:28] (c6.deriv.2) That's exactly eye omega, times cosine plus eye sine.
+S063 [05:33] (c6.deriv.2) So it's the same rule as for a real exponential.
+S064 [05:37] (c6.deriv.3) Now the picture.
+S065 [05:39] (c6.deriv.3) Multiplying by eye turns the arrow a quarter turn ahead, and multiplying by omega stretches it.
+S066 [05:45] (c6.deriv.3) So the velocity arrow always leads the position arrow by ninety degrees, and its shadow is the velocity.
+S067 [05:53] (c6.deriv.3) When the pendulum reaches the end of its swing, the position arrow lies along the real axis, so the velocity arrow is vertical, and its shadow is zero.
+S068 [06:03] (c6.deriv.3) For a moment, the pendulum is still.
+S069 [06:07] (c6.deriv.3) A quarter turn later, the pendulum passes the bottom, and the velocity's shadow is furthest out.
+S070 [06:13] (c6.deriv.3) That's where it's fastest.
+S071 [06:16] (c6.deriv.4) Do it twice, and you multiply by eye omega twice, which is minus omega squared.
+S072 [06:22] (c6.deriv.4) So the acceleration arrow points straight back, against the position.
+S073 [06:27] (c6.deriv.4) The further out the pendulum is, the harder it's pulled back towards the middle.
+S074 [06:32] (c6.deriv.4) That's the equation of simple harmonic motion, and the course comes back to it next term.
+S075 [06:39] (c6.ex.1) Let's put all this to work on the example in the notes.
+S076 [06:43] (c6.ex.1) At time zero, the pendulum is at displacement C, and it's moving with velocity root three times C omega.
+S077 [06:52] (c6.ex.1) Those are two facts about the start.
+S078 [06:55] (c6.ex.1) From them, what are the amplitude and the phase of the swing?
+S079 [07:03] (c6.ex.2) At time zero, E to the eye omega T is just one, so the arrows are at their starting positions.
+S080 [07:10] (c6.ex.2) The starting displacement is the real part of the complex amplitude, so that real part is C.
+S081 [07:16] (c6.ex.2) The starting velocity is the real part of eye omega times the complex amplitude, so that's root three times C omega.
+S082 [07:25] (c6.ex.3) Since its real part is C, write the complex amplitude as C plus eye beta.
+S083 [07:30] (c6.ex.3) Multiply by eye omega, and you get eye omega C, minus omega beta.
+S084 [07:37] (c6.ex.3) The real part is minus omega beta.
+S085 [07:40] (c6.ex.3) Set that equal to root three times C omega, and beta is minus root three times C.
+S086 [07:46] (c6.ex.3) So the complex amplitude is C times, one minus eye root three.
+S087 [07:51] (c6.ex.4) Now draw it.
+S088 [07:53] (c6.ex.4) It's C along the real axis, and root three times C downwards.
+S089 [07:58] (c6.ex.4) By Pythagoras, its length is two C, since one plus three is four.
+S090 [08:04] (c6.ex.4) Its angle is minus sixty degrees, or minus pi over three, taking C to be positive.
+S091 [08:10] (c6.ex.4) So the amplitude is two C, the phase is minus pi over three, and the displacement is two C times the cosine of the arrow's angle, omega T minus pi over three.
+S092 [08:21] (c6.ex.5) Let it run.
+S093 [08:23] (c6.ex.5) The shadow starts at C, half the amplitude, and moves outward, with the starting velocity we asked for.
+S094 [08:31] (c6.ex.5) In fact, this is the pendulum we've been watching all chapter.
+S095 [08:35] (c6.ex.5) With sines and cosines alone, you'd find both coefficients, then combine them with a trig identity to get the amplitude and phase.
+S096 [08:44] (c6.ex.5) The complex amplitude hands you both at once, in two lines.
+S097 [08:50] (c6.try.1) Here's a question to try.
+S098 [08:53] (c6.try.1) It's F nineteen, on the first examples sheet.
+S099 [08:56] (c6.try.1) The motion is ex equals seven, plus twenty-four times the cosine of three T, plus seven times the sine of three T.
+S100 [09:05] (c6.try.1) The seven just moves the centre of the motion to seven.
+S101 [09:09] (c6.try.1) The rest is our simple harmonic motion, with cosine coefficient twenty-four, sine coefficient seven, and omega equal to three.
+S102 [09:18] (c6.try.1) So its complex amplitude is twenty-four minus seven eye.
+S103 [09:22] (c6.try.2) Write that in polar form, as a modulus and an angle.
+S104 [09:26] (c6.try.2) The modulus is the amplitude.
+S105 [09:30] (c6.try.2) The motion passes through the centre when the shadow is at zero.
+S106 [09:34] (c6.try.2) It's momentarily still when the shadow is at plus or minus the modulus.
+S107 [09:39] (c6.try.2) But careful, the sheet asks for distances from the origin, not from the centre, so add the seven back.
+S108 [09:47] (c6.try.2) Full solutions are in Part eight.
+S109 [09:50] (c6.recap.1) Let's recap.
+S110 [09:52] (c6.recap.1) Simple harmonic motion is a cosine plus a sine, at one angular frequency, omega.
+S111 [09:58] (c6.recap.1) It's the shadow of an arrow turning at that rate, and the complex amplitude is where the arrow starts.
+S112 [10:05] (c6.recap.1) To differentiate, multiply by eye omega, which turns the arrow a quarter turn ahead.
+S113 [10:11] (c6.recap.1) And the modulus and argument of the complex amplitude are the size of the swing and its phase.
+S114 [10:18] (c6.recap.1) Next time, a circuit where four quantities oscillate together.
+S115 [10:23] (c6.recap.1) Every derivative becomes a multiplication by eye omega, and a calculus problem turns into algebra.

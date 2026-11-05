@@ -1,0 +1,24 @@
+{
+  "title": "Sorting",
+  "course_line": "Foundations of Computer Science · Lecture 5",
+  "code_language": "ocaml",
+  "toolchain": "ocaml (5.4.1, ~/.opam/default/bin/ocaml): run code as `ocaml < file.ml` and quote replies verbatim. To count comparisons, define `let cmps = ref 0;; let le x y = incr cmps; x <= y;;` and use `le` in place of `<=` (quote counts only from such runs). Insertion sort on the 10,000-item `rs` takes ~1 s in the toplevel, and quicksort on sorted input ~3 s. Anything that may not terminate (e.g. a bubble sort that swaps equal neighbours) must run under `timeout 10`",
+  "sources": [
+    {
+      "path": "../source/focs-202627-v1.8.pdf",
+      "pages": "37-44",
+      "note": "Lecture 5: Sorting (intro, §5.1-5.8, exercises 5.1-5.4). Assumed known: Lecture 1's floats (pp. 8-11), Lecture 2's O-notation and recurrence table (pp. 15-19: nsumsum's T(n+1)=T(n)+n, T(n)=2T(n/2)+n tabulated but not derived), all of Lectures 3-4 (projects/focs/l03-lists, l04-more-lists: take/drop pp. 30-31, linear search p. 31, polymorphic <= p. 31). Forward links only: p. 49 (making change with exceptions), p. 56 (binary search trees, Lecture 7)"
+    },
+    {
+      "path": "https://computerhistory.org/blog/in-memoriam-sir-antony-hoare-1934-2026/",
+      "pages": "",
+      "note": "Hoare's dates (5 March 2026, aged 92) and quicksort's origin (1959, Moscow), confirming the notes' (1934-2026). For ch3"
+    },
+    {
+      "path": "https://programmingpraxis.com/2014/01/14/minimum-standard-random-number-generator/",
+      "pages": "",
+      "note": "nextrandom is Park & Miller's 'minimal standard' generator (CACM 31(10), 1988, 'Random number generators: good ones are hard to find'): x' = 16807x mod (2^31 - 1). Its published check value (x = 1, then 10,000 steps -> 1043618065) is exactly the notes' Out[77] `seed`. For ch1"
+    }
+  ],
+  "created": "2026-10-27"
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Hardware Labs and Shift Registers",
+  "course_line": "Digital Electronics · Lecture 7",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every bit sequence (the shift-register trace, the demo, the parallel load, the serial link), resistor colour code and number you add in Python 3.11.9, standard library only: `python3 -I check.py`. The planner's checks are in PLAN.md (Decisions, 'Checked'). No HDL or circuit simulator is installed (iverilog, yosys, ghdl, verilator, ngspice: none)",
+  "sources": [
+    {
+      "path": "../source/l07-lecture.transcript.md",
+      "pages": "00:04:49-00:06:55, 00:06:55-00:39:32 (ch1); 00:39:41-00:57:19 (ch2)",
+      "note": "Whisper medium transcript of l07-lecture.mp4 (recorded Wed 2026-10-21, Lecture 7). Nothing before 00:03:27. Skip 00:03:27-00:04:49 (handout location, lab room and times) and the end. ch1 uses only 00:04:49-00:06:55's orientation (Workshop 1 has no preparation; 2-4 do). The hardware-labs slides are a separate deck that isn't in our material: their text is in the digest (checked on frames). Slips: 'Yankathy'/'Yenca'/'Janka' = Yenka (the simulator); 'nanogates' = NAND gates; 'whole time' = hold time; 'OrkVolts' = nought volts; 'Nick Batram' = Mr N. Batterham (a name: not used)"
+    },
+    {
+      "path": "../source/l07-lecture.digest.md",
+      "pages": "00:06:55-00:57:26",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l07-lecture.mp4: the only source for the lab-intro slides' text (Prototyping Box, Breadboard, DIL Package, Wiring, Testing, Building - Tips, Building and Testing - Tips), checked on frames at 00:09:30, 00:15:00, 00:20:40, 00:23:00, 00:34:30, 00:37:00. Wrong in places (PLAN.md Decisions): p. 102's diagram has 9 rising edges, not 6; the Yenka chips are 74HC74, not 74HCT74; its 'pin 1 to the left of the notch' and DIL layout description are muddled (use PLAN.md's); the HVAC 'electrostatic charge from passing hands' and 'protection diodes' glosses are the model's, not the lecturer's; the 'decoupling capacitor' in the Wiring photo isn't mentioned by the lecturer"
+    },
+    {
+      "path": "../source/l07-lecture.captions.md",
+      "pages": "00:03:27-00:57:19",
+      "note": "embedded captions (panopto_EN-GB eng) of l07-lecture.mp4; cross-check only"
+    },
+    {
+      "path": "../source/Hardware_26.pdf",
+      "pages": "3-8 (ch1); 9-26 for orientation only",
+      "note": "Hardware Practical Classes handout 2026-27 (26 pp.). ch1 uses p. 3 (Introduction: the four workshops, preparation), pp. 5-7 (Circuit Building Guidance: the prototyping box's contents and LED banks, the breadboard's strips, layout advice, 7400 vs 7402 pin-outs, the log-book habit) and pp. 7-8 (Appendix 1, resistor colour code). pp. 9-26 are Workshops 1-4, which are ASSESSED: say at most what each is about. Never show their preparation designs or answer their questions (list in PLAN.md Decisions, 'Assessed work'). p. 6's breadboard drawing shows six-hole columns and a top rail broken halfway; the lecturer counts five holes on a photo of the real board (PLAN.md Decisions). Figures (box drawing p. 5, pin-outs p. 7, LED pin-out p. 9) are clearest rendered with pdftoppm"
+    },
+    {
+      "path": "../source/combined_26.pdf",
+      "pages": "101-104 (first slide only)",
+      "note": "Course slides (190 pp., two slides per page). ch2: p. 101 first slide (Synchronous Counter, arbitrary count sequences: recalled in ch2 s1 only, L6 ch6 s8 taught it), p. 101 second slide (Shift Register), p. 102 (its timing diagram; Preset/Clear parallel load), p. 103 (Serial Data Link; System Timing), p. 104 first slide (set-up, hold, clock-to-Q: teaser only, since L8 ch1 s3 teaches it). p. 102's diagram: 9 rising edges, D_in sampled 0 0 1 1 1 0 0 1 1, outputs unknown (two lines) until each stage has seen an edge with a known input; read it from the rendered page. pdftotext drops subscripts and the f_c = 1/T_c fraction bar"
+    }
+  ],
+  "created": "2026-10-31"
+}

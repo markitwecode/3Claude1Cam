@@ -1,0 +1,34 @@
+{
+  "title": "Flip-flops and Counters",
+  "course_line": "Digital Electronics · Lecture 6",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every truth table, excitation table, K-map grouping, Boolean simplification and count sequence by exhaustive enumeration in Python 3.11.9, standard library only (itertools.product over the inputs): `python3 -I check.py`. No HDL simulator is installed (iverilog, yosys, ghdl, verilator: none).",
+  "sources": [
+    {
+      "path": "../source/combined_26.pdf",
+      "pages": "85-101",
+      "note": "Slides for the whole course (190 pp.). This lecture is pp. 85-101, ending with p. 101's 'Synchronous Counter' (arbitrary count sequence) slide; p. 101's 'Shift Register' slide and pp. 102+ are the next lecture. pp. 78-84 (sequential logic intro, RS latch, its state transition table and state diagram) are the previous lecture: refresher (ch1 s2) and callback (ch5 s3) only. What the viewer already knows: XOR p. 15, K-maps pp. 26-36 (don't cares p. 35, prime and essential prime implicants p. 36), gate propagation delay p. 58, timing diagrams p. 60. pdftotext drops overbars: read formulas from the rendered page (pdftoppm)"
+    },
+    {
+      "path": "../source/l06-lecture.transcript.md",
+      "pages": "00:04:59-00:59:57",
+      "note": "Whisper medium transcript of l06-lecture.mp4. Skip 00:00-00:04:59 (mic checks, admin). Chapter time ranges are in PLAN.md. The recording ends mid-way through the synchronous counter demo"
+    },
+    {
+      "path": "../source/l06-lecture.digest.md",
+      "pages": "00:04:59-00:59:57",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l06-lecture.mp4: screen content, diagrams, examples, emphasis, Q&A, demos. Wrong in places (PLAN.md Decisions): the master-slave D waveform at 00:20:00, the Yenka counter's gates at 00:58:52, and its Q^{t+1}/Q+ notation (the slides write Q')"
+    },
+    {
+      "path": "../source/l06-lecture.captions.md",
+      "pages": "00:04:59-00:59:57",
+      "note": "embedded captions (panopto_EN-GB eng) of l06-lecture.mp4; cross-check only"
+    },
+    {
+      "path": "../source/l06-lecture.mp4",
+      "pages": "00:21:36-00:25:01, 00:58:52-00:59:57",
+      "note": "the recording. Frames show the Yenka demos: d_latch and ms_d_ff (00:21:36-00:25:01), sync_ctr (from 00:58:52; D2 built from 74HC32 OR, 74HC08 AND, 74HC11 3-input AND, 74HC32 OR, the slide's factored sum of products). Extract a frame with `ffmpeg -ss 00:59:30 -i <mp4> -frames:v 1 out.png`"
+    }
+  ],
+  "created": "2026-10-28"
+}

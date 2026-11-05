@@ -1,0 +1,59 @@
+{
+  "title": "How These Videos Are Made",
+  "course_line": "3Claude1Cam · A studio tour",
+  "code_language": "python",
+  "toolchain": "python (3.11.9, the engine venv): `/Users/markgolbraikh/Documents/3Claude1Cam/engine/.venv/bin/python -I snippet.py`. Every on-screen Python snippet is an excerpt of real code: check each call against `engine/lib/narration.py` and `projects/focs/l03-lists/scenes/ch4_s3_trace.py` (grep), and check that it parses with `.venv/bin/python -I -c 'import ast,sys; ast.parse(open(sys.argv[1]).read())' snippet.py`. Real tool output to quote: `engine/vk -C /Users/markgolbraikh/Documents/3Claude1Cam/projects/focs/l03-lists packet ch4_s3_trace` and `... check ch4_s3_trace --no-render` (read-only, seconds; snapshots in source/figures/). Recompute every derived number (sums, shares, dollar splits) from source/measured-costs.md with the same python. Use double-quoted strings in snippets (lib.style.Code's colouring is tuned for OCaml and can tint 'x-style strings PINK)",
+  "sources": [
+    {
+      "path": "source/measured-costs.md",
+      "pages": "all",
+      "note": "The authority for every cost number (prices, totals, by agent type, one builder's medians) and the producer's answers to the user's three questions (Sonnet vs Opus; fewer builders; how building works), the caveats, and 'Later findings' (2026-10-27): the anatomy of a build (thinking ~80k of the ~132k peak, the biggest cost), effort level, the Gemini second opinion with verdicts, the three engine changes (described as done), and this video as the Sonnet/effort test (no outcomes narrated). Use as is; don't re-measure. Chapter 2's spine; question 3 is chapter 1"
+    },
+    {
+      "path": "source/studio-CLAUDE.md",
+      "pages": "all",
+      "note": "The producer's runbook: who does what (the agent tree), the new-project steps and the one checkpoint, resume, the rules (stay lean, state in files, reports are claims), costs as of 2026-10-23. Chapter 1 s2, s5, s8; chapter 2 s3, s7"
+    },
+    {
+      "path": "source/PIPELINE.md",
+      "pages": "all",
+      "note": "The stage diagram, granularity (project, chapter, scene, clip, mark), the project folder, the vk commands, the review standard, recovery, design notes (nested agents, omitClaudeMd, one director at a time, why not a workflow script). Chapter 1 throughout; design notes in chapter 2 s3"
+    },
+    {
+      "path": "source/LESSONS.md",
+      "pages": "Token budget; Pacing and depth; Voice; Automatic QA; Sync; Working with agents",
+      "note": "'Token budget' is the cost history (the first lecture's ~450M, the 854k orchestrator, 6-11M per scene, and the fixes): chapter 2 s3. Voice and Whisper QA: chapter 1 s4 (now several Whisper models must agree inside vk voice; see measured-costs.md 'Later findings'). Sync (157 hard-coded times in v1): chapter 1 s7. Working with agents (holds review, the 'left-heavy' misread, fix passes): chapter 1 s8. The Manim, rendering, music and look sections are out of scope (see PLAN.md Decisions)"
+    },
+    {
+      "path": "source/agent-series-planner.md",
+      "pages": "all",
+      "note": "The planner's job: sizing rules, PLAN.md, the continuity review. Chapter 1 s3"
+    },
+    {
+      "path": "source/agent-script-writer.md",
+      "pages": "all",
+      "note": "The script format ([id] lines, {marks}, > visual briefs), writing for the ear, verifying code with the real toolchain. Chapter 1 s3"
+    },
+    {
+      "path": "source/agent-chapter-director.md",
+      "pages": "all",
+      "note": "The director's steps: orient, narration, music cue sheet, launching builders, review (vk check, the holds image), fix notes, final, STATUS.md and the report. Chapter 1 s5 and s8"
+    },
+    {
+      "path": "source/agent-scene-builder.md",
+      "pages": "all",
+      "note": "The builder's workflow (packet, design, write, vk check, beats image, fix), the timing API (with self.say), pacing rules, scope and report. Chapter 1 s6 and s7"
+    },
+    {
+      "path": "source/figures/",
+      "pages": "",
+      "note": "Real artifacts of the running example, FoCS L3 ch4_s3_trace ('Tracing append'), frozen 2026-10-27 so they can't change under the scenes: packet_ch4_s3_trace.txt (its vk packet), check_ch4_s3_trace.txt (its vk check --no-render output), ch4_s3_trace_beats.png (1720x972, its beats image), ch4_holds.png (1720x1948, the chapter's holds image), final_ch4_s3_trace_frame.png (1920x1080, a frame of the finished video at the 'answer' beat). Scenes may show the PNGs as ImageMobjects"
+    },
+    {
+      "path": "../focs/l03-lists/",
+      "pages": "script/ch4_append_reverse.md Scene 3; scenes/ch4_s3_trace.py lines 160-350; music/ch4.json",
+      "note": "The running example's own files, to quote verbatim: its script clips [c4.trace.1-3], its say blocks, the chapter's music cue sheet"
+    }
+  ],
+  "created": "2026-10-27"
+}

@@ -1,0 +1,14 @@
+{
+ "cues": [
+  {"track": "music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 25 Clarity.ogg",
+   "from": "START", "until": "c1.what.1",
+   "track_start": 0, "fade_in": 1, "fade_out": 4, "level_db": -12},
+  {"track": "music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 19 Spirals.ogg",
+   "from": "c1.build.5:end", "until": "c1.ht.1",
+   "track_start": 214, "fade_in": 3, "fade_out": 3.5, "level_db": -12},
+  {"track": "music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 22 Occlusion.ogg",
+   "from": "c1.ht.4:end", "until": "END",
+   "track_start": 0, "fade_in": 3, "fade_out": 3, "level_db": -11}
+ ],
+ "duck": {"threshold": 0.03, "ratio": 2, "attack": 50, "release": 2000}
+}

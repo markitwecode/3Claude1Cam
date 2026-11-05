@@ -1,0 +1,34 @@
+{
+  "title": "State Minimisation, Programmable Logic and Circuits",
+  "course_line": "Digital Electronics · Lecture 11",
+  "code_language": "",
+  "toolchain": "no code on screen. Check every state table, row-matching step, implication-table entry and pass, equivalence claim (by partition refinement and by running input sequences from both states), product-term and lookup-table content, and every electronics number by exhaustive enumeration in Python 3.11.9, standard library only (itertools.product over states and input sequences): `python3 -I check.py`. The planner's results are in PLAN.md (Decisions, 'Checked'). No HDL or circuit simulator is installed (iverilog, yosys, ghdl, verilator, ngspice: none).",
+  "sources": [
+    {
+      "path": "../source/combined_26.pdf",
+      "pages": "144-170 (refreshers: 66, 70-73, 122-123)",
+      "note": "Slides for the whole course (190 pp., two slides per page). This lecture is all of 'Sequential Logic: Further Considerations', pp. 144-162 (redundant states and row matching pp. 144-147; state equivalence and the implication table pp. 148-155; GLA and GAL pp. 156-158; FPGA and the Xilinx Spartan CLB pp. 158-162), then 'Electronics, Devices and Circuits: Underlying Concepts' up to Kirchhoff's voltage law, pp. 163-170. p. 170's last bullet (potential divider) and pp. 171+ are Lecture 12's. Refreshers from lectures outside our series: Mealy machines pp. 122-123 (Lecture 9); multiplexer as a 'hardware look-up table' p. 66, ROM p. 70-71, PLA and PAL pp. 71-73, SRAM volatile p. 73. pdftotext drops primes and some symbols, and loses the figures: read the tables and figures from the rendered page (pdftoppm), especially pp. 152-155 (implication tables), 157-160 (GLA, GAL, FPGA, CLB) and 170 (KVL loop). Slide slips: p. 160's CLB figure labels the F-LUT's output 'G' (should be F; the lecturer says so); p. 151-153 write '≠' for 'not equivalent' (we use ≢)"
+    },
+    {
+      "path": "../source/l11-lecture.transcript.md",
+      "pages": "00:04:21-00:59:57",
+      "note": "Whisper medium transcript of l11-lecture.mp4 (recorded Fri 2026-10-30; Lecture 11, see PLAN.md Decisions). Skip 00:00-00:04:21 (setup, room chat). Chapter and scene time ranges are in PLAN.md. Slips to correct, listed in PLAN.md Decisions: 00:17:47 'AD box' (the A-B cell), 00:19:10 and 00:23:04 misread implied pairs, 00:35:47/00:36:15 'complex' for configurable, 00:39:57-00:40:56 G/F mix-ups. Whisper writes 'VariLog' (Verilog), 'coolant' (coulomb), 'batches' (batteries), and inserts a line at 00:43:58 that the captions don't have. The recording ends mid-KVL at 00:59:57"
+    },
+    {
+      "path": "../source/l11-lecture.digest.md",
+      "pages": "00:04:21-00:59:57",
+      "note": "Gemini (gemini-3.8-flash-medium) digest of l11-lecture.mp4. Right on the implication table's entries and passes; wrong in places (PLAN.md Decisions): '16 initial states' (15), row C at 00:10:00 (C → E, D), the whole table at 00:30:00 (the frame shows p. 155's 6-state table), the KVL figure's resistor names (Ra, Rb, Rc). It adds ASIC/NRE, which the lecturer doesn't say. No student questions in the lecture"
+    },
+    {
+      "path": "../source/l11-lecture.captions.md",
+      "pages": "00:04:21-00:59:57",
+      "note": "embedded captions (panopto_EN-GB eng) of l11-lecture.mp4; cross-check only ('lab' for lamp at 00:53:00)"
+    },
+    {
+      "path": "../source/l11-lecture.mp4",
+      "pages": "00:03:30, 00:23:15, 00:30:20, 00:41:45, 00:59:50",
+      "note": "the recording (59:57). Frames confirm: p. 144's title slide (00:03:30); p. 152's filled implication table (00:23:15); p. 155's 6-state table (00:30:20); p. 162 shown at 00:41:45 between returns to the CLB figure; a blank screen 00:42:40-00:44:41 while the lecturer compares FPGAs with custom chips; p. 170's KVL slide at 00:59:50. Extract a frame with `ffmpeg -ss 00:23:15 -i <mp4> -frames:v 1 out.png`"
+    }
+  ],
+  "created": "2026-10-31"
+}

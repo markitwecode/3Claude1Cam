@@ -141,6 +141,10 @@ Don't redo work the files show as done.
 | `docs/PIPELINE.md` | How it all fits together: stages, file formats, the `vk` commands, recovery |
 | `docs/LESSONS.md` | Every pitfall paid for so far. Read before changing the engine |
 | `docs/STYLE.md` | The visual style, long form (the scene-builder kit is its distilled version) |
+| `docs/DEEP_STYLE.md` | The teaching styles (auto, deep): §0 says which rules apply to which; the load gate (§13), the rail (§15) |
+| `docs/ROADMAP.md` | Findings so far, provisional numbers to recalibrate, tightenings not built yet, tasks for later |
+| `docs/SETUP.md` | Setup for a newcomer: bring your own voice and material, then auto or deep |
+| `engine/tools/publish.sh` | Publishes to the public GitHub repo (everything except lecture material, voices, audio, renders, music, third-party clones; policy in `engine/publish.gitignore`). Never push this repo itself: its history holds private material |
 
 ## Decisions already made (don't re-ask)
 - **Engine:** ManimCE 0.22, not ManimGL. 3b1b's style is ported from `engine/reference/3b1b/PATTERNS.md`.

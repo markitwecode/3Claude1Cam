@@ -1,0 +1,123 @@
+S001 [00:00] (c2.hook.1) This is part two of Powers, Logarithms and Oscillations, on De Moivre's theorem.
+S002 [00:07] (c2.hook.1) Last time, you solved zed to the fifth equals two eye, and found five roots, spaced evenly round a ring.
+S003 [00:15] (c2.hook.1) The key was that multiplying complex numbers adds their angles, so a fifth power multiplies an angle by five.
+S004 [00:22] (c2.hook.2) Today's question sounds like plain trigonometry.
+S005 [00:26] (c2.hook.2) What is cosine of four theta, written using only cosine theta?
+S006 [00:32] (c2.hook.2) You could use the double-angle formula twice, since four is two times two.
+S007 [00:38] (c2.hook.2) But for cosine of seven theta, you'd be stacking compound-angle formulas, line after line.
+S008 [00:43] (c2.hook.2) De Moivre's theorem gets any of them from a single power.
+S009 [00:51] (c2.thm.1) Start with a complex number of modulus one, at angle theta.
+S010 [00:55] (c2.thm.1) It's cosine theta, plus eye sine theta, and by Euler's formula, that's E to the eye theta.
+S011 [01:02] (c2.thm.1) Now raise it to a whole-number power, N.
+S012 [01:07] (c2.thm.1) Here, as in the notes, N is the power.
+S013 [01:11] (c2.thm.1) It's no longer the count of full turns from last time.
+S014 [01:15] (c2.thm.2) When you raise an exponential to a power, you multiply the exponents.
+S015 [01:19] (c2.thm.2) So E to the eye theta, to the power N, is E to the eye N theta.
+S016 [01:26] (c2.thm.2) And by Euler's formula again, that's cosine of N theta, plus eye sine of N theta.
+S017 [01:33] (c2.thm.2) Set the first expression equal to the last, and you have De Moivre's theorem.
+S018 [01:38] (c2.thm.2) Cosine of N theta, plus eye sine of N theta, equals cosine theta plus eye sine theta, all to the power N.
+S019 [01:48] (c2.thm.3) Here's what that means in the plane.
+S020 [01:52] (c2.thm.3) Multiplying complex numbers multiplies their lengths and adds their angles.
+S021 [01:58] (c2.thm.3) So the arrow times itself points at angle two theta.
+S022 [02:03] (c2.thm.3) Times itself again, three theta.
+S023 [02:06] (c2.thm.3) And once more, four theta.
+S024 [02:09] (c2.thm.3) Each step turns it by another theta, and its length stays one, because one times one is still one.
+S025 [02:16] (c2.thm.4) The lecturer calls the proof rather trivial.
+S026 [02:19] (c2.thm.4) Those were good times, she says, when putting your name on a theorem took very little labour.
+S027 [02:25] (c2.thm.4) She keeps the modulus equal to one, for simplicity.
+S028 [02:30] (c2.thm.4) With a modulus R, the only change is the length, which becomes R to the power N.
+S029 [02:36] (c2.thm.5) The power N can be negative, too.
+S030 [02:39] (c2.thm.5) With N equal to minus one, you get cosine theta, minus eye sine theta.
+S031 [02:45] (c2.thm.5) That's the arrow turned back by theta, to its mirror image below the real axis.
+S032 [02:51] (c2.thm.5) It's the conjugate, and you'll need it again at the end of this chapter.
+S033 [02:56] (c2.int.1) The notes add a warning.
+S034 [02:59] (c2.int.1) The power N must be an integer here.
+S035 [03:03] (c2.int.1) The lecturer wrote it as E to the eye theta, to the N, equals E to the eye times N theta, for whole numbers N.
+S036 [03:12] (c2.int.1) For any other N, the left-hand side has more than one value.
+S037 [03:17] (c2.int.1) So what goes wrong with a fraction, like one half?
+S038 [03:24] (c2.int.2) Remember the full turns from last time.
+S039 [03:28] (c2.int.2) The point E to the eye theta is also E to the eye, theta plus two pi, one full turn later.
+S040 [03:34] (c2.int.2) Now take N equal to one half, and take half of each angle.
+S041 [03:40] (c2.int.2) Half of theta gives E to the eye, theta over two.
+S042 [03:45] (c2.int.2) Half of the second angle, theta plus two pi, is theta over two, plus pi.
+S043 [03:51] (c2.int.2) That's an extra half turn, which lands on the opposite point, minus E to the eye, theta over two.
+S044 [03:59] (c2.int.3) Two different points, and both of them square back to the same number.
+S045 [04:03] (c2.int.3) So E to the eye theta, to the power one half, has two values, the two square roots.
+S046 [04:10] (c2.int.3) With a whole number N, the extra turn becomes N full turns, and every version lands on the same point.
+S047 [04:21] (c2.int.4) That's exactly why, last time, zed to the fifth equals two eye had five roots.
+S048 [04:27] (c2.int.4) Dividing the full turns by five gave fifths of a turn, and five different points.
+S049 [04:33] (c2.int.4) In part five, you'll count the values of any power, even eye to the power eye.
+S050 [04:41] (c2.exp.1) Here's Example twenty-nine from the notes.
+S051 [04:46] (c2.exp.1) Use De Moivre's theorem to write cosine of four theta and sine of four theta, in terms of cosine theta and sine theta.
+S052 [04:54] (c2.exp.1) Take the theorem with N equal to four.
+S053 [04:58] (c2.exp.1) Cosine of four theta, plus eye sine of four theta, equals cosine theta plus eye sine theta, all to the fourth.
+S054 [05:06] (c2.exp.2) The right side is a sum of two terms, raised to the fourth power.
+S055 [05:11] (c2.exp.2) So the coefficients come from row four of Pascal's triangle, one, four, six, four, one.
+S056 [05:18] (c2.exp.2) In each term, the power of cosine counts down from four, and the power of eye sine counts up from zero.
+S057 [05:25] (c2.exp.2) Every cosine and sine here is of theta, so for this example, I'll just say cosine and sine.
+S058 [05:31] (c2.exp.3) Each term also carries a power of eye.
+S059 [05:35] (c2.exp.3) Eye squared is minus one.
+S060 [05:38] (c2.exp.3) Eye cubed is minus eye.
+S061 [05:41] (c2.exp.3) And eye to the fourth is one.
+S062 [05:45] (c2.exp.3) On the Argand diagram, each factor of eye is a quarter turn, so the powers go round a dial, eye, minus one, minus eye, and back to one.
+S063 [05:57] (c2.exp.4) Now put those values into the five terms.
+S064 [06:01] (c2.exp.4) The terms with eye squared and eye to the fourth become real.
+S065 [06:06] (c2.exp.4) The terms with eye and eye cubed stay imaginary.
+S066 [06:10] (c2.exp.4) That's how plus six becomes minus six, and plus four eye becomes minus four eye.
+S067 [06:16] (c2.exp.4) Now collect them.
+S068 [06:18] (c2.exp.4) The real terms are cosine to the fourth, minus six cosine squared sine squared, plus sine to the fourth.
+S069 [06:25] (c2.exp.4) The imaginary terms share a factor of four eye, times a bracket, cosine cubed sine, minus cosine sine cubed.
+S070 [06:36] (c2.simp.1) Two complex numbers are equal exactly when their real parts match and their imaginary parts match.
+S071 [06:43] (c2.simp.1) So cosine of four theta is the real part, cosine to the fourth, minus six cosine squared sine squared, plus sine to the fourth.
+S072 [06:51] (c2.simp.1) And sine of four theta is the imaginary part, four times the bracket.
+S073 [06:58] (c2.simp.1) That's the task done, with both written in terms of cosine and sine of theta.
+S074 [07:04] (c2.simp.2) Now write cosine of four theta using cosine alone.
+S075 [07:09] (c2.simp.2) Replace each sine squared with one minus cosine squared.
+S076 [07:13] (c2.simp.2) The middle term becomes minus six cosine squared, times one minus cosine squared.
+S077 [07:19] (c2.simp.2) Sine to the fourth becomes one minus cosine squared, all squared.
+S078 [07:25] (c2.simp.2) Multiply everything out.
+S079 [07:28] (c2.simp.2) The fourth powers come with one, six and one, eight in all.
+S080 [07:32] (c2.simp.2) The squares come with minus six and minus two, minus eight in all.
+S081 [07:37] (c2.simp.2) And a plus one is left over.
+S082 [07:41] (c2.simp.2) So cosine of four theta is eight cosine to the fourth, minus eight cosine squared, plus one.
+S083 [07:49] (c2.simp.3) For sine of four theta, take out the common factor, four cosine sine.
+S084 [07:55] (c2.simp.3) What's left in the bracket is cosine squared minus sine squared.
+S085 [08:00] (c2.simp.3) Since cosine squared plus sine squared is one, that bracket is also two cosine squared minus one, or, equally, one minus two sine squared.
+S086 [08:10] (c2.simp.3) Those are the two endings the lecturer wrote in by hand.
+S087 [08:14] (c2.simp.4) A quick check never hurts.
+S088 [08:18] (c2.simp.4) Take theta equal to pi over four.
+S089 [08:21] (c2.simp.4) Then four theta is pi, and cosine of pi is minus one.
+S090 [08:27] (c2.simp.4) On the right, cosine squared of pi over four is one half, so cosine to the fourth is one quarter.
+S091 [08:34] (c2.simp.4) Eight quarters make two.
+S092 [08:37] (c2.simp.4) Eight halves make four.
+S093 [08:40] (c2.simp.4) So you get two, minus four, plus one.
+S094 [08:45] (c2.simp.4) That's minus one.
+S095 [08:48] (c2.simp.4) It matches.
+S096 [08:51] (c2.expo.1) You can use the same idea another way, and it's even more useful.
+S097 [08:56] (c2.expo.1) Here's Oiler's formula, equation seventy-one in the notes.
+S098 [09:00] (c2.expo.1) E to the eye theta equals cosine theta, plus eye sine theta.
+S099 [09:05] (c2.expo.1) Take the complex conjugate, which turns every plus eye into minus eye.
+S100 [09:11] (c2.expo.1) You get E to the minus eye theta equals cosine theta, minus eye sine theta.
+S101 [09:19] (c2.expo.2) Add the two equations.
+S102 [09:21] (c2.expo.2) The eye sine terms cancel, and you're left with two cosine theta.
+S103 [09:27] (c2.expo.2) So cosine theta is E to the eye theta, plus E to the minus eye theta, all over two.
+S104 [09:34] (c2.expo.2) That's equation seventy-seven.
+S105 [09:38] (c2.expo.2) Subtract instead, and the cosines cancel, leaving two eye sine theta.
+S106 [09:44] (c2.expo.2) So sine theta is E to the eye theta, minus E to the minus eye theta, all over two eye.
+S107 [09:51] (c2.expo.2) That's equation seventy-eight.
+S108 [09:54] (c2.expo.3) Here's the picture.
+S109 [09:57] (c2.expo.3) The gold arrow, E to the eye theta, turns one way as theta grows.
+S110 [10:02] (c2.expo.3) Its mirror image, E to the minus eye theta, turns the other way.
+S111 [10:07] (c2.expo.3) Put them tip to tail.
+S112 [10:10] (c2.expo.3) Their imaginary parts cancel, so the sum always lands on the real axis, at two cosine theta.
+S113 [10:19] (c2.expo.4) Their difference does the opposite.
+S114 [10:23] (c2.expo.4) The real parts cancel, and it lands on the imaginary axis, at two eye sine theta.
+S115 [10:29] (c2.expo.4) Dividing by two eye brings it back to a real number, sine theta.
+S116 [10:34] (c2.expo.4) As the lecturer puts it, working with exponentials is easier than working with cosines and sines.
+S117 [10:47] (c2.recap.1) Let's recap.
+S118 [10:48] (c2.recap.1) De Moivre's theorem says that E to the eye theta, to the power N, is E to the eye N theta, the arrow turned to angle N theta.
+S119 [11:00] (c2.recap.1) The power N must be a whole number, because a fraction splits the full turns into several values.
+S120 [11:07] (c2.recap.1) To expand a power, use Pascal's row, and let the powers of eye sort the real terms from the imaginary ones.
+S121 [11:16] (c2.recap.1) Matching real parts, then imaginary parts, gives cosine and sine of four theta.
+S122 [11:22] (c2.recap.1) And adding or subtracting two mirror-image arrows writes cosine and sine as exponentials.
+S123 [11:31] (c2.recap.2) Next time, those two formulas turn a power like cosine cubed into single cosines, and a sum of cosines into a geometric series.

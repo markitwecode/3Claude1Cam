@@ -1,0 +1,909 @@
+{
+ "key": "de10ch2",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/digital-electronics/l10-state-assignment",
+ "chapter": 2,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/digital-electronics/l10-state-assignment/out/ch2_sliding_ring.mp4",
+ "total": 677.617667,
+ "scenes_sum": 677.5333330000001,
+ "words": 1566,
+ "scenes": [
+  {
+   "stem": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 45.416667,
+   "cue_dur": 45.4167
+  },
+  {
+   "stem": "ch2_s2_sliding",
+   "t0": 45.416667,
+   "dur": 126.416667,
+   "cue_dur": 126.4167
+  },
+  {
+   "stem": "ch2_s3_slidelogic",
+   "t0": 171.833334,
+   "dur": 121.333333,
+   "cue_dur": 121.3333
+  },
+  {
+   "stem": "ch2_s4_slidecircuit",
+   "t0": 293.166667,
+   "dur": 76.216667,
+   "cue_dur": 76.2167
+  },
+  {
+   "stem": "ch2_s5_ring",
+   "t0": 369.383334,
+   "dur": 81.25,
+   "cue_dur": 81.25
+  },
+  {
+   "stem": "ch2_s6_nologic",
+   "t0": 450.633334,
+   "dur": 93.433333,
+   "cue_dur": 93.4333
+  },
+  {
+   "stem": "ch2_s7_tradeoff",
+   "t0": 544.066667,
+   "dur": 73.083333,
+   "cue_dur": 73.0833
+  },
+  {
+   "stem": "ch2_s8_recap",
+   "t0": 617.1500000000001,
+   "dur": 60.383333,
+   "cue_dur": 60.3833
+  }
+ ],
+ "clips": [
+  {
+   "id": "c2.hook.1",
+   "scene": "ch2_s1_hook",
+   "t0": 0.0,
+   "dur": 15.796
+  },
+  {
+   "id": "c2.hook.2",
+   "scene": "ch2_s1_hook",
+   "t0": 16.6833,
+   "dur": 26.163
+  },
+  {
+   "id": "c2.slide.1",
+   "scene": "ch2_s2_sliding",
+   "t0": 45.416667,
+   "dur": 32.819
+  },
+  {
+   "id": "c2.slide.2",
+   "scene": "ch2_s2_sliding",
+   "t0": 78.866667,
+   "dur": 26.7
+  },
+  {
+   "id": "c2.slide.3",
+   "scene": "ch2_s2_sliding",
+   "t0": 106.799967,
+   "dur": 22.996
+  },
+  {
+   "id": "c2.slide.4",
+   "scene": "ch2_s2_sliding",
+   "t0": 130.583367,
+   "dur": 37.209
+  },
+  {
+   "id": "c2.logic.1",
+   "scene": "ch2_s3_slidelogic",
+   "t0": 171.833334,
+   "dur": 24.841
+  },
+  {
+   "id": "c2.logic.2",
+   "scene": "ch2_s3_slidelogic",
+   "t0": 197.70003400000002,
+   "dur": 28.072
+  },
+  {
+   "id": "c2.logic.3",
+   "scene": "ch2_s3_slidelogic",
+   "t0": 226.433334,
+   "dur": 36.094
+  },
+  {
+   "id": "c2.logic.4",
+   "scene": "ch2_s3_slidelogic",
+   "t0": 263.516634,
+   "dur": 24.352
+  },
+  {
+   "id": "c2.circ.1",
+   "scene": "ch2_s4_slidecircuit",
+   "t0": 293.166667,
+   "dur": 29.907
+  },
+  {
+   "id": "c2.circ.2",
+   "scene": "ch2_s4_slidecircuit",
+   "t0": 323.79996700000004,
+   "dur": 21.848
+  },
+  {
+   "id": "c2.circ.3",
+   "scene": "ch2_s4_slidecircuit",
+   "t0": 346.449967,
+   "dur": 18.869
+  },
+  {
+   "id": "c2.ring.1",
+   "scene": "ch2_s5_ring",
+   "t0": 369.383334,
+   "dur": 16.512
+  },
+  {
+   "id": "c2.ring.2",
+   "scene": "ch2_s5_ring",
+   "t0": 387.166634,
+   "dur": 40.089
+  },
+  {
+   "id": "c2.ring.3",
+   "scene": "ch2_s5_ring",
+   "t0": 428.133334,
+   "dur": 18.366
+  },
+  {
+   "id": "c2.wire.1",
+   "scene": "ch2_s6_nologic",
+   "t0": 450.633334,
+   "dur": 43.489
+  },
+  {
+   "id": "c2.wire.2",
+   "scene": "ch2_s6_nologic",
+   "t0": 495.366634,
+   "dur": 23.36
+  },
+  {
+   "id": "c2.wire.3",
+   "scene": "ch2_s6_nologic",
+   "t0": 519.516634,
+   "dur": 23.651
+  },
+  {
+   "id": "c2.trade.1",
+   "scene": "ch2_s7_tradeoff",
+   "t0": 544.066667,
+   "dur": 18.12
+  },
+  {
+   "id": "c2.trade.2",
+   "scene": "ch2_s7_tradeoff",
+   "t0": 563.283367,
+   "dur": 23.713
+  },
+  {
+   "id": "c2.trade.3",
+   "scene": "ch2_s7_tradeoff",
+   "t0": 588.033367,
+   "dur": 22.699
+  },
+  {
+   "id": "c2.recap.1",
+   "scene": "ch2_s8_recap",
+   "t0": 617.1500000000001,
+   "dur": 25.058
+  },
+  {
+   "id": "c2.recap.2",
+   "scene": "ch2_s8_recap",
+   "t0": 643.0333,
+   "dur": 23.444
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c2.hook.1",
+   "text": "Last time, you built a divide-by-five counter by giving its five states a plain binary count.",
+   "i": 1
+  },
+  {
+   "t": 6.68,
+   "clip": "c2.hook.1",
+   "text": "It worked, and its next-state logic cost three gates.",
+   "i": 2
+  },
+  {
+   "t": 11.4,
+   "clip": "c2.hook.1",
+   "text": "Two and gates, and an exclusive-or.",
+   "i": 3
+  },
+  {
+   "t": 16.68,
+   "clip": "c2.hook.2",
+   "text": "This time, the same five states get some funkier codes.",
+   "i": 4
+  },
+  {
+   "t": 21.75,
+   "clip": "c2.hook.2",
+   "text": "The lecturer calls them just a bit of fun, not something you'd necessarily do for real.",
+   "i": 5
+  },
+  {
+   "t": 27.9,
+   "clip": "c2.hook.2",
+   "text": "But they show how much freedom you have when you choose the codes.",
+   "i": 6
+  },
+  {
+   "t": 33.27,
+   "clip": "c2.hook.2",
+   "text": "Can a cleverer choice make the logic almost disappear?",
+   "i": 7
+  },
+  {
+   "t": 38.09,
+   "clip": "c2.hook.2",
+   "text": "And if it can, what do you pay for it instead?",
+   "i": 8
+  },
+  {
+   "t": 45.42,
+   "clip": "c2.slide.1",
+   "text": "These funkier assignments often borrow the action of a shift register.",
+   "i": 9
+  },
+  {
+   "t": 49.94,
+   "clip": "c2.slide.1",
+   "text": "In a shift register, every edge of the clock passes each flip-flop's value on to the next.",
+   "i": 10
+  },
+  {
+   "t": 57.15,
+   "clip": "c2.slide.1",
+   "text": "The first example is called the sliding assignment.",
+   "i": 11
+  },
+  {
+   "t": 60.87,
+   "clip": "c2.slide.1",
+   "text": "We start with all three flip-flops at zero, drawn in the table's order, with flip-flop A on the right.",
+   "i": 12
+  },
+  {
+   "t": 68.24,
+   "clip": "c2.slide.1",
+   "text": "On the first edge of the clock, a one enters flip-flop A.",
+   "i": 13
+  },
+  {
+   "t": 73.02,
+   "clip": "c2.slide.1",
+   "text": "On the next edge, it slides along to flip-flop bee, and a second one enters behind it.",
+   "i": 14
+  },
+  {
+   "t": 78.87,
+   "clip": "c2.slide.2",
+   "text": "On the third edge, both ones slide along together.",
+   "i": 15
+  },
+  {
+   "t": 83.02,
+   "clip": "c2.slide.2",
+   "text": "On the fourth, the first one drops off the far end.",
+   "i": 16
+  },
+  {
+   "t": 87.89,
+   "clip": "c2.slide.2",
+   "text": "On the fifth, the second one drops off too, and every flip-flop is back at zero.",
+   "i": 17
+  },
+  {
+   "t": 93.91,
+   "clip": "c2.slide.2",
+   "text": "So the five states get the codes zero zero zero, zero zero one, zero one one, one one zero, and one zero zero, and then round again.",
+   "i": 18
+  },
+  {
+   "t": 106.8,
+   "clip": "c2.slide.3",
+   "text": "Why send in two ones?",
+   "i": 19
+  },
+  {
+   "t": 110.44,
+   "clip": "c2.slide.3",
+   "text": "The output must be one in two of the five states, and we'd like to take it straight from a flip-flop.",
+   "i": 20
+  },
+  {
+   "t": 117.57,
+   "clip": "c2.slide.3",
+   "text": "A single one passing through would hold each flip-flop at one for just one state.",
+   "i": 21
+  },
+  {
+   "t": 124.11,
+   "clip": "c2.slide.3",
+   "text": "Two of them, one right behind the other, hold each flip-flop at one for two states in a row.",
+   "i": 22
+  },
+  {
+   "t": 130.58,
+   "clip": "c2.slide.4",
+   "text": "Check it on the columns.",
+   "i": 23
+  },
+  {
+   "t": 133.61,
+   "clip": "c2.slide.4",
+   "text": "Flip-flop A reads zero, one, one, zero, zero.",
+   "i": 24
+  },
+  {
+   "t": 139.67,
+   "clip": "c2.slide.4",
+   "text": "Flip-flop bee reads zero, zero, one, one, zero.",
+   "i": 25
+  },
+  {
+   "t": 144.36,
+   "clip": "c2.slide.4",
+   "text": "And flip-flop see reads three zeros, then two ones.",
+   "i": 26
+  },
+  {
+   "t": 149.33,
+   "clip": "c2.slide.4",
+   "text": "Each is high for two states and low for three, the waveform we want.",
+   "i": 27
+  },
+  {
+   "t": 154.93,
+   "clip": "c2.slide.4",
+   "text": "In fact they're the same waveform, each one period behind the last.",
+   "i": 28
+  },
+  {
+   "t": 159.81,
+   "clip": "c2.slide.4",
+   "text": "The specification never says where the output's cycle should start, so any of the three can be the output.",
+   "i": 29
+  },
+  {
+   "t": 171.83,
+   "clip": "c2.logic.1",
+   "text": "Here's the transition table for the sliding assignment.",
+   "i": 30
+  },
+  {
+   "t": 175.36,
+   "clip": "c2.logic.1",
+   "text": "Each state's next state is simply the code that follows it in the sequence.",
+   "i": 31
+  },
+  {
+   "t": 180.95,
+   "clip": "c2.logic.1",
+   "text": "Three patterns never occur: zero one zero, one zero one, and one one one.",
+   "i": 32
+  },
+  {
+   "t": 188.39,
+   "clip": "c2.logic.1",
+   "text": "Notice that zero one zero is unused here, though the binary count used it.",
+   "i": 33
+  },
+  {
+   "t": 194.02,
+   "clip": "c2.logic.1",
+   "text": "Which patterns are unused depends on the assignment.",
+   "i": 34
+  },
+  {
+   "t": 197.7,
+   "clip": "c2.logic.2",
+   "text": "Now plot a K-map for the input of flip-flop A, with the unused states as don't cares, just as in part one.",
+   "i": 35
+  },
+  {
+   "t": 206.07,
+   "clip": "c2.logic.2",
+   "text": "The next value of flip-flop A is one in just two states, zero zero zero and zero zero one.",
+   "i": 36
+  },
+  {
+   "t": 214.19,
+   "clip": "c2.logic.2",
+   "text": "They sit side by side, so they make a pair, and the input to flip-flop A is not bee and not see.",
+   "i": 37
+  },
+  {
+   "t": 222.47,
+   "clip": "c2.logic.2",
+   "text": "The don't cares can't make a bigger group, so we leave them out.",
+   "i": 38
+  },
+  {
+   "t": 226.43,
+   "clip": "c2.logic.3",
+   "text": "For the other two flip-flops, you don't even need a K-map.",
+   "i": 39
+  },
+  {
+   "t": 230.79,
+   "clip": "c2.logic.3",
+   "text": "Look at the column for flip-flop A in the current state.",
+   "i": 40
+  },
+  {
+   "t": 234.51,
+   "clip": "c2.logic.3",
+   "text": "It reads zero, one, one, zero, zero.",
+   "i": 41
+  },
+  {
+   "t": 238.99,
+   "clip": "c2.logic.3",
+   "text": "Now look at the column for flip-flop bee in the next state.",
+   "i": 42
+  },
+  {
+   "t": 243.8,
+   "clip": "c2.logic.3",
+   "text": "It's exactly the same.",
+   "i": 43
+  },
+  {
+   "t": 247.03,
+   "clip": "c2.logic.3",
+   "text": "So dee bee equals A, which is just a wire.",
+   "i": 44
+  },
+  {
+   "t": 250.76,
+   "clip": "c2.logic.3",
+   "text": "In the same way, the current column for bee matches the next column for see, so dee see equals bee.",
+   "i": 45
+  },
+  {
+   "t": 258.72,
+   "clip": "c2.logic.3",
+   "text": "As the lecturer puts it, we like things where we don't have to do anything.",
+   "i": 46
+  },
+  {
+   "t": 263.52,
+   "clip": "c2.logic.4",
+   "text": "Put the three together.",
+   "i": 47
+  },
+  {
+   "t": 266.3,
+   "clip": "c2.logic.4",
+   "text": "Flip-flop bee copies A, and flip-flop see copies bee, on every edge of the clock.",
+   "i": 48
+  },
+  {
+   "t": 273.17,
+   "clip": "c2.logic.4",
+   "text": "That's a shift register, running from A to bee to see.",
+   "i": 49
+  },
+  {
+   "t": 277.12,
+   "clip": "c2.logic.4",
+   "text": "The only logic is the and gate at its input, and you can read it in words.",
+   "i": 50
+  },
+  {
+   "t": 283.28,
+   "clip": "c2.logic.4",
+   "text": "A new one enters flip-flop A only when bee and see are both zero.",
+   "i": 51
+  },
+  {
+   "t": 293.17,
+   "clip": "c2.circ.1",
+   "text": "Here's the sliding counter as a circuit, laid out the way the lecturer drew it in his simulator.",
+   "i": 52
+  },
+  {
+   "t": 298.67,
+   "clip": "c2.circ.1",
+   "text": "As in part one, the circuit puts flip-flop A on the left, so here the ones slide to the right.",
+   "i": 53
+  },
+  {
+   "t": 306.13,
+   "clip": "c2.circ.1",
+   "text": "Just one gate is needed, an and gate.",
+   "i": 54
+  },
+  {
+   "t": 310.47,
+   "clip": "c2.circ.1",
+   "text": "It takes the not-bee and not-see outputs, and feeds flip-flop A.",
+   "i": 55
+  },
+  {
+   "t": 315.95,
+   "clip": "c2.circ.1",
+   "text": "Then the output of flip-flop A is wired straight into the input of flip-flop bee, and the output of bee into flip-flop see.",
+   "i": 56
+  },
+  {
+   "t": 323.8,
+   "clip": "c2.circ.2",
+   "text": "It starts with all three flip-flops at zero, which is the first state in our table.",
+   "i": 57
+  },
+  {
+   "t": 330.25,
+   "clip": "c2.circ.2",
+   "text": "On every edge of the clock, the ones slide one place along.",
+   "i": 58
+  },
+  {
+   "t": 335.74,
+   "clip": "c2.circ.2",
+   "text": "The lecturer takes the output from flip-flop bee, though any of them would do.",
+   "i": 59
+  },
+  {
+   "t": 341.57,
+   "clip": "c2.circ.2",
+   "text": "It's high for two periods of the clock, then low for three, again and again.",
+   "i": 60
+  },
+  {
+   "t": 346.45,
+   "clip": "c2.circ.3",
+   "text": "So the sliding assignment uses the same three flip-flops as the binary count, but one gate instead of three.",
+   "i": 61
+  },
+  {
+   "t": 354.23,
+   "clip": "c2.circ.3",
+   "text": "It needs less wiring too, because two of its three inputs are plain wires from a neighbour.",
+   "i": 62
+  },
+  {
+   "t": 360.62,
+   "clip": "c2.circ.3",
+   "text": "Can we go further, and get rid of that last gate?",
+   "i": 63
+  },
+  {
+   "t": 369.38,
+   "clip": "c2.ring.1",
+   "text": "Next comes the shift register assignment, what the lecturer calls an even more egregious use of flip-flops.",
+   "i": 64
+  },
+  {
+   "t": 376.13,
+   "clip": "c2.ring.1",
+   "text": "Take a shift register, and connect the output of its last flip-flop back to the input of its first.",
+   "i": 65
+  },
+  {
+   "t": 381.39,
+   "clip": "c2.ring.1",
+   "text": "Now whatever is inside just cycles round and round.",
+   "i": 66
+  },
+  {
+   "t": 387.17,
+   "clip": "c2.ring.2",
+   "text": "Use five flip-flops, from flip-flop A to flip-flop ee, and put two ones side by side in the ring.",
+   "i": 67
+  },
+  {
+   "t": 394.2,
+   "clip": "c2.ring.2",
+   "text": "They have to be neighbours, so that each output stays high for two states in a row.",
+   "i": 68
+  },
+  {
+   "t": 400.55,
+   "clip": "c2.ring.2",
+   "text": "On every edge of the clock, the pair moves one step round the ring.",
+   "i": 69
+  },
+  {
+   "t": 405.54,
+   "clip": "c2.ring.2",
+   "text": "In the table's order, with flip-flop A on the right, the first state is zero zero zero one one.",
+   "i": 70
+  },
+  {
+   "t": 413.01,
+   "clip": "c2.ring.2",
+   "text": "The next is zero zero one one zero.",
+   "i": 71
+  },
+  {
+   "t": 416.58,
+   "clip": "c2.ring.2",
+   "text": "The pair moves one place left each time, and wraps round from the left end back to the right.",
+   "i": 72
+  },
+  {
+   "t": 424.21,
+   "clip": "c2.ring.2",
+   "text": "After five steps, it's back where it started.",
+   "i": 73
+  },
+  {
+   "t": 428.13,
+   "clip": "c2.ring.3",
+   "text": "That's five flip-flops for five states, two more than the minimum of three.",
+   "i": 74
+  },
+  {
+   "t": 433.82,
+   "clip": "c2.ring.3",
+   "text": "And just as before, every column reads one, one, zero, zero, zero, each starting at a different point in the cycle.",
+   "i": 75
+  },
+  {
+   "t": 443.67,
+   "clip": "c2.ring.3",
+   "text": "So any of the five flip-flops can be the output.",
+   "i": 76
+  },
+  {
+   "t": 450.63,
+   "clip": "c2.wire.1",
+   "text": "So what next-state logic does the ring need?",
+   "i": 77
+  },
+  {
+   "t": 455.23,
+   "clip": "c2.wire.1",
+   "text": "Remember, with dee flip-flops each input is just the next state.",
+   "i": 78
+  },
+  {
+   "t": 460.69,
+   "clip": "c2.wire.1",
+   "text": "The next-state column for flip-flop A reads zero, zero, zero, then one, one, exactly the current column for flip-flop ee.",
+   "i": 79
+  },
+  {
+   "t": 471.74,
+   "clip": "c2.wire.1",
+   "text": "So flip-flop A takes its input from ee, the last flip-flop.",
+   "i": 80
+  },
+  {
+   "t": 477.17,
+   "clip": "c2.wire.1",
+   "text": "The next column for flip-flop bee matches the current column for flip-flop A, so dee bee equals A.",
+   "i": 81
+  },
+  {
+   "t": 483.92,
+   "clip": "c2.wire.1",
+   "text": "The rest follow the same way.",
+   "i": 82
+  },
+  {
+   "t": 487.08,
+   "clip": "c2.wire.1",
+   "text": "Flip-flop see takes its input from bee, flip-flop dee from see, and flip-flop ee from dee.",
+   "i": 83
+  },
+  {
+   "t": 495.37,
+   "clip": "c2.wire.2",
+   "text": "That's no surprise, because it's exactly how the ring is wired.",
+   "i": 84
+  },
+  {
+   "t": 500.57,
+   "clip": "c2.wire.2",
+   "text": "Each flip-flop's input is the output of the flip-flop before it.",
+   "i": 85
+  },
+  {
+   "t": 505.08,
+   "clip": "c2.wire.2",
+   "text": "Laid out as a circuit, it's five flip-flops in a row, sharing one clock signal, with one long wire from the last back to the first.",
+   "i": 86
+  },
+  {
+   "t": 513.95,
+   "clip": "c2.wire.2",
+   "text": "There are no gates at all, only wires.",
+   "i": 87
+  },
+  {
+   "t": 519.52,
+   "clip": "c2.wire.3",
+   "text": "Five flip-flops can hold thirty-two patterns, and we use only five.",
+   "i": 88
+  },
+  {
+   "t": 524.58,
+   "clip": "c2.wire.3",
+   "text": "In the slide's words, unused states, lots!",
+   "i": 89
+  },
+  {
+   "t": 529.86,
+   "clip": "c2.wire.3",
+   "text": "Twenty-seven of them.",
+   "i": 90
+  },
+  {
+   "t": 532.43,
+   "clip": "c2.wire.3",
+   "text": "In the design they're just don't cares, and this time we never even drew a K-map.",
+   "i": 91
+  },
+  {
+   "t": 538.19,
+   "clip": "c2.wire.3",
+   "text": "Keep those twenty-seven in mind.",
+   "i": 92
+  },
+  {
+   "t": 540.83,
+   "clip": "c2.wire.3",
+   "text": "They come back in part three.",
+   "i": 93
+  },
+  {
+   "t": 544.07,
+   "clip": "c2.trade.1",
+   "text": "The slide sums up the ring in one line.",
+   "i": 94
+  },
+  {
+   "t": 547.12,
+   "clip": "c2.trade.1",
+   "text": "Two more flip-flops, but no logic and simple wiring.",
+   "i": 95
+  },
+  {
+   "t": 551.77,
+   "clip": "c2.trade.1",
+   "text": "The lecturer calls these last two designs just a couple of bits of fun.",
+   "i": 96
+  },
+  {
+   "t": 556.01,
+   "clip": "c2.trade.1",
+   "text": "But they show that you can build a working machine with no combinational logic at all, from flip-flops alone.",
+   "i": 97
+  },
+  {
+   "t": 563.28,
+   "clip": "c2.trade.2",
+   "text": "And sometimes that's the cheaper design.",
+   "i": 98
+  },
+  {
+   "t": 566.74,
+   "clip": "c2.trade.2",
+   "text": "On a modern chip, each flip-flop takes up only a little room.",
+   "i": 99
+  },
+  {
+   "t": 572.19,
+   "clip": "c2.trade.2",
+   "text": "Logic gates need wiring between them, and wiring takes up space.",
+   "i": 100
+  },
+  {
+   "t": 577.51,
+   "clip": "c2.trade.2",
+   "text": "So using more flip-flops to avoid the logic can be the better choice.",
+   "i": 101
+  },
+  {
+   "t": 582.49,
+   "clip": "c2.trade.2",
+   "text": "Those were the slide's two points in part one, about area and wiring.",
+   "i": 102
+  },
+  {
+   "t": 588.03,
+   "clip": "c2.trade.3",
+   "text": "Here's the scoreboard so far.",
+   "i": 103
+  },
+  {
+   "t": 590.94,
+   "clip": "c2.trade.3",
+   "text": "The binary count used three flip-flops and three gates.",
+   "i": 104
+  },
+  {
+   "t": 595.29,
+   "clip": "c2.trade.3",
+   "text": "Sliding used three flip-flops and one gate.",
+   "i": 105
+  },
+  {
+   "t": 599.19,
+   "clip": "c2.trade.3",
+   "text": "The ring uses five flip-flops and no gates at all.",
+   "i": 106
+  },
+  {
+   "t": 603.4,
+   "clip": "c2.trade.3",
+   "text": "None of them needs output logic.",
+   "i": 107
+  },
+  {
+   "t": 607.04,
+   "clip": "c2.trade.3",
+   "text": "So which is best depends on what you're trying to save.",
+   "i": 108
+  },
+  {
+   "t": 617.15,
+   "clip": "c2.recap.1",
+   "text": "To recap.",
+   "i": 109
+  },
+  {
+   "t": 619.75,
+   "clip": "c2.recap.1",
+   "text": "In the sliding assignment, two ones slide through three flip-flops.",
+   "i": 110
+  },
+  {
+   "t": 625.56,
+   "clip": "c2.recap.1",
+   "text": "Each flip-flop then gives the same waveform in a different phase, so any of them can be the output.",
+   "i": 111
+  },
+  {
+   "t": 633.04,
+   "clip": "c2.recap.1",
+   "text": "Where a current column matches a next-state column, that input is just a wire.",
+   "i": 112
+  },
+  {
+   "t": 639.08,
+   "clip": "c2.recap.1",
+   "text": "So the sliding counter needs just one and gate.",
+   "i": 113
+  },
+  {
+   "t": 643.03,
+   "clip": "c2.recap.2",
+   "text": "Then join the register into a ring of five, and each flip-flop simply copies the one before it, with no gates at all.",
+   "i": 114
+  },
+  {
+   "t": 651.19,
+   "clip": "c2.recap.2",
+   "text": "You spend flip-flops to save logic and wiring, and on a modern chip that can be the better deal.",
+   "i": 115
+  },
+  {
+   "t": 658.21,
+   "clip": "c2.recap.2",
+   "text": "Next time, we switch the ring on, and nothing happens.",
+   "i": 116
+  },
+  {
+   "t": 662.57,
+   "clip": "c2.recap.2",
+   "text": "Why?",
+   "i": 117
+  }
+ ]
+}

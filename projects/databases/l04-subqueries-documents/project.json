@@ -1,0 +1,49 @@
+{
+  "title": "Subqueries and Documents",
+  "course_line": "Databases · Lecture 4",
+  "code_language": "sql",
+  "toolchain": "duckdb (v1.5.6, ~/.local/bin/duckdb, the version of the lecture's demos): relational queries `duckdb -readonly ../source/movies.duckdb -c \"<sql>\"`, document queries `duckdb -readonly ../source/movies-json.duckdb -c \"<sql>\"` (paths from the project folder; for longer SQL, a heredoc `duckdb -readonly <db> <<'EOF' … EOF`). Never open the databases without -readonly. Run every query shown on screen, including the ones meant to fail, and quote results and error messages exactly as printed",
+  "sources": [
+    {
+      "path": "../source/databases-notes.pdf",
+      "pages": "32-49 (refresher: 11-16, 20-31)",
+      "note": "Lecture notes (Kleppmann, 2026/27), the primary text; PDF page = printed page. §3.6 Query composition pp. 32-35 (slides 60-68, exercises 13-14); ch. 4 Document databases pp. 36-49 (slides 69-93, exercises 15-19). Refreshers: movies schema pp. 11-16 (slides 19-29), HAVING p. 24 (slide 45), joins pp. 25-28 (slides 46-54), set operations p. 30 (slides 56-57), NULL and three-valued logic pp. 30-32 (slides 58-59)"
+    },
+    {
+      "path": "../source/databases-handout.pdf",
+      "pages": "59-99",
+      "note": "The slides without builds; handout page = slide number + 3 up to slide 68 (p. 71); p. 72 is the 'Document Databases' title slide; p. 73 is slide 69 (IMDb's 'Full cast & crew' page for The Kid, a screenshot); slides 70-93 are pp. 76-99 (pp. 74-75 repeat slides 24-25)"
+    },
+    {
+      "path": "../source/databases-exercises.pdf",
+      "pages": "2-4",
+      "note": "Exercises 13-19 on their own (same text as in the notes). Exercise 12 (three-valued logic, §3.5) is Lecture 3's, out of scope (PLAN.md Decisions)"
+    },
+    {
+      "path": "../source/movies.duckdb",
+      "pages": "",
+      "note": "Relational movies database: 7 tables (movies 2,935, people 23,179, genres 26, ratings 2,935, has_genre 7,826, has_position 49,811, plays_role 30,303). Every chapter 1-3 and 9 query runs here"
+    },
+    {
+      "path": "../source/movies-json.duckdb",
+      "pages": "",
+      "note": "Document version: tables movies(movie_id, movie JSON) 2,935 rows and people(person_id, person JSON) 23,179 rows. Chapters 4-8 and 10"
+    },
+    {
+      "path": "../source/94772e13-b1c5-4b62-89a8-b4d700a412cb-749a8c6d-b557-43a4-b83d-b4f000dc88da.transcript.md",
+      "pages": "00:04:34-00:57:20",
+      "note": "Whisper medium transcript of the Tue 2026-10-27 recording, /Users/markgolbraikh/Downloads/94772e13-b1c5-4b62-89a8-b4d700a412cb-749a8c6d-b557-43a4-b83d-b4f000dc88da.mp4 (screen capture of slides and the DuckDB terminal). Teaching starts 00:04:34; per-chapter time ranges in PLAN.md"
+    },
+    {
+      "path": "../source/94772e13-b1c5-4b62-89a8-b4d700a412cb-749a8c6d-b557-43a4-b83d-b4f000dc88da.captions.md",
+      "pages": "",
+      "note": "Embedded Panopto captions of the same recording; cross-check only (they write 'sequel practicals': the lecturer says SQL as 'sequel')"
+    },
+    {
+      "path": "../source/94772e13-b1c5-4b62-89a8-b4d700a412cb-749a8c6d-b557-43a4-b83d-b4f000dc88da.digest.md",
+      "pages": "",
+      "note": "Empty: all six Gemini pieces MISSING (quota, 2026-11-01). Not used; the slides and the real database stand in for it"
+    }
+  ],
+  "created": "2026-11-01"
+}

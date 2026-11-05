@@ -1,0 +1,1035 @@
+{
+ "key": "l10ch4",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-complex-roots-logs",
+ "chapter": 4,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-complex-roots-logs/out/ch4_logarithm.mp4",
+ "total": 701.513,
+ "scenes_sum": 701.4833330000001,
+ "words": 1597,
+ "scenes": [
+  {
+   "stem": "ch4_s1_hook",
+   "t0": 0.0,
+   "dur": 60.933333,
+   "cue_dur": 60.9333
+  },
+  {
+   "stem": "ch4_s2_define",
+   "t0": 60.933333,
+   "dur": 146.516667,
+   "cue_dur": 146.5167
+  },
+  {
+   "stem": "ch4_s3_map",
+   "t0": 207.45000000000002,
+   "dur": 100.133333,
+   "cue_dur": 100.1333
+  },
+  {
+   "stem": "ch4_s4_ln2i",
+   "t0": 307.58333300000004,
+   "dur": 94.3,
+   "cue_dur": 94.3
+  },
+  {
+   "stem": "ch4_s5_consequences",
+   "t0": 401.88333300000005,
+   "dur": 105.683333,
+   "cue_dur": 105.6833
+  },
+  {
+   "stem": "ch4_s6_principal",
+   "t0": 507.56666600000005,
+   "dur": 135.85,
+   "cue_dur": 135.85
+  },
+  {
+   "stem": "ch4_s7_recap",
+   "t0": 643.4166660000001,
+   "dur": 58.066667,
+   "cue_dur": 58.0667
+  }
+ ],
+ "clips": [
+  {
+   "id": "c4.hook.1",
+   "scene": "ch4_s1_hook",
+   "t0": 4.6,
+   "dur": 10.793
+  },
+  {
+   "id": "c4.hook.2",
+   "scene": "ch4_s1_hook",
+   "t0": 16.1833,
+   "dur": 25.346
+  },
+  {
+   "id": "c4.hook.3",
+   "scene": "ch4_s1_hook",
+   "t0": 43.15,
+   "dur": 14.136
+  },
+  {
+   "id": "c4.def.1",
+   "scene": "ch4_s2_define",
+   "t0": 60.933333,
+   "dur": 26.369
+  },
+  {
+   "id": "c4.def.2",
+   "scene": "ch4_s2_define",
+   "t0": 88.250033,
+   "dur": 23.77
+  },
+  {
+   "id": "c4.def.3",
+   "scene": "ch4_s2_define",
+   "t0": 113.133333,
+   "dur": 28.782
+  },
+  {
+   "id": "c4.def.4",
+   "scene": "ch4_s2_define",
+   "t0": 143.233333,
+   "dur": 23.808
+  },
+  {
+   "id": "c4.def.5",
+   "scene": "ch4_s2_define",
+   "t0": 167.950033,
+   "dur": 22.644
+  },
+  {
+   "id": "c4.def.6",
+   "scene": "ch4_s2_define",
+   "t0": 191.350033,
+   "dur": 13.838
+  },
+  {
+   "id": "c4.map.1",
+   "scene": "ch4_s3_map",
+   "t0": 207.45000000000002,
+   "dur": 16.688
+  },
+  {
+   "id": "c4.map.2",
+   "scene": "ch4_s3_map",
+   "t0": 224.95000000000002,
+   "dur": 25.879
+  },
+  {
+   "id": "c4.map.3",
+   "scene": "ch4_s3_map",
+   "t0": 251.8333,
+   "dur": 22.439
+  },
+  {
+   "id": "c4.map.4",
+   "scene": "ch4_s3_map",
+   "t0": 275.5333,
+   "dur": 27.655
+  },
+  {
+   "id": "c4.ladder.1",
+   "scene": "ch4_s4_ln2i",
+   "t0": 307.58333300000004,
+   "dur": 15.134
+  },
+  {
+   "id": "c4.ladder.2",
+   "scene": "ch4_s4_ln2i",
+   "t0": 323.816633,
+   "dur": 17.526
+  },
+  {
+   "id": "c4.ladder.3",
+   "scene": "ch4_s4_ln2i",
+   "t0": 342.400033,
+   "dur": 32.821
+  },
+  {
+   "id": "c4.ladder.4",
+   "scene": "ch4_s4_ln2i",
+   "t0": 376.150033,
+   "dur": 23.463
+  },
+  {
+   "id": "c4.cons.1",
+   "scene": "ch4_s5_consequences",
+   "t0": 401.88333300000005,
+   "dur": 21.541
+  },
+  {
+   "id": "c4.cons.2",
+   "scene": "ch4_s5_consequences",
+   "t0": 424.68333300000006,
+   "dur": 31.738
+  },
+  {
+   "id": "c4.cons.3",
+   "scene": "ch4_s5_consequences",
+   "t0": 457.2333330000001,
+   "dur": 28.576
+  },
+  {
+   "id": "c4.cons.4",
+   "scene": "ch4_s5_consequences",
+   "t0": 486.46663300000006,
+   "dur": 17.162
+  },
+  {
+   "id": "c4.prin.1",
+   "scene": "ch4_s6_principal",
+   "t0": 507.56666600000005,
+   "dur": 23.988
+  },
+  {
+   "id": "c4.prin.2",
+   "scene": "ch4_s6_principal",
+   "t0": 532.566666,
+   "dur": 21.808
+  },
+  {
+   "id": "c4.prin.3",
+   "scene": "ch4_s6_principal",
+   "t0": 555.2833660000001,
+   "dur": 28.956
+  },
+  {
+   "id": "c4.prin.4",
+   "scene": "ch4_s6_principal",
+   "t0": 585.066666,
+   "dur": 24.956
+  },
+  {
+   "id": "c4.prin.5",
+   "scene": "ch4_s6_principal",
+   "t0": 613.0166660000001,
+   "dur": 24.764
+  },
+  {
+   "id": "c4.recap.1",
+   "scene": "ch4_s7_recap",
+   "t0": 643.4166660000001,
+   "dur": 36.531
+  },
+  {
+   "id": "c4.recap.2",
+   "scene": "ch4_s7_recap",
+   "t0": 680.8999660000001,
+   "dur": 9.743
+  }
+ ],
+ "sentences": [
+  {
+   "t": 4.6,
+   "clip": "c4.hook.1",
+   "text": "This is part four.",
+   "i": 1
+  },
+  {
+   "t": 7.57,
+   "clip": "c4.hook.1",
+   "text": "Last time, exponentials turned powers and sums of cosines into simple algebra.",
+   "i": 2
+  },
+  {
+   "t": 13.2,
+   "clip": "c4.hook.1",
+   "text": "Now we run the exponential backwards.",
+   "i": 3
+  },
+  {
+   "t": 16.18,
+   "clip": "c4.hook.2",
+   "text": "For real numbers, that's easy.",
+   "i": 4
+  },
+  {
+   "t": 19.54,
+   "clip": "c4.hook.2",
+   "text": "If E to the ex equals two, then ex is log two, about zero point six nine, and that's the only answer.",
+   "i": 5
+  },
+  {
+   "t": 27.78,
+   "clip": "c4.hook.2",
+   "text": "Now take two eye, our running number from part one.",
+   "i": 6
+  },
+  {
+   "t": 31.71,
+   "clip": "c4.hook.2",
+   "text": "Which complex numbers W make E to the W equal to two eye?",
+   "i": 7
+  },
+  {
+   "t": 37.11,
+   "clip": "c4.hook.2",
+   "text": "Is there one answer, or many?",
+   "i": 8
+  },
+  {
+   "t": 43.15,
+   "clip": "c4.hook.3",
+   "text": "To find out, we'll do what the lecturer does.",
+   "i": 9
+  },
+  {
+   "t": 46.88,
+   "clip": "c4.hook.3",
+   "text": "We define the logarithm by undoing the exponential, which we already know.",
+   "i": 10
+  },
+  {
+   "t": 52.49,
+   "clip": "c4.hook.3",
+   "text": "In her words, each time you see the logarithm, you have to go through this definition.",
+   "i": 11
+  },
+  {
+   "t": 60.93,
+   "clip": "c4.def.1",
+   "text": "The notes ask the question directly.",
+   "i": 12
+  },
+  {
+   "t": 64.65,
+   "clip": "c4.def.1",
+   "text": "If zed equals ex plus eye why, or mod zed times E to the eye theta, then what is log zed?",
+   "i": 13
+  },
+  {
+   "t": 72.89,
+   "clip": "c4.def.1",
+   "text": "Here's the definition.",
+   "i": 14
+  },
+  {
+   "t": 75.42,
+   "clip": "c4.def.1",
+   "text": "For any zed other than zero, W is the log of zed if E to the W equals zed.",
+   "i": 15
+  },
+  {
+   "t": 82.74,
+   "clip": "c4.def.1",
+   "text": "That's how you define the log of a real number too, by undoing the exponential.",
+   "i": 16
+  },
+  {
+   "t": 88.25,
+   "clip": "c4.def.2",
+   "text": "Now use what you know.",
+   "i": 17
+  },
+  {
+   "t": 91.58,
+   "clip": "c4.def.2",
+   "text": "Split W into its real and imaginary parts, U plus eye V.",
+   "i": 18
+  },
+  {
+   "t": 97.67,
+   "clip": "c4.def.2",
+   "text": "Write zed with its modulus and argument, mod zed times E to the eye theta.",
+   "i": 19
+  },
+  {
+   "t": 103.7,
+   "clip": "c4.def.2",
+   "text": "Then E to the W is E to the U, times E to the eye V.",
+   "i": 20
+  },
+  {
+   "t": 108.59,
+   "clip": "c4.def.2",
+   "text": "And that has to equal mod zed, times E to the eye theta.",
+   "i": 21
+  },
+  {
+   "t": 113.13,
+   "clip": "c4.def.3",
+   "text": "Compare the two sides, one part at a time.",
+   "i": 22
+  },
+  {
+   "t": 117.36,
+   "clip": "c4.def.3",
+   "text": "E to the eye V and E to the eye theta both have length one.",
+   "i": 23
+  },
+  {
+   "t": 122.4,
+   "clip": "c4.def.3",
+   "text": "So the lengths must agree, and E to the U equals mod zed.",
+   "i": 24
+  },
+  {
+   "t": 126.91,
+   "clip": "c4.def.3",
+   "text": "That's an ordinary real equation, and its answer is U equals log of mod zed.",
+   "i": 25
+  },
+  {
+   "t": 133.67,
+   "clip": "c4.def.3",
+   "text": "There's exactly one answer, because E to the U is positive and always increasing, so it reaches each positive height exactly once.",
+   "i": 26
+  },
+  {
+   "t": 143.23,
+   "clip": "c4.def.4",
+   "text": "Now the angles.",
+   "i": 27
+  },
+  {
+   "t": 145.98,
+   "clip": "c4.def.4",
+   "text": "E to the eye V points at angle V, and E to the eye theta points at angle theta.",
+   "i": 28
+  },
+  {
+   "t": 152.15,
+   "clip": "c4.def.4",
+   "text": "They point at the same place, so the two angles can differ by any whole number of turns.",
+   "i": 29
+  },
+  {
+   "t": 158.58,
+   "clip": "c4.def.4",
+   "text": "V equals theta, plus two pi N, for any integer N.",
+   "i": 30
+  },
+  {
+   "t": 163.74,
+   "clip": "c4.def.4",
+   "text": "There's that two pi N again, the thread of this whole lecture.",
+   "i": 31
+  },
+  {
+   "t": 167.95,
+   "clip": "c4.def.5",
+   "text": "Put the two parts together.",
+   "i": 32
+  },
+  {
+   "t": 171.29,
+   "clip": "c4.def.5",
+   "text": "Log zed equals log of mod zed, plus eye times the bracket, arg zed plus two pi N.",
+   "i": 33
+  },
+  {
+   "t": 179.05,
+   "clip": "c4.def.5",
+   "text": "Every integer N gives a value.",
+   "i": 34
+  },
+  {
+   "t": 182.82,
+   "clip": "c4.def.5",
+   "text": "So, in the words of the notes, there are infinitely many values, spaced two pi eye apart, on a vertical line in the complex plane.",
+   "i": 35
+  },
+  {
+   "t": 191.35,
+   "clip": "c4.def.6",
+   "text": "And why leave out zero?",
+   "i": 36
+  },
+  {
+   "t": 195.05,
+   "clip": "c4.def.6",
+   "text": "E to the W has length E to the U, which is always positive.",
+   "i": 37
+  },
+  {
+   "t": 200.37,
+   "clip": "c4.def.6",
+   "text": "So E to the W can never be zero, and zero has no logarithm at all.",
+   "i": 38
+  },
+  {
+   "t": 207.45,
+   "clip": "c4.map.1",
+   "text": "Here's a picture of what that formula means.",
+   "i": 39
+  },
+  {
+   "t": 211.04,
+   "clip": "c4.map.1",
+   "text": "On the left is the plane of W, the inputs.",
+   "i": 40
+  },
+  {
+   "t": 215.19,
+   "clip": "c4.map.1",
+   "text": "On the right is the plane of zed, the outputs.",
+   "i": 41
+  },
+  {
+   "t": 219.98,
+   "clip": "c4.map.1",
+   "text": "The exponential sends each point W to the point E to the W.",
+   "i": 42
+  },
+  {
+   "t": 224.95,
+   "clip": "c4.map.2",
+   "text": "Take a vertical line on the left, where the real part, U, is fixed.",
+   "i": 43
+  },
+  {
+   "t": 230.45,
+   "clip": "c4.map.2",
+   "text": "Let's use log two.",
+   "i": 44
+  },
+  {
+   "t": 233.44,
+   "clip": "c4.map.2",
+   "text": "Every point on it lands at distance E to the U from zero, and that's two.",
+   "i": 45
+  },
+  {
+   "t": 239.2,
+   "clip": "c4.map.2",
+   "text": "So the line lands on a circle of radius two.",
+   "i": 46
+  },
+  {
+   "t": 243.47,
+   "clip": "c4.map.2",
+   "text": "Slide the line right, and the circle grows.",
+   "i": 47
+  },
+  {
+   "t": 247.23,
+   "clip": "c4.map.2",
+   "text": "Slide it left, and the circle shrinks towards zero, but never reaches it.",
+   "i": 48
+  },
+  {
+   "t": 251.83,
+   "clip": "c4.map.3",
+   "text": "Now climb the line.",
+   "i": 49
+  },
+  {
+   "t": 255.16,
+   "clip": "c4.map.3",
+   "text": "The imaginary part, V, sets the angle, so the image goes round the circle.",
+   "i": 50
+  },
+  {
+   "t": 260.96,
+   "clip": "c4.map.3",
+   "text": "Climb two pi, and it's back where it started.",
+   "i": 51
+  },
+  {
+   "t": 264.34,
+   "clip": "c4.map.3",
+   "text": "Climb another two pi, and it goes round again.",
+   "i": 52
+  },
+  {
+   "t": 268.86,
+   "clip": "c4.map.3",
+   "text": "The exponential wraps the line round the circle, over and over, like thread round a spool.",
+   "i": 53
+  },
+  {
+   "t": 275.53,
+   "clip": "c4.map.4",
+   "text": "Now run it backwards.",
+   "i": 54
+  },
+  {
+   "t": 278.2,
+   "clip": "c4.map.4",
+   "text": "Pick one point on the circle.",
+   "i": 55
+  },
+  {
+   "t": 281.15,
+   "clip": "c4.map.4",
+   "text": "It came from a whole column of points on the line, two pi apart, one for each turn.",
+   "i": 56
+  },
+  {
+   "t": 287.83,
+   "clip": "c4.map.4",
+   "text": "The real exponential never wraps.",
+   "i": 57
+  },
+  {
+   "t": 291.52,
+   "clip": "c4.map.4",
+   "text": "It lays the real line once along the positive real axis, so the real log has one value.",
+   "i": 58
+  },
+  {
+   "t": 298.88,
+   "clip": "c4.map.4",
+   "text": "The complex exponential wraps, so the complex log has infinitely many.",
+   "i": 59
+  },
+  {
+   "t": 307.58,
+   "clip": "c4.ladder.1",
+   "text": "Let's try it on two eye, the number from part one.",
+   "i": 60
+  },
+  {
+   "t": 311.47,
+   "clip": "c4.ladder.1",
+   "text": "As before, write it with its modulus and every version of its angle.",
+   "i": 61
+  },
+  {
+   "t": 316.41,
+   "clip": "c4.ladder.1",
+   "text": "Its modulus is two.",
+   "i": 62
+  },
+  {
+   "t": 319.44,
+   "clip": "c4.ladder.1",
+   "text": "Its argument is pi over two, plus two pi N.",
+   "i": 63
+  },
+  {
+   "t": 323.82,
+   "clip": "c4.ladder.2",
+   "text": "Put those into the formula.",
+   "i": 64
+  },
+  {
+   "t": 326.66,
+   "clip": "c4.ladder.2",
+   "text": "Log of two eye equals log two, plus eye times the bracket, pi over two plus two pi N.",
+   "i": 65
+  },
+  {
+   "t": 333.88,
+   "clip": "c4.ladder.2",
+   "text": "The real part is log two, about zero point six nine.",
+   "i": 66
+  },
+  {
+   "t": 338.1,
+   "clip": "c4.ladder.2",
+   "text": "The imaginary part is pi over two, plus two pi N.",
+   "i": 67
+  },
+  {
+   "t": 342.4,
+   "clip": "c4.ladder.3",
+   "text": "Now plot these values in the plane of W.",
+   "i": 68
+  },
+  {
+   "t": 346.26,
+   "clip": "c4.ladder.3",
+   "text": "They all have the same real part, so they sit on one vertical line, at log two.",
+   "i": 69
+  },
+  {
+   "t": 352.52,
+   "clip": "c4.ladder.3",
+   "text": "N equals zero uses the principal argument, pi over two, so that point is the principal value.",
+   "i": 70
+  },
+  {
+   "t": 359.7,
+   "clip": "c4.ladder.3",
+   "text": "Then come N equals one and minus one, two and minus two, and so on, in both directions.",
+   "i": 71
+  },
+  {
+   "t": 367.38,
+   "clip": "c4.ladder.3",
+   "text": "Neighbours are two pi eye apart.",
+   "i": 72
+  },
+  {
+   "t": 371.36,
+   "clip": "c4.ladder.3",
+   "text": "This is the ladder of log two eye, and every rung is a correct answer.",
+   "i": 73
+  },
+  {
+   "t": 376.15,
+   "clip": "c4.ladder.4",
+   "text": "The lecturer adds a warning here.",
+   "i": 74
+  },
+  {
+   "t": 379.13,
+   "clip": "c4.ladder.4",
+   "text": "Notice, it is not the angle anymore.",
+   "i": 75
+  },
+  {
+   "t": 382.86,
+   "clip": "c4.ladder.4",
+   "text": "This is the actual value.",
+   "i": 76
+  },
+  {
+   "t": 385.85,
+   "clip": "c4.ladder.4",
+   "text": "On this ladder, pi over two is a height on the imaginary axis, the number one point five seven, not an angle.",
+   "i": 77
+  },
+  {
+   "t": 393.04,
+   "clip": "c4.ladder.4",
+   "text": "And every rung really works.",
+   "i": 78
+  },
+  {
+   "t": 396.64,
+   "clip": "c4.ladder.4",
+   "text": "Raise E to any of them, and you land on two eye.",
+   "i": 79
+  },
+  {
+   "t": 401.88,
+   "clip": "c4.cons.1",
+   "text": "The definition has two consequences that catch people out.",
+   "i": 80
+  },
+  {
+   "t": 406.32,
+   "clip": "c4.cons.1",
+   "text": "The first is about the log of E to the zed.",
+   "i": 81
+  },
+  {
+   "t": 410.23,
+   "clip": "c4.cons.1",
+   "text": "For real numbers, the log of E to the ex is just ex.",
+   "i": 82
+  },
+  {
+   "t": 415.11,
+   "clip": "c4.cons.1",
+   "text": "Here it's zed, plus two pi eye N.",
+   "i": 83
+  },
+  {
+   "t": 419.18,
+   "clip": "c4.cons.1",
+   "text": "The way back gives the whole ladder through zed, so you can land on any rung.",
+   "i": 84
+  },
+  {
+   "t": 424.68,
+   "clip": "c4.cons.2",
+   "text": "Here's an example: zed equals three plus four eye.",
+   "i": 85
+  },
+  {
+   "t": 430.28,
+   "clip": "c4.cons.2",
+   "text": "The principal value is the rung whose height lies between minus pi and pi.",
+   "i": 86
+  },
+  {
+   "t": 435.28,
+   "clip": "c4.cons.2",
+   "text": "But four is bigger than pi, so three plus four eye sits above that strip.",
+   "i": 87
+  },
+  {
+   "t": 440.62,
+   "clip": "c4.cons.2",
+   "text": "The principal value of the round trip is one rung lower.",
+   "i": 88
+  },
+  {
+   "t": 444.75,
+   "clip": "c4.cons.2",
+   "text": "Its real part is three, and its imaginary part is four minus two pi, about minus two point two eight.",
+   "i": 89
+  },
+  {
+   "t": 452.55,
+   "clip": "c4.cons.2",
+   "text": "So even the principal value is a different number from the zed you started with.",
+   "i": 90
+  },
+  {
+   "t": 457.23,
+   "clip": "c4.cons.3",
+   "text": "The second consequence is about products.",
+   "i": 91
+  },
+  {
+   "t": 461.17,
+   "clip": "c4.cons.3",
+   "text": "The log of zed one times zed two equals log zed one, plus log zed two, up to whole multiples of two pi eye.",
+   "i": 92
+  },
+  {
+   "t": 470.26,
+   "clip": "c4.cons.3",
+   "text": "As whole ladders, the two sides match exactly.",
+   "i": 93
+  },
+  {
+   "t": 474.49,
+   "clip": "c4.cons.3",
+   "text": "But pick one value on each side, and they can differ by a multiple of two pi eye.",
+   "i": 94
+  },
+  {
+   "t": 480.54,
+   "clip": "c4.cons.3",
+   "text": "So, as the lecturer says, remember that you can always add or subtract two pi eye.",
+   "i": 95
+  },
+  {
+   "t": 486.47,
+   "clip": "c4.cons.4",
+   "text": "One more thing.",
+   "i": 96
+  },
+  {
+   "t": 488.72,
+   "clip": "c4.cons.4",
+   "text": "Even log two has a whole ladder.",
+   "i": 97
+  },
+  {
+   "t": 492.14,
+   "clip": "c4.cons.4",
+   "text": "It's log two, plus two pi eye N.",
+   "i": 98
+  },
+  {
+   "t": 495.95,
+   "clip": "c4.cons.4",
+   "text": "Only N equals zero gives a real number, the familiar log of two.",
+   "i": 99
+  },
+  {
+   "t": 500.76,
+   "clip": "c4.cons.4",
+   "text": "That small fact is the key to the next part.",
+   "i": 100
+  },
+  {
+   "t": 507.57,
+   "clip": "c4.prin.1",
+   "text": "The notes give principal values a box of their own.",
+   "i": 101
+  },
+  {
+   "t": 511.65,
+   "clip": "c4.prin.1",
+   "text": "You choose just one value of the angle, and the usual choice is the principal argument.",
+   "i": 102
+  },
+  {
+   "t": 517.82,
+   "clip": "c4.prin.1",
+   "text": "It lies between minus pi and pi, with pi included and minus pi left out.",
+   "i": 103
+  },
+  {
+   "t": 523.96,
+   "clip": "c4.prin.1",
+   "text": "On a ladder, that picks out one rung, the one inside this strip.",
+   "i": 104
+  },
+  {
+   "t": 529.03,
+   "clip": "c4.prin.1",
+   "text": "We tag it in green, principal value.",
+   "i": 105
+  },
+  {
+   "t": 532.57,
+   "clip": "c4.prin.2",
+   "text": "A word on notation.",
+   "i": 106
+  },
+  {
+   "t": 535.93,
+   "clip": "c4.prin.2",
+   "text": "Some books write the principal value with a capital L.",
+   "i": 107
+  },
+  {
+   "t": 539.77,
+   "clip": "c4.prin.2",
+   "text": "This course uses the same log for both, the whole ladder and the principal value.",
+   "i": 108
+  },
+  {
+   "t": 545.67,
+   "clip": "c4.prin.2",
+   "text": "In the lecturer's words, please bear with this abuse of the notation.",
+   "i": 109
+  },
+  {
+   "t": 550.79,
+   "clip": "c4.prin.2",
+   "text": "In these videos, the green tag tells you which one is meant.",
+   "i": 110
+  },
+  {
+   "t": 555.28,
+   "clip": "c4.prin.3",
+   "text": "The box also warns that principal values can break the product rule.",
+   "i": 111
+  },
+  {
+   "t": 559.98,
+   "clip": "c4.prin.3",
+   "text": "Here's an example: zed one and zed two both equal minus one.",
+   "i": 112
+  },
+  {
+   "t": 566.77,
+   "clip": "c4.prin.3",
+   "text": "The principal log of minus one is eye times pi.",
+   "i": 113
+  },
+  {
+   "t": 571.09,
+   "clip": "c4.prin.3",
+   "text": "So the two principal logs add up to two pi eye.",
+   "i": 114
+  },
+  {
+   "t": 575.13,
+   "clip": "c4.prin.3",
+   "text": "But minus one times minus one is one, and the principal log of one is zero.",
+   "i": 115
+  },
+  {
+   "t": 581.13,
+   "clip": "c4.prin.3",
+   "text": "The two answers differ by exactly two pi eye.",
+   "i": 116
+  },
+  {
+   "t": 585.07,
+   "clip": "c4.prin.4",
+   "text": "Here's why, in terms of angles.",
+   "i": 117
+  },
+  {
+   "t": 588.36,
+   "clip": "c4.prin.4",
+   "text": "Multiplying adds the angles, so pi plus pi gives two pi.",
+   "i": 118
+  },
+  {
+   "t": 593.79,
+   "clip": "c4.prin.4",
+   "text": "But two pi lies outside the principal range.",
+   "i": 119
+  },
+  {
+   "t": 598.52,
+   "clip": "c4.prin.4",
+   "text": "To get the principal argument, pull it back one full turn, to zero.",
+   "i": 120
+  },
+  {
+   "t": 604.12,
+   "clip": "c4.prin.4",
+   "text": "So the product rule holds for the full sets of values, but principal values can be off by one rung.",
+   "i": 121
+  },
+  {
+   "t": 613.02,
+   "clip": "c4.prin.5",
+   "text": "Now try question F eighteen on Examples Sheet One, the logarithms of five numbers.",
+   "i": 122
+  },
+  {
+   "t": 619.44,
+   "clip": "c4.prin.5",
+   "text": "Write each one with its modulus and every version of its argument, and then read off the log.",
+   "i": 123
+  },
+  {
+   "t": 626.06,
+   "clip": "c4.prin.5",
+   "text": "Taking the conjugate of ex plus eye why flips the sign of the argument.",
+   "i": 124
+  },
+  {
+   "t": 630.86,
+   "clip": "c4.prin.5",
+   "text": "And in the last one, multiplying by eye adds pi over two to the argument.",
+   "i": 125
+  },
+  {
+   "t": 636.03,
+   "clip": "c4.prin.5",
+   "text": "Full solutions are in part eight.",
+   "i": 126
+  },
+  {
+   "t": 643.42,
+   "clip": "c4.recap.1",
+   "text": "To recap.",
+   "i": 127
+  },
+  {
+   "t": 646.11,
+   "clip": "c4.recap.1",
+   "text": "The log of zed comes from undoing the exponential.",
+   "i": 128
+  },
+  {
+   "t": 649.79,
+   "clip": "c4.recap.1",
+   "text": "Its real part is the ordinary log of the modulus, and its imaginary part is the argument, plus two pi N.",
+   "i": 129
+  },
+  {
+   "t": 658.2,
+   "clip": "c4.recap.1",
+   "text": "The exponential wraps vertical lines into circles, so each zed comes from a whole column of points.",
+   "i": 130
+  },
+  {
+   "t": 665.2,
+   "clip": "c4.recap.1",
+   "text": "For two eye, that column is a ladder at log two, with rungs two pi eye apart.",
+   "i": 131
+  },
+  {
+   "t": 671.21,
+   "clip": "c4.recap.1",
+   "text": "The log of E to the zed can land on any rung of zed's ladder.",
+   "i": 132
+  },
+  {
+   "t": 676.22,
+   "clip": "c4.recap.1",
+   "text": "And principal values can break the product rule, by a whole two pi eye.",
+   "i": 133
+  },
+  {
+   "t": 680.9,
+   "clip": "c4.recap.2",
+   "text": "Next time, if log two has infinitely many values, then so does two to the power eye.",
+   "i": 134
+  },
+  {
+   "t": 686.98,
+   "clip": "c4.recap.2",
+   "text": "And eye to the power eye turns out to be a real number.",
+   "i": 135
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{"cues": [
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 24 Transformation.ogg", "from": "START", "until": "c1.why.1",
+   "track_start": 0, "fade_in": 1, "fade_out": 4, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 02 Heartbeat.ogg", "from": "c1.bin.1:end", "until": "c1.bin.3",
+   "track_start": 0, "fade_in": 3, "fade_out": 3.5, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 20 Endpoint.ogg", "from": "c1.test.5:end", "until": "END",
+   "track_start": 0, "fade_in": 3, "fade_out": 3, "level_db": -11,
+   "swell_after": "c1.recap.2:end", "swell_db": 6}],
+ "duck": {"threshold": 0.03, "ratio": 2, "attack": 50, "release": 2000}}

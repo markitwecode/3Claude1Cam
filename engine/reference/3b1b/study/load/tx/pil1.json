@@ -1,0 +1,1185 @@
+{
+ "key": "pil1",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-deep-oscillations",
+ "chapter": 1,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/nst-maths/l10-deep-oscillations/out/ch1_rule.mp4",
+ "total": 900.351313,
+ "scenes_sum": 900.3156910000001,
+ "words": 1909,
+ "scenes": [
+  {
+   "stem": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 65.599349,
+   "cue_dur": 65.6
+  },
+  {
+   "stem": "ch1_s2_tools",
+   "t0": 65.599349,
+   "dur": 89.916667,
+   "cue_dur": 89.9167
+  },
+  {
+   "stem": "ch1_s3_spring",
+   "t0": 155.516016,
+   "dur": 165.0,
+   "cue_dur": 165.0
+  },
+  {
+   "stem": "ch1_s4_extremes",
+   "t0": 320.51601600000004,
+   "dur": 105.866667,
+   "cue_dur": 105.8667
+  },
+  {
+   "stem": "ch1_s5_gravity",
+   "t0": 426.38268300000004,
+   "dur": 123.95,
+   "cue_dur": 123.95
+  },
+  {
+   "stem": "ch1_s6_arc",
+   "t0": 550.3326830000001,
+   "dur": 130.95,
+   "cue_dur": 130.95
+  },
+  {
+   "stem": "ch1_s7_small",
+   "t0": 681.2826830000001,
+   "dur": 113.516667,
+   "cue_dur": 113.5167
+  },
+  {
+   "stem": "ch1_s8_recap",
+   "t0": 794.7993500000001,
+   "dur": 105.516341,
+   "cue_dur": 105.5167
+  }
+ ],
+ "clips": [
+  {
+   "id": "c1.hook.1",
+   "scene": "ch1_s1_hook",
+   "t0": 0.0,
+   "dur": 31.011
+  },
+  {
+   "id": "c1.hook.2",
+   "scene": "ch1_s1_hook",
+   "t0": 32.6,
+   "dur": 31.049
+  },
+  {
+   "id": "c1.tools.1",
+   "scene": "ch1_s2_tools",
+   "t0": 65.599349,
+   "dur": 24.037
+  },
+  {
+   "id": "c1.tools.2",
+   "scene": "ch1_s2_tools",
+   "t0": 90.632649,
+   "dur": 24.049
+  },
+  {
+   "id": "c1.tools.3",
+   "scene": "ch1_s2_tools",
+   "t0": 116.032649,
+   "dur": 36.489
+  },
+  {
+   "id": "c1.spring.1",
+   "scene": "ch1_s3_spring",
+   "t0": 155.516016,
+   "dur": 27.633
+  },
+  {
+   "id": "c1.spring.2",
+   "scene": "ch1_s3_spring",
+   "t0": 184.59931600000002,
+   "dur": 22.131
+  },
+  {
+   "id": "c1.spring.3",
+   "scene": "ch1_s3_spring",
+   "t0": 207.582716,
+   "dur": 36.914
+  },
+  {
+   "id": "c1.spring.4",
+   "scene": "ch1_s3_spring",
+   "t0": 245.566016,
+   "dur": 29.143
+  },
+  {
+   "id": "c1.spring.5",
+   "scene": "ch1_s3_spring",
+   "t0": 275.76601600000004,
+   "dur": 41.173
+  },
+  {
+   "id": "c1.ends.1",
+   "scene": "ch1_s4_extremes",
+   "t0": 320.51601600000004,
+   "dur": 24.377
+  },
+  {
+   "id": "c1.ends.2",
+   "scene": "ch1_s4_extremes",
+   "t0": 345.632716,
+   "dur": 15.372
+  },
+  {
+   "id": "c1.ends.3",
+   "scene": "ch1_s4_extremes",
+   "t0": 361.749316,
+   "dur": 45.144
+  },
+  {
+   "id": "c1.ends.4",
+   "scene": "ch1_s4_extremes",
+   "t0": 407.69931600000007,
+   "dur": 15.284
+  },
+  {
+   "id": "c1.gravity.1",
+   "scene": "ch1_s5_gravity",
+   "t0": 426.38268300000004,
+   "dur": 36.179
+  },
+  {
+   "id": "c1.gravity.2",
+   "scene": "ch1_s5_gravity",
+   "t0": 463.365983,
+   "dur": 28.029
+  },
+  {
+   "id": "c1.gravity.3",
+   "scene": "ch1_s5_gravity",
+   "t0": 492.14938300000006,
+   "dur": 24.556
+  },
+  {
+   "id": "c1.gravity.4",
+   "scene": "ch1_s5_gravity",
+   "t0": 517.4993830000001,
+   "dur": 29.317
+  },
+  {
+   "id": "c1.arc.1",
+   "scene": "ch1_s6_arc",
+   "t0": 550.3326830000001,
+   "dur": 20.386
+  },
+  {
+   "id": "c1.arc.2",
+   "scene": "ch1_s6_arc",
+   "t0": 572.0659830000001,
+   "dur": 39.166
+  },
+  {
+   "id": "c1.arc.3",
+   "scene": "ch1_s6_arc",
+   "t0": 612.7826830000001,
+   "dur": 29.451
+  },
+  {
+   "id": "c1.arc.4",
+   "scene": "ch1_s6_arc",
+   "t0": 643.4993830000001,
+   "dur": 33.412
+  },
+  {
+   "id": "c1.small.1",
+   "scene": "ch1_s7_small",
+   "t0": 681.2826830000001,
+   "dur": 26.179
+  },
+  {
+   "id": "c1.small.2",
+   "scene": "ch1_s7_small",
+   "t0": 708.6826830000001,
+   "dur": 26.961
+  },
+  {
+   "id": "c1.small.3",
+   "scene": "ch1_s7_small",
+   "t0": 736.7326830000002,
+   "dur": 33.083
+  },
+  {
+   "id": "c1.small.4",
+   "scene": "ch1_s7_small",
+   "t0": 771.2659830000001,
+   "dur": 21.136
+  },
+  {
+   "id": "c1.recap.1",
+   "scene": "ch1_s8_recap",
+   "t0": 794.7993500000001,
+   "dur": 35.04
+  },
+  {
+   "id": "c1.recap.2",
+   "scene": "ch1_s8_recap",
+   "t0": 830.6660500000002,
+   "dur": 39.569
+  },
+  {
+   "id": "c1.recap.3",
+   "scene": "ch1_s8_recap",
+   "t0": 871.0660500000001,
+   "dur": 16.27
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c1.hook.1",
+   "text": "Here's a pendulum one metre long, and beside it, a weight on a spring.",
+   "i": 1
+  },
+  {
+   "t": 5.33,
+   "clip": "c1.hook.1",
+   "text": "Two very different machines, and you can see them swinging in perfect step.",
+   "i": 2
+  },
+  {
+   "t": 10.27,
+   "clip": "c1.hook.1",
+   "text": "The pendulum takes about one second to swing across, and one second to swing back.",
+   "i": 3
+  },
+  {
+   "t": 16.52,
+   "clip": "c1.hook.1",
+   "text": "Now take two identical pendulums, and give one a wide swing and the other a narrow one.",
+   "i": 4
+  },
+  {
+   "t": 23.12,
+   "clip": "c1.hook.1",
+   "text": "You might expect the wide one to fall behind.",
+   "i": 5
+  },
+  {
+   "t": 26.59,
+   "clip": "c1.hook.1",
+   "text": "It doesn't: they keep the same beat.",
+   "i": 6
+  },
+  {
+   "t": 32.6,
+   "clip": "c1.hook.2",
+   "text": "So what rule makes things swing like this, and what sets the beat?",
+   "i": 7
+  },
+  {
+   "t": 37.82,
+   "clip": "c1.hook.2",
+   "text": "This part finds that rule, from the physics up.",
+   "i": 8
+  },
+  {
+   "t": 41.78,
+   "clip": "c1.hook.2",
+   "text": "Pendulums, alternating currents and waves all swing like this, and complex numbers turn out to be the natural language for all of them, from part two on.",
+   "i": 9
+  },
+  {
+   "t": 51.96,
+   "clip": "c1.hook.2",
+   "text": "The general theory of their equations comes next term.",
+   "i": 10
+  },
+  {
+   "t": 55.97,
+   "clip": "c1.hook.2",
+   "text": "Most of this part goes beyond the notes, which take the physics as given.",
+   "i": 11
+  },
+  {
+   "t": 61.26,
+   "clip": "c1.hook.2",
+   "text": "Here you build it from facts you already know.",
+   "i": 12
+  },
+  {
+   "t": 65.6,
+   "clip": "c1.tools.1",
+   "text": "First, the names.",
+   "i": 13
+  },
+  {
+   "t": 68.41,
+   "clip": "c1.tools.1",
+   "text": "Whatever swings, ex is how far it is from the middle.",
+   "i": 14
+  },
+  {
+   "t": 73.18,
+   "clip": "c1.tools.1",
+   "text": "It's signed: positive on one side, negative on the other.",
+   "i": 15
+  },
+  {
+   "t": 78.88,
+   "clip": "c1.tools.1",
+   "text": "Ex with one dot on top is its rate of change in time, the velocity.",
+   "i": 16
+  },
+  {
+   "t": 84.07,
+   "clip": "c1.tools.1",
+   "text": "Two dots means you take the rate of change again: that's the acceleration.",
+   "i": 17
+  },
+  {
+   "t": 90.63,
+   "clip": "c1.tools.2",
+   "text": "Now three quick questions, on tools this part will need.",
+   "i": 18
+  },
+  {
+   "t": 95.25,
+   "clip": "c1.tools.2",
+   "text": "A ten newton push on a two kilogram trolley.",
+   "i": 19
+  },
+  {
+   "t": 98.85,
+   "clip": "c1.tools.2",
+   "text": "What's its acceleration?",
+   "i": 20
+  },
+  {
+   "t": 103.13,
+   "clip": "c1.tools.2",
+   "text": "Five metres per second squared.",
+   "i": 21
+  },
+  {
+   "t": 106.68,
+   "clip": "c1.tools.2",
+   "text": "Force equals mass times acceleration, so you divide the force by the mass.",
+   "i": 22
+  },
+  {
+   "t": 110.1,
+   "clip": "c1.tools.2",
+   "text": "From here on, the acceleration is written ex double dot.",
+   "i": 23
+  },
+  {
+   "t": 116.03,
+   "clip": "c1.tools.3",
+   "text": "A right-angled triangle with a hypotenuse of ten, and an angle of thirty degrees.",
+   "i": 24
+  },
+  {
+   "t": 121.96,
+   "clip": "c1.tools.3",
+   "text": "How long is the side opposite that angle?",
+   "i": 25
+  },
+  {
+   "t": 127.58,
+   "clip": "c1.tools.3",
+   "text": "Ten times the sine of thirty degrees, which is five.",
+   "i": 26
+  },
+  {
+   "t": 132.0,
+   "clip": "c1.tools.3",
+   "text": "Last one: an arc of a circle with radius two and an angle of half a radian.",
+   "i": 27
+  },
+  {
+   "t": 138.98,
+   "clip": "c1.tools.3",
+   "text": "How long is it?",
+   "i": 28
+  },
+  {
+   "t": 142.88,
+   "clip": "c1.tools.3",
+   "text": "One.",
+   "i": 29
+  },
+  {
+   "t": 145.55,
+   "clip": "c1.tools.3",
+   "text": "Arc length is radius times angle, with the angle in radians.",
+   "i": 30
+  },
+  {
+   "t": 149.86,
+   "clip": "c1.tools.3",
+   "text": "All three get used in the next few minutes.",
+   "i": 31
+  },
+  {
+   "t": 155.52,
+   "clip": "c1.spring.1",
+   "text": "Start with the simplest thing that swings: a weight on a spring, lying on a smooth table, so gravity plays no part for now.",
+   "i": 32
+  },
+  {
+   "t": 165.27,
+   "clip": "c1.spring.1",
+   "text": "Pull the weight out, and the spring pulls back.",
+   "i": 33
+  },
+  {
+   "t": 168.86,
+   "clip": "c1.spring.1",
+   "text": "The further you pull, the harder it pulls.",
+   "i": 34
+  },
+  {
+   "t": 172.83,
+   "clip": "c1.spring.1",
+   "text": "Twice the stretch gives twice the pull: the pull is proportional to the stretch.",
+   "i": 35
+  },
+  {
+   "t": 180.29,
+   "clip": "c1.spring.1",
+   "text": "That's Hooke's law, from GCSE physics.",
+   "i": 36
+  },
+  {
+   "t": 184.6,
+   "clip": "c1.spring.2",
+   "text": "Now the sign.",
+   "i": 37
+  },
+  {
+   "t": 186.91,
+   "clip": "c1.spring.2",
+   "text": "Ex to the right is positive, and the pull points left.",
+   "i": 38
+  },
+  {
+   "t": 191.61,
+   "clip": "c1.spring.2",
+   "text": "Push the weight to the left, and you see both flip.",
+   "i": 39
+  },
+  {
+   "t": 195.72,
+   "clip": "c1.spring.2",
+   "text": "So the pull is minus the stiffness K, times ex.",
+   "i": 40
+  },
+  {
+   "t": 199.67,
+   "clip": "c1.spring.2",
+   "text": "The stiffness says how strong the spring is.",
+   "i": 41
+  },
+  {
+   "t": 203.62,
+   "clip": "c1.spring.2",
+   "text": "The minus sign means the pull always points back toward the middle.",
+   "i": 42
+  },
+  {
+   "t": 207.58,
+   "clip": "c1.spring.3",
+   "text": "But you want the motion, not the force.",
+   "i": 43
+  },
+  {
+   "t": 211.77,
+   "clip": "c1.spring.3",
+   "text": "Newton ties a force to an acceleration, and the acceleration is the position, differentiated twice.",
+   "i": 44
+  },
+  {
+   "t": 218.85,
+   "clip": "c1.spring.3",
+   "text": "So the move here is: name the force that pulls back, then let Newton turn it into an acceleration.",
+   "i": 45
+  },
+  {
+   "t": 226.83,
+   "clip": "c1.spring.3",
+   "text": "Force equals mass times acceleration.",
+   "i": 46
+  },
+  {
+   "t": 230.38,
+   "clip": "c1.spring.3",
+   "text": "The only force is the spring pulling back, so the mass M, times ex double dot, is minus K times ex.",
+   "i": 47
+  },
+  {
+   "t": 238.27,
+   "clip": "c1.spring.3",
+   "text": "Divide by the mass: ex double dot equals minus K over M, times ex.",
+   "i": 48
+  },
+  {
+   "t": 245.57,
+   "clip": "c1.spring.4",
+   "text": "That ratio, K over M, is the pull back per unit of stretch, for each kilogram it has to move.",
+   "i": 49
+  },
+  {
+   "t": 253.02,
+   "clip": "c1.spring.4",
+   "text": "Call it omega squared.",
+   "i": 50
+  },
+  {
+   "t": 255.89,
+   "clip": "c1.spring.4",
+   "text": "It's written as a square for a reason part two makes clear.",
+   "i": 51
+  },
+  {
+   "t": 260.57,
+   "clip": "c1.spring.4",
+   "text": "So ex double dot equals minus omega squared, times ex.",
+   "i": 52
+  },
+  {
+   "t": 265.32,
+   "clip": "c1.spring.4",
+   "text": "Out of context it looks abstract, but you can read it as: the acceleration always points back to the middle, and it grows with the distance.",
+   "i": 53
+  },
+  {
+   "t": 275.77,
+   "clip": "c1.spring.5",
+   "text": "Here's one for you.",
+   "i": 54
+  },
+  {
+   "t": 277.97,
+   "clip": "c1.spring.5",
+   "text": "Same spring, twice the mass.",
+   "i": 55
+  },
+  {
+   "t": 280.99,
+   "clip": "c1.spring.5",
+   "text": "Is the acceleration back toward the middle bigger or smaller, and by how much?",
+   "i": 56
+  },
+  {
+   "t": 287.03,
+   "clip": "c1.spring.5",
+   "text": "Pause the video if you want longer.",
+   "i": 57
+  },
+  {
+   "t": 296.65,
+   "clip": "c1.spring.5",
+   "text": "The pull depends only on the stretch, so it's the same as before.",
+   "i": 58
+  },
+  {
+   "t": 301.92,
+   "clip": "c1.spring.5",
+   "text": "But now it has twice the mass to move.",
+   "i": 59
+  },
+  {
+   "t": 306.14,
+   "clip": "c1.spring.5",
+   "text": "So the acceleration is half as big: minus K over two M, times ex.",
+   "i": 60
+  },
+  {
+   "t": 313.67,
+   "clip": "c1.spring.5",
+   "text": "A heavier weight on the same spring swings more slowly.",
+   "i": 61
+  },
+  {
+   "t": 320.52,
+   "clip": "c1.ends.1",
+   "text": "First, try it with numbers.",
+   "i": 62
+  },
+  {
+   "t": 323.73,
+   "clip": "c1.ends.1",
+   "text": "Say omega squared is four, and the weight is half a metre out.",
+   "i": 63
+  },
+  {
+   "t": 328.29,
+   "clip": "c1.ends.1",
+   "text": "Then the acceleration is minus four times a half: two metres per second squared, back toward the middle.",
+   "i": 64
+  },
+  {
+   "t": 336.24,
+   "clip": "c1.ends.1",
+   "text": "Now let it swing, out to half a metre on each side.",
+   "i": 65
+  },
+  {
+   "t": 341.2,
+   "clip": "c1.ends.1",
+   "text": "Keep your eye on the green velocity arrow and the red acceleration arrow.",
+   "i": 66
+  },
+  {
+   "t": 345.63,
+   "clip": "c1.ends.2",
+   "text": "Freeze it as it crosses the middle.",
+   "i": 67
+  },
+  {
+   "t": 349.22,
+   "clip": "c1.ends.2",
+   "text": "Here ex is zero, so the rule says there's no pull at all.",
+   "i": 68
+  },
+  {
+   "t": 353.95,
+   "clip": "c1.ends.2",
+   "text": "But the weight is moving at its fastest.",
+   "i": 69
+  },
+  {
+   "t": 357.56,
+   "clip": "c1.ends.2",
+   "text": "With nothing there to slow it down, it carries straight on past.",
+   "i": 70
+  },
+  {
+   "t": 361.75,
+   "clip": "c1.ends.3",
+   "text": "Now let it run out to the end of its swing, and freeze.",
+   "i": 71
+  },
+  {
+   "t": 366.55,
+   "clip": "c1.ends.3",
+   "text": "The weight is still, for an instant.",
+   "i": 72
+  },
+  {
+   "t": 370.17,
+   "clip": "c1.ends.3",
+   "text": "Is its acceleration zero there too?",
+   "i": 73
+  },
+  {
+   "t": 374.31,
+   "clip": "c1.ends.3",
+   "text": "Pause the video if you want longer.",
+   "i": 74
+  },
+  {
+   "t": 384.03,
+   "clip": "c1.ends.3",
+   "text": "You might expect so, since nothing is moving.",
+   "i": 75
+  },
+  {
+   "t": 388.12,
+   "clip": "c1.ends.3",
+   "text": "But the rule only looks at where the weight is, and here it's as far out as it ever gets.",
+   "i": 76
+  },
+  {
+   "t": 395.51,
+   "clip": "c1.ends.3",
+   "text": "So the pull is the largest it ever is: minus four times a half, minus two.",
+   "i": 77
+  },
+  {
+   "t": 403.13,
+   "clip": "c1.ends.3",
+   "text": "Being still and being free of any pull are two different things.",
+   "i": 78
+  },
+  {
+   "t": 407.7,
+   "clip": "c1.ends.4",
+   "text": "So now you can see why the weight never settles.",
+   "i": 79
+  },
+  {
+   "t": 411.87,
+   "clip": "c1.ends.4",
+   "text": "In the middle there's no pull, but it's moving too fast to stop.",
+   "i": 80
+  },
+  {
+   "t": 416.78,
+   "clip": "c1.ends.4",
+   "text": "At each end it stops, but that's where it's pulled hardest.",
+   "i": 81
+  },
+  {
+   "t": 421.52,
+   "clip": "c1.ends.4",
+   "text": "That's why it swings.",
+   "i": 82
+  },
+  {
+   "t": 426.38,
+   "clip": "c1.gravity.1",
+   "text": "Now the pendulum: a weight called the bob, on a rod of length L, hung from a fixed point.",
+   "i": 83
+  },
+  {
+   "t": 434.24,
+   "clip": "c1.gravity.1",
+   "text": "You measure its angle from the vertical, and call it theta for now.",
+   "i": 84
+  },
+  {
+   "t": 438.62,
+   "clip": "c1.gravity.1",
+   "text": "Two forces act on the bob.",
+   "i": 85
+  },
+  {
+   "t": 441.42,
+   "clip": "c1.gravity.1",
+   "text": "Gravity pulls it straight down with its weight: the mass M, times G, the strength of gravity.",
+   "i": 86
+  },
+  {
+   "t": 449.4,
+   "clip": "c1.gravity.1",
+   "text": "And the rod pulls along itself, toward the pivot.",
+   "i": 87
+  },
+  {
+   "t": 453.06,
+   "clip": "c1.gravity.1",
+   "text": "But the bob can only move along its arc, and the rod pulls at right angles to that.",
+   "i": 88
+  },
+  {
+   "t": 459.28,
+   "clip": "c1.gravity.1",
+   "text": "So the rod can't speed the bob up, or slow it down.",
+   "i": 89
+  },
+  {
+   "t": 463.37,
+   "clip": "c1.gravity.2",
+   "text": "So which part of gravity can?",
+   "i": 90
+  },
+  {
+   "t": 467.63,
+   "clip": "c1.gravity.2",
+   "text": "The move here is: split gravity into a part along the rod and a part along the swing.",
+   "i": 91
+  },
+  {
+   "t": 476.04,
+   "clip": "c1.gravity.2",
+   "text": "Only the part along the swing drives the motion.",
+   "i": 92
+  },
+  {
+   "t": 480.03,
+   "clip": "c1.gravity.2",
+   "text": "Gravity points straight down.",
+   "i": 93
+  },
+  {
+   "t": 483.83,
+   "clip": "c1.gravity.2",
+   "text": "The rod leans theta away from the vertical.",
+   "i": 94
+  },
+  {
+   "t": 487.98,
+   "clip": "c1.gravity.2",
+   "text": "So gravity and the line of the rod are theta apart, too.",
+   "i": 95
+  },
+  {
+   "t": 492.15,
+   "clip": "c1.gravity.3",
+   "text": "Now you draw gravity's arrow as the hypotenuse of a right-angled triangle, with one side along the rod, and one along the swing.",
+   "i": 96
+  },
+  {
+   "t": 501.21,
+   "clip": "c1.gravity.3",
+   "text": "The part along the swing is the side opposite theta: M times G, times the sine of theta, just like the triangle you saw at the start.",
+   "i": 97
+  },
+  {
+   "t": 509.87,
+   "clip": "c1.gravity.3",
+   "text": "It points back toward the bottom, so the pull is minus M times G, times sine theta.",
+   "i": 98
+  },
+  {
+   "t": 517.5,
+   "clip": "c1.gravity.4",
+   "text": "Watch gravity's pull as you change the angle.",
+   "i": 99
+  },
+  {
+   "t": 522.03,
+   "clip": "c1.gravity.4",
+   "text": "At the bottom, theta is zero, and there's no pull at all.",
+   "i": 100
+  },
+  {
+   "t": 526.53,
+   "clip": "c1.gravity.4",
+   "text": "Swing out to forty degrees, and gravity pulls with about sixty-four percent of the bob's weight.",
+   "i": 101
+  },
+  {
+   "t": 533.16,
+   "clip": "c1.gravity.4",
+   "text": "Swing to the other side, and it flips, still pointing home.",
+   "i": 102
+  },
+  {
+   "t": 538.02,
+   "clip": "c1.gravity.4",
+   "text": "Read it back: the further out the bob is, the harder gravity drags it home, but by the sine of the angle, not by the angle itself.",
+   "i": 103
+  },
+  {
+   "t": 550.33,
+   "clip": "c1.arc.1",
+   "text": "Now let Newton turn gravity's pull into an acceleration along the swing: the mass, times the acceleration along the swing, equals minus M times G, times sine theta.",
+   "i": 104
+  },
+  {
+   "t": 562.71,
+   "clip": "c1.arc.1",
+   "text": "Divide by the mass, and the acceleration along the swing is minus G, times sine theta.",
+   "i": 105
+  },
+  {
+   "t": 569.16,
+   "clip": "c1.arc.1",
+   "text": "The mass is gone.",
+   "i": 106
+  },
+  {
+   "t": 572.07,
+   "clip": "c1.arc.2",
+   "text": "Now a question for you.",
+   "i": 107
+  },
+  {
+   "t": 574.96,
+   "clip": "c1.arc.2",
+   "text": "Swap the bob for one twice as heavy.",
+   "i": 108
+  },
+  {
+   "t": 578.56,
+   "clip": "c1.arc.2",
+   "text": "Does the pendulum swing faster, slower, or the same?",
+   "i": 109
+  },
+  {
+   "t": 583.64,
+   "clip": "c1.arc.2",
+   "text": "Pause the video if you want longer.",
+   "i": 110
+  },
+  {
+   "t": 593.44,
+   "clip": "c1.arc.2",
+   "text": "The same.",
+   "i": 111
+  },
+  {
+   "t": 596.08,
+   "clip": "c1.arc.2",
+   "text": "Twice the mass means twice the weight, so the pull doubles too, and the two cancel.",
+   "i": 112
+  },
+  {
+   "t": 602.68,
+   "clip": "c1.arc.2",
+   "text": "The spring is different: its pull depends only on the stretch, which is why the heavier weight on the spring was slower.",
+   "i": 113
+  },
+  {
+   "t": 612.78,
+   "clip": "c1.arc.3",
+   "text": "There's one snag left.",
+   "i": 114
+  },
+  {
+   "t": 616.0,
+   "clip": "c1.arc.3",
+   "text": "Newton counts the distance the bob travels, but you're describing the pendulum by its angle.",
+   "i": 115
+  },
+  {
+   "t": 621.8,
+   "clip": "c1.arc.3",
+   "text": "The arc turns one into the other.",
+   "i": 116
+  },
+  {
+   "t": 625.14,
+   "clip": "c1.arc.3",
+   "text": "The bob moves on a circle of radius L, so its distance along the arc is L times theta, with theta in radians.",
+   "i": 117
+  },
+  {
+   "t": 634.1,
+   "clip": "c1.arc.3",
+   "text": "The length L is fixed, so differentiate twice: the acceleration along the arc is L times theta double dot.",
+   "i": 118
+  },
+  {
+   "t": 643.5,
+   "clip": "c1.arc.4",
+   "text": "Put that in: the length L, times theta double dot, equals minus G, times sine theta.",
+   "i": 119
+  },
+  {
+   "t": 651.9,
+   "clip": "c1.arc.4",
+   "text": "Divide by the length L: theta double dot equals minus G over L, times sine theta.",
+   "i": 120
+  },
+  {
+   "t": 661.68,
+   "clip": "c1.arc.4",
+   "text": "Now read it back, next to the spring's rule.",
+   "i": 121
+  },
+  {
+   "t": 665.41,
+   "clip": "c1.arc.4",
+   "text": "It's almost the same, but with the sine of theta where theta should be.",
+   "i": 122
+  },
+  {
+   "t": 670.56,
+   "clip": "c1.arc.4",
+   "text": "And that sine makes it much harder: this equation has no answer in any functions you know.",
+   "i": 123
+  },
+  {
+   "t": 681.28,
+   "clip": "c1.small.1",
+   "text": "So here's the last move: for small swings, trade sine theta for theta.",
+   "i": 124
+  },
+  {
+   "t": 687.88,
+   "clip": "c1.small.1",
+   "text": "To see why that's fair, you can compare two lengths on the same picture.",
+   "i": 125
+  },
+  {
+   "t": 693.12,
+   "clip": "c1.small.1",
+   "text": "The bob's sideways reach is L times sine theta, the side opposite the angle.",
+   "i": 126
+  },
+  {
+   "t": 698.74,
+   "clip": "c1.small.1",
+   "text": "Its distance along the arc is L times theta.",
+   "i": 127
+  },
+  {
+   "t": 703.31,
+   "clip": "c1.small.1",
+   "text": "For a small swing, the arc is nearly straight, so the two almost agree.",
+   "i": 128
+  },
+  {
+   "t": 708.68,
+   "clip": "c1.small.2",
+   "text": "How good is that trade, would you guess?",
+   "i": 129
+  },
+  {
+   "t": 713.72,
+   "clip": "c1.small.2",
+   "text": "At a tenth of a radian, the sine is point zero nine nine eight: two tenths of a percent short.",
+   "i": 130
+  },
+  {
+   "t": 722.19,
+   "clip": "c1.small.2",
+   "text": "At ten degrees, it's half a percent short.",
+   "i": 131
+  },
+  {
+   "t": 726.58,
+   "clip": "c1.small.2",
+   "text": "At thirty degrees, four and a half percent.",
+   "i": 132
+  },
+  {
+   "t": 730.36,
+   "clip": "c1.small.2",
+   "text": "At sixty degrees, the sine is seventeen percent short, and the trade starts to fail.",
+   "i": 133
+  },
+  {
+   "t": 736.73,
+   "clip": "c1.small.3",
+   "text": "So for small swings, theta double dot is about minus G over L, times theta.",
+   "i": 134
+  },
+  {
+   "t": 741.89,
+   "clip": "c1.small.3",
+   "text": "That's the spring's rule exactly, with omega squared equal to G over L.",
+   "i": 135
+  },
+  {
+   "t": 747.1,
+   "clip": "c1.small.3",
+   "text": "So omega is the square root of G over L.",
+   "i": 136
+  },
+  {
+   "t": 750.56,
+   "clip": "c1.small.3",
+   "text": "Read it back: a longer pendulum is pulled back more gently, for each radian of swing.",
+   "i": 137
+  },
+  {
+   "t": 758.42,
+   "clip": "c1.small.3",
+   "text": "For the one metre pendulum, omega squared is nine point eight one, so omega is about three point one three per second.",
+   "i": 138
+  },
+  {
+   "t": 766.53,
+   "clip": "c1.small.3",
+   "text": "What that does to its beat is part two's story.",
+   "i": 139
+  },
+  {
+   "t": 771.27,
+   "clip": "c1.small.4",
+   "text": "One honest warning.",
+   "i": 140
+  },
+  {
+   "t": 773.67,
+   "clip": "c1.small.4",
+   "text": "At big angles, gravity really pulls with the sine of theta, and that is weaker than the rule, which uses theta itself.",
+   "i": 141
+  },
+  {
+   "t": 782.71,
+   "clip": "c1.small.4",
+   "text": "So for big swings the rule is only an approximation, and part two shows what that costs.",
+   "i": 142
+  },
+  {
+   "t": 789.24,
+   "clip": "c1.small.4",
+   "text": "For small swings, though, you now have the rule.",
+   "i": 143
+  },
+  {
+   "t": 794.8,
+   "clip": "c1.recap.1",
+   "text": "So here are two very different machines, obeying one rule: ex double dot equals minus omega squared, times ex.",
+   "i": 144
+  },
+  {
+   "t": 804.69,
+   "clip": "c1.recap.1",
+   "text": "For the spring, omega squared is K over M.",
+   "i": 145
+  },
+  {
+   "t": 809.12,
+   "clip": "c1.recap.1",
+   "text": "For the pendulum, it's G over L.",
+   "i": 146
+  },
+  {
+   "t": 812.92,
+   "clip": "c1.recap.1",
+   "text": "From now on, whatever swings, you call its displacement ex, even when it's an angle.",
+   "i": 147
+  },
+  {
+   "t": 819.49,
+   "clip": "c1.recap.1",
+   "text": "Anything pulled back in proportion to how far out it is obeys this rule.",
+   "i": 148
+  },
+  {
+   "t": 824.88,
+   "clip": "c1.recap.1",
+   "text": "Its motion has a name: simple harmonic motion.",
+   "i": 149
+  },
+  {
+   "t": 830.67,
+   "clip": "c1.recap.2",
+   "text": "Time for a recap.",
+   "i": 150
+  },
+  {
+   "t": 832.86,
+   "clip": "c1.recap.2",
+   "text": "First move: name the force that pulls back, then use Newton to turn it into an acceleration.",
+   "i": 151
+  },
+  {
+   "t": 840.22,
+   "clip": "c1.recap.2",
+   "text": "Second: split gravity along the rod and along the swing.",
+   "i": 152
+  },
+  {
+   "t": 846.94,
+   "clip": "c1.recap.2",
+   "text": "Only the swing part drives the bob.",
+   "i": 153
+  },
+  {
+   "t": 850.89,
+   "clip": "c1.recap.2",
+   "text": "Third: for small swings, trade sine theta for theta, because the arc and the reach almost agree.",
+   "i": 154
+  },
+  {
+   "t": 859.41,
+   "clip": "c1.recap.2",
+   "text": "And four facts you need to keep: Newton's law, Hooke's law, G is nine point eight one metres per second squared, and arc length is radius times angle.",
+   "i": 155
+  },
+  {
+   "t": 871.07,
+   "clip": "c1.recap.3",
+   "text": "Next time: which motion obeys this rule?",
+   "i": 156
+  },
+  {
+   "t": 877.13,
+   "clip": "c1.recap.3",
+   "text": "You need a function that comes back as minus omega squared times itself after two derivatives.",
+   "i": 157
+  },
+  {
+   "t": 883.87,
+   "clip": "c1.recap.3",
+   "text": "The answer is the shadow of an arrow that turns in a circle.",
+   "i": 158
+  }
+ ]
+}

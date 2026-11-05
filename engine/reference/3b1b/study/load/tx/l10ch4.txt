@@ -1,0 +1,135 @@
+S001 [00:04] (c4.hook.1) This is part four.
+S002 [00:07] (c4.hook.1) Last time, exponentials turned powers and sums of cosines into simple algebra.
+S003 [00:13] (c4.hook.1) Now we run the exponential backwards.
+S004 [00:16] (c4.hook.2) For real numbers, that's easy.
+S005 [00:19] (c4.hook.2) If E to the ex equals two, then ex is log two, about zero point six nine, and that's the only answer.
+S006 [00:27] (c4.hook.2) Now take two eye, our running number from part one.
+S007 [00:31] (c4.hook.2) Which complex numbers W make E to the W equal to two eye?
+S008 [00:37] (c4.hook.2) Is there one answer, or many?
+S009 [00:43] (c4.hook.3) To find out, we'll do what the lecturer does.
+S010 [00:46] (c4.hook.3) We define the logarithm by undoing the exponential, which we already know.
+S011 [00:52] (c4.hook.3) In her words, each time you see the logarithm, you have to go through this definition.
+S012 [01:00] (c4.def.1) The notes ask the question directly.
+S013 [01:04] (c4.def.1) If zed equals ex plus eye why, or mod zed times E to the eye theta, then what is log zed?
+S014 [01:12] (c4.def.1) Here's the definition.
+S015 [01:15] (c4.def.1) For any zed other than zero, W is the log of zed if E to the W equals zed.
+S016 [01:22] (c4.def.1) That's how you define the log of a real number too, by undoing the exponential.
+S017 [01:28] (c4.def.2) Now use what you know.
+S018 [01:31] (c4.def.2) Split W into its real and imaginary parts, U plus eye V.
+S019 [01:37] (c4.def.2) Write zed with its modulus and argument, mod zed times E to the eye theta.
+S020 [01:43] (c4.def.2) Then E to the W is E to the U, times E to the eye V.
+S021 [01:48] (c4.def.2) And that has to equal mod zed, times E to the eye theta.
+S022 [01:53] (c4.def.3) Compare the two sides, one part at a time.
+S023 [01:57] (c4.def.3) E to the eye V and E to the eye theta both have length one.
+S024 [02:02] (c4.def.3) So the lengths must agree, and E to the U equals mod zed.
+S025 [02:06] (c4.def.3) That's an ordinary real equation, and its answer is U equals log of mod zed.
+S026 [02:13] (c4.def.3) There's exactly one answer, because E to the U is positive and always increasing, so it reaches each positive height exactly once.
+S027 [02:23] (c4.def.4) Now the angles.
+S028 [02:25] (c4.def.4) E to the eye V points at angle V, and E to the eye theta points at angle theta.
+S029 [02:32] (c4.def.4) They point at the same place, so the two angles can differ by any whole number of turns.
+S030 [02:38] (c4.def.4) V equals theta, plus two pi N, for any integer N.
+S031 [02:43] (c4.def.4) There's that two pi N again, the thread of this whole lecture.
+S032 [02:47] (c4.def.5) Put the two parts together.
+S033 [02:51] (c4.def.5) Log zed equals log of mod zed, plus eye times the bracket, arg zed plus two pi N.
+S034 [02:59] (c4.def.5) Every integer N gives a value.
+S035 [03:02] (c4.def.5) So, in the words of the notes, there are infinitely many values, spaced two pi eye apart, on a vertical line in the complex plane.
+S036 [03:11] (c4.def.6) And why leave out zero?
+S037 [03:15] (c4.def.6) E to the W has length E to the U, which is always positive.
+S038 [03:20] (c4.def.6) So E to the W can never be zero, and zero has no logarithm at all.
+S039 [03:27] (c4.map.1) Here's a picture of what that formula means.
+S040 [03:31] (c4.map.1) On the left is the plane of W, the inputs.
+S041 [03:35] (c4.map.1) On the right is the plane of zed, the outputs.
+S042 [03:39] (c4.map.1) The exponential sends each point W to the point E to the W.
+S043 [03:44] (c4.map.2) Take a vertical line on the left, where the real part, U, is fixed.
+S044 [03:50] (c4.map.2) Let's use log two.
+S045 [03:53] (c4.map.2) Every point on it lands at distance E to the U from zero, and that's two.
+S046 [03:59] (c4.map.2) So the line lands on a circle of radius two.
+S047 [04:03] (c4.map.2) Slide the line right, and the circle grows.
+S048 [04:07] (c4.map.2) Slide it left, and the circle shrinks towards zero, but never reaches it.
+S049 [04:11] (c4.map.3) Now climb the line.
+S050 [04:15] (c4.map.3) The imaginary part, V, sets the angle, so the image goes round the circle.
+S051 [04:20] (c4.map.3) Climb two pi, and it's back where it started.
+S052 [04:24] (c4.map.3) Climb another two pi, and it goes round again.
+S053 [04:28] (c4.map.3) The exponential wraps the line round the circle, over and over, like thread round a spool.
+S054 [04:35] (c4.map.4) Now run it backwards.
+S055 [04:38] (c4.map.4) Pick one point on the circle.
+S056 [04:41] (c4.map.4) It came from a whole column of points on the line, two pi apart, one for each turn.
+S057 [04:47] (c4.map.4) The real exponential never wraps.
+S058 [04:51] (c4.map.4) It lays the real line once along the positive real axis, so the real log has one value.
+S059 [04:58] (c4.map.4) The complex exponential wraps, so the complex log has infinitely many.
+S060 [05:07] (c4.ladder.1) Let's try it on two eye, the number from part one.
+S061 [05:11] (c4.ladder.1) As before, write it with its modulus and every version of its angle.
+S062 [05:16] (c4.ladder.1) Its modulus is two.
+S063 [05:19] (c4.ladder.1) Its argument is pi over two, plus two pi N.
+S064 [05:23] (c4.ladder.2) Put those into the formula.
+S065 [05:26] (c4.ladder.2) Log of two eye equals log two, plus eye times the bracket, pi over two plus two pi N.
+S066 [05:33] (c4.ladder.2) The real part is log two, about zero point six nine.
+S067 [05:38] (c4.ladder.2) The imaginary part is pi over two, plus two pi N.
+S068 [05:42] (c4.ladder.3) Now plot these values in the plane of W.
+S069 [05:46] (c4.ladder.3) They all have the same real part, so they sit on one vertical line, at log two.
+S070 [05:52] (c4.ladder.3) N equals zero uses the principal argument, pi over two, so that point is the principal value.
+S071 [05:59] (c4.ladder.3) Then come N equals one and minus one, two and minus two, and so on, in both directions.
+S072 [06:07] (c4.ladder.3) Neighbours are two pi eye apart.
+S073 [06:11] (c4.ladder.3) This is the ladder of log two eye, and every rung is a correct answer.
+S074 [06:16] (c4.ladder.4) The lecturer adds a warning here.
+S075 [06:19] (c4.ladder.4) Notice, it is not the angle anymore.
+S076 [06:22] (c4.ladder.4) This is the actual value.
+S077 [06:25] (c4.ladder.4) On this ladder, pi over two is a height on the imaginary axis, the number one point five seven, not an angle.
+S078 [06:33] (c4.ladder.4) And every rung really works.
+S079 [06:36] (c4.ladder.4) Raise E to any of them, and you land on two eye.
+S080 [06:41] (c4.cons.1) The definition has two consequences that catch people out.
+S081 [06:46] (c4.cons.1) The first is about the log of E to the zed.
+S082 [06:50] (c4.cons.1) For real numbers, the log of E to the ex is just ex.
+S083 [06:55] (c4.cons.1) Here it's zed, plus two pi eye N.
+S084 [06:59] (c4.cons.1) The way back gives the whole ladder through zed, so you can land on any rung.
+S085 [07:04] (c4.cons.2) Here's an example: zed equals three plus four eye.
+S086 [07:10] (c4.cons.2) The principal value is the rung whose height lies between minus pi and pi.
+S087 [07:15] (c4.cons.2) But four is bigger than pi, so three plus four eye sits above that strip.
+S088 [07:20] (c4.cons.2) The principal value of the round trip is one rung lower.
+S089 [07:24] (c4.cons.2) Its real part is three, and its imaginary part is four minus two pi, about minus two point two eight.
+S090 [07:32] (c4.cons.2) So even the principal value is a different number from the zed you started with.
+S091 [07:37] (c4.cons.3) The second consequence is about products.
+S092 [07:41] (c4.cons.3) The log of zed one times zed two equals log zed one, plus log zed two, up to whole multiples of two pi eye.
+S093 [07:50] (c4.cons.3) As whole ladders, the two sides match exactly.
+S094 [07:54] (c4.cons.3) But pick one value on each side, and they can differ by a multiple of two pi eye.
+S095 [08:00] (c4.cons.3) So, as the lecturer says, remember that you can always add or subtract two pi eye.
+S096 [08:06] (c4.cons.4) One more thing.
+S097 [08:08] (c4.cons.4) Even log two has a whole ladder.
+S098 [08:12] (c4.cons.4) It's log two, plus two pi eye N.
+S099 [08:15] (c4.cons.4) Only N equals zero gives a real number, the familiar log of two.
+S100 [08:20] (c4.cons.4) That small fact is the key to the next part.
+S101 [08:27] (c4.prin.1) The notes give principal values a box of their own.
+S102 [08:31] (c4.prin.1) You choose just one value of the angle, and the usual choice is the principal argument.
+S103 [08:37] (c4.prin.1) It lies between minus pi and pi, with pi included and minus pi left out.
+S104 [08:43] (c4.prin.1) On a ladder, that picks out one rung, the one inside this strip.
+S105 [08:49] (c4.prin.1) We tag it in green, principal value.
+S106 [08:52] (c4.prin.2) A word on notation.
+S107 [08:55] (c4.prin.2) Some books write the principal value with a capital L.
+S108 [08:59] (c4.prin.2) This course uses the same log for both, the whole ladder and the principal value.
+S109 [09:05] (c4.prin.2) In the lecturer's words, please bear with this abuse of the notation.
+S110 [09:10] (c4.prin.2) In these videos, the green tag tells you which one is meant.
+S111 [09:15] (c4.prin.3) The box also warns that principal values can break the product rule.
+S112 [09:19] (c4.prin.3) Here's an example: zed one and zed two both equal minus one.
+S113 [09:26] (c4.prin.3) The principal log of minus one is eye times pi.
+S114 [09:31] (c4.prin.3) So the two principal logs add up to two pi eye.
+S115 [09:35] (c4.prin.3) But minus one times minus one is one, and the principal log of one is zero.
+S116 [09:41] (c4.prin.3) The two answers differ by exactly two pi eye.
+S117 [09:45] (c4.prin.4) Here's why, in terms of angles.
+S118 [09:48] (c4.prin.4) Multiplying adds the angles, so pi plus pi gives two pi.
+S119 [09:53] (c4.prin.4) But two pi lies outside the principal range.
+S120 [09:58] (c4.prin.4) To get the principal argument, pull it back one full turn, to zero.
+S121 [10:04] (c4.prin.4) So the product rule holds for the full sets of values, but principal values can be off by one rung.
+S122 [10:13] (c4.prin.5) Now try question F eighteen on Examples Sheet One, the logarithms of five numbers.
+S123 [10:19] (c4.prin.5) Write each one with its modulus and every version of its argument, and then read off the log.
+S124 [10:26] (c4.prin.5) Taking the conjugate of ex plus eye why flips the sign of the argument.
+S125 [10:30] (c4.prin.5) And in the last one, multiplying by eye adds pi over two to the argument.
+S126 [10:36] (c4.prin.5) Full solutions are in part eight.
+S127 [10:43] (c4.recap.1) To recap.
+S128 [10:46] (c4.recap.1) The log of zed comes from undoing the exponential.
+S129 [10:49] (c4.recap.1) Its real part is the ordinary log of the modulus, and its imaginary part is the argument, plus two pi N.
+S130 [10:58] (c4.recap.1) The exponential wraps vertical lines into circles, so each zed comes from a whole column of points.
+S131 [11:05] (c4.recap.1) For two eye, that column is a ladder at log two, with rungs two pi eye apart.
+S132 [11:11] (c4.recap.1) The log of E to the zed can land on any rung of zed's ladder.
+S133 [11:16] (c4.recap.1) And principal values can break the product rule, by a whole two pi eye.
+S134 [11:20] (c4.recap.2) Next time, if log two has infinitely many values, then so does two to the power eye.
+S135 [11:26] (c4.recap.2) And eye to the power eye turns out to be a real number.

@@ -1,0 +1,9 @@
+{"cues": [
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 10 Stepwise.ogg", "from": "START", "until": "c4.onehot.1",
+   "track_start": 0, "fade_in": 1, "fade_out": 4, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 28 Gnomon.ogg", "from": "c4.lamps.2:end", "until": "c4.compare.1",
+   "track_start": 0, "fade_in": 3, "fade_out": 3.5, "level_db": -12},
+  {"track": "assets/music/album/Vincent Rubinetti - The Music of 3Blue1Brown - 20 Endpoint.ogg", "from": "c4.recap.1:end", "until": "END",
+   "track_start": 0, "fade_in": 3, "fade_out": 3, "level_db": -11,
+   "swell_after": "c4.recap.3:end", "swell_db": 6}],
+ "duck": {"threshold": 0.03, "ratio": 2, "attack": 50, "release": 2000}}

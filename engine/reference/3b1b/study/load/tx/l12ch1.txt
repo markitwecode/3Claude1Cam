@@ -1,0 +1,141 @@
+S001 [00:00] (c1.hook.1) This is part one of Differentiation.
+S002 [00:03] (c1.hook.1) Last time, in Lecture eleven, you met the hyperbolic functions, and the conics: circles, ellipses and hyperbolas.
+S003 [00:13] (c1.hook.1) The lecturer calls Chapter four of the notes a review of A-level maths.
+S004 [00:19] (c1.hook.1) So these videos rebuild it from the foundations.
+S005 [00:23] (c1.hook.1) And they slow down on the parts people only half remember: implicit differentiation, Leibniz's formula, and classifying stationary points.
+S006 [00:35] (c1.hook.2) Everything in this lecture is about functions of one variable.
+S007 [00:39] (c1.hook.2) Taking a function of two variables and differentiating it in different directions is called partial differentiation.
+S008 [00:47] (c1.hook.2) That comes in Chapter seven of the notes, and next term.
+S009 [00:54] (c1.hook.3) So start at the very beginning: a curve, and a line through two of its points.
+S010 [01:01] (c1.hook.3) Slide one point towards the other, and the line swings round until it just touches the curve.
+S011 [01:07] (c1.hook.3) What exactly is a derivative?
+S012 [01:11] (c1.hook.3) And when does it fail to exist?
+S013 [01:19] (c1.chord.1) Take a function of one variable, why of ex, drawn in blue.
+S014 [01:24] (c1.chord.1) Pick a point on it, at ex.
+S015 [01:27] (c1.chord.1) Now step along by a small amount, delta ex, to a second point, at ex plus delta ex.
+S016 [01:34] (c1.chord.1) Between the two points, the curve rises by delta why: the height at the second point, minus the height at the first.
+S017 [01:43] (c1.chord.2) The line through the two points is called the chord.
+S018 [01:48] (c1.chord.2) Its slope is the rise over the run, delta why over delta ex.
+S019 [01:53] (c1.chord.2) Here's an example: why equals ex cubed, at ex equals one.
+S020 [02:00] (c1.chord.2) With delta ex equal to a half, the chord's slope is four point seven five.
+S021 [02:05] (c1.chord.2) With a tenth, it's three point three one.
+S022 [02:10] (c1.chord.2) With a hundredth, three point zero three.
+S023 [02:15] (c1.chord.3) As delta ex shrinks, the chords swing round and settle on one line, the tangent line.
+S024 [02:21] (c1.chord.3) Here its slope is three.
+S025 [02:25] (c1.chord.3) That slope is the derivative, the gradient of the curve at that point.
+S026 [02:31] (c1.chord.3) So here's the definition.
+S027 [02:34] (c1.chord.3) The derivative of why with respect to ex is the limit, as delta ex goes to zero, of delta why over delta ex.
+S028 [02:43] (c1.chord.3) Chapter five of the notes does limits properly.
+S029 [02:47] (c1.chord.3) For now, closer and closer is enough.
+S030 [02:51] (c1.chord.4) Look closely at that limit.
+S031 [02:54] (c1.chord.4) The top goes to zero, and so does the bottom.
+S032 [02:58] (c1.chord.4) Newton's idea, in effect, divides zero by zero, and in the seventeenth century that was controversial.
+S033 [03:04] (c1.chord.4) Yet the ratio heads somewhere definite, here to three.
+S034 [03:08] (c1.chord.4) As the lecturer puts it, another mathematical crisis successfully resolved.
+S035 [03:17] (c1.chord.5) One property follows straight away: differentiation is a linear operation.
+S036 [03:24] (c1.chord.5) The derivative of a sum is the sum of the derivatives, and a constant factor comes out in front.
+S037 [03:31] (c1.chord.5) That's because the quotient for a sum splits into one quotient per function, and limits add up the same way.
+S038 [03:41] (c1.cube.1) So why do those chord slopes head for three?
+S039 [03:45] (c1.cube.1) Work it out from first principles.
+S040 [03:48] (c1.cube.1) The lecturer's recipe has five steps: substitute, expand, subtract, divide, and take the limit.
+S041 [03:57] (c1.cube.1) First, substitute ex plus delta ex into ex cubed.
+S042 [04:01] (c1.cube.2) Expand the cube.
+S043 [04:03] (c1.cube.2) You get ex cubed, plus three ex squared times delta ex, plus three ex times delta ex squared, plus delta ex cubed.
+S044 [04:12] (c1.cube.2) Now subtract why of ex, which is ex cubed.
+S045 [04:17] (c1.cube.2) It cancels the first term.
+S046 [04:21] (c1.cube.2) Every term that's left has at least one factor of delta ex.
+S047 [04:25] (c1.cube.3) Divide by delta ex.
+S048 [04:28] (c1.cube.3) Each term loses one factor of it.
+S049 [04:32] (c1.cube.3) You get three ex squared, plus three ex times delta ex, plus delta ex squared.
+S050 [04:37] (c1.cube.3) At ex equals one, with delta ex equal to a half, this comes to four point seven five.
+S051 [04:44] (c1.cube.3) That's the first chord slope you saw.
+S052 [04:49] (c1.cube.4) Now let delta ex go to zero.
+S053 [04:53] (c1.cube.4) The last two terms each carry a factor of delta ex, so they go to zero.
+S054 [04:59] (c1.cube.4) What's left is three ex squared.
+S055 [05:03] (c1.cube.4) That's the power rule you already know: the power comes down in front, and the new power is one less.
+S056 [05:12] (c1.cube.4) At ex equals one, it gives three, the slope of the tangent line.
+S057 [05:17] (c1.cube.5) The notes add a condition here: if delta ex is smaller than one in size, each power of it is smaller than the last.
+S058 [05:26] (c1.cube.5) The lecturer says you can skip it: every leftover term has a factor of delta ex, so it goes to zero anyway.
+S059 [05:35] (c1.cube.5) Keep the result on a card, ex cubed to three ex squared.
+S060 [05:40] (c1.cube.5) Part four takes it further.
+S061 [05:43] (c1.notation.1) The symbol in that box, dee why by dee ex, has a history.
+S062 [05:48] (c1.notation.1) Calculus was invented by two people at around the same time, Isaac Newton and Gottfried Leibniz.
+S063 [05:55] (c1.notation.1) Leibniz published in sixteen eighty-six, and Newton in sixteen eighty-seven.
+S064 [06:00] (c1.notation.1) But it seems Newton made his breakthrough some twenty years earlier, in sixteen sixty-five and sixty-six.
+S065 [06:07] (c1.notation.1) Each claimed to be first, and they fell out badly.
+S066 [06:11] (c1.notation.2) Newton's approach was based on limits.
+S067 [06:15] (c1.notation.2) Leibniz used geometric arguments, and a much simpler notation, including dee by dee ex and the integral sign.
+S068 [06:22] (c1.notation.2) Britain kept Newton's notation through the eighteenth century, and the rest of the world, using Leibniz's, made more progress.
+S069 [06:31] (c1.notation.2) Newton's dot, for a derivative with respect to time, survives.
+S070 [06:36] (c1.notation.2) Oiler wrote a capital D, and his student Lagrange gave us primes.
+S071 [06:42] (c1.notation.2) And mathematicians in India seem to have had similar ideas a couple of centuries earlier.
+S072 [06:47] (c1.notation.3) So here are the notations in the notes.
+S073 [06:52] (c1.notation.3) First, dee why by dee ex, and dee by dee ex acting on why.
+S074 [06:58] (c1.notation.3) Then why prime, two kinds of subscript, and a capital D.
+S075 [07:03] (c1.notation.3) For a function of time, a dot on top.
+S076 [07:07] (c1.notation.3) This course uses mostly the fractions and the primes.
+S077 [07:11] (c1.notation.3) The capital D comes later, especially next term.
+S078 [07:16] (c1.notation.4) Read dee why by dee ex as an operator, dee by dee ex, acting on the function why.
+S079 [07:23] (c1.notation.4) Dee why over dee ex looks like a fraction.
+S080 [07:29] (c1.notation.4) Some manipulations will treat it like one.
+S081 [07:33] (c1.notation.4) But it is not a fraction.
+S082 [07:36] (c1.notation.4) So when part three flips it over, it proves that the flip is allowed.
+S083 [07:43] (c1.fail.1) Now, when does it fail?
+S084 [07:47] (c1.fail.1) Functions are not always differentiable.
+S085 [07:51] (c1.fail.1) Here's an example: why equals mod ex, the absolute value of ex.
+S086 [07:58] (c1.fail.1) To the left of zero it's minus ex, a straight line with slope minus one.
+S087 [08:04] (c1.fail.1) To the right it's just ex, with slope plus one.
+S088 [08:08] (c1.fail.1) And it's continuous.
+S089 [08:11] (c1.fail.1) You can draw it without lifting the pen.
+S090 [08:15] (c1.fail.2) But look at the corner, at zero.
+S091 [08:19] (c1.fail.2) Which line is the tangent line there?
+S092 [08:23] (c1.fail.2) Lots of lines touch the corner, and none of them is the right one.
+S093 [08:27] (c1.fail.2) Chords from the right all have slope plus one.
+S094 [08:31] (c1.fail.2) Chords from the left all have slope minus one.
+S095 [08:36] (c1.fail.2) There's no single slope, so the derivative of mod ex does not exist at zero.
+S096 [08:42] (c1.fail.2) Everywhere else, it's fine.
+S097 [08:46] (c1.fail.3) The second example is the Heaviside step function.
+S098 [08:50] (c1.fail.3) It's zero for negative ex, and one for positive ex.
+S099 [08:56] (c1.fail.3) At zero itself, definitions vary, and the notes leave it out.
+S100 [09:01] (c1.fail.3) The lecturer puts that point in the top piece: a filled dot at height one, and an open circle at the origin.
+S101 [09:10] (c1.fail.3) That way the function has exactly one value at zero.
+S102 [09:14] (c1.fail.4) Away from zero, the graph is flat, so its derivative is zero.
+S103 [09:19] (c1.fail.4) At zero, it's undefined.
+S104 [09:23] (c1.fail.4) To see why, take a chord from the left that crosses the jump.
+S105 [09:27] (c1.fail.4) It rises by one over a run of delta ex, so its slope is one over delta ex.
+S106 [09:34] (c1.fail.4) With delta ex equal to a tenth, that's ten.
+S107 [09:38] (c1.fail.4) With a hundredth, a hundred.
+S108 [09:42] (c1.fail.4) The slope grows without bound, so no tangent line can match it.
+S109 [09:48] (c1.diff.1) So what exactly does differentiable demand?
+S110 [09:52] (c1.diff.1) Here's the lecturer's definition.
+S111 [09:55] (c1.diff.1) F is differentiable at ex if this limit exists, and is finite.
+S112 [10:01] (c1.diff.1) It's the quotient from before: the change in F, over a small step.
+S113 [10:08] (c1.diff.1) She calls the step H, instead of delta ex.
+S114 [10:13] (c1.diff.1) As she says, H is just a variable.
+S115 [10:16] (c1.diff.2) The notes' box says what that takes.
+S116 [10:20] (c1.diff.2) First, the function must be continuous.
+S117 [10:24] (c1.diff.2) Second, the derivative must be finite and defined.
+S118 [10:29] (c1.diff.2) That means the left-hand limit, where you step back from ex by H, must equal the right-hand limit, where you step forward.
+S119 [10:38] (c1.diff.3) Run mod ex through the box, at zero.
+S120 [10:43] (c1.diff.3) It's continuous, so the first test passes.
+S121 [10:47] (c1.diff.3) But the left-hand limit is minus one, and the right-hand limit is plus one.
+S122 [10:53] (c1.diff.3) They disagree, so the second test fails.
+S123 [10:56] (c1.diff.4) Now the Heaviside step function.
+S124 [11:00] (c1.diff.4) Both pieces are flat, with slope zero, so the two sides seem to agree.
+S125 [11:05] (c1.diff.4) But the function jumps, so it is not continuous, and the first test fails.
+S126 [11:11] (c1.diff.4) Indeed, the left-hand quotient is one over the step, which blows up.
+S127 [11:18] (c1.diff.5) Notice which way it goes.
+S128 [11:21] (c1.diff.5) If the derivative exists, the change in F is the step, times the difference quotient, which stays finite, so it goes to zero with the step.
+S129 [11:31] (c1.diff.5) So a differentiable function is continuous.
+S130 [11:34] (c1.diff.5) The reverse is false, and mod ex shows it.
+S131 [11:39] (c1.diff.5) Finite matters too.
+S132 [11:42] (c1.diff.5) Where the tangent line is vertical, its slope is infinite.
+S133 [11:47] (c1.diff.5) The circle in part three has two such points.
+S134 [11:52] (c1.recap.1) Time for a recap.
+S135 [11:56] (c1.recap.1) The derivative is the limit of chord slopes, as delta ex goes to zero.
+S136 [12:00] (c1.recap.1) From first principles, you substitute, expand, subtract, divide, and take the limit.
+S137 [12:07] (c1.recap.1) For ex cubed, that gives three ex squared.
+S138 [12:11] (c1.recap.2) At a corner or a jump, there's no derivative.
+S139 [12:15] (c1.recap.2) To be differentiable, a function must be continuous, its left-hand and right-hand limits must agree, and its slope must be finite.
+S140 [12:25] (c1.recap.3) Next time: the chain rule, the product rule and the quotient rule.
+S141 [12:31] (c1.recap.3) Each one comes from this same limit.

@@ -1,0 +1,957 @@
+{
+ "key": "de10ch4",
+ "project": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/digital-electronics/l10-state-assignment",
+ "chapter": 4,
+ "final": "/Users/markgolbraikh/Documents/3Claude1Cam/projects/digital-electronics/l10-state-assignment/out/ch4_one_hot.mp4",
+ "total": 687.161,
+ "scenes_sum": 687.0666669999999,
+ "words": 1616,
+ "scenes": [
+  {
+   "stem": "ch4_s1_hook",
+   "t0": 0.0,
+   "dur": 49.816667,
+   "cue_dur": 49.8167
+  },
+  {
+   "stem": "ch4_s2_onehot",
+   "t0": 49.816667,
+   "dur": 87.25,
+   "cue_dur": 87.25
+  },
+  {
+   "stem": "ch4_s3_ring4",
+   "t0": 137.066667,
+   "dur": 110.5,
+   "cue_dur": 110.5
+  },
+  {
+   "stem": "ch4_s4_outputs",
+   "t0": 247.566667,
+   "dur": 83.416667,
+   "cue_dur": 83.4167
+  },
+  {
+   "stem": "ch4_s5_compare",
+   "t0": 330.983334,
+   "dur": 89.083333,
+   "cue_dur": 89.0833
+  },
+  {
+   "stem": "ch4_s6_demo",
+   "t0": 420.066667,
+   "dur": 98.333333,
+   "cue_dur": 98.3333
+  },
+  {
+   "stem": "ch4_s7_fast",
+   "t0": 518.4,
+   "dur": 109.916667,
+   "cue_dur": 109.9167
+  },
+  {
+   "stem": "ch4_s8_recap",
+   "t0": 628.3166669999999,
+   "dur": 58.75,
+   "cue_dur": 58.75
+  }
+ ],
+ "clips": [
+  {
+   "id": "c4.hook.1",
+   "scene": "ch4_s1_hook",
+   "t0": 0.0,
+   "dur": 19.674
+  },
+  {
+   "id": "c4.hook.2",
+   "scene": "ch4_s1_hook",
+   "t0": 20.9833,
+   "dur": 24.081
+  },
+  {
+   "id": "c4.onehot.1",
+   "scene": "ch4_s2_onehot",
+   "t0": 49.816667,
+   "dur": 19.256
+  },
+  {
+   "id": "c4.onehot.2",
+   "scene": "ch4_s2_onehot",
+   "t0": 70.099967,
+   "dur": 20.965
+  },
+  {
+   "id": "c4.onehot.3",
+   "scene": "ch4_s2_onehot",
+   "t0": 91.916667,
+   "dur": 18.306
+  },
+  {
+   "id": "c4.onehot.4",
+   "scene": "ch4_s2_onehot",
+   "t0": 111.249967,
+   "dur": 21.476
+  },
+  {
+   "id": "c4.ring.1",
+   "scene": "ch4_s3_ring4",
+   "t0": 137.066667,
+   "dur": 31.735
+  },
+  {
+   "id": "c4.ring.2",
+   "scene": "ch4_s3_ring4",
+   "t0": 169.54996699999998,
+   "dur": 33.241
+  },
+  {
+   "id": "c4.ring.3",
+   "scene": "ch4_s3_ring4",
+   "t0": 204.383367,
+   "dur": 19.308
+  },
+  {
+   "id": "c4.ring.4",
+   "scene": "ch4_s3_ring4",
+   "t0": 224.849967,
+   "dur": 20.058
+  },
+  {
+   "id": "c4.lamps.1",
+   "scene": "ch4_s4_outputs",
+   "t0": 247.566667,
+   "dur": 21.868
+  },
+  {
+   "id": "c4.lamps.2",
+   "scene": "ch4_s4_outputs",
+   "t0": 270.733367,
+   "dur": 22.735
+  },
+  {
+   "id": "c4.lamps.3",
+   "scene": "ch4_s4_outputs",
+   "t0": 294.366667,
+   "dur": 31.139
+  },
+  {
+   "id": "c4.compare.1",
+   "scene": "ch4_s5_compare",
+   "t0": 330.983334,
+   "dur": 37.731
+  },
+  {
+   "id": "c4.compare.2",
+   "scene": "ch4_s5_compare",
+   "t0": 369.66663400000004,
+   "dur": 24.199
+  },
+  {
+   "id": "c4.compare.3",
+   "scene": "ch4_s5_compare",
+   "t0": 394.816634,
+   "dur": 20.996
+  },
+  {
+   "id": "c4.demo.1",
+   "scene": "ch4_s6_demo",
+   "t0": 420.066667,
+   "dur": 26.439
+  },
+  {
+   "id": "c4.demo.2",
+   "scene": "ch4_s6_demo",
+   "t0": 447.533367,
+   "dur": 29.125
+  },
+  {
+   "id": "c4.demo.3",
+   "scene": "ch4_s6_demo",
+   "t0": 478.149967,
+   "dur": 34.199
+  },
+  {
+   "id": "c4.fast.1",
+   "scene": "ch4_s7_fast",
+   "t0": 518.4,
+   "dur": 18.252
+  },
+  {
+   "id": "c4.fast.2",
+   "scene": "ch4_s7_fast",
+   "t0": 537.5667,
+   "dur": 24.573
+  },
+  {
+   "id": "c4.fast.3",
+   "scene": "ch4_s7_fast",
+   "t0": 563.3667,
+   "dur": 16.748
+  },
+  {
+   "id": "c4.fast.4",
+   "scene": "ch4_s7_fast",
+   "t0": 580.9332999999999,
+   "dur": 17.088
+  },
+  {
+   "id": "c4.fast.5",
+   "scene": "ch4_s7_fast",
+   "t0": 599.4667,
+   "dur": 22.374
+  },
+  {
+   "id": "c4.recap.1",
+   "scene": "ch4_s8_recap",
+   "t0": 628.3166669999999,
+   "dur": 19.268
+  },
+  {
+   "id": "c4.recap.2",
+   "scene": "ch4_s8_recap",
+   "t0": 648.399967,
+   "dur": 18.556
+  },
+  {
+   "id": "c4.recap.3",
+   "scene": "ch4_s8_recap",
+   "t0": 668.033367,
+   "dur": 10.633
+  }
+ ],
+ "sentences": [
+  {
+   "t": 0.0,
+   "clip": "c4.hook.1",
+   "text": "This is part four of our lecture on state assignment.",
+   "i": 1
+  },
+  {
+   "t": 4.21,
+   "clip": "c4.hook.1",
+   "text": "Last time, the ring of five did nothing until we set it into a used state.",
+   "i": 2
+  },
+  {
+   "t": 9.52,
+   "clip": "c4.hook.1",
+   "text": "That ring spent two more flip-flops than it needed, mostly for fun.",
+   "i": 3
+  },
+  {
+   "t": 14.45,
+   "clip": "c4.hook.1",
+   "text": "This part is about a style that spends flip-flops just as freely, and is used a lot in real designs.",
+   "i": 4
+  },
+  {
+   "t": 20.98,
+   "clip": "c4.hook.2",
+   "text": "Here are eight states, built two ways.",
+   "i": 5
+  },
+  {
+   "t": 24.94,
+   "clip": "c4.hook.2",
+   "text": "On the right, three flip-flops count through them in binary.",
+   "i": 6
+  },
+  {
+   "t": 28.88,
+   "clip": "c4.hook.2",
+   "text": "On the left, eight flip-flops pass a single one along, one flip-flop for each state.",
+   "i": 7
+  },
+  {
+   "t": 34.85,
+   "clip": "c4.hook.2",
+   "text": "That's eight flip-flops where three would do.",
+   "i": 8
+  },
+  {
+   "t": 38.7,
+   "clip": "c4.hook.2",
+   "text": "So what do we gain by giving every state its own flip-flop?",
+   "i": 9
+  },
+  {
+   "t": 49.82,
+   "clip": "c4.onehot.1",
+   "text": "This style is called one-hot encoding.",
+   "i": 10
+  },
+  {
+   "t": 53.02,
+   "clip": "c4.onehot.1",
+   "text": "It's a shift-register style of design, in which only one flip-flop at a time holds a one.",
+   "i": 11
+  },
+  {
+   "t": 60.04,
+   "clip": "c4.onehot.1",
+   "text": "That flip-flop is the hot one.",
+   "i": 12
+  },
+  {
+   "t": 63.75,
+   "clip": "c4.onehot.1",
+   "text": "As the machine steps from state to state, the one steps from flip-flop to flip-flop.",
+   "i": 13
+  },
+  {
+   "t": 70.1,
+   "clip": "c4.onehot.2",
+   "text": "You've seen something close to this.",
+   "i": 14
+  },
+  {
+   "t": 72.87,
+   "clip": "c4.onehot.2",
+   "text": "Part two's ring of five carried a pair of ones round.",
+   "i": 15
+  },
+  {
+   "t": 77.31,
+   "clip": "c4.onehot.2",
+   "text": "A one-hot machine always carries exactly one.",
+   "i": 16
+  },
+  {
+   "t": 81.52,
+   "clip": "c4.onehot.2",
+   "text": "So each state has its own flip-flop, and the state is simply wherever the one is.",
+   "i": 17
+  },
+  {
+   "t": 87.62,
+   "clip": "c4.onehot.2",
+   "text": "To see which state the machine is in, you just look for the one.",
+   "i": 18
+  },
+  {
+   "t": 91.92,
+   "clip": "c4.onehot.3",
+   "text": "A sequential assignment needs only log base two of the number of states, rounded up.",
+   "i": 19
+  },
+  {
+   "t": 97.88,
+   "clip": "c4.onehot.3",
+   "text": "One-hot needs one flip-flop for every state.",
+   "i": 20
+  },
+  {
+   "t": 102.45,
+   "clip": "c4.onehot.3",
+   "text": "For eight states, that's eight flip-flops instead of three.",
+   "i": 21
+  },
+  {
+   "t": 104.89,
+   "clip": "c4.onehot.3",
+   "text": "In the lecturer's words, here we really are burning through the flip-flops.",
+   "i": 22
+  },
+  {
+   "t": 111.25,
+   "clip": "c4.onehot.4",
+   "text": "So why would anyone design this way?",
+   "i": 23
+  },
+  {
+   "t": 115.27,
+   "clip": "c4.onehot.4",
+   "text": "The slide's answer is that one-hot can give simple, fast state machines.",
+   "i": 24
+  },
+  {
+   "t": 120.65,
+   "clip": "c4.onehot.4",
+   "text": "And each output comes from joining the outputs of the right flip-flops, the ones for the states where it should be on, with an or gate.",
+   "i": 25
+  },
+  {
+   "t": 129.74,
+   "clip": "c4.onehot.4",
+   "text": "Let's test both claims on a machine you already know.",
+   "i": 26
+  },
+  {
+   "t": 137.07,
+   "clip": "c4.ring.1",
+   "text": "The lecturer goes back to the traffic light from part one.",
+   "i": 27
+  },
+  {
+   "t": 140.75,
+   "clip": "c4.ring.1",
+   "text": "It steps through four states in the British order: red, then red and amber, then green, then amber, and back to red.",
+   "i": 28
+  },
+  {
+   "t": 149.71,
+   "clip": "c4.ring.1",
+   "text": "It has no inputs, and it moves on one state at every edge of the clock.",
+   "i": 29
+  },
+  {
+   "t": 154.9,
+   "clip": "c4.ring.1",
+   "text": "Four states, so one-hot needs four flip-flops, one for each state.",
+   "i": 30
+  },
+  {
+   "t": 160.42,
+   "clip": "c4.ring.1",
+   "text": "Call them the red, red-and-amber, green and amber flip-flops.",
+   "i": 31
+  },
+  {
+   "t": 165.56,
+   "clip": "c4.ring.1",
+   "text": "This time each one stands for a state, not a lamp.",
+   "i": 32
+  },
+  {
+   "t": 169.55,
+   "clip": "c4.ring.2",
+   "text": "In part one, these states had three-bit codes.",
+   "i": 33
+  },
+  {
+   "t": 174.14,
+   "clip": "c4.ring.2",
+   "text": "Now each code has a single one, in that state's own flip-flop.",
+   "i": 34
+  },
+  {
+   "t": 179.71,
+   "clip": "c4.ring.2",
+   "text": "Red is one, zero, zero, zero, red and amber is zero, one, zero, zero, and so on.",
+   "i": 35
+  },
+  {
+   "t": 186.8,
+   "clip": "c4.ring.2",
+   "text": "In the transition table, each state's next state is the next row down, and amber goes back to red.",
+   "i": 36
+  },
+  {
+   "t": 193.46,
+   "clip": "c4.ring.2",
+   "text": "Four flip-flops give sixteen patterns, and only four are used.",
+   "i": 37
+  },
+  {
+   "t": 198.48,
+   "clip": "c4.ring.2",
+   "text": "That leaves twelve unused states, or as the slide says, lots.",
+   "i": 38
+  },
+  {
+   "t": 204.38,
+   "clip": "c4.ring.3",
+   "text": "Now read the dee inputs off the table.",
+   "i": 39
+  },
+  {
+   "t": 207.74,
+   "clip": "c4.ring.3",
+   "text": "With dee flip-flops, they're just the next state.",
+   "i": 40
+  },
+  {
+   "t": 212.14,
+   "clip": "c4.ring.3",
+   "text": "The next-state column for red-and-amber reads one, zero, zero, zero, exactly the current red column.",
+   "i": 41
+  },
+  {
+   "t": 219.27,
+   "clip": "c4.ring.3",
+   "text": "So the red-and-amber flip-flop's input is the red flip-flop's output.",
+   "i": 42
+  },
+  {
+   "t": 224.85,
+   "clip": "c4.ring.4",
+   "text": "In the same way, green takes its input from red-and-amber, amber from green, and red from amber.",
+   "i": 43
+  },
+  {
+   "t": 231.98,
+   "clip": "c4.ring.4",
+   "text": "That's a ring of four, a shift register fed back on itself, and it needs no logic at all to work out the next state.",
+   "i": 44
+  },
+  {
+   "t": 240.3,
+   "clip": "c4.ring.4",
+   "text": "It has the same shape as part two's ring of five, but it carries a single one.",
+   "i": 45
+  },
+  {
+   "t": 247.57,
+   "clip": "c4.lamps.1",
+   "text": "The flip-flops now say which state we're in, but there are four flip-flops and only three lamps.",
+   "i": 46
+  },
+  {
+   "t": 254.47,
+   "clip": "c4.lamps.1",
+   "text": "The red lamp is on in two states, red and red-and-amber.",
+   "i": 47
+  },
+  {
+   "t": 260.17,
+   "clip": "c4.lamps.1",
+   "text": "So it should light when either the red flip-flop or the red-and-amber flip-flop holds the one.",
+   "i": 48
+  },
+  {
+   "t": 267.15,
+   "clip": "c4.lamps.1",
+   "text": "An or gate joins those two outputs.",
+   "i": 49
+  },
+  {
+   "t": 270.73,
+   "clip": "c4.lamps.2",
+   "text": "The amber lamp is on in red-and-amber and in amber, so another or gate joins those two flip-flops.",
+   "i": 50
+  },
+  {
+   "t": 278.9,
+   "clip": "c4.lamps.2",
+   "text": "The green lamp is on only in the green state.",
+   "i": 51
+  },
+  {
+   "t": 282.73,
+   "clip": "c4.lamps.2",
+   "text": "It's simply the green flip-flop's output, a plain wire.",
+   "i": 52
+  },
+  {
+   "t": 286.96,
+   "clip": "c4.lamps.2",
+   "text": "That's the slide's rule at work.",
+   "i": 53
+  },
+  {
+   "t": 290.3,
+   "clip": "c4.lamps.2",
+   "text": "Each output joins the flip-flops of the states where it's on.",
+   "i": 54
+  },
+  {
+   "t": 294.37,
+   "clip": "c4.lamps.3",
+   "text": "Here's the whole circuit, as the slide draws it.",
+   "i": 55
+  },
+  {
+   "t": 296.96,
+   "clip": "c4.lamps.3",
+   "text": "Four dee flip-flops share one clock signal.",
+   "i": 56
+  },
+  {
+   "t": 302.2,
+   "clip": "c4.lamps.3",
+   "text": "Each output is wired to the next input, and the last one runs back to the first.",
+   "i": 57
+  },
+  {
+   "t": 307.99,
+   "clip": "c4.lamps.3",
+   "text": "Underneath are the two or gates and the wire for green.",
+   "i": 58
+  },
+  {
+   "t": 312.62,
+   "clip": "c4.lamps.3",
+   "text": "As the one goes round, the lamps follow, red, then red and amber, then green, then amber.",
+   "i": 59
+  },
+  {
+   "t": 320.31,
+   "clip": "c4.lamps.3",
+   "text": "So the next-state logic is gone, but we do need a little output logic, two gates.",
+   "i": 60
+  },
+  {
+   "t": 330.98,
+   "clip": "c4.compare.1",
+   "text": "Now compare lecture nine's design.",
+   "i": 61
+  },
+  {
+   "t": 334.58,
+   "clip": "c4.compare.1",
+   "text": "It used part one's codes, with three flip-flops, one per lamp.",
+   "i": 62
+  },
+  {
+   "t": 340.07,
+   "clip": "c4.compare.1",
+   "text": "The red lamp's flip-flop is fed by an exclusive-or gate, which takes the red and amber outputs.",
+   "i": 63
+  },
+  {
+   "t": 346.86,
+   "clip": "c4.compare.1",
+   "text": "The amber lamp's flip-flop takes its own inverted output, so amber simply flips on every edge of the clock.",
+   "i": 64
+  },
+  {
+   "t": 354.81,
+   "clip": "c4.compare.1",
+   "text": "The green lamp's flip-flop gets an and gate, fed by the red and amber outputs, because green always follows the one state with both of them lit.",
+   "i": 65
+  },
+  {
+   "t": 364.22,
+   "clip": "c4.compare.1",
+   "text": "And each lamp is driven straight from one of the flip-flops, so there's no output logic.",
+   "i": 66
+  },
+  {
+   "t": 369.67,
+   "clip": "c4.compare.2",
+   "text": "Put the two side by side.",
+   "i": 67
+  },
+  {
+   "t": 372.58,
+   "clip": "c4.compare.2",
+   "text": "Lecture nine's design needs two gates between its flip-flops.",
+   "i": 68
+  },
+  {
+   "t": 377.19,
+   "clip": "c4.compare.2",
+   "text": "One-hot needs none there, and two gates after them, for the lamps.",
+   "i": 69
+  },
+  {
+   "t": 382.79,
+   "clip": "c4.compare.2",
+   "text": "So the logic hasn't vanished, it has moved from inside the loop to the outputs.",
+   "i": 70
+  },
+  {
+   "t": 389.01,
+   "clip": "c4.compare.2",
+   "text": "Same machine, same lamps.",
+   "i": 71
+  },
+  {
+   "t": 391.79,
+   "clip": "c4.compare.2",
+   "text": "Only the state assignment changed.",
+   "i": 72
+  },
+  {
+   "t": 394.82,
+   "clip": "c4.compare.3",
+   "text": "Both designs go on the scoreboard.",
+   "i": 73
+  },
+  {
+   "t": 398.16,
+   "clip": "c4.compare.3",
+   "text": "Lecture nine's has three flip-flops, two next-state gates and no output logic.",
+   "i": 74
+  },
+  {
+   "t": 403.93,
+   "clip": "c4.compare.3",
+   "text": "One-hot has four flip-flops, no next-state gates, and two output gates.",
+   "i": 75
+  },
+  {
+   "t": 410.03,
+   "clip": "c4.compare.3",
+   "text": "Which is better depends on what you optimise, as part one said.",
+   "i": 76
+  },
+  {
+   "t": 420.07,
+   "clip": "c4.demo.1",
+   "text": "The lecturer built this circuit in his simulator.",
+   "i": 77
+  },
+  {
+   "t": 424.1,
+   "clip": "c4.demo.1",
+   "text": "The clock signal ticks, and nothing lights up.",
+   "i": 78
+  },
+  {
+   "t": 427.93,
+   "clip": "c4.demo.1",
+   "text": "Can you see why?",
+   "i": 79
+  },
+  {
+   "t": 430.99,
+   "clip": "c4.demo.1",
+   "text": "It's the same deal as the ring of five.",
+   "i": 80
+  },
+  {
+   "t": 434.14,
+   "clip": "c4.demo.1",
+   "text": "The flip-flops start at all zeros, and all zeros is an unused state, because a one-hot state has exactly one flip-flop at one.",
+   "i": 81
+  },
+  {
+   "t": 443.0,
+   "clip": "c4.demo.1",
+   "text": "So every edge of the clock shifts zeros into zeros.",
+   "i": 82
+  },
+  {
+   "t": 447.53,
+   "clip": "c4.demo.2",
+   "text": "First he disconnects the clock signal, so that nothing shifts while he works.",
+   "i": 83
+  },
+  {
+   "t": 453.22,
+   "clip": "c4.demo.2",
+   "text": "Any single one would make a used state.",
+   "i": 84
+  },
+  {
+   "t": 457.09,
+   "clip": "c4.demo.2",
+   "text": "He picks the amber flip-flop and pulls its asynchronous set input low.",
+   "i": 85
+  },
+  {
+   "t": 462.59,
+   "clip": "c4.demo.2",
+   "text": "Remember, the little circle means active low.",
+   "i": 86
+  },
+  {
+   "t": 466.37,
+   "clip": "c4.demo.2",
+   "text": "Its output goes to one, and the amber lamp lights at once, through its or gate.",
+   "i": 87
+  },
+  {
+   "t": 471.92,
+   "clip": "c4.demo.2",
+   "text": "Then he puts the set input back high, so the flip-flop works normally again.",
+   "i": 88
+  },
+  {
+   "t": 478.15,
+   "clip": "c4.demo.3",
+   "text": "He reconnects the clock signal, and the lights run.",
+   "i": 89
+  },
+  {
+   "t": 482.04,
+   "clip": "c4.demo.3",
+   "text": "Amber, red, red and amber, green, amber.",
+   "i": 90
+  },
+  {
+   "t": 486.89,
+   "clip": "c4.demo.3",
+   "text": "Like the ring of five, this ring can never find its own way back, because any pattern just goes round.",
+   "i": 91
+  },
+  {
+   "t": 494.07,
+   "clip": "c4.demo.3",
+   "text": "Its sixteen patterns fall into six loops, and only one of them is ours.",
+   "i": 92
+  },
+  {
+   "t": 499.46,
+   "clip": "c4.demo.3",
+   "text": "Power it up with two ones that have a gap between them, and the lamps alternate for ever between red with amber, and red with green.",
+   "i": 93
+  },
+  {
+   "t": 509.19,
+   "clip": "c4.demo.3",
+   "text": "So a one-hot machine has to start in a used state.",
+   "i": 94
+  },
+  {
+   "t": 518.4,
+   "clip": "c4.fast.1",
+   "text": "The lecturer's last point is speed.",
+   "i": 95
+  },
+  {
+   "t": 522.05,
+   "clip": "c4.fast.1",
+   "text": "Remember from lecture eight what limits the clock speed.",
+   "i": 96
+  },
+  {
+   "t": 525.69,
+   "clip": "c4.fast.1",
+   "text": "Every path runs from one flip-flop, through logic, to the next.",
+   "i": 97
+  },
+  {
+   "t": 530.75,
+   "clip": "c4.fast.1",
+   "text": "So the clock period must cover the clock-to-output delay, the logic's delay, and the set-up time.",
+   "i": 98
+  },
+  {
+   "t": 537.57,
+   "clip": "c4.fast.2",
+   "text": "Now look at the one-hot ring.",
+   "i": 99
+  },
+  {
+   "t": 540.46,
+   "clip": "c4.fast.2",
+   "text": "Each output is wired straight into the next input.",
+   "i": 100
+  },
+  {
+   "t": 544.29,
+   "clip": "c4.fast.2",
+   "text": "There's no logic in the loop, so the logic's delay is zero.",
+   "i": 101
+  },
+  {
+   "t": 549.02,
+   "clip": "c4.fast.2",
+   "text": "The clock period only has to cover the clock-to-output delay and the set-up time.",
+   "i": 102
+  },
+  {
+   "t": 555.23,
+   "clip": "c4.fast.2",
+   "text": "With lecture eight's flip-flops, that's zero point two plus zero point one, which is zero point three nanoseconds.",
+   "i": 103
+  },
+  {
+   "t": 563.37,
+   "clip": "c4.fast.3",
+   "text": "That's a clock frequency of about three point three gigahertz, as fast as these flip-flops can go.",
+   "i": 104
+  },
+  {
+   "t": 570.22,
+   "clip": "c4.fast.3",
+   "text": "In lecture eight's example, four point seven nanoseconds of logic held the clock to two hundred megahertz.",
+   "i": 105
+  },
+  {
+   "t": 577.3,
+   "clip": "c4.fast.3",
+   "text": "Here the flip-flops alone set the limit.",
+   "i": 106
+  },
+  {
+   "t": 580.93,
+   "clip": "c4.fast.4",
+   "text": "The or gates for the lamps sit after the loop.",
+   "i": 107
+  },
+  {
+   "t": 584.87,
+   "clip": "c4.fast.4",
+   "text": "They delay the lamps a little, but the clock never waits for them.",
+   "i": 108
+  },
+  {
+   "t": 589.63,
+   "clip": "c4.fast.4",
+   "text": "Lecture nine's design has two gates inside its loop, an and gate and an exclusive-or gate, so its clock period must also cover the slower of the two.",
+   "i": 109
+  },
+  {
+   "t": 599.47,
+   "clip": "c4.fast.5",
+   "text": "One more check from lecture eight.",
+   "i": 110
+  },
+  {
+   "t": 602.57,
+   "clip": "c4.fast.5",
+   "text": "With no logic between flip-flops, new data reaches the next input as early as it possibly can.",
+   "i": 111
+  },
+  {
+   "t": 609.21,
+   "clip": "c4.fast.5",
+   "text": "That's the hold-time worry, in the shift register's case, and flip-flops are normally designed to meet it.",
+   "i": 112
+  },
+  {
+   "t": 615.9,
+   "clip": "c4.fast.5",
+   "text": "So, in the lecturer's words, one-hot machines can be fast, but we could end up burning lots of flip-flops.",
+   "i": 113
+  },
+  {
+   "t": 628.32,
+   "clip": "c4.recap.1",
+   "text": "Let's recap.",
+   "i": 114
+  },
+  {
+   "t": 630.91,
+   "clip": "c4.recap.1",
+   "text": "In one-hot encoding, exactly one flip-flop holds a one, so there's one flip-flop per state.",
+   "i": 115
+  },
+  {
+   "t": 637.75,
+   "clip": "c4.recap.1",
+   "text": "Built one-hot, the traffic light is a ring of four, with no next-state logic at all.",
+   "i": 116
+  },
+  {
+   "t": 644.28,
+   "clip": "c4.recap.1",
+   "text": "Its lamps come from two or gates and one plain wire.",
+   "i": 117
+  },
+  {
+   "t": 648.4,
+   "clip": "c4.recap.2",
+   "text": "Compared with lecture nine's design, the logic moved out of the loop and onto the outputs.",
+   "i": 118
+  },
+  {
+   "t": 654.8,
+   "clip": "c4.recap.2",
+   "text": "Like any ring, it has to be set into a used state, here with an asynchronous set.",
+   "i": 119
+  },
+  {
+   "t": 660.58,
+   "clip": "c4.recap.2",
+   "text": "And with no logic in its loop, it runs as fast as its flip-flops allow.",
+   "i": 120
+  },
+  {
+   "t": 668.03,
+   "clip": "c4.recap.3",
+   "text": "Next time, a real machine with inputs, from a Cambridge exam question.",
+   "i": 121
+  },
+  {
+   "t": 672.7,
+   "clip": "c4.recap.3",
+   "text": "We'll build it the usual way, with two flip-flops, and then one-hot.",
+   "i": 122
+  }
+ ]
+}
